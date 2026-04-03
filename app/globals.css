@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary: #006a66;
+  --color-primary-container: #00bbb4;
+  --color-primary-fixed: #6bf8f0;
+  --color-on-primary: #ffffff;
+  
+  --color-secondary-container: #baece8;
+  --color-on-secondary-container: #3d6c69;
+  
+  --color-tertiary: #9a451b;
+  
+  --color-surface: #f5fafa;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff5f5;
+  --color-surface-container-high: #e4e9e9;
+  
+  --color-on-surface: #171d1d;
+  --color-on-surface-variant: #3c4948;
+  --color-on-background: #171d1d;
+  --color-background: #f5fafa;
+  --color-outline-variant: #bbc9c7;
+
+  /* Fonts */
+  --font-plus-jakarta-sans: var(--font-plus-jakarta-sans);
+  --font-be-vietnam-pro: var(--font-be-vietnam-pro);
+  --font-sans: var(--font-be-vietnam-pro); /* Default body font */
+  
+  /* Shadows */
+  --shadow-ambient: 0 10px 40px -10px rgba(0, 106, 102, 0.08);
+
+  /* Spacing */
+  --spacing-xl: 3rem;
+}
+
+:root {
+  --background: var(--color-background);
+  --foreground: var(--color-on-background);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+@layer utilities {
+  .bg-gradient-signature {
+    background-image: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
+  }
+}

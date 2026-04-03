@@ -8,8 +8,8 @@ Créer une expérience numérique haut de gamme pour le "Centre dentaire plateau
 - **Internationalisation :** i18n pour le support bilingue (Français/Anglais).
 - **Langage :** TypeScript / React.
 - **Style :** Tailwind CSS.
-- **Hébergement :** Cloudflare Pages (Déploiement Statique).
-- **Backend (Serverless) :** Cloudflare Pages Functions (Workers).
+- **Hébergement :** Cloudflare Pages (via `@cloudflare/next-on-pages`).
+- **Backend (Serverless) :** Next.js API Routes (Edge Runtime).
 - **Emails :** Resend (via API).
 - **Base de données :** Google Sheets (via API).
 
