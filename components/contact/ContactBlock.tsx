@@ -30,7 +30,7 @@ export function ContactBlock() {
             <div className="bg-surface-container-lowest rounded-[1.5rem] p-8 space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-primary-fixed/20 flex items-center justify-center">
-                  <MapPin className="text-primary" size={20} />
+                  <MapPin className="text-primary" size={20} aria-hidden="true" />
                 </div>
                 <h3 className="font-heading font-semibold text-lg text-on-surface">
                   {t("info.address_title")}
@@ -45,7 +45,7 @@ export function ContactBlock() {
             <div className="bg-surface-container-lowest rounded-[1.5rem] p-8 space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-primary-fixed/20 flex items-center justify-center">
-                  <Clock className="text-primary" size={20} />
+                  <Clock className="text-primary" size={20} aria-hidden="true" />
                 </div>
                 <h3 className="font-heading font-semibold text-lg text-on-surface">
                   {t("info.hours_title")}
@@ -61,10 +61,10 @@ export function ContactBlock() {
               </div>
               <div className="pl-[52px] pt-3">
                 <div className="bg-tertiary/10 rounded-xl px-4 py-3 flex items-center gap-3">
-                  <Phone className="text-tertiary flex-shrink-0" size={18} />
+                  <Phone className="text-tertiary flex-shrink-0" size={18} aria-hidden="true" />
                   <div>
                     <span className="font-body text-sm font-semibold text-on-surface">{t("info.emergency")}</span>
-                    <a href="tel:+15141234568" className="block font-body text-sm text-tertiary font-medium hover:underline">
+                    <a href="tel:+15145281587" className="block font-body text-sm text-tertiary font-medium hover:underline">
                       {t("info.emergency_phone")}
                     </a>
                   </div>
@@ -76,7 +76,7 @@ export function ContactBlock() {
             <div className="bg-surface-container-lowest rounded-[1.5rem] p-8 space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-primary-fixed/20 flex items-center justify-center">
-                  <Car className="text-primary" size={20} />
+                  <Car className="text-primary" size={20} aria-hidden="true" />
                 </div>
                 <h3 className="font-heading font-semibold text-lg text-on-surface">
                   {t("info.access_title")}
@@ -89,7 +89,7 @@ export function ContactBlock() {
           </div>
 
           {/* Right: Contact Form */}
-          <div>
+          <div id="rendez-vous">
             <ContactForm />
           </div>
         </div>

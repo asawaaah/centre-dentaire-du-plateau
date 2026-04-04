@@ -5,9 +5,13 @@
     "about": "Équipe",
     "contact": "Contact",
     "cta": "Prendre RDV",
-    "phone": "(514) 123-4567",
+    "phone": "514 528 1587",
     "hours_short": "Lun-Jeu 9h-18h • Ven 9h-14h • Dim 10h-14h",
-    "switch_lang": "Changer de langue"
+    "switch_lang": "Changer de langue",
+    "nav_label": "Navigation principale",
+    "skip_to_content": "Passer au contenu principal",
+    "menu_open": "Ouvrir le menu",
+    "menu_close": "Fermer le menu"
   },
   "Footer": {
     "tagline": "Redéfinir l'expérience dentaire par le calme et l'excellence technique au cœur du Plateau.",
@@ -31,11 +35,11 @@
       "sat": "Sam : Fermé",
       "sun": "Dim : 10h00 - 14h00"
     },
-    "phone_number": "Tél : (514) 123-4567",
+    "phone_number": "Tél : 514 528 1587",
     "phone_label": "Appelez-nous",
     "email_label": "Envoyez-nous un email",
     "map_label": "Voir sur la carte",
-    "copyright": "© 2024 Centre Dentaire du Plateau. Tous droits réservés.",
+    "copyright": "© 2025 Centre Dentaire du Plateau. Tous droits réservés.",
     "legal": "Mentions Légales",
     "privacy": "Confidentialité",
     "accessibility": "Accessibilité"
@@ -93,30 +97,309 @@
       "title": "Nos Traitements",
       "subtitle": "Au Centre Dentaire du Plateau, nous redéfinissons le soin dentaire par une alliance unique entre technologie de pointe et environnement apaisant."
     },
-    "preventive": {
-      "title": "Soins Préventifs",
-      "description": "La base d'un sourire durable commence par la prévention. Nous proposons des bilans complets, détartrages et conseils d'hygiène personnalisés.",
-      "features": {
-        "xray": "Examens radiologiques 3D",
-        "cleaning": "Nettoyage prophylactique"
-      }
+    "hygiene": {
+      "title": "Hygiène Dentaire & Prévention",
+      "description": "Des gencives saines sont la fondation d'un beau sourire. Détartrage, nettoyage prophylactique et bilans complets pour protéger votre santé bucco-dentaire."
     },
-    "orthodontics": {
-      "title": "Orthodontie",
-      "description": "Solutions invisibles et confortables pour aligner votre sourire à tout âge. Invisalign® et multi-attaches."
+    "veneers": {
+      "title": "Facettes & Obturations Esthétiques",
+      "description": "Facettes en porcelaine ultra-minces et obturations invisibles en composite pour corriger forme, couleur et alignement de vos dents antérieures."
     },
-    "aesthetic": {
-      "title": "Dentisterie Esthétique",
-      "description": "Blanchiment professionnel, facettes en céramique et restaurations invisibles pour sublimer votre sourire."
+    "rootCanal": {
+      "title": "Traitement de Canal & Couronne",
+      "description": "Dévitalisation précise et couronne céramique sans métal pour sauver votre dent, lui rendre sa résistance et préserver votre sourire naturel."
     },
     "implants": {
-      "title": "Implantologie",
-      "description": "Retrouvez le confort d'une dentition complète grâce à nos technologies d'implants de dernière génération, biocompatibles et durables."
+      "title": "Implantologie & Couronnes",
+      "description": "Retrouvez le confort d'une dentition complète grâce à nos implants dentaires de dernière génération, biocompatibles et durables."
+    },
+    "orthodontics": {
+      "title": "Orthodontie Invisible",
+      "description": "Alignez votre sourire discrètement avec Invisalign® — sans métal, sans broches, pour adultes et adolescents."
+    },
+    "surgery": {
+      "title": "Chirurgie Dentaire",
+      "description": "Extractions complexes, greffes de gencive et pose d'implants réalisés avec précision et douceur pour une récupération optimale."
+    },
+    "radiology": {
+      "title": "Radiologie Numérique",
+      "description": "Appareils panoramiques et capteurs intra-oraux 100 % numériques pour un diagnostic précis avec une radiation minimale."
+    },
+    "whitening": {
+      "title": "Blanchiment Dentaire",
+      "description": "Un sourire lumineux grâce à nos protocoles de blanchiment professionnel — résultats durables, sans sensibilité exacerbée."
+    },
+    "technology": {
+      "title": "Technologie de Pointe",
+      "description": "Scanner oral Trios 3D, laser Bluewave diode et radiologie numérique complète pour des soins plus précis, plus confortables et plus rapides."
     },
     "cta": {
       "title": "Trouvez le traitement adapté",
       "subtitle": "Notre équipe vous guide vers la solution la plus adaptée à vos besoins.",
       "button": "Prendre Rendez-vous"
+    }
+  },
+  "ServicePages": {
+    "hygiene": {
+      "meta_title": "Nettoyage & Hygiène Dentaire à Montréal | Centre Dentaire du Plateau",
+      "meta_description": "Détartrage professionnel, nettoyage des dents et bilans parodontaux au Plateau Mont-Royal. Prévention sur mesure pour des gencives saines et un sourire durable.",
+      "hero_title": "Hygiène Dentaire & Prévention",
+      "hero_subtitle": "La meilleure dentisterie est celle qu'on évite. Nos protocoles préventifs gardent vos gencives saines et détectent les problèmes avant qu'ils s'aggravent.",
+      "description": "Une gencive en santé est la base d'un beau sourire et d'une dentition solide. Lors de chaque suivi périodique, notre hygiéniste élimine le tartre et la plaque dentaire inaccessibles au brossage, évalue l'état de vos gencives et vous guide vers une routine d'hygiène personnalisée. Nous détectons également les récessions gingivales, l'hypersensibilité dentinaire, les parafonctions comme le bruxisme et les obturations inadéquates — autant de problèmes qu'il vaut mieux traiter tôt.",
+      "features": [
+        "Détartrage supra et sous-gingival",
+        "Élimination de l'inflammation et des poches parodontales",
+        "Détection et correction de l'occlusion traumatique",
+        "Traitement des récessions gingivales et de l'hypersensibilité",
+        "Dépistage et prise en charge du bruxisme (gouttière)",
+        "Correction des obturations défectueuses"
+      ],
+      "faq": [
+        {
+          "q": "À quelle fréquence devrais-je faire un nettoyage dentaire ?",
+          "a": "Pour la plupart des patients, un nettoyage tous les 6 mois suffit. Si vous avez une tendance à accumuler du tartre ou une maladie des gencives, nous recommandons tous les 3 à 4 mois."
+        },
+        {
+          "q": "Le détartrage est-il douloureux ?",
+          "a": "Non, le détartrage est généralement indolore. Si vos gencives sont sensibles, nous pouvons appliquer un gel anesthésique local pour votre confort."
+        },
+        {
+          "q": "Est-ce que mon assurance couvre le nettoyage dentaire ?",
+          "a": "La plupart des assurances dentaires couvrent 1 à 2 nettoyages par an. Nous vous aidons à maximiser vos remboursements lors de votre visite."
+        }
+      ]
+    },
+    "veneers": {
+      "meta_title": "Facettes Porcelaine & Obturations Esthétiques à Montréal | CDP",
+      "meta_description": "Facettes en céramique ultra-minces (0,3 mm) et obturations invisibles en composite au Plateau Mont-Royal. Corrigez couleur, forme et espaces sans meulage excessif.",
+      "hero_title": "Facettes en Porcelaine & Obturations Esthétiques",
+      "hero_subtitle": "Des corrections précises et ultra-naturelles pour retrouver un sourire que vous serez fier d'afficher, sans compromettre la structure de vos dents.",
+      "description": "Les facettes en porcelaine sont de fines coquilles de céramique (aussi minces que 0,3 mm) collées sur la face visible de vos dents pour en corriger la couleur, la forme, l'alignement léger ou les espaces. Elles nécessitent un meulage minimal et offrent un rendu extrêmement naturel. Les obturations esthétiques en composite, quant à elles, remplacent les anciennes amalgames grises et restaurent les caries de façon invisible. Résultat : un sourire harmonieux où rien ne trahit l'intervention.",
+      "features": [
+        "Facettes en porcelaine ultra-minces à partir de 0,3 mm",
+        "Conservation maximale de l'émail naturel",
+        "Correction de la couleur, de la forme et des diastèmes",
+        "Obturations en composite couleur dent (sans métal)",
+        "Remplacement d'anciennes obturations en amalgame",
+        "Résultat naturel et durable (10-15 ans pour les facettes)"
+      ],
+      "faq": [
+        {
+          "q": "Les facettes en porcelaine abîment-elles les dents ?",
+          "a": "Les facettes ultra-minces (0,3 mm) nécessitent un meulage très limité, parfois nul. Elles sont considérées comme l'option la moins invasive en dentisterie esthétique."
+        },
+        {
+          "q": "Combien de temps durent les facettes ?",
+          "a": "Avec un bon entretien (brossage, soie dentaire, suivi régulier), les facettes en porcelaine durent en moyenne 10 à 15 ans."
+        },
+        {
+          "q": "Combien de rendez-vous sont nécessaires pour des facettes ?",
+          "a": "En général, 2 à 3 rendez-vous : consultation et planification numérique, préparation et prise d'empreinte optique, puis pose finale."
+        }
+      ]
+    },
+    "rootCanal": {
+      "meta_title": "Traitement de Canal à Montréal | Dévitalisation & Couronne | CDP",
+      "meta_description": "Traitement de canal indolore au Centre Dentaire du Plateau. Dévitalisation précise et couronne céramique sans métal pour sauver votre dent naturelle.",
+      "hero_title": "Traitement de Canal & Couronne Céramique",
+      "hero_subtitle": "Sauver votre dent naturelle est toujours notre première priorité. Un traitement de canal moderne est rapide, précis et bien moins inconfortable que vous ne l'imaginez.",
+      "description": "Lorsque la pulpe d'une dent (le tissu vivant intérieur) est infectée ou irrémédiablement endommagée par une carie profonde ou un traumatisme, le traitement de canal est la solution pour sauver la dent sans l'extraire. Nous nettoyons soigneusement les canaux radiculaires, les désinfectons et les obturons hermétiquement. Dans la grande majorité des cas, la dent dévitalisée doit ensuite être protégée par une couronne céramique sans métal, très résistante, qui restaure sa forme et sa fonction tout en préservant l'esthétique.",
+      "features": [
+        "Dévitalisation sous anesthésie locale — sans douleur",
+        "Nettoyage et obturation hermétique des canaux",
+        "Couronne en céramique sans métal (zircone ou e.max)",
+        "Protection de la dent contre la fracture",
+        "Médicaments intra-canalaires si nécessaire",
+        "Suivi radiologique post-traitement"
+      ],
+      "faq": [
+        {
+          "q": "Un traitement de canal est-il douloureux ?",
+          "a": "Non. Sous anesthésie locale moderne, le traitement de canal n'est pas plus douloureux qu'une obturation classique. C'est surtout l'infection pré-existante qui cause de la douleur, et le traitement la soulage."
+        },
+        {
+          "q": "Faut-il toujours une couronne après un traitement de canal ?",
+          "a": "Dans la majorité des cas oui — une dent dévitalisée devient fragile et propice à la fracture. La couronne la protège et lui restitue toute sa solidité."
+        },
+        {
+          "q": "Combien de temps dure un traitement de canal ?",
+          "a": "La plupart des traitements se font en 1 à 2 séances. Les cas complexes (canaux courbés, retreatment) peuvent nécessiter 3 séances."
+        }
+      ]
+    },
+    "implants": {
+      "meta_title": "Implants Dentaires à Montréal | Plateau Mont-Royal | CDP",
+      "meta_description": "Pose d'implants dentaires au Plateau Mont-Royal. Solution permanente pour remplacer une dent manquante — biocompatible, naturel et durable. Consultation sans frais.",
+      "hero_title": "Implantologie & Couronnes sur Implant",
+      "hero_subtitle": "Un implant dentaire est la solution la plus proche d'une vraie dent — esthétique, fonctionnelle et conçue pour durer toute une vie.",
+      "description": "L'implant dentaire est une racine artificielle en titane biocompatible posée directement dans l'os de la mâchoire. Une fois l'ostéointégration complète (3 à 6 mois), une couronne céramique sur mesure est fixée sur l'implant pour reconstituer la dent visible. Contrairement aux ponts, l'implant ne nécessite pas de travailler les dents adjacentes. Il préserve l'os, est entretenu comme une dent naturelle et offre un résultat qui dure des décennies. Pour les patients edentés, les mini-implants peuvent stabiliser une prothèse amovible et en éliminer les crochets inesthétiques.",
+      "features": [
+        "Pose d'implant en titane biocompatible",
+        "Couronne céramique sur mesure — rendu 100 % naturel",
+        "Pont implanto-porté pour plusieurs dents manquantes",
+        "Prothèse amovible stabilisée sur mini-implants",
+        "Planification 3D pour une pose ultra-précise",
+        "Conservation de l'os maxillaire"
+      ],
+      "faq": [
+        {
+          "q": "Suis-je candidat à un implant dentaire ?",
+          "a": "La plupart des adultes en bonne santé générale sont candidats. Un bilan radiologique 3D (cone beam) permet d'évaluer le volume osseux disponible. Dans certains cas, une greffe osseuse préalable peut être nécessaire."
+        },
+        {
+          "q": "La pose d'un implant est-elle douloureuse ?",
+          "a": "L'intervention se fait sous anesthésie locale et est généralement bien tolérée. Les suites post-opératoires ressemblent à celles d'une extraction : légère sensibilité et gonflement pendant 48-72h."
+        },
+        {
+          "q": "Combien de temps dure un implant dentaire ?",
+          "a": "Avec un entretien approprié (brossage, soie, suivi annuel), un implant peut durer 20 à 30 ans, souvent toute une vie."
+        }
+      ]
+    },
+    "orthodontics": {
+      "meta_title": "Invisalign Montréal | Orthodontie Invisible Adulte & Ado | CDP",
+      "meta_description": "Alignez vos dents discrètement avec Invisalign au Plateau Mont-Royal. Orthodontie sans métal pour adultes et adolescents. Consultation Invisalign gratuite.",
+      "hero_title": "Orthodontie Invisible avec Invisalign®",
+      "hero_subtitle": "Redressez vos dents sans broches, sans métal, sans compromis esthétique — à votre rythme, avec des gouttières transparentes sur mesure.",
+      "description": "Invisalign® est le système d'orthodontie invisible le plus avancé au monde. Chaque série de gouttières transparentes est fabriquée sur mesure à partir d'une empreinte numérique (scanner 3D Trios) et déplace progressivement vos dents vers la position cible planifiée par ordinateur. Les gouttières sont amovibles — vous les retirez pour manger et vous brosser les dents — et presque invisibles, ce qui les rend idéales pour les adultes et adolescents soucieux de leur image. Nous réalisons un aperçu virtuel du résultat final avant même de commencer le traitement.",
+      "features": [
+        "Gouttières transparentes Invisalign® — discrètes et confortables",
+        "Planification 3D avec aperçu du sourire final",
+        "Amovibles : manger et se brosser les dents normalement",
+        "Pour adultes et adolescents",
+        "Pas de métal, pas de blessure aux gencives",
+        "Moins de rendez-vous qu'avec les bagues traditionnelles"
+      ],
+      "faq": [
+        {
+          "q": "Combien de temps dure un traitement Invisalign ?",
+          "a": "Un traitement léger peut durer 6 à 12 mois. Les cas plus complexes nécessitent 18 à 24 mois. La durée exacte est déterminée lors de la consultation initiale."
+        },
+        {
+          "q": "Invisalign est-il aussi efficace que les bagues traditionnelles ?",
+          "a": "Pour la majorité des cas, oui. Invisalign traite efficacement les surencombres modérés, les diastèmes et les malocclusions légères à modérées. Les cas très sévères peuvent nécessiter les bagues."
+        },
+        {
+          "q": "Combien coûte Invisalign ?",
+          "a": "Le coût varie selon la complexité du cas (de 3 500 $ à 7 000 $ environ). Nous offrons une consultation initiale pour évaluer votre cas et vous donner un devis précis."
+        }
+      ]
+    },
+    "surgery": {
+      "meta_title": "Chirurgie Dentaire à Montréal | Extraction & Greffe de Gencive | CDP",
+      "meta_description": "Extractions dentaires, greffes de gencive et chirurgie implantaire au Plateau Mont-Royal. Soins chirurgicaux précis et doux pour une récupération rapide.",
+      "hero_title": "Chirurgie Dentaire",
+      "hero_subtitle": "Quand une intervention chirurgicale est nécessaire, notre approche minutieuse et nos techniques mini-invasives garantissent votre confort et une guérison rapide.",
+      "description": "Nos chirurgies dentaires couvrent l'extraction de dents très atteintes ou très mobiles (en cas de maladie parodontale avancée), la pose d'implants, et les greffes de gencive pour traiter les récessions ou l'absence congénitale de gencive attachée. Toutes nos interventions sont réalisées sous anesthésie locale, avec une technique mini-invasive et, lorsque c'est possible, assistée par notre laser Bluewave pour réduire les saignements et accélérer la cicatrisation.",
+      "features": [
+        "Extraction de dents très atteintes ou fracturées",
+        "Extraction de dents très mobiles (maladie parodontale)",
+        "Pose chirurgicale d'implants dentaires",
+        "Greffe de gencive (récession, absence congénitale)",
+        "Traitement de l'hypersensibilité par greffe de tissu",
+        "Assistance laser Bluewave pour moins de saignements"
+      ],
+      "faq": [
+        {
+          "q": "Les extractions dentaires sont-elles douloureuses ?",
+          "a": "L'extraction est réalisée sous anesthésie locale et ne doit pas être douloureuse pendant l'intervention. Les suites (24-48h) comportent une légère sensibilité gérée par des analgésiques standards."
+        },
+        {
+          "q": "Qu'est-ce qu'une greffe de gencive ?",
+          "a": "C'est une intervention où du tissu gingival (prélevé sur le palais ou d'une banque de tissu) est greffé sur une zone de récession pour couvrir la racine exposée et prévenir la sensibilité et la perte osseuse."
+        },
+        {
+          "q": "Combien de temps dure la convalescence après une chirurgie ?",
+          "a": "Pour une extraction simple, 24-48h. Pour une greffe de gencive ou la pose d'un implant, comptez 3 à 7 jours avant de reprendre une activité normale."
+        }
+      ]
+    },
+    "radiology": {
+      "meta_title": "Radiologie Dentaire Numérique Montréal | Panoramique | CDP",
+      "meta_description": "Radiologie dentaire 100 % numérique au Plateau Mont-Royal. Panoramique Planmeca, capteurs intra-oraux et cone beam 3D pour des diagnostics précis avec radiation minimale.",
+      "hero_title": "Radiologie Dentaire Numérique",
+      "hero_subtitle": "Des images plus nettes, un diagnostic plus précis, et jusqu'à 90 % moins de radiation qu'un appareil conventionnel — pour votre santé et celle de l'environnement.",
+      "description": "La radiologie numérique est au cœur de notre démarche diagnostique. Nos appareils panoramiques Planmeca et nos capteurs intra-oraux numériques produisent des images haute résolution immédiatement disponibles sur écran, sans temps de développement et sans produits chimiques. La dose de radiation est réduite jusqu'à 90 % par rapport aux appareils analogiques. Pour la planification d'implants ou l'évaluation de cas complexes, notre cone beam 3D offre une vision tridimensionnelle complète des structures osseuses et dentaires.",
+      "features": [
+        "Panoramique numérique haute résolution",
+        "Capteurs intra-oraux numériques (sans film)",
+        "Imagerie cone beam 3D pour la planification implantaire",
+        "Radiation réduite de 80 à 90 % vs analogique",
+        "Zéro produits chimiques — impact environnemental minimal",
+        "Images disponibles immédiatement sur écran"
+      ],
+      "faq": [
+        {
+          "q": "Les radiographies dentaires sont-elles dangereuses ?",
+          "a": "Avec notre technologie numérique, la dose de radiation est extrêmement faible — comparable à quelques heures de rayonnement cosmique en avion. Les bénéfices diagnostiques dépassent largement le risque."
+        },
+        {
+          "q": "À quelle fréquence faut-il faire des radiographies dentaires ?",
+          "a": "Pour un adulte en bonne santé sans facteur de risque : une radio panoramique tous les 3-5 ans et des radiographies bitewing tous les 1-2 ans lors des examens de routine."
+        },
+        {
+          "q": "Qu'est-ce qu'un cone beam 3D ?",
+          "a": "C'est un scanner dentaire qui produit une reconstruction 3D complète de vos mâchoires et de vos dents. Indispensable pour planifier avec précision la pose d'implants ou évaluer des cas complexes."
+        }
+      ]
+    },
+    "whitening": {
+      "meta_title": "Blanchiment Dentaire Professionnel Montréal | Plateau | CDP",
+      "meta_description": "Blanchiment dentaire professionnel au Centre Dentaire du Plateau. Résultats visibles et durables, sans sensibilité excessive. Sourire lumineux garanti.",
+      "hero_title": "Blanchiment Dentaire Professionnel",
+      "hero_subtitle": "Un sourire plusieurs tons plus lumineux en une séance — avec des produits sécuritaires, supervisés par nos dentistes, pour un résultat qui dure.",
+      "description": "Le blanchiment dentaire professionnel est la solution la plus sûre et la plus efficace pour éclaircir votre sourire. Contrairement aux kits vendus en pharmacie, nos protocoles utilisent des agents blanchissants de concentration optimale, adaptés à votre dentition et appliqués sous supervision dentaire. Nous proposons deux formules : le blanchiment en cabinet (résultats immédiats en une heure) et le blanchiment à domicile avec gouttières sur mesure (pour un traitement progressif à votre rythme). Les deux options peuvent être combinées pour un résultat maximal.",
+      "features": [
+        "Blanchiment en cabinet — résultats en 1 heure",
+        "Gouttières de blanchiment sur mesure à domicile",
+        "Produits blanchissants professionnels haute efficacité",
+        "Protocole adapté aux dents sensibles",
+        "Résultats visibles de 4 à 8 tons plus clairs",
+        "Durabilité améliorée avec produits fluorés post-traitement"
+      ],
+      "faq": [
+        {
+          "q": "Le blanchiment dentaire est-il sécuritaire ?",
+          "a": "Oui, lorsqu'il est réalisé sous supervision dentaire avec des produits appropriés. Nous évaluons d'abord l'état de vos gencives et de votre émail pour adapter le protocole."
+        },
+        {
+          "q": "Combien de temps durent les résultats ?",
+          "a": "En moyenne 1 à 3 ans selon vos habitudes alimentaires (café, thé, vin rouge, tabac). Des retouches ponctuelles avec les gouttières sur mesure permettent de maintenir l'éclat."
+        },
+        {
+          "q": "Le blanchiment fonctionne-t-il sur les couronnes et facettes ?",
+          "a": "Non, les restaurations en céramique ou en composite ne réagissent pas aux agents blanchissants. Nous planifions le traitement pour harmoniser la teinte de l'ensemble du sourire."
+        }
+      ]
+    },
+    "technology": {
+      "meta_title": "Technologie Dentaire Avancée Montréal | Scanner 3D, Laser | CDP",
+      "meta_description": "Scanner oral Trios 3D, laser Bluewave diode et radiologie numérique complète au Centre Dentaire du Plateau. La technologie au service de soins plus précis et plus confortables.",
+      "hero_title": "Technologie de Pointe au Service de Votre Sourire",
+      "hero_subtitle": "Nous investissons continuellement dans les technologies les plus récentes pour que chaque soin soit plus précis, plus rapide et plus confortable pour vous.",
+      "description": "La technologie moderne transforme radicalement l'expérience dentaire. Notre scanner oral Trios (3Shape) remplace les empreintes en pâte désagréables par une empreinte numérique en quelques secondes — plus précise et immédiatement transmissible au laboratoire. Notre laser Bluewave diode traite les tissus mous (gencives) sans saignement, sans sutures dans la plupart des cas, et accélère la cicatrisation. La radiologie 100 % numérique (panoramique + capteurs intra-oraux + cone beam 3D) réduit l'exposition aux rayons et améliore la qualité des diagnostics. Ensemble, ces technologies permettent des soins moins invasifs, plus prévisibles et des résultats de haute qualité.",
+      "features": [
+        "Scanner oral Trios 3D — empreintes numériques sans pâte",
+        "Laser Bluewave diode pour tissus mous (sans bistouri)",
+        "Panoramique numérique Planmeca",
+        "Capteurs intra-oraux numériques haute résolution",
+        "Imagerie cone beam 3D pour la chirurgie implantaire",
+        "Logiciels de simulation de sourire (DSD)"
+      ],
+      "faq": [
+        {
+          "q": "Qu'est-ce qu'un scanner oral Trios ?",
+          "a": "C'est un appareil qui capture une empreinte numérique 3D de vos dents en quelques minutes, sans pâte, sans inconfort. Les données sont transmises directement au laboratoire prothétique pour fabriquer couronnes, facettes et gouttières avec une précision au dixième de millimètre."
+        },
+        {
+          "q": "Le laser dentaire remplace-t-il la fraise ?",
+          "a": "Le laser Bluewave diode est utilisé spécifiquement pour les tissus mous (gencives). Il ne remplace pas la fraise pour les soins de caries, mais permet des interventions gingivales (remodelage, traitement parodontal) sans bistouri et avec moins de douleur post-opératoire."
+        },
+        {
+          "q": "Ces technologies augmentent-elles le coût des soins ?",
+          "a": "Certaines technologies impliquent un coût légèrement plus élevé (ex: empreinte numérique vs conventionnelle), mais elles réduisent souvent le nombre de rendez-vous nécessaires et améliorent la précision, ce qui évite des reprises coûteuses."
+        }
+      ]
     }
   },
   "About": {
@@ -138,7 +421,7 @@
       },
       "history": {
         "title": "Historique",
-        "description": "Fondé par le Dr. Aris en 2008, le centre a évolué d'un cabinet de quartier à une référence en dentisterie esthétique et implantaire."
+        "description": "Fondé par le Dr. Barchichat, le centre a évolué pour devenir une référence en dentisterie moderne au cœur du Plateau Mont-Royal."
       }
     },
     "tech": {
@@ -158,29 +441,33 @@
       }
     },
     "team": {
-      "title": "L'Équipe de Praticiens",
-      "subtitle": "Des spécialistes passionnés, formés aux meilleures techniques internationales, unis par une vision commune de la dentisterie moderne.",
-      "members": {
-        "aris": {
-          "name": "Dr. Jean Aris",
-          "role": "Fondateur & Implantologie",
-          "bio": "Expert en réhabilitation complète et esthétique du sourire."
-        },
-        "chen": {
-          "name": "Dr. Sophie Chen",
-          "role": "Orthodontie Invisible",
-          "bio": "Spécialiste certifiée Diamond Apex pour les traitements d'alignement."
-        },
-        "laurent": {
-          "name": "Dr. Marc Laurent",
-          "role": "Chirurgie Orale",
-          "bio": "Prise en charge spécialisée pour les cas chirurgicaux complexes."
-        },
-        "martin": {
-          "name": "Dr. Léa Martin",
-          "role": "Pédodontie & Prévention",
-          "bio": "Spécialiste des sourires de nos plus jeunes patients."
-        }
+      "title": "Votre Dentiste",
+      "subtitle": "Chez le Centre Dentaire du Plateau, Dr. Saul Barchichat vous accueille personnellement et vous offre des soins de qualité pour toute la famille.",
+      "member": {
+        "name": "Dr. Saul Barchichat",
+        "role": "Membre de l'Ordre des dentistes du Québec",
+        "bio_1": "Le Dr. Saul Barchichat est dévoué à offrir des soins dentaires de haute qualité, centrés sur le patient. Membre de l'Ordre des dentistes du Québec (ODQ), il adhère aux plus hauts standards professionnels et éthiques de la profession dentaire au Québec.",
+        "bio_2": "Il offre une vaste gamme de services pour patients de tous âges : soins préventifs, bilans complets, nettoyages, obturations, couronnes, bridges, traitements de canal et extractions de base — avec une attention particulière portée à la santé bucco-dentaire globale.",
+        "bio_3": "Engagé dans la formation continue, le Dr. Barchichat reste à la pointe des avancées en techniques et technologies dentaires pour offrir les traitements les plus efficaces et confortables disponibles.",
+        "badge_odq": "Membre ODQ",
+        "badge_ages": "Tous âges",
+        "badge_insurance": "Facturation directe aux assurances",
+        "badge_languages": "FR / EN",
+        "services_title": "Services offerts",
+        "services": "Soins préventifs · Bilans complets · Nettoyages · Obturations · Couronnes & Bridges · Traitements de canal · Extractions"
+      },
+      "staff_title": "Notre Équipe",
+      "grace": {
+        "name": "Grace Mirasol",
+        "role": "Assistante Dentaire"
+      },
+      "cristina": {
+        "name": "Dre. Cristina",
+        "role": "Dentiste & Hygiéniste Dentaire"
+      },
+      "sabrina": {
+        "name": "Sabrina",
+        "role": "Administration"
       }
     }
   },
@@ -195,28 +482,44 @@
     },
     "info": {
       "address_title": "Notre Cabinet",
-      "address": "1357 Avenue Mont-Royal, Montréal, QC",
+      "address": "1357 Avenue du Mont-Royal Est, Montréal, QC",
       "hours_title": "Horaires d'ouverture",
       "hours": {
-        "mon_thu": { "day": "Lundi - Jeudi", "time": "9h - 18h" },
-        "fri": { "day": "Vendredi", "time": "9h - 14h" },
-        "sat": { "day": "Samedi", "time": "Fermé" },
-        "sun": { "day": "Dimanche", "time": "10h - 14h" }
+        "mon_thu": {
+          "day": "Lundi - Jeudi",
+          "time": "9h - 18h"
+        },
+        "fri": {
+          "day": "Vendredi",
+          "time": "9h - 14h"
+        },
+        "sat": {
+          "day": "Samedi",
+          "time": "Fermé"
+        },
+        "sun": {
+          "day": "Dimanche",
+          "time": "10h - 14h"
+        }
       },
       "emergency": "Urgences",
-      "emergency_phone": "(514) 123-4568",
+      "emergency_phone": "514 528 1587",
       "access_title": "Accès & Stationnement",
-      "access_description": "Stationnement gratuit pour nos patients pendant 1h. Accès direct via le métro Mont-Royal."
+      "access_description": "Stationnement sur la rue Mont-Royal ou rues adjacentes. Accès direct via métro Mont-Royal (1km) et bus 97 (face à la clinique)."
     },
     "form": {
       "title": "Envoyez-nous un message",
       "name": "Nom complet",
       "email": "Adresse email",
       "phone": "Téléphone",
+      "date": "Date souhaitée",
+      "date_placeholder": "JJ/MM/AAAA",
       "message": "Votre message",
       "submit": "Envoyer le message",
       "success": "Message envoyé avec succès !",
-      "error": "Une erreur est survenue. Veuillez réessayer."
+      "error": "Une erreur est survenue. Veuillez réessayer.",
+      "phone_title": "Veuillez entrer un numéro valide (ex : 514 123 4567)",
+      "email_title": "Veuillez entrer une adresse email valide"
     },
     "faq": {
       "title": "Questions Fréquentes",

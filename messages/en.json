@@ -5,9 +5,13 @@
     "about": "Team",
     "contact": "Contact",
     "cta": "Book Now",
-    "phone": "(514) 123-4567",
+    "phone": "514 528 1587",
     "hours_short": "Mon-Thu 9am-6pm • Fri 9am-2pm • Sun 10am-2pm",
-    "switch_lang": "Switch language"
+    "switch_lang": "Switch language",
+    "nav_label": "Main navigation",
+    "skip_to_content": "Skip to main content",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu"
   },
   "Footer": {
     "tagline": "Redefining the dental experience through calm and technical excellence in the heart of the Plateau.",
@@ -31,11 +35,11 @@
       "sat": "Sat: Closed",
       "sun": "Sun: 10:00 AM - 2:00 PM"
     },
-    "phone_number": "Tel: (514) 123-4567",
+    "phone_number": "Tel: 514 528 1587",
     "phone_label": "Call us",
     "email_label": "Email us",
     "map_label": "View on map",
-    "copyright": "© 2024 Centre Dentaire du Plateau. All rights reserved.",
+    "copyright": "© 2025 Centre Dentaire du Plateau. All rights reserved.",
     "legal": "Legal Notice",
     "privacy": "Privacy",
     "accessibility": "Accessibility"
@@ -93,30 +97,309 @@
       "title": "Our Treatments",
       "subtitle": "At Centre Dentaire du Plateau, we redefine dental care through a unique blend of cutting-edge technology and a soothing environment."
     },
-    "preventive": {
-      "title": "Preventive Care",
-      "description": "The foundation of a lasting smile starts with prevention. We offer comprehensive check-ups, scaling, and personalized hygiene advice.",
-      "features": {
-        "xray": "3D Radiographic Examinations",
-        "cleaning": "Prophylactic Cleaning"
-      }
+    "hygiene": {
+      "title": "Dental Hygiene & Prevention",
+      "description": "Healthy gums are the foundation of a beautiful smile. Professional scaling, cleaning and comprehensive check-ups to protect your oral health."
     },
-    "orthodontics": {
-      "title": "Orthodontics",
-      "description": "Invisible and comfortable solutions to align your smile at any age. Invisalign® and multi-bracket systems."
+    "veneers": {
+      "title": "Veneers & Cosmetic Fillings",
+      "description": "Ultra-thin porcelain veneers and invisible composite fillings to correct shape, colour and alignment of your front teeth."
     },
-    "aesthetic": {
-      "title": "Cosmetic Dentistry",
-      "description": "Professional whitening, ceramic veneers, and invisible restorations to enhance your smile."
+    "rootCanal": {
+      "title": "Root Canal & Crown",
+      "description": "Precise root canal therapy and metal-free ceramic crown to save your tooth, restore its strength and preserve your natural smile."
     },
     "implants": {
-      "title": "Implantology",
-      "description": "Regain the comfort of a complete set of teeth with our latest-generation implant technologies, biocompatible and long-lasting."
+      "title": "Implants & Crowns",
+      "description": "Regain the comfort of a complete smile with our latest-generation biocompatible dental implants, built to last a lifetime."
+    },
+    "orthodontics": {
+      "title": "Invisible Orthodontics",
+      "description": "Straighten your smile discreetly with Invisalign® — no metal, no brackets, for adults and teenagers."
+    },
+    "surgery": {
+      "title": "Oral Surgery",
+      "description": "Complex extractions, gum grafts and implant placement performed with precision and care for optimal recovery."
+    },
+    "radiology": {
+      "title": "Digital Radiology",
+      "description": "100% digital panoramic and intraoral sensors for precise diagnostics with minimal radiation."
+    },
+    "whitening": {
+      "title": "Teeth Whitening",
+      "description": "A luminous smile through our professional whitening protocols — lasting results with minimal sensitivity."
+    },
+    "technology": {
+      "title": "Advanced Technology",
+      "description": "Trios 3D oral scanner, Bluewave diode laser and full digital radiology for more precise, comfortable and efficient care."
     },
     "cta": {
       "title": "Find the right treatment for you",
       "subtitle": "Our team will guide you to the solution best suited to your needs.",
       "button": "Book an Appointment"
+    }
+  },
+  "ServicePages": {
+    "hygiene": {
+      "meta_title": "Dental Cleaning & Hygiene in Montreal | Centre Dentaire du Plateau",
+      "meta_description": "Professional teeth cleaning, scaling and periodontal check-ups on the Plateau Mont-Royal. Personalized prevention for healthy gums and a lasting smile.",
+      "hero_title": "Dental Hygiene & Prevention",
+      "hero_subtitle": "The best dentistry is the kind you never need. Our preventive protocols keep your gums healthy and catch problems before they escalate.",
+      "description": "Healthy gums are the foundation of a beautiful smile and strong teeth. At every periodic check-up, our hygienist removes tartar and plaque that brushing can't reach, assesses your gum health and guides you toward a personalized home hygiene routine. We also screen for gum recession, dentin hypersensitivity, parafunction habits like bruxism, and defective fillings — all conditions that are much easier to address early.",
+      "features": [
+        "Supra and subgingival scaling",
+        "Elimination of gum inflammation and periodontal pockets",
+        "Detection and correction of traumatic occlusion",
+        "Treatment of gum recession and hypersensitivity",
+        "Bruxism screening and night-guard therapy",
+        "Replacement of defective restorations"
+      ],
+      "faq": [
+        {
+          "q": "How often should I get a dental cleaning?",
+          "a": "For most patients, every 6 months is sufficient. If you tend to accumulate tartar quickly or have a history of gum disease, we recommend every 3 to 4 months."
+        },
+        {
+          "q": "Is scaling painful?",
+          "a": "Scaling is generally painless. If your gums are sensitive, we can apply a topical anesthetic gel for your comfort before starting."
+        },
+        {
+          "q": "Does my insurance cover dental cleanings?",
+          "a": "Most dental insurance plans cover 1 to 2 cleanings per year. We help you maximize your coverage at every visit."
+        }
+      ]
+    },
+    "veneers": {
+      "meta_title": "Porcelain Veneers & Cosmetic Fillings in Montreal | CDP",
+      "meta_description": "Ultra-thin ceramic veneers (0.3 mm) and invisible composite fillings on the Plateau Mont-Royal. Correct colour, shape and gaps with minimal tooth preparation.",
+      "hero_title": "Porcelain Veneers & Cosmetic Fillings",
+      "hero_subtitle": "Precise, ultra-natural corrections to give you a smile you are proud to show — without compromising the structure of your teeth.",
+      "description": "Porcelain veneers are thin ceramic shells (as thin as 0.3 mm) bonded to the visible surface of your teeth to correct colour, shape, mild misalignment or gaps. They require minimal tooth reduction and deliver an exceptionally natural result. Cosmetic composite fillings, meanwhile, replace old grey amalgam restorations and treat cavities invisibly — no one will know the difference. The result is a harmonious smile where the work simply cannot be detected.",
+      "features": [
+        "Ultra-thin porcelain veneers from 0.3 mm",
+        "Maximum preservation of natural enamel",
+        "Correction of colour, shape and diastemas",
+        "Tooth-coloured composite fillings (metal-free)",
+        "Replacement of old amalgam restorations",
+        "Natural, long-lasting result (10–15 years for veneers)"
+      ],
+      "faq": [
+        {
+          "q": "Do porcelain veneers damage your teeth?",
+          "a": "Ultra-thin veneers (0.3 mm) require very little — sometimes zero — tooth preparation. They are considered the least invasive option in cosmetic dentistry."
+        },
+        {
+          "q": "How long do veneers last?",
+          "a": "With proper care (brushing, flossing, regular check-ups), porcelain veneers typically last 10 to 15 years."
+        },
+        {
+          "q": "How many appointments are needed for veneers?",
+          "a": "Generally 2 to 3 visits: consultation and digital planning, preparation and digital impression, then final placement."
+        }
+      ]
+    },
+    "rootCanal": {
+      "meta_title": "Root Canal Treatment in Montreal | Crown & Endodontics | CDP",
+      "meta_description": "Painless root canal therapy at Centre Dentaire du Plateau. Precise endodontic treatment and metal-free ceramic crown to save your natural tooth.",
+      "hero_title": "Root Canal & Ceramic Crown",
+      "hero_subtitle": "Saving your natural tooth is always our first priority. Modern root canal treatment is fast, precise and far more comfortable than you might expect.",
+      "description": "When the pulp inside a tooth (the living tissue) is infected or irreparably damaged by deep decay or trauma, root canal therapy is the solution to save the tooth without extracting it. We meticulously clean the root canals, disinfect them and seal them hermetically. In the vast majority of cases, a devitalized tooth should then be protected by a metal-free ceramic crown — highly fracture-resistant — which restores its shape and function while preserving aesthetics.",
+      "features": [
+        "Endodontic therapy under local anesthesia — pain-free",
+        "Thorough cleaning and hermetic sealing of canals",
+        "Metal-free ceramic crown (zirconia or e.max)",
+        "Protection against tooth fracture",
+        "Intracanal medication when needed",
+        "Radiographic follow-up post-treatment"
+      ],
+      "faq": [
+        {
+          "q": "Is a root canal painful?",
+          "a": "No. Under modern local anesthesia, root canal treatment is no more uncomfortable than a regular filling. It's the pre-existing infection that causes pain — the treatment relieves it."
+        },
+        {
+          "q": "Do I always need a crown after a root canal?",
+          "a": "In most cases, yes. A devitalized tooth becomes brittle and prone to fracture. A crown protects it and restores its full strength."
+        },
+        {
+          "q": "How long does root canal treatment take?",
+          "a": "Most treatments are completed in 1 to 2 appointments. Complex cases (curved canals, retreatment) may require 3 sessions."
+        }
+      ]
+    },
+    "implants": {
+      "meta_title": "Dental Implants in Montreal | Plateau Mont-Royal | CDP",
+      "meta_description": "Dental implant placement on the Plateau Mont-Royal. The permanent, natural-looking solution to replace missing teeth — biocompatible and built to last.",
+      "hero_title": "Dental Implants & Implant Crowns",
+      "hero_subtitle": "A dental implant is the closest thing to a real tooth — beautiful, fully functional and designed to last a lifetime.",
+      "description": "A dental implant is an artificial root made of biocompatible titanium placed directly into the jawbone. Once osseointegration is complete (3 to 6 months), a custom ceramic crown is attached to the implant to recreate the visible tooth. Unlike bridges, an implant does not require grinding down adjacent teeth. It preserves bone, is cared for just like a natural tooth, and offers results that can last decades. For patients with full or partial dentures, mini-implants can stabilize a removable prosthesis and eliminate unsightly clasps.",
+      "features": [
+        "Biocompatible titanium implant placement",
+        "Custom ceramic crown — 100% natural appearance",
+        "Implant-supported bridge for multiple missing teeth",
+        "Removable denture stabilized by mini-implants",
+        "3D computer-guided planning for ultra-precise placement",
+        "Preservation of jawbone volume"
+      ],
+      "faq": [
+        {
+          "q": "Am I a candidate for a dental implant?",
+          "a": "Most healthy adults are candidates. A 3D cone beam scan evaluates available bone volume. In some cases, a bone graft may be needed beforehand."
+        },
+        {
+          "q": "Is implant placement painful?",
+          "a": "The procedure is performed under local anesthesia and is generally well-tolerated. Post-operative effects are similar to those of an extraction: mild sensitivity and swelling for 48–72 hours."
+        },
+        {
+          "q": "How long does a dental implant last?",
+          "a": "With proper maintenance (brushing, flossing, annual check-ups), an implant can last 20 to 30 years — often a lifetime."
+        }
+      ]
+    },
+    "orthodontics": {
+      "meta_title": "Invisalign Montreal | Invisible Orthodontics for Adults & Teens | CDP",
+      "meta_description": "Straighten your teeth discreetly with Invisalign on the Plateau Mont-Royal. Metal-free orthodontics for adults and teenagers. Free Invisalign consultation.",
+      "hero_title": "Invisible Orthodontics with Invisalign®",
+      "hero_subtitle": "Align your teeth without brackets, without metal, without aesthetic compromise — at your pace, with custom clear aligners.",
+      "description": "Invisalign® is the world's most advanced invisible orthodontic system. Each series of clear aligners is custom-made from a digital impression (Trios 3D scanner) and progressively moves your teeth toward the computer-planned target position. The aligners are removable — take them out to eat and brush your teeth — and virtually invisible, making them ideal for adults and teens who care about their appearance. We show you a virtual preview of your final smile before treatment even begins.",
+      "features": [
+        "Invisalign® clear aligners — discreet and comfortable",
+        "3D digital planning with final smile preview",
+        "Removable: eat and brush normally",
+        "For adults and teenagers",
+        "No metal, no gum irritation",
+        "Fewer appointments than traditional braces"
+      ],
+      "faq": [
+        {
+          "q": "How long does Invisalign treatment take?",
+          "a": "A mild case can be completed in 6 to 12 months. More complex cases take 18 to 24 months. The exact duration is determined at your initial consultation."
+        },
+        {
+          "q": "Is Invisalign as effective as traditional braces?",
+          "a": "For the majority of cases, yes. Invisalign effectively treats moderate crowding, gaps and mild to moderate malocclusion. Very severe cases may still require braces."
+        },
+        {
+          "q": "How much does Invisalign cost?",
+          "a": "Costs vary by case complexity (approximately $3,500 to $7,000). We offer an initial consultation to assess your case and provide an accurate quote."
+        }
+      ]
+    },
+    "surgery": {
+      "meta_title": "Oral Surgery in Montreal | Tooth Extraction & Gum Graft | CDP",
+      "meta_description": "Tooth extractions, gum grafts and implant surgery on the Plateau Mont-Royal. Precise, gentle surgical care for fast recovery.",
+      "hero_title": "Oral Surgery",
+      "hero_subtitle": "When surgery is needed, our minimally invasive techniques and careful approach ensure your comfort and a smooth, speedy recovery.",
+      "description": "Our oral surgery services cover the extraction of severely compromised or highly mobile teeth (in advanced periodontal disease), implant placement, and gum grafts to treat recession or congenital absence of attached gingiva. All procedures are performed under local anesthesia using minimally invasive techniques and, where possible, assisted by our Bluewave laser to reduce bleeding and accelerate healing.",
+      "features": [
+        "Extraction of severely damaged or fractured teeth",
+        "Extraction of highly mobile teeth (periodontal disease)",
+        "Surgical placement of dental implants",
+        "Gum graft (recession or congenital absence of gingiva)",
+        "Treatment of root hypersensitivity through tissue grafting",
+        "Bluewave laser assistance for reduced bleeding"
+      ],
+      "faq": [
+        {
+          "q": "Are tooth extractions painful?",
+          "a": "Extractions are performed under local anesthesia and should not be painful during the procedure. Post-operative discomfort (24–48h) is managed with standard pain relievers."
+        },
+        {
+          "q": "What is a gum graft?",
+          "a": "It is a procedure where gingival tissue (taken from the palate or a tissue bank) is grafted onto a recession area to cover the exposed root and prevent sensitivity and bone loss."
+        },
+        {
+          "q": "How long is recovery after oral surgery?",
+          "a": "For a simple extraction, 24–48 hours. For a gum graft or implant placement, expect 3 to 7 days before returning to normal activity."
+        }
+      ]
+    },
+    "radiology": {
+      "meta_title": "Digital Dental X-Ray Montreal | Panoramic & Cone Beam | CDP",
+      "meta_description": "100% digital dental radiology on the Plateau Mont-Royal. Planmeca panoramic, intraoral sensors and 3D cone beam for precise diagnostics with minimal radiation.",
+      "hero_title": "Digital Dental Radiology",
+      "hero_subtitle": "Sharper images, more accurate diagnoses, and up to 90% less radiation than conventional equipment — for your health and the environment.",
+      "description": "Digital radiology is at the heart of our diagnostic approach. Our Planmeca panoramic unit and digital intraoral sensors produce high-resolution images instantly available on screen — no developing time, no chemicals. Radiation dose is reduced by up to 90% compared to analogue equipment. For implant planning or complex case evaluation, our 3D cone beam provides a complete three-dimensional view of bone and dental structures.",
+      "features": [
+        "High-resolution digital panoramic X-ray",
+        "Digital intraoral sensors (filmless)",
+        "3D cone beam imaging for implant planning",
+        "Up to 90% less radiation vs analogue",
+        "Zero chemicals — minimal environmental impact",
+        "Images available instantly on screen"
+      ],
+      "faq": [
+        {
+          "q": "Are dental X-rays dangerous?",
+          "a": "With our digital technology, the radiation dose is extremely low — comparable to a few hours of cosmic radiation during a flight. The diagnostic benefits far outweigh the risk."
+        },
+        {
+          "q": "How often should I have dental X-rays?",
+          "a": "For a healthy adult with no risk factors: a panoramic X-ray every 3–5 years and bitewing X-rays every 1–2 years during routine exams."
+        },
+        {
+          "q": "What is a cone beam CT scan?",
+          "a": "It is a dental scanner that produces a full 3D reconstruction of your jaws and teeth. Essential for precisely planning implant placement or evaluating complex cases."
+        }
+      ]
+    },
+    "whitening": {
+      "meta_title": "Professional Teeth Whitening Montreal | Plateau | CDP",
+      "meta_description": "Professional teeth whitening at Centre Dentaire du Plateau. Visible, lasting results with minimal sensitivity. Achieve a brighter smile safely.",
+      "hero_title": "Professional Teeth Whitening",
+      "hero_subtitle": "A smile several shades brighter in one session — with safe, dentist-supervised products that deliver results that last.",
+      "description": "Professional teeth whitening is the safest and most effective way to brighten your smile. Unlike over-the-counter kits, our protocols use optimal-concentration whitening agents tailored to your teeth and applied under dental supervision. We offer two formats: in-office whitening (immediate results in one hour) and take-home whitening with custom-fitted trays (for a gradual treatment at your own pace). Both options can be combined for maximum impact.",
+      "features": [
+        "In-office whitening — results in 1 hour",
+        "Custom take-home whitening trays",
+        "High-efficacy professional whitening agents",
+        "Protocol adapted for sensitive teeth",
+        "Visible results of 4 to 8 shades lighter",
+        "Post-treatment fluoride protocol for lasting brightness"
+      ],
+      "faq": [
+        {
+          "q": "Is teeth whitening safe?",
+          "a": "Yes, when performed under dental supervision with appropriate products. We first assess your gum health and enamel condition to tailor the protocol to your situation."
+        },
+        {
+          "q": "How long do whitening results last?",
+          "a": "On average 1 to 3 years depending on your dietary habits (coffee, tea, red wine, tobacco). Occasional touch-ups with the custom trays help maintain brightness."
+        },
+        {
+          "q": "Does whitening work on crowns and veneers?",
+          "a": "No — ceramic and composite restorations do not respond to whitening agents. We plan the treatment to harmonize the overall shade of your smile."
+        }
+      ]
+    },
+    "technology": {
+      "meta_title": "Advanced Dental Technology Montreal | 3D Scanner, Laser | CDP",
+      "meta_description": "Trios 3D oral scanner, Bluewave diode laser and full digital radiology at Centre Dentaire du Plateau. Technology in service of more precise and comfortable care.",
+      "hero_title": "Advanced Technology in Service of Your Smile",
+      "hero_subtitle": "We continuously invest in the latest innovations so that every treatment is more accurate, faster and more comfortable for you.",
+      "description": "Modern technology is radically transforming the dental experience. Our Trios oral scanner (3Shape) replaces unpleasant impression pastes with a digital scan in seconds — more precise and instantly transmittable to the laboratory. Our Bluewave diode laser treats soft tissue (gums) without bleeding, without sutures in most cases, and accelerates healing. Our fully digital radiology (panoramic + intraoral sensors + 3D cone beam) reduces radiation exposure and improves diagnostic quality. Together, these technologies enable less invasive, more predictable care and consistently high-quality results.",
+      "features": [
+        "Trios 3D oral scanner — digital impressions, no paste",
+        "Bluewave diode laser for soft tissue (no scalpel)",
+        "Planmeca digital panoramic X-ray",
+        "High-resolution digital intraoral sensors",
+        "3D cone beam imaging for implant surgery",
+        "Digital Smile Design (DSD) simulation software"
+      ],
+      "faq": [
+        {
+          "q": "What is a Trios oral scanner?",
+          "a": "It is a device that captures a 3D digital impression of your teeth in minutes — no paste, no discomfort. The data is sent directly to the dental lab to fabricate crowns, veneers and aligners with sub-millimetre precision."
+        },
+        {
+          "q": "Does the dental laser replace the drill?",
+          "a": "The Bluewave diode laser is used specifically for soft tissue (gums). It does not replace the drill for cavity treatment, but it allows gum procedures (reshaping, periodontal treatment) without a scalpel and with less post-operative discomfort."
+        },
+        {
+          "q": "Do these technologies increase the cost of care?",
+          "a": "Some technologies carry a slightly higher cost (e.g. digital vs conventional impression), but they often reduce the number of appointments needed and improve precision, which avoids costly remakes."
+        }
+      ]
     }
   },
   "About": {
@@ -138,7 +421,7 @@
       },
       "history": {
         "title": "Our Story",
-        "description": "Founded by Dr. Aris in 2008, the center has evolved from a neighborhood practice to a leading reference in aesthetic and implant dentistry."
+        "description": "Founded by Dr. Barchichat, the center has grown into a leading reference for modern dentistry in the heart of Plateau Mont-Royal."
       }
     },
     "tech": {
@@ -158,29 +441,33 @@
       }
     },
     "team": {
-      "title": "Our Team of Practitioners",
-      "subtitle": "Passionate specialists trained in the best international techniques, united by a shared vision of modern dentistry.",
-      "members": {
-        "aris": {
-          "name": "Dr. Jean Aris",
-          "role": "Founder & Implantology",
-          "bio": "Expert in complete smile rehabilitation and aesthetics."
-        },
-        "chen": {
-          "name": "Dr. Sophie Chen",
-          "role": "Invisible Orthodontics",
-          "bio": "Diamond Apex certified specialist for alignment treatments."
-        },
-        "laurent": {
-          "name": "Dr. Marc Laurent",
-          "role": "Oral Surgery",
-          "bio": "Specialized care for complex surgical cases."
-        },
-        "martin": {
-          "name": "Dr. Léa Martin",
-          "role": "Pedodontics & Prevention",
-          "bio": "Specialist for our youngest patients' smiles."
-        }
+      "title": "Your Dentist",
+      "subtitle": "At Centre Dentaire du Plateau, Dr. Saul Barchichat personally welcomes you and provides high-quality care for the whole family.",
+      "member": {
+        "name": "Dr. Saul Barchichat",
+        "role": "Member of the Ordre des dentistes du Québec",
+        "bio_1": "Dr. Saul Barchichat is committed to delivering high-quality, patient-focused dental care. Licensed by the Ordre des dentistes du Québec (ODQ), he adheres to the highest professional and ethical standards of the dental profession in Quebec.",
+        "bio_2": "He provides a wide range of dental services for patients of all ages: preventive care, routine check-ups, cleanings, fillings, crowns, bridges, root canal treatments (non-specialist), and basic extractions — focused on maintaining overall oral health.",
+        "bio_3": "Committed to ongoing continuing education, Dr. Barchichat remains at the forefront of advancements in dental techniques and technology, ensuring patients receive the most effective and comfortable treatments available.",
+        "badge_odq": "ODQ Member",
+        "badge_ages": "All Ages",
+        "badge_insurance": "Direct Insurance Billing",
+        "badge_languages": "FR / EN",
+        "services_title": "Services offered",
+        "services": "Preventive care · Check-ups · Cleanings · Fillings · Crowns & Bridges · Root Canal · Extractions"
+      },
+      "staff_title": "Our Team",
+      "grace": {
+        "name": "Grace Mirasol",
+        "role": "Dental Assistant"
+      },
+      "cristina": {
+        "name": "Dr. Cristina",
+        "role": "Dentist & Dental Hygienist"
+      },
+      "sabrina": {
+        "name": "Sabrina",
+        "role": "Administration"
       }
     }
   },
@@ -195,28 +482,44 @@
     },
     "info": {
       "address_title": "Our Office",
-      "address": "1357 Avenue Mont-Royal, Montreal, QC",
+      "address": "1357 Avenue du Mont-Royal Est, Montreal, QC",
       "hours_title": "Opening Hours",
       "hours": {
-        "mon_thu": { "day": "Monday - Thursday", "time": "9am - 6pm" },
-        "fri": { "day": "Friday", "time": "9am - 2pm" },
-        "sat": { "day": "Saturday", "time": "Closed" },
-        "sun": { "day": "Sunday", "time": "10am - 2pm" }
+        "mon_thu": {
+          "day": "Monday - Thursday",
+          "time": "9am - 6pm"
+        },
+        "fri": {
+          "day": "Friday",
+          "time": "9am - 2pm"
+        },
+        "sat": {
+          "day": "Saturday",
+          "time": "Closed"
+        },
+        "sun": {
+          "day": "Sunday",
+          "time": "10am - 2pm"
+        }
       },
       "emergency": "Emergency",
-      "emergency_phone": "(514) 123-4568",
+      "emergency_phone": "514 528 1587",
       "access_title": "Access & Parking",
-      "access_description": "Free parking for our patients for 1 hour. Direct access via Mont-Royal metro station."
+      "access_description": "Parking on Mont-Royal Avenue or adjacent streets. Direct access via Mont-Royal metro station (1km) and bus 97 (stops in front of the clinic)."
     },
     "form": {
       "title": "Send us a message",
       "name": "Full name",
       "email": "Email address",
       "phone": "Phone",
+      "date": "Desired date",
+      "date_placeholder": "DD/MM/YYYY",
       "message": "Your message",
       "submit": "Send message",
       "success": "Message sent successfully!",
-      "error": "An error occurred. Please try again."
+      "error": "An error occurred. Please try again.",
+      "phone_title": "Please enter a valid phone number (e.g. 514 123 4567)",
+      "email_title": "Please enter a valid email address"
     },
     "faq": {
       "title": "Frequently Asked Questions",
