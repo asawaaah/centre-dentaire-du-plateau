@@ -4,6 +4,10 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing } from "../../i18n/routing";
 import { notFound } from "next/navigation";
+import { Navbar } from "../../components/layout/Navbar";
+import { Footer } from "../../components/layout/Footer";
+import { ContactBlock } from "../../components/contact/ContactBlock";
+import { SchemaOrg } from "../../components/seo/SchemaOrg";
 import "../globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -18,8 +22,19 @@ const beVietnamPro = Be_Vietnam_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "Clinique Dentaire",
-  description: "L'expérience dentaire repensée dans une atmosphère de sérénité.",
+  title: {
+    default: "Centre Dentaire du Plateau | Expérience Sérénité",
+    template: "%s | Centre Dentaire du Plateau",
+  },
+  description:
+    "Clinique dentaire haut de gamme au Plateau Mont-Royal. Implants, esthétique, orthodontie invisible et soins préventifs dans une atmosphère apaisante.",
+  metadataBase: new URL("https://centre-dentaire-plateau.com"),
+  openGraph: {
+    type: "website",
+    locale: "fr_CA",
+    alternateLocale: "en_CA",
+    siteName: "Centre Dentaire du Plateau",
+  },
 };
 
 export function generateStaticParams() {
@@ -28,7 +43,7 @@ export function generateStaticParams() {
 
 export default async function RootLayout({
   children,
-  params
+  params,
 }: Readonly<{
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
@@ -36,7 +51,7 @@ export default async function RootLayout({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as "fr" | "en")) {
     notFound();
   }
 
@@ -47,9 +62,13 @@ export default async function RootLayout({
       lang={locale}
       className={`${plusJakartaSans.variable} ${beVietnamPro.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-surface text-on-surface">
+        <SchemaOrg locale={locale} />
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <ContactBlock />
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
