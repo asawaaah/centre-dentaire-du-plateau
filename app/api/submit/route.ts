@@ -12,9 +12,9 @@ export async function POST(request: Request) {
         { status: 500 }
       );
     }
-    
+
     const resend = new Resend(process.env.RESEND_API_KEY);
-    const { name, email, phone, message } = await request.json();
+    const { name, email, phone, date, message } = await request.json();
 
     if (!name || !email || !message) {
       return NextResponse.json(
@@ -24,7 +24,7 @@ export async function POST(request: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'Sérénité Clinique <onboarding@resend.dev>',
+      from: 'Centre Dentaire du Plateau <onboarding@resend.dev>',
       to: ['asawauno@gmail.com'],
       replyTo: email,
       subject: `Nouveau message de contact: ${name}`,
@@ -36,6 +36,7 @@ export async function POST(request: Request) {
             <p style="margin: 8px 0;"><strong>Nom:</strong> ${name}</p>
             <p style="margin: 8px 0;"><strong>Email:</strong> ${email}</p>
             <p style="margin: 8px 0;"><strong>Téléphone:</strong> ${phone || 'Non renseigné'}</p>
+            <p style="margin: 8px 0;"><strong>Date souhaitée:</strong> ${date ? new Date(date).toLocaleDateString('en-GB') : 'Non renseignée'}</p>
           </div>
           
           <div style="background-color: white; padding: 24px; border-radius: 8px; border: 1px solid #eff5f5;">

@@ -5,7 +5,7 @@
     "about": "Team",
     "contact": "Contact",
     "cta": "Book Now",
-    "phone": "(514) 123-4567",
+    "phone": "514 528 1587",
     "hours_short": "Mon-Thu 9am-6pm • Fri 9am-2pm • Sun 10am-2pm",
     "switch_lang": "Switch language"
   },
@@ -31,7 +31,7 @@
       "sat": "Sat: Closed",
       "sun": "Sun: 10:00 AM - 2:00 PM"
     },
-    "phone_number": "Tel: (514) 123-4567",
+    "phone_number": "Tel: 514 528 1587",
     "phone_label": "Call us",
     "email_label": "Email us",
     "map_label": "View on map",
@@ -198,21 +198,34 @@
       "address": "1357 Avenue Mont-Royal, Montreal, QC",
       "hours_title": "Opening Hours",
       "hours": {
-        "mon_thu": { "day": "Monday - Thursday", "time": "9am - 6pm" },
-        "fri": { "day": "Friday", "time": "9am - 2pm" },
-        "sat": { "day": "Saturday", "time": "Closed" },
-        "sun": { "day": "Sunday", "time": "10am - 2pm" }
+        "mon_thu": {
+          "day": "Monday - Thursday",
+          "time": "9am - 6pm"
+        },
+        "fri": {
+          "day": "Friday",
+          "time": "9am - 2pm"
+        },
+        "sat": {
+          "day": "Saturday",
+          "time": "Closed"
+        },
+        "sun": {
+          "day": "Sunday",
+          "time": "10am - 2pm"
+        }
       },
       "emergency": "Emergency",
-      "emergency_phone": "(514) 123-4568",
+      "emergency_phone": "514 528 1587",
       "access_title": "Access & Parking",
-      "access_description": "Free parking for our patients for 1 hour. Direct access via Mont-Royal metro station."
+      "access_description": "Parking on Mont-Royal Avenue or adjacent streets. Direct access via Mont-Royal metro station (1km) and bus 97 (stops in front of the clinic)."
     },
     "form": {
       "title": "Send us a message",
       "name": "Full name",
       "email": "Email address",
       "phone": "Phone",
+      "date": "Desired date (dd/mm/yyyy)",
       "message": "Your message",
       "submit": "Send message",
       "success": "Message sent successfully!",

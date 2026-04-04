@@ -5,7 +5,7 @@
     "about": "Équipe",
     "contact": "Contact",
     "cta": "Prendre RDV",
-    "phone": "(514) 123-4567",
+    "phone": "514 528 1587",
     "hours_short": "Lun-Jeu 9h-18h • Ven 9h-14h • Dim 10h-14h",
     "switch_lang": "Changer de langue"
   },
@@ -31,7 +31,7 @@
       "sat": "Sam : Fermé",
       "sun": "Dim : 10h00 - 14h00"
     },
-    "phone_number": "Tél : (514) 123-4567",
+    "phone_number": "Tél : 514 528 1587",
     "phone_label": "Appelez-nous",
     "email_label": "Envoyez-nous un email",
     "map_label": "Voir sur la carte",
@@ -198,21 +198,34 @@
       "address": "1357 Avenue Mont-Royal, Montréal, QC",
       "hours_title": "Horaires d'ouverture",
       "hours": {
-        "mon_thu": { "day": "Lundi - Jeudi", "time": "9h - 18h" },
-        "fri": { "day": "Vendredi", "time": "9h - 14h" },
-        "sat": { "day": "Samedi", "time": "Fermé" },
-        "sun": { "day": "Dimanche", "time": "10h - 14h" }
+        "mon_thu": {
+          "day": "Lundi - Jeudi",
+          "time": "9h - 18h"
+        },
+        "fri": {
+          "day": "Vendredi",
+          "time": "9h - 14h"
+        },
+        "sat": {
+          "day": "Samedi",
+          "time": "Fermé"
+        },
+        "sun": {
+          "day": "Dimanche",
+          "time": "10h - 14h"
+        }
       },
       "emergency": "Urgences",
-      "emergency_phone": "(514) 123-4568",
+      "emergency_phone": "514 528 1587",
       "access_title": "Accès & Stationnement",
-      "access_description": "Stationnement gratuit pour nos patients pendant 1h. Accès direct via le métro Mont-Royal."
+      "access_description": "Stationnement sur la rue Mont-Royal ou rues adjacentes. Accès direct via métro Mont-Royal (1km) et bus 97 (face à la clinique)."
     },
     "form": {
       "title": "Envoyez-nous un message",
       "name": "Nom complet",
       "email": "Adresse email",
       "phone": "Téléphone",
+      "date": "Date souhaitée",
       "message": "Votre message",
       "submit": "Envoyer le message",
       "success": "Message envoyé avec succès !",

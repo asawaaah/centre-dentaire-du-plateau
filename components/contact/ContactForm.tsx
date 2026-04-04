@@ -19,6 +19,7 @@ export function ContactForm() {
       name: formData.get('name'),
       email: formData.get('email'),
       phone: formData.get('phone'),
+      date: formData.get('date'),
       message: formData.get('message'),
     };
 
@@ -73,6 +74,8 @@ export function ContactForm() {
             id="contact-email"
             name="email"
             type="email"
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+            title="Veuillez entrer une adresse email valide"
             required
             className="w-full px-4 py-3 rounded-lg bg-surface-container-lowest font-body text-on-surface placeholder:text-outline ghost-border focus:ghost-border-focus transition-all duration-200 outline-none"
             placeholder={t('email')}
@@ -88,8 +91,24 @@ export function ContactForm() {
             id="contact-phone"
             name="phone"
             type="tel"
+            pattern="^(\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$"
+            title="Veuillez entrer un numéro de téléphone valide (ex: 514-123-4567)"
             className="w-full px-4 py-3 rounded-lg bg-surface-container-lowest font-body text-on-surface placeholder:text-outline ghost-border focus:ghost-border-focus transition-all duration-200 outline-none"
             placeholder={t('phone')}
+          />
+        </div>
+
+        {/* Date */}
+        <div className="space-y-2">
+          <label htmlFor="contact-date" className="font-body text-sm font-medium text-on-surface">
+            {t('date')}
+          </label>
+          <input
+            id="contact-date"
+            name="date"
+            type="date"
+            min={new Date().toISOString().split('T')[0]}
+            className="w-full px-4 py-3 rounded-lg bg-surface-container-lowest font-body text-on-surface placeholder:text-outline [color-scheme:light] dark:[color-scheme:dark] ghost-border focus:ghost-border-focus transition-all duration-200 outline-none"
           />
         </div>
 
