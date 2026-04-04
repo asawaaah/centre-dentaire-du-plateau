@@ -1,6 +1,240 @@
 {
-  "Index": {
-    "title": "Clinique Dentaire",
-    "description": "L'expérience dentaire repensée dans une atmosphère de sérénité."
+  "Nav": {
+    "home": "Accueil",
+    "services": "Traitements",
+    "about": "Équipe",
+    "contact": "Contact",
+    "cta": "Prendre RDV",
+    "phone": "(514) 123-4567",
+    "hours_short": "Lun-Jeu 9h-18h • Ven 9h-14h • Dim 10h-14h",
+    "switch_lang": "Changer de langue"
+  },
+  "Footer": {
+    "tagline": "Redéfinir l'expérience dentaire par le calme et l'excellence technique au cœur du Plateau.",
+    "services_title": "Traitements",
+    "services": {
+      "implants": "Implants Dentaires",
+      "whitening": "Esthétique & Blanchiment",
+      "orthodontics": "Orthodontie Invisible",
+      "pediatric": "Soins Préventifs"
+    },
+    "navigation_title": "Navigation",
+    "nav": {
+      "home": "Accueil",
+      "about": "À Propos",
+      "contact": "Contact"
+    },
+    "hours_title": "Horaires",
+    "hours": {
+      "mon_thu": "Lun - Jeu : 9h00 - 18h00",
+      "fri": "Ven : 9h00 - 14h00",
+      "sat": "Sam : Fermé",
+      "sun": "Dim : 10h00 - 14h00"
+    },
+    "phone_number": "Tél : (514) 123-4567",
+    "phone_label": "Appelez-nous",
+    "email_label": "Envoyez-nous un email",
+    "map_label": "Voir sur la carte",
+    "copyright": "© 2024 Centre Dentaire du Plateau. Tous droits réservés.",
+    "legal": "Mentions Légales",
+    "privacy": "Confidentialité",
+    "accessibility": "Accessibilité"
+  },
+  "Home": {
+    "hero": {
+      "title": "Votre sourire mérite une expérience d'exception",
+      "subtitle": "Découvrez une expérience dentaire repensée dans un cadre apaisant. Expertise clinique de pointe et bien-être fusionnent pour prendre soin de votre santé bucco-dentaire.",
+      "cta_primary": "Prendre Rendez-vous",
+      "cta_secondary": "Nos Traitements"
+    },
+    "services": {
+      "section_title": "Nos Traitements",
+      "section_subtitle": "Un éventail complet de traitements réalisés avec les technologies les plus avancées pour un confort optimal.",
+      "aesthetic": {
+        "title": "Esthétique Dentaire",
+        "description": "Redécouvrez l'éclat de votre sourire grâce à nos solutions de facettes, blanchiment professionnel et alignement invisible.",
+        "cta": "En savoir plus"
+      },
+      "implants": {
+        "title": "Implantologie",
+        "description": "Remplacement durable et naturel de vos racines dentaires pour une fonctionnalité retrouvée.",
+        "cta": "Consulter"
+      },
+      "pediatric": {
+        "title": "Odontologie Pédiatrique",
+        "description": "Une approche douce et ludique pour les premiers soins de vos enfants."
+      },
+      "emergency": {
+        "title": "Urgences",
+        "description": "Prise en charge rapide pour vos douleurs aiguës et traumatismes."
+      },
+      "prevention": {
+        "title": "Prévention & Hygiène",
+        "description": "Détartrage et bilans complets pour préserver votre capital santé."
+      }
+    },
+    "serenity": {
+      "title": "Sérénité Garantie à Chaque Étape",
+      "subtitle": "Nous comprenons que la visite chez le dentiste peut être source de stress. Notre protocole « Peace of Mind » est conçu pour transformer votre visite en un moment de détente.",
+      "items": {
+        "atmosphere": "Atmosphère musicale apaisante et aromathérapie",
+        "punctuality": "Zéro attente avec une ponctualité rigoureuse",
+        "technology": "Technologie de pointe pour des soins indolores"
+      }
+    },
+    "cta": {
+      "title": "Prêt à sublimer votre sourire ?",
+      "subtitle": "Rejoignez nos patients satisfaits et bénéficiez d'une première consultation complète pour définir votre plan de traitement personnalisé.",
+      "button": "Prendre Rendez-vous"
+    }
+  },
+  "Services": {
+    "hero": {
+      "title": "Nos Traitements",
+      "subtitle": "Au Centre Dentaire du Plateau, nous redéfinissons le soin dentaire par une alliance unique entre technologie de pointe et environnement apaisant."
+    },
+    "preventive": {
+      "title": "Soins Préventifs",
+      "description": "La base d'un sourire durable commence par la prévention. Nous proposons des bilans complets, détartrages et conseils d'hygiène personnalisés.",
+      "features": {
+        "xray": "Examens radiologiques 3D",
+        "cleaning": "Nettoyage prophylactique"
+      }
+    },
+    "orthodontics": {
+      "title": "Orthodontie",
+      "description": "Solutions invisibles et confortables pour aligner votre sourire à tout âge. Invisalign® et multi-attaches."
+    },
+    "aesthetic": {
+      "title": "Dentisterie Esthétique",
+      "description": "Blanchiment professionnel, facettes en céramique et restaurations invisibles pour sublimer votre sourire."
+    },
+    "implants": {
+      "title": "Implantologie",
+      "description": "Retrouvez le confort d'une dentition complète grâce à nos technologies d'implants de dernière génération, biocompatibles et durables."
+    },
+    "cta": {
+      "title": "Trouvez le traitement adapté",
+      "subtitle": "Notre équipe vous guide vers la solution la plus adaptée à vos besoins.",
+      "button": "Prendre Rendez-vous"
+    }
+  },
+  "About": {
+    "hero": {
+      "title": "Redéfinir le Soin Dentaire par la Sérénité.",
+      "subtitle": "Depuis 2008, le Centre Dentaire du Plateau allie expertise médicale de pointe et approche holistique pour transformer votre visite chez le dentiste en un moment de bien-être.",
+      "quote": "L'innovation technologique au service du confort humain."
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Notre mission est de fournir des soins dentaires d'excellence dans un environnement qui apaise l'esprit. Nous croyons que la santé bucco-dentaire est le reflet de votre bien-être général. Chaque traitement est conçu pour être minimalement invasif, hautement esthétique et totalement sans douleur.",
+      "quality": {
+        "title": "Engagement Qualité",
+        "description": "Protocoles de stérilisation certifiés ISO et matériaux bio-compatibles uniquement."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Utilisation exclusive de technologies numériques pour une précision millimétrique."
+      },
+      "history": {
+        "title": "Historique",
+        "description": "Fondé par le Dr. Aris en 2008, le centre a évolué d'un cabinet de quartier à une référence en dentisterie esthétique et implantaire."
+      }
+    },
+    "tech": {
+      "title": "Le High-Tech au service du Patient",
+      "subtitle": "Nous investissons continuellement dans les dernières innovations pour des diagnostics plus rapides et des traitements plus doux.",
+      "cone_beam": {
+        "title": "Imagerie 3D Cone Beam",
+        "description": "Une vision tridimensionnelle précise pour des implants posés avec une sécurité absolue."
+      },
+      "optical": {
+        "title": "Empreinte Optique",
+        "description": "Dites adieu aux pâtes désagréables. Un scanner laser capture votre sourire en quelques secondes."
+      },
+      "laser": {
+        "title": "Laser Dentaire Er:YAG",
+        "description": "Pour des soins des gencives sans saignement et une cicatrisation ultra-rapide."
+      }
+    },
+    "team": {
+      "title": "L'Équipe de Praticiens",
+      "subtitle": "Des spécialistes passionnés, formés aux meilleures techniques internationales, unis par une vision commune de la dentisterie moderne.",
+      "members": {
+        "aris": {
+          "name": "Dr. Jean Aris",
+          "role": "Fondateur & Implantologie",
+          "bio": "Expert en réhabilitation complète et esthétique du sourire."
+        },
+        "chen": {
+          "name": "Dr. Sophie Chen",
+          "role": "Orthodontie Invisible",
+          "bio": "Spécialiste certifiée Diamond Apex pour les traitements d'alignement."
+        },
+        "laurent": {
+          "name": "Dr. Marc Laurent",
+          "role": "Chirurgie Orale",
+          "bio": "Prise en charge spécialisée pour les cas chirurgicaux complexes."
+        },
+        "martin": {
+          "name": "Dr. Léa Martin",
+          "role": "Pédodontie & Prévention",
+          "bio": "Spécialiste des sourires de nos plus jeunes patients."
+        }
+      }
+    }
+  },
+  "Contact": {
+    "hero": {
+      "title": "Contactez-nous",
+      "subtitle": "Notre équipe est à votre disposition pour toute question concernant vos soins ou pour planifier une première consultation dans notre centre du Plateau."
+    },
+    "block": {
+      "title": "Prenez Rendez-vous",
+      "subtitle": "Contactez-nous dès aujourd'hui pour planifier votre visite ou poser toutes vos questions. Notre équipe vous accueille avec bienveillance."
+    },
+    "info": {
+      "address_title": "Notre Cabinet",
+      "address": "1357 Avenue Mont-Royal, Montréal, QC",
+      "hours_title": "Horaires d'ouverture",
+      "hours": {
+        "mon_thu": { "day": "Lundi - Jeudi", "time": "9h - 18h" },
+        "fri": { "day": "Vendredi", "time": "9h - 14h" },
+        "sat": { "day": "Samedi", "time": "Fermé" },
+        "sun": { "day": "Dimanche", "time": "10h - 14h" }
+      },
+      "emergency": "Urgences",
+      "emergency_phone": "(514) 123-4568",
+      "access_title": "Accès & Stationnement",
+      "access_description": "Stationnement gratuit pour nos patients pendant 1h. Accès direct via le métro Mont-Royal."
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "name": "Nom complet",
+      "email": "Adresse email",
+      "phone": "Téléphone",
+      "message": "Votre message",
+      "submit": "Envoyer le message",
+      "success": "Message envoyé avec succès !",
+      "error": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "faq": {
+      "title": "Questions Fréquentes",
+      "subtitle": "Tout ce que vous devez savoir avant votre visite.",
+      "items": {
+        "new_patients": {
+          "question": "Acceptez-vous les nouveaux patients ?",
+          "answer": "Oui, nous accueillons avec plaisir les nouveaux patients. Une première consultation de bilan sera nécessaire pour établir votre dossier médical complet."
+        },
+        "payment": {
+          "question": "Quels sont vos modes de paiement ?",
+          "answer": "Nous acceptons les cartes bancaires, les chèques et les espèces. Nous pratiquons également le tiers-payant avec la majorité des mutuelles."
+        },
+        "emergency": {
+          "question": "Comment gérer une urgence le week-end ?",
+          "answer": "Le dimanche, nous sommes ouverts de 10h à 14h pour les soins urgents. En dehors de ces horaires, veuillez contacter le service de garde."
+        }
+      }
+    }
   }
 }
