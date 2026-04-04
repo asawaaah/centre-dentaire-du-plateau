@@ -37,8 +37,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const runtime = 'edge';
-
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
