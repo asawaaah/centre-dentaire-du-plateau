@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '../../i18n/routing';
 import { Phone, Menu, X, Globe } from 'lucide-react';
@@ -45,11 +46,16 @@ export function Navbar() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-gradient-signature flex items-center justify-center">
-                <span className="text-on-primary font-heading font-bold text-sm">S</span>
-              </div>
-              <span className="font-heading font-bold text-xl text-primary">
-                Sérénité
+              <Image
+                src="/images/logo.svg"
+                alt="Centre Dentaire du Plateau"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+                priority
+              />
+              <span className="hidden sm:block font-heading font-bold text-xl text-primary">
+                Centre Dentaire du Plateau
               </span>
             </Link>
 

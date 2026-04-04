@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '../../i18n/routing';
 import { MapPin, Mail, Phone } from 'lucide-react';
@@ -13,11 +14,15 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1 space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-gradient-signature flex items-center justify-center">
-                <span className="text-on-primary font-heading font-bold text-sm">S</span>
-              </div>
+              <Image
+                src="/images/logo.svg"
+                alt="Centre Dentaire du Plateau"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
               <span className="font-heading font-bold text-xl text-primary">
-                Sérénité
+                Centre Dentaire du Plateau
               </span>
             </div>
             <p className="font-body text-sm text-on-surface-variant leading-relaxed">
@@ -25,21 +30,21 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="tel:+15141234567"
+                href="tel:+15145281587"
                 className="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary hover:-translate-y-0.5 transition-all duration-300 hover:shadow-[var(--shadow-ambient)]"
                 aria-label={t('phone_label')}
               >
                 <Phone size={18} />
               </a>
               <a
-                href="mailto:info@centre-dentaire-plateau.com"
+                href="mailto:info@dentisteplateau.com"
                 className="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary hover:-translate-y-0.5 transition-all duration-300 hover:shadow-[var(--shadow-ambient)]"
                 aria-label={t('email_label')}
               >
                 <Mail size={18} />
               </a>
               <a
-                href="https://maps.google.com/?q=1357+Avenue+Mont-Royal"
+                href="https://maps.google.com/?q=1357+Ave+du+Mont-Royal+Est+Montréal+QC+H2J+1Y8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary hover:-translate-y-0.5 transition-all duration-300 hover:shadow-[var(--shadow-ambient)]"
@@ -106,7 +111,7 @@ export function Footer() {
             </div>
             <div className="pt-2">
               <p className="font-body text-xs text-on-surface-variant">
-                1357 Avenue Mont-Royal
+                1357 Ave du Mont-Royal Est, Montréal, QC H2J 1Y8
               </p>
               <p className="font-body text-xs text-on-surface-variant">
                 {t('phone_number')}

@@ -7,11 +7,19 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   return {
     title: locale === 'fr'
-      ? "À Propos | Notre Équipe & Notre Mission"
-      : "About Us | Our Team & Mission",
+      ? "Dr. Saul Barchichat | Dentiste à Montréal — Centre Dentaire du Plateau"
+      : "Dr. Saul Barchichat | Dentist in Montreal — Centre Dentaire du Plateau",
     description: locale === 'fr'
-      ? "Rencontrez l'équipe du Centre Dentaire du Plateau. Depuis 2008, nos spécialistes allient technologie de pointe et approche bienveillante pour votre sourire."
-      : "Meet the team at Centre Dentaire du Plateau. Since 2008, our specialists combine cutting-edge technology with a caring approach for your smile.",
+      ? "Rencontrez le Dr. Saul Barchichat, dentiste au Centre Dentaire du Plateau à Montréal. Membre de l'ODQ, il offre des soins complets pour patients de tous âges au Plateau Mont-Royal."
+      : "Meet Dr. Saul Barchichat, dentist at Centre Dentaire du Plateau in Montreal. ODQ member providing comprehensive care for patients of all ages on Plateau Mont-Royal.",
+    alternates: {
+      canonical: `https://dentisteplateau.com/${locale}/a-propos`,
+      languages: {
+        fr: 'https://dentisteplateau.com/fr/a-propos',
+        en: 'https://dentisteplateau.com/en/a-propos',
+        'x-default': 'https://dentisteplateau.com/fr/a-propos',
+      },
+    },
   };
 }
 
@@ -32,12 +40,6 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
     { key: "laser", icon: <Zap className="text-primary" size={32} /> },
   ];
 
-  const teamMembers = [
-    { key: "aris", image: "/images/team/dr-aris.png" },
-    { key: "chen", image: "/images/team/dr-chen.png" },
-    { key: "laurent", image: "/images/team/dr-laurent.png" },
-    { key: "martin", image: "/images/team/dr-martin.png" },
-  ];
 
   return (
     <>
@@ -138,34 +140,95 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member) => (
-              <div
-                key={member.key}
-                className="bg-surface-container-lowest rounded-[2rem] overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-ambient-hover)]"
-              >
-                <div className="relative w-full aspect-[3/4]">
-                  <Image
-                    src={member.image}
-                    alt={t(`team.members.${member.key}.name`)}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  />
-                </div>
-                <div className="p-7 space-y-3">
-                  <h3 className="font-heading font-bold text-lg text-on-surface">
-                    {t(`team.members.${member.key}.name`)}
-                  </h3>
-                  <p className="font-body text-sm font-medium text-primary">
-                    {t(`team.members.${member.key}.role`)}
-                  </p>
-                  <p className="font-body text-sm text-on-surface-variant leading-relaxed">
-                    {t(`team.members.${member.key}.bio`)}
-                  </p>
-                </div>
+          {/* Single doctor profile */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
+            {/* Photo */}
+            <div className="relative">
+              <div className="relative aspect-[3/4] max-w-sm mx-auto lg:max-w-none rounded-[2.5rem] overflow-hidden shadow-2xl">
+                <Image
+                  src="/images/team/dr-barchichat.jpg"
+                  alt="Dr. Saul Barchichat — Centre Dentaire du Plateau"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 384px, 50vw"
+                />
               </div>
-            ))}
+              <div className="absolute -bottom-4 -right-4 w-full h-full rounded-[2.5rem] bg-primary-fixed/10 -z-10" />
+            </div>
+
+            {/* Bio */}
+            <div className="space-y-8">
+              <div className="space-y-3">
+                <h3 className="font-heading font-bold text-3xl sm:text-4xl text-on-surface">
+                  {t("team.member.name")}
+                </h3>
+                <p className="font-body font-semibold text-primary text-lg">
+                  {t("team.member.role")}
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-3">
+                {(["badge_odq", "badge_ages", "badge_insurance", "badge_languages"] as const).map((badge) => (
+                  <span
+                    key={badge}
+                    className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary-fixed/15 text-primary font-body font-medium text-sm"
+                  >
+                    {t(`team.member.${badge}`)}
+                  </span>
+                ))}
+              </div>
+
+              <div className="space-y-5">
+                <p className="font-body text-on-surface-variant leading-relaxed">{t("team.member.bio_1")}</p>
+                <p className="font-body text-on-surface-variant leading-relaxed">{t("team.member.bio_2")}</p>
+                <p className="font-body text-on-surface-variant leading-relaxed">{t("team.member.bio_3")}</p>
+              </div>
+
+              <div className="bg-surface-container-lowest rounded-2xl p-6 space-y-3">
+                <p className="font-heading font-semibold text-on-surface text-sm uppercase tracking-wider">
+                  {t("team.member.services_title")}
+                </p>
+                <p className="font-body text-on-surface-variant text-sm leading-relaxed">
+                  {t("team.member.services")}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Staff cards */}
+          <div className="mt-20">
+            <h3 className="font-heading font-bold text-2xl text-on-surface text-center mb-12">
+              {t("team.staff_title")}
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto">
+              {(["grace", "cristina", "sabrina"] as const).map((key) => (
+                <div
+                  key={key}
+                  className="bg-surface-container-lowest rounded-[2rem] overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-ambient-hover)]"
+                >
+                  <div className="relative w-full aspect-[3/4]">
+                    <Image
+                      src="/images/placeholder-f.svg"
+                      alt={t(`team.${key}.name`)}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, 33vw"
+                    />
+                    <span className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-black/40 backdrop-blur-sm text-white font-body text-xs font-medium whitespace-nowrap">
+                      {locale === "fr" ? "Photo à venir" : "Photo coming soon"}
+                    </span>
+                  </div>
+                  <div className="p-6 space-y-2">
+                    <h4 className="font-heading font-bold text-lg text-on-surface">
+                      {t(`team.${key}.name`)}
+                    </h4>
+                    <p className="font-body text-sm font-medium text-primary">
+                      {t(`team.${key}.role`)}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

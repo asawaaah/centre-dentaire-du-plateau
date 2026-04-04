@@ -1,7 +1,8 @@
 import type { MetadataRoute } from 'next';
+import { SERVICES } from '../lib/services';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://centre-dentaire-plateau.com';
+  const baseUrl = 'https://dentisteplateau.com';
   const locales = ['fr', 'en'];
   const pages = ['', '/services', '/a-propos', '/contact'];
 
@@ -18,6 +19,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
           languages: {
             fr: `${baseUrl}/fr${page}`,
             en: `${baseUrl}/en${page}`,
+          },
+        },
+      });
+    }
+
+    for (const service of SERVICES) {
+      const slug = service.slugs[locale as 'fr' | 'en'];
+      entries.push({
+        url: `${baseUrl}/${locale}/services/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        alternates: {
+          languages: {
+            fr: `${baseUrl}/fr/services/${service.slugs.fr}`,
+            en: `${baseUrl}/en/services/${service.slugs.en}`,
           },
         },
       });

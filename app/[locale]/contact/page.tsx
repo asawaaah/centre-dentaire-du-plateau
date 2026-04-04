@@ -1,4 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { ContactBlock } from "../../../components/contact/ContactBlock";
 import { FaqSection } from "../../../components/contact/FaqSection";
 import { FaqSchemaOrg } from "../../../components/seo/SchemaOrg";
 import type { Metadata } from "next";
@@ -10,8 +11,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       ? "Contact | Prenez Rendez-vous"
       : "Contact | Book an Appointment",
     description: locale === 'fr'
-      ? "Contactez le Centre Dentaire du Plateau au 1357 Avenue Mont-Royal. Prenez rendez-vous en ligne ou appelez-nous. Horaires, accès et FAQ."
-      : "Contact Centre Dentaire du Plateau at 1357 Avenue Mont-Royal. Book an appointment online or call us. Hours, access and FAQ.",
+      ? "Contactez le Centre Dentaire du Plateau au 1357 Avenue du Mont-Royal Est. Prenez rendez-vous en ligne ou appelez-nous. Horaires, accès et FAQ."
+      : "Contact Centre Dentaire du Plateau at 1357 Avenue du Mont-Royal Est. Book an appointment online or call us. Hours, access and FAQ.",
+    alternates: {
+      canonical: `https://dentisteplateau.com/${locale}/contact`,
+      languages: {
+        fr: 'https://dentisteplateau.com/fr/contact',
+        en: 'https://dentisteplateau.com/en/contact',
+        'x-default': 'https://dentisteplateau.com/fr/contact',
+      },
+    },
   };
 }
 
@@ -36,6 +45,9 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           </p>
         </div>
       </section>
+
+      {/* ==================== CONTACT FORM ==================== */}
+      <ContactBlock />
 
       {/* ==================== FAQ ==================== */}
       <FaqSection />

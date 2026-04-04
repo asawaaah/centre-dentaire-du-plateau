@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 267">
+  <rect width="200" height="267" fill="#F0F0F0"/>
+  <!-- Head -->
+  <circle cx="100" cy="88" r="40" fill="#ABABAB"/>
+  <!-- Hair suggestion (gentle wave) -->
+  <ellipse cx="100" cy="58" rx="43" ry="20" fill="#898989"/>
+  <!-- Body / dress silhouette suggesting feminine form -->
+  <path d="M30 267 Q35 185 100 178 Q165 185 170 267Z" fill="#ABABAB"/>
+</svg>

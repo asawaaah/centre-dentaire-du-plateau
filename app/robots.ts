@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/'],
       },
     ],
-    sitemap: 'https://centre-dentaire-plateau.com/sitemap.xml',
+    sitemap: 'https://dentisteplateau.com/sitemap.xml',
   };
 }

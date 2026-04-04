@@ -45,7 +45,7 @@ export async function POST(request: Request) {
           </div>
           
           <hr style="border: none; border-top: 1px solid #eff5f5; margin: 32px 0;" />
-          <p style="font-size: 12px; color: #666; text-align: center; margin: 0;">Cet email a été envoyé depuis le formulaire de contact du site Clinique Dentaire Sérénité.</p>
+          <p style="font-size: 12px; color: #666; text-align: center; margin: 0;">Cet email a été envoyé depuis le formulaire de contact du site Centre Dentaire du Plateau.</p>
         </div>
       `,
     });
@@ -53,6 +53,22 @@ export async function POST(request: Request) {
     if (error) {
       console.error('Resend error:', error);
       return NextResponse.json({ error: error.message }, { status: 400 });
+    }
+
+    if (process.env.GOOGLE_SHEETS_WEBHOOK_URL && process.env.GOOGLE_SHEETS_WEBHOOK_SECRET) {
+      fetch(process.env.GOOGLE_SHEETS_WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          secret: process.env.GOOGLE_SHEETS_WEBHOOK_SECRET,
+          submittedAt: new Date().toISOString(),
+          name,
+          email,
+          phone: phone || '',
+          preferredDate: date || '',
+          message,
+        }),
+      }).catch((err) => console.error('Google Sheets logging failed:', err));
     }
 
     return NextResponse.json({ success: true, data });

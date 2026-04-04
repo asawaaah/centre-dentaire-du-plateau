@@ -22,6 +22,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: isFr
       ? "Clinique dentaire haut de gamme au Plateau Mont-Royal. Implants dentaires, esthétique, orthodontie invisible et soins préventifs dans une atmosphère apaisante. Prenez rendez-vous."
       : "Premium dental clinic in Plateau Mont-Royal. Dental implants, cosmetics, invisible orthodontics and preventive care in a soothing atmosphere. Book an appointment.",
+    alternates: {
+      canonical: `https://dentisteplateau.com/${locale}`,
+      languages: {
+        fr: 'https://dentisteplateau.com/fr',
+        en: 'https://dentisteplateau.com/en',
+        'x-default': 'https://dentisteplateau.com/fr',
+      },
+    },
     openGraph: {
       title: isFr
         ? "Centre Dentaire du Plateau | Votre sourire mérite l'excellence"

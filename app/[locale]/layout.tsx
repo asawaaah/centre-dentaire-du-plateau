@@ -6,7 +6,7 @@ import { routing } from "../../i18n/routing";
 import { notFound } from "next/navigation";
 import { Navbar } from "../../components/layout/Navbar";
 import { Footer } from "../../components/layout/Footer";
-import { ContactBlock } from "../../components/contact/ContactBlock";
+import { ConditionalContactBlock } from "../../components/layout/ConditionalContactBlock";
 import { SchemaOrg } from "../../components/seo/SchemaOrg";
 import "../globals.css";
 
@@ -28,12 +28,16 @@ export const metadata: Metadata = {
   },
   description:
     "Clinique dentaire haut de gamme au Plateau Mont-Royal. Implants, esthétique, orthodontie invisible et soins préventifs dans une atmosphère apaisante.",
-  metadataBase: new URL("https://centre-dentaire-plateau.com"),
+  metadataBase: new URL("https://dentisteplateau.com"),
   openGraph: {
     type: "website",
     locale: "fr_CA",
     alternateLocale: "en_CA",
     siteName: "Centre Dentaire du Plateau",
+    images: ["/images/clinic/hero-smile.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
   },
 };
 
@@ -68,7 +72,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main className="flex-1">{children}</main>
-          <ContactBlock />
+          <ConditionalContactBlock />
           <Footer />
         </NextIntlClientProvider>
       </body>
