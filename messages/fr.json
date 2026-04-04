@@ -86,6 +86,24 @@
         "technology": "Technologie de pointe pour des soins indolores"
       }
     },
+    "testimonials": {
+      "section_title": "Ce que disent nos patients",
+      "section_subtitle": "Des milliers de sourires transformés. Voici quelques mots de nos patients.",
+      "items": [
+        {
+          "quote": "Très bon dentiste, professionnel et honnête. Toute l'équipe est accueillante et sympathique. Je recommande vivement !",
+          "author": "Marie-Anne"
+        },
+        {
+          "quote": "Le Dr Barchichat est très minutieux et prend le temps d'expliquer les interventions. On se sent en confiance.",
+          "author": "Saeed"
+        },
+        {
+          "quote": "Client depuis des années, le service est toujours impeccable. Merci à toute l'équipe du Plateau !",
+          "author": "Simon"
+        }
+      ]
+    },
     "cta": {
       "title": "Prêt à sublimer votre sourire ?",
       "subtitle": "Rejoignez nos patients satisfaits et bénéficiez d'une première consultation complète pour définir votre plan de traitement personnalisé.",
@@ -459,15 +477,18 @@
       "staff_title": "Notre Équipe",
       "grace": {
         "name": "Grace Mirasol",
-        "role": "Assistante Dentaire"
+        "role": "Assistante Dentaire",
+        "bio": "Grace accompagne chaque patient avec une attention particulière, créant une atmosphère chaleureuse dès votre arrivée."
       },
       "cristina": {
         "name": "Dre. Cristina",
-        "role": "Dentiste & Hygiéniste Dentaire"
+        "role": "Dentiste & Hygiéniste Dentaire",
+        "bio": "Dre. Cristina offre des soins préventifs et des nettoyages professionnels avec expertise et douceur."
       },
       "sabrina": {
         "name": "Sabrina",
-        "role": "Administration"
+        "role": "Coordination & Administration",
+        "bio": "Sabrina coordonne vos rendez-vous et répond à toutes vos questions administratives avec efficacité et bienveillance."
       }
     }
   },
