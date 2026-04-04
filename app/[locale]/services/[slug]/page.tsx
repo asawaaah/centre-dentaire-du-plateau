@@ -31,10 +31,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t(`${key}.meta_title`),
     description: t(`${key}.meta_description`),
     alternates: {
-      canonical: `/${locale}/services/${slug}`,
+      canonical: `https://dentisteplateau.com/${locale}/services/${slug}`,
       languages: {
-        fr: `/fr/services/${getServiceSlug('fr', key as ServiceKey)}`,
-        en: `/en/services/${getServiceSlug('en', key as ServiceKey)}`,
+        fr: `https://dentisteplateau.com/fr/services/${getServiceSlug('fr', key as ServiceKey)}`,
+        en: `https://dentisteplateau.com/en/services/${getServiceSlug('en', key as ServiceKey)}`,
       },
     },
   };
@@ -69,11 +69,11 @@ export default async function ServiceDetailPage({ params }: Props) {
             <Link href="/" className="hover:text-on-primary transition-colors">
               {locale === 'fr' ? 'Accueil' : 'Home'}
             </Link>
-            <ChevronRight size={14} />
+            <ChevronRight size={14} aria-hidden="true" />
             <Link href="/services" className="hover:text-on-primary transition-colors">
               {locale === 'fr' ? 'Traitements' : 'Treatments'}
             </Link>
-            <ChevronRight size={14} />
+            <ChevronRight size={14} aria-hidden="true" />
             <span className="text-on-primary/80">{tServices(`${key}.title`)}</span>
           </nav>
 
@@ -116,7 +116,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <ul className="space-y-4">
                   {features.map((feat, i) => (
                     <li key={i} className="flex items-start gap-4 p-4 rounded-2xl bg-surface-container-lowest">
-                      <CheckCircle className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                      <CheckCircle className="text-primary flex-shrink-0 mt-0.5" size={20} aria-hidden="true" />
                       <span className="font-body text-on-surface leading-snug">{feat}</span>
                     </li>
                   ))}
@@ -140,6 +140,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                         <span>{item.q}</span>
                         <ChevronDown
                           size={18}
+                          aria-hidden="true"
                           className="flex-shrink-0 text-primary transition-transform duration-200 group-open:rotate-180"
                         />
                       </summary>
@@ -152,25 +153,6 @@ export default async function ServiceDetailPage({ params }: Props) {
               </section>
             )}
 
-            {/* Inline CTA */}
-            <section className="rounded-[2rem] bg-surface-container-low p-10 text-center space-y-6">
-              <h2 className="font-heading font-bold text-2xl text-on-surface">
-                {locale === 'fr'
-                  ? 'Prêt à prendre soin de votre sourire ?'
-                  : 'Ready to take care of your smile?'}
-              </h2>
-              <p className="font-body text-on-surface-variant">
-                {locale === 'fr'
-                  ? 'Notre équipe vous accueille du lundi au vendredi et le dimanche matin.'
-                  : 'Our team welcomes you Monday to Friday and Sunday mornings.'}
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-primary text-on-primary font-body font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-ambient-hover)]"
-              >
-                {locale === 'fr' ? 'Prendre Rendez-vous' : 'Book an Appointment'}
-              </Link>
-            </section>
           </div>
 
           {/* ---- Right: Sidebar ---- */}
@@ -183,11 +165,11 @@ export default async function ServiceDetailPage({ params }: Props) {
                 {otherServices.map((s) => (
                   <Link
                     key={s.key}
-                    href={`/services/${getServiceSlug(locale, s.key as ServiceKey)}`}
+                    href={{ pathname: '/services/[slug]', params: { slug: getServiceSlug(locale, s.key as ServiceKey) } }}
                     className="flex items-center justify-between gap-3 px-4 py-3 rounded-xl font-body text-sm text-on-surface-variant hover:text-primary hover:bg-primary-fixed/10 transition-all duration-200"
                   >
                     <span>{tServices(`${s.key}.title`)}</span>
-                    <ChevronRight size={14} className="flex-shrink-0 text-primary" />
+                    <ChevronRight size={14} className="flex-shrink-0 text-primary" aria-hidden="true" />
                   </Link>
                 ))}
                 <Link
@@ -195,7 +177,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                   className="flex items-center justify-between gap-3 px-4 py-3 rounded-xl font-body text-sm font-semibold text-primary hover:bg-primary-fixed/10 transition-all duration-200"
                 >
                   <span>{locale === 'fr' ? 'Voir tous les traitements' : 'See all treatments'}</span>
-                  <ChevronRight size={14} className="flex-shrink-0" />
+                  <ChevronRight size={14} className="flex-shrink-0" aria-hidden="true" />
                 </Link>
               </nav>
 

@@ -7,7 +7,11 @@
     "cta": "Prendre RDV",
     "phone": "514 528 1587",
     "hours_short": "Lun-Jeu 9h-18h • Ven 9h-14h • Dim 10h-14h",
-    "switch_lang": "Changer de langue"
+    "switch_lang": "Changer de langue",
+    "nav_label": "Navigation principale",
+    "skip_to_content": "Passer au contenu principal",
+    "menu_open": "Ouvrir le menu",
+    "menu_close": "Fermer le menu"
   },
   "Footer": {
     "tagline": "Redéfinir l'expérience dentaire par le calme et l'excellence technique au cœur du Plateau.",
@@ -509,10 +513,13 @@
       "email": "Adresse email",
       "phone": "Téléphone",
       "date": "Date souhaitée",
+      "date_placeholder": "JJ/MM/AAAA",
       "message": "Votre message",
       "submit": "Envoyer le message",
       "success": "Message envoyé avec succès !",
-      "error": "Une erreur est survenue. Veuillez réessayer."
+      "error": "Une erreur est survenue. Veuillez réessayer.",
+      "phone_title": "Veuillez entrer un numéro valide (ex : 514 123 4567)",
+      "email_title": "Veuillez entrer une adresse email valide"
     },
     "faq": {
       "title": "Questions Fréquentes",

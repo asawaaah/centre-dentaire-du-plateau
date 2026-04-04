@@ -93,7 +93,7 @@ export default async function Home({
                   }}
                 >
                   {t("hero.cta_secondary")}
-                  <ArrowRight size={18} className="ml-2.5" />
+                  <ArrowRight size={18} className="ml-2.5" aria-hidden="true" />
                 </Link>
               </div>
             </div>
@@ -136,7 +136,7 @@ export default async function Home({
             {/* Aesthetic Card */}
             <div className="bg-surface-container-lowest rounded-[2rem] p-10 sm:p-12 space-y-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-ambient-hover)]">
               <div className="w-16 h-16 rounded-2xl bg-primary-fixed/20 flex items-center justify-center">
-                <Sparkles className="text-primary" size={32} />
+                <Sparkles className="text-primary" size={32} aria-hidden="true" />
               </div>
               <div className="space-y-4">
                 <h3 className="font-heading font-bold text-2xl text-on-surface">
@@ -151,14 +151,14 @@ export default async function Home({
                 className="inline-flex items-center gap-2.5 font-body font-semibold text-primary hover:gap-4 transition-all duration-300 pt-2"
               >
                 {t("services.aesthetic.cta")}
-                <ArrowRight size={18} />
+                <ArrowRight size={18} aria-hidden="true" />
               </Link>
             </div>
 
             {/* Implants Card */}
             <div className="bg-surface-container-lowest rounded-[2rem] p-10 sm:p-12 space-y-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-ambient-hover)]">
               <div className="w-16 h-16 rounded-2xl bg-primary-fixed/20 flex items-center justify-center">
-                <Shield className="text-primary" size={32} />
+                <Shield className="text-primary" size={32} aria-hidden="true" />
               </div>
               <div className="space-y-4">
                 <h3 className="font-heading font-bold text-2xl text-on-surface">
@@ -173,7 +173,7 @@ export default async function Home({
                 className="inline-flex items-center gap-2.5 font-body font-semibold text-primary hover:gap-4 transition-all duration-300 pt-2"
               >
                 {t("services.implants.cta")}
-                <ArrowRight size={18} />
+                <ArrowRight size={18} aria-hidden="true" />
               </Link>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default async function Home({
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <div className="bg-surface-container-low rounded-[1.5rem] p-8 space-y-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-ambient)]">
               <div className="w-12 h-12 rounded-xl bg-primary-fixed/20 flex items-center justify-center">
-                <Baby className="text-primary" size={24} />
+                <Baby className="text-primary" size={24} aria-hidden="true" />
               </div>
               <h4 className="font-heading font-semibold text-xl text-on-surface">
                 {t("services.pediatric.title")}
@@ -193,7 +193,7 @@ export default async function Home({
             </div>
             <div className="bg-surface-container-low rounded-[1.5rem] p-8 space-y-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-ambient)]">
               <div className="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center">
-                <Zap className="text-tertiary" size={24} />
+                <Zap className="text-tertiary" size={24} aria-hidden="true" />
               </div>
               <h4 className="font-heading font-semibold text-xl text-on-surface">
                 {t("services.emergency.title")}
@@ -204,7 +204,7 @@ export default async function Home({
             </div>
             <div className="bg-surface-container-low rounded-[1.5rem] p-8 space-y-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-ambient)]">
               <div className="w-12 h-12 rounded-xl bg-primary-fixed/20 flex items-center justify-center">
-                <HeartPulse className="text-primary" size={24} />
+                <HeartPulse className="text-primary" size={24} aria-hidden="true" />
               </div>
               <h4 className="font-heading font-semibold text-xl text-on-surface">
                 {t("services.prevention.title")}
@@ -251,7 +251,7 @@ export default async function Home({
                 {["atmosphere", "punctuality", "technology"].map((item) => (
                   <li key={item} className="flex items-start gap-5">
                     <div className="w-10 h-10 rounded-xl bg-primary-fixed/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <CheckCircle className="text-primary" size={20} />
+                      <CheckCircle className="text-primary" size={20} aria-hidden="true" />
                     </div>
                     <span className="font-body text-lg text-on-surface leading-relaxed">
                       {t(`serenity.items.${item}`)}

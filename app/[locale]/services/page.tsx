@@ -36,15 +36,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 const ICON_MAP: Record<string, React.ReactNode> = {
-  ShieldCheck: <ShieldCheck className="text-primary" size={32} />,
-  Sparkles:    <Sparkles    className="text-primary" size={32} />,
-  Drill:       <Drill       className="text-primary" size={32} />,
-  CircleDot:   <CircleDot   className="text-primary" size={32} />,
-  Smile:       <Smile       className="text-primary" size={32} />,
-  Stethoscope: <Stethoscope className="text-primary" size={32} />,
-  ScanLine:    <ScanLine    className="text-primary" size={32} />,
-  Sun:         <Sun         className="text-primary" size={32} />,
-  Cpu:         <Cpu         className="text-primary" size={32} />,
+  ShieldCheck: <ShieldCheck className="text-primary" size={32} aria-hidden="true" />,
+  Sparkles: <Sparkles className="text-primary" size={32} aria-hidden="true" />,
+  Drill: <Drill className="text-primary" size={32} aria-hidden="true" />,
+  CircleDot: <CircleDot className="text-primary" size={32} aria-hidden="true" />,
+  Smile: <Smile className="text-primary" size={32} aria-hidden="true" />,
+  Stethoscope: <Stethoscope className="text-primary" size={32} aria-hidden="true" />,
+  ScanLine: <ScanLine className="text-primary" size={32} aria-hidden="true" />,
+  Sun: <Sun className="text-primary" size={32} aria-hidden="true" />,
+  Cpu: <Cpu className="text-primary" size={32} aria-hidden="true" />,
 };
 
 export default async function ServicesPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -78,7 +78,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
             return (
               <Link
                 key={service.key}
-                href={`/services/${slug}`}
+                href={{ pathname: '/services/[slug]', params: { slug } }}
                 className={`group flex flex-col gap-5 rounded-[2rem] p-8 ${service.bgClass} transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-ambient-hover)]`}
               >
                 <div className="w-14 h-14 rounded-2xl bg-primary-fixed/20 flex items-center justify-center flex-shrink-0">
@@ -94,7 +94,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
                 </div>
                 <div className="flex items-center gap-2 text-primary font-body text-sm font-medium">
                   <span>{locale === 'fr' ? 'En savoir plus' : 'Learn more'}</span>
-                  <ArrowRight size={16} className="transition-transform duration-200 group-hover:translate-x-1" />
+                  <ArrowRight size={16} className="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
                 </div>
               </Link>
             );
@@ -102,23 +102,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
         </div>
       </div>
 
-      {/* ==================== CTA ==================== */}
-      <section className="py-24 sm:py-32 lg:py-40 px-6 sm:px-8 lg:px-12 bg-surface-container-low">
-        <div className="max-w-3xl mx-auto text-center space-y-10">
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl text-on-surface">
-            {t("cta.title")}
-          </h2>
-          <p className="font-body text-lg text-on-surface-variant leading-relaxed">
-            {t("cta.subtitle")}
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-primary text-on-primary font-body font-semibold text-base transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-ambient-hover)]"
-          >
-            {t("cta.button")}
-          </Link>
-        </div>
-      </section>
+
     </>
   );
 }

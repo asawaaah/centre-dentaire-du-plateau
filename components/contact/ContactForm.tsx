@@ -8,6 +8,16 @@ export function ContactForm() {
   const t = useTranslations('Contact.form');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [dateValue, setDateValue] = useState('');
+  const [dateFocused, setDateFocused] = useState(false);
+  const [phoneValue, setPhoneValue] = useState('');
+
+  const formatPhone = (value: string) => {
+    const digits = value.replace(/\D/g, '').slice(0, 10);
+    if (digits.length <= 3) return digits;
+    if (digits.length <= 6) return `${digits.slice(0, 3)} ${digits.slice(3)}`;
+    return `${digits.slice(0, 3)} ${digits.slice(3, 6)} ${digits.slice(6)}`;
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -35,6 +45,8 @@ export function ContactForm() {
       }
 
       setStatus('success');
+      setDateValue('');
+      setPhoneValue('');
       (e.target as HTMLFormElement).reset();
     } catch {
       setStatus('error');
@@ -75,7 +87,7 @@ export function ContactForm() {
             name="email"
             type="email"
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
-            title="Veuillez entrer une adresse email valide"
+            title={t('email_title')}
             required
             className="w-full px-4 py-3 rounded-lg bg-surface-container-lowest font-body text-on-surface placeholder:text-outline ghost-border focus:ghost-border-focus transition-all duration-200 outline-none"
             placeholder={t('email')}
@@ -91,8 +103,10 @@ export function ContactForm() {
             id="contact-phone"
             name="phone"
             type="tel"
-            pattern="^(\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$"
-            title="Veuillez entrer un numéro de téléphone valide (ex: 514-123-4567)"
+            value={phoneValue}
+            onChange={(e) => setPhoneValue(formatPhone(e.target.value))}
+            pattern="\d{3} \d{3} \d{4}"
+            title={t('phone_title')}
             className="w-full px-4 py-3 rounded-lg bg-surface-container-lowest font-body text-on-surface placeholder:text-outline ghost-border focus:ghost-border-focus transition-all duration-200 outline-none"
             placeholder={t('phone')}
           />
@@ -103,13 +117,26 @@ export function ContactForm() {
           <label htmlFor="contact-date" className="font-body text-sm font-medium text-on-surface">
             {t('date')}
           </label>
-          <input
-            id="contact-date"
-            name="date"
-            type="date"
-            min={new Date().toISOString().split('T')[0]}
-            className="w-full px-4 py-3 rounded-lg bg-surface-container-lowest font-body text-on-surface placeholder:text-outline [color-scheme:light] dark:[color-scheme:dark] ghost-border focus:ghost-border-focus transition-all duration-200 outline-none"
-          />
+          <div className="relative">
+            <input
+              id="contact-date"
+              name="date"
+              type="date"
+              min={new Date().toISOString().split('T')[0]}
+              value={dateValue}
+              onChange={(e) => setDateValue(e.target.value)}
+              onFocus={() => setDateFocused(true)}
+              onBlur={() => setDateFocused(false)}
+              className={`w-full px-4 py-3 rounded-lg bg-surface-container-lowest font-body [color-scheme:light] ghost-border focus:ghost-border-focus transition-all duration-200 outline-none ${
+                dateValue || dateFocused ? 'text-on-surface' : 'text-transparent'
+              }`}
+            />
+            {!dateValue && !dateFocused && (
+              <span className="absolute inset-0 flex items-center px-4 text-outline pointer-events-none font-body text-sm">
+                {t('date_placeholder')}
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Message */}
@@ -135,12 +162,12 @@ export function ContactForm() {
         >
           {isSubmitting ? (
             <>
-              <Loader2 size={18} className="animate-spin" />
+              <Loader2 size={18} className="animate-spin" aria-hidden="true" />
               <span>{t('submit')}</span>
             </>
           ) : (
             <>
-              <Send size={18} />
+              <Send size={18} aria-hidden="true" />
               <span>{t('submit')}</span>
             </>
           )}
@@ -148,12 +175,12 @@ export function ContactForm() {
 
         {/* Status Messages */}
         {status === 'success' && (
-          <div className="bg-primary-fixed/20 rounded-xl p-4 text-center">
+          <div role="alert" className="bg-primary-fixed/20 rounded-xl p-4 text-center">
             <p className="font-body text-sm text-primary font-medium">{t('success')}</p>
           </div>
         )}
         {status === 'error' && (
-          <div className="bg-error-container rounded-xl p-4 text-center">
+          <div role="alert" className="bg-error-container rounded-xl p-4 text-center">
             <p className="font-body text-sm text-error font-medium">{t('error')}</p>
           </div>
         )}

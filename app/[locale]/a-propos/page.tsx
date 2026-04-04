@@ -13,10 +13,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       ? "Rencontrez le Dr. Saul Barchichat, dentiste au Centre Dentaire du Plateau à Montréal. Membre de l'ODQ, il offre des soins complets pour patients de tous âges au Plateau Mont-Royal."
       : "Meet Dr. Saul Barchichat, dentist at Centre Dentaire du Plateau in Montreal. ODQ member providing comprehensive care for patients of all ages on Plateau Mont-Royal.",
     alternates: {
-      canonical: `https://dentisteplateau.com/${locale}/a-propos`,
+      canonical: `https://dentisteplateau.com/${locale === 'fr' ? 'fr/a-propos' : 'en/about'}`,
       languages: {
         fr: 'https://dentisteplateau.com/fr/a-propos',
-        en: 'https://dentisteplateau.com/en/a-propos',
+        en: 'https://dentisteplateau.com/en/about',
         'x-default': 'https://dentisteplateau.com/fr/a-propos',
       },
     },
@@ -29,15 +29,15 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const t = await getTranslations("About");
 
   const pillars = [
-    { key: "quality", icon: <Award className="text-primary" size={28} /> },
-    { key: "innovation", icon: <Cpu className="text-primary" size={28} /> },
-    { key: "history", icon: <History className="text-primary" size={28} /> },
+    { key: "quality", icon: <Award className="text-primary" size={28} aria-hidden="true" /> },
+    { key: "innovation", icon: <Cpu className="text-primary" size={28} aria-hidden="true" /> },
+    { key: "history", icon: <History className="text-primary" size={28} aria-hidden="true" /> },
   ];
 
   const technologies = [
-    { key: "cone_beam", icon: <ScanLine className="text-primary" size={32} /> },
-    { key: "optical", icon: <Fingerprint className="text-primary" size={32} /> },
-    { key: "laser", icon: <Zap className="text-primary" size={32} /> },
+    { key: "cone_beam", icon: <ScanLine className="text-primary" size={32} aria-hidden="true" /> },
+    { key: "optical", icon: <Fingerprint className="text-primary" size={32} aria-hidden="true" /> },
+    { key: "laser", icon: <Zap className="text-primary" size={32} aria-hidden="true" /> },
   ];
 
 
