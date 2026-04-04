@@ -31,7 +31,7 @@ export function Navbar() {
       {/* Top Bar */}
       <div className="bg-primary text-on-primary text-sm py-2 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <a href="tel:+15141234567" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <a href="tel:+15145281587" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Phone size={14} />
             <span className="font-body">{t('phone')}</span>
           </a>
@@ -59,11 +59,10 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`font-body text-sm font-medium transition-colors duration-200 hover:text-primary ${
-                    pathname === link.href
+                  className={`font-body text-sm font-medium transition-colors duration-200 hover:text-primary ${pathname === link.href
                       ? 'text-primary'
                       : 'text-on-surface-variant'
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </Link>
@@ -108,11 +107,10 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className={`block font-body text-base font-medium py-2 transition-colors ${
-                    pathname === link.href
+                  className={`block font-body text-base font-medium py-2 transition-colors ${pathname === link.href
                       ? 'text-primary'
                       : 'text-on-surface-variant'
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </Link>

@@ -64,7 +64,7 @@ export function ContactBlock() {
                   <Phone className="text-tertiary flex-shrink-0" size={18} />
                   <div>
                     <span className="font-body text-sm font-semibold text-on-surface">{t("info.emergency")}</span>
-                    <a href="tel:+15141234568" className="block font-body text-sm text-tertiary font-medium hover:underline">
+                    <a href="tel:+15145281587" className="block font-body text-sm text-tertiary font-medium hover:underline">
                       {t("info.emergency_phone")}
                     </a>
                   </div>
