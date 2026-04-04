@@ -37,9 +37,12 @@ export const metadata: Metadata = {
   },
 };
 
+export const runtime = 'edge';
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
 
 export default async function RootLayout({
   children,
