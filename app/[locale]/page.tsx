@@ -11,6 +11,7 @@ import {
   HeartPulse,
 } from "lucide-react";
 import type { Metadata } from "next";
+import { TestimonialsCarousel } from "../../components/ui/TestimonialsCarousel";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -263,6 +264,18 @@ export default async function Home({
           </div>
         </div>
       </section>
+
+
+      {/* ==================== TESTIMONIALS ==================== */}
+      <TestimonialsCarousel
+        testimonials={[
+          { quote: t("testimonials.items.0.quote"), author: t("testimonials.items.0.author") },
+          { quote: t("testimonials.items.1.quote"), author: t("testimonials.items.1.author") },
+          { quote: t("testimonials.items.2.quote"), author: t("testimonials.items.2.author") },
+        ]}
+        sectionTitle={t("testimonials.section_title")}
+        sectionSubtitle={t("testimonials.section_subtitle")}
+      />
 
 
     </>

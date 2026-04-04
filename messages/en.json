@@ -86,6 +86,24 @@
         "technology": "Cutting-edge technology for painless treatments"
       }
     },
+    "testimonials": {
+      "section_title": "What our patients say",
+      "section_subtitle": "Thousands of smiles transformed. Here are a few words from our patients.",
+      "items": [
+        {
+          "quote": "A very good dentist, professional and honest. The whole team is welcoming and friendly. I highly recommend!",
+          "author": "Marie-Anne"
+        },
+        {
+          "quote": "Dr. Barchichat is very thorough and takes the time to explain every step. You feel at ease right away.",
+          "author": "Saeed"
+        },
+        {
+          "quote": "A patient for years — the service is always impeccable. Thank you to the entire Plateau team!",
+          "author": "Simon"
+        }
+      ]
+    },
     "cta": {
       "title": "Ready to enhance your smile?",
       "subtitle": "Join our satisfied patients and benefit from a comprehensive first consultation to define your personalized treatment plan.",
@@ -459,15 +477,18 @@
       "staff_title": "Our Team",
       "grace": {
         "name": "Grace Mirasol",
-        "role": "Dental Assistant"
+        "role": "Dental Assistant",
+        "bio": "Grace accompanies every patient with special care, creating a warm atmosphere from the moment you arrive."
       },
       "cristina": {
         "name": "Dr. Cristina",
-        "role": "Dentist & Dental Hygienist"
+        "role": "Dentist & Dental Hygienist",
+        "bio": "Dr. Cristina delivers expert preventive care and professional cleanings with skill and gentleness."
       },
       "sabrina": {
         "name": "Sabrina",
-        "role": "Administration"
+        "role": "Coordination & Administration",
+        "bio": "Sabrina coordinates your appointments and answers all your administrative questions with efficiency and care."
       }
     }
   },

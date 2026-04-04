@@ -2,6 +2,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import { Award, Cpu, History, ScanLine, Fingerprint, Zap } from "lucide-react";
 import type { Metadata } from "next";
+import { TestimonialsCarousel } from "@/components/ui/TestimonialsCarousel";
+
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -27,6 +29,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("About");
+  const tHome = await getTranslations("Home");
+
 
   const pillars = [
     { key: "quality", icon: <Award className="text-primary" size={28} aria-hidden="true" /> },
@@ -218,20 +222,37 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                       {locale === "fr" ? "Photo à venir" : "Photo coming soon"}
                     </span>
                   </div>
-                  <div className="p-6 space-y-2">
-                    <h4 className="font-heading font-bold text-lg text-on-surface">
-                      {t(`team.${key}.name`)}
-                    </h4>
-                    <p className="font-body text-sm font-medium text-primary">
-                      {t(`team.${key}.role`)}
+                  <div className="p-6 space-y-3">
+                    <div>
+                      <h4 className="font-heading font-bold text-lg text-on-surface">
+                        {t(`team.${key}.name`)}
+                      </h4>
+                      <p className="font-body text-sm font-semibold text-primary mt-0.5">
+                        {t(`team.${key}.role`)}
+                      </p>
+                    </div>
+                    <p className="font-body text-sm text-on-surface-variant leading-relaxed">
+                      {t(`team.${key}.bio`)}
                     </p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
+
         </div>
       </section>
+
+      {/* ==================== TESTIMONIALS ==================== */}
+      <TestimonialsCarousel
+        testimonials={[
+          { quote: tHome("testimonials.items.0.quote"), author: tHome("testimonials.items.0.author") },
+          { quote: tHome("testimonials.items.1.quote"), author: tHome("testimonials.items.1.author") },
+          { quote: tHome("testimonials.items.2.quote"), author: tHome("testimonials.items.2.author") },
+        ]}
+        sectionTitle={tHome("testimonials.section_title")}
+        sectionSubtitle={tHome("testimonials.section_subtitle")}
+      />
     </>
   );
 }
