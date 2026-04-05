@@ -8,7 +8,7 @@ export function FaqSection() {
   const t = useTranslations('Contact.faq');
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const faqItems = ['new_patients', 'payment', 'emergency'];
+  const faqItems = ['new_patients', 'cdcp', 'payment', 'emergency', 'languages', 'insurance_direct', 'children', 'ramq'];
 
   return (
     <section className="section-spacing px-4 sm:px-6 lg:px-8 bg-surface-container-low">
@@ -51,7 +51,7 @@ export function FaqSection() {
                 role="region"
                 aria-labelledby={`faq-btn-${index}`}
                 className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  openIndex === index ? 'max-h-[32rem] opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
                 <p className="px-6 pb-6 font-body text-on-surface-variant leading-relaxed">

@@ -10,6 +10,7 @@ import {
   SERVICES,
   type ServiceKey,
 } from "../../../../lib/services";
+import { FaqSchemaOrg, BreadcrumbSchemaOrg } from "../../../../components/seo/SchemaOrg";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -91,6 +92,11 @@ export default async function ServiceDetailPage({ params }: Props) {
           </Link>
         </div>
       </section>
+
+      <BreadcrumbSchemaOrg locale={locale} serviceName={tServices(`${key}.title`)} serviceSlug={slug} />
+      {faq.length > 0 && (
+        <FaqSchemaOrg items={faq.map((item) => ({ question: item.q, answer: item.a }))} />
+      )}
 
       {/* ==================== MAIN CONTENT ==================== */}
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 sm:py-24">
