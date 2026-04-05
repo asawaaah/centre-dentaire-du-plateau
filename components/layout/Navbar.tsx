@@ -7,6 +7,8 @@ import { Link, usePathname } from '../../i18n/routing';
 import { Phone, Menu, X, Globe, Clock } from 'lucide-react';
 import { useRouter } from '../../i18n/routing';
 import { useLocale } from 'next-intl';
+import { useParams } from 'next/navigation';
+import { getServiceBySlug, getServiceSlug, type ServiceKey } from '../../lib/services';
 
 export function Navbar() {
   const t = useTranslations('Nav');
@@ -15,6 +17,8 @@ export function Navbar() {
   const router = useRouter();
   const locale = useLocale();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const params = useParams();
+  const slug = params?.slug as string | undefined;
 
   const scrollToContact = () => {
     document.getElementById('rendez-vous')?.scrollIntoView({ behavior: 'smooth' });
@@ -30,6 +34,19 @@ export function Navbar() {
 
   const switchLocale = () => {
     const newLocale = locale === 'fr' ? 'en' : 'fr';
+
+    if (slug) {
+      const service = getServiceBySlug(locale, slug);
+      if (service) {
+        const newSlug = getServiceSlug(newLocale, service.key as ServiceKey);
+        router.replace(
+          { pathname: '/services/[slug]', params: { slug: newSlug } },
+          { locale: newLocale, scroll: false }
+        );
+        return;
+      }
+    }
+
     router.replace(pathname as '/' | '/services' | '/a-propos' | '/contact', { locale: newLocale, scroll: false });
   };
 
