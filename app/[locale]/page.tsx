@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       ? "Centre Dentaire du Plateau | Expérience Sérénité à Montréal"
       : "Centre Dentaire du Plateau | Serenity Experience in Montreal",
     description: isFr
-      ? "Clinique dentaire haut de gamme au Plateau Mont-Royal. Implants dentaires, esthétique, orthodontie invisible et soins préventifs dans une atmosphère apaisante. Prenez rendez-vous."
-      : "Premium dental clinic in Plateau Mont-Royal. Dental implants, cosmetics, invisible orthodontics and preventive care in a soothing atmosphere. Book an appointment.",
+      ? "Votre dentiste de quartier au Plateau Mont-Royal. Implants dentaires, soins esthétiques, orthodontie et soins préventifs dans un cadre chaleureux et accessible. Prenez rendez-vous."
+      : "Your neighborhood dentist in Plateau Mont-Royal. Dental implants, cosmetic care, orthodontics and preventive care in a warm and welcoming setting. Book an appointment.",
     alternates: {
       canonical: `https://dentisteplateau.com/${locale}`,
       languages: {

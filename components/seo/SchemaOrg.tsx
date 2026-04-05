@@ -12,8 +12,8 @@ export function SchemaOrg({ locale }: { locale: string }) {
         logo: 'https://dentisteplateau.com/images/logo.svg',
         image: 'https://dentisteplateau.com/images/clinic/interior.png',
         description: isFr
-          ? 'Clinique dentaire haut de gamme au Plateau Mont-Royal. Implants, esthétique, orthodontie invisible et soins préventifs dans une atmosphère apaisante.'
-          : 'Premium dental clinic in Plateau Mont-Royal. Implants, cosmetics, invisible orthodontics and preventive care in a soothing atmosphere.',
+          ? 'Votre dentiste de quartier au Plateau Mont-Royal. Implants dentaires, soins esthétiques, orthodontie et soins préventifs dans un environnement chaleureux et accessible.'
+          : 'Your neighborhood dentist in Plateau Mont-Royal. Dental implants, cosmetic care, orthodontics and preventive care in a warm, welcoming environment.',
         telephone: '+1-514-528-1587',
         email: 'info@dentisteplateau.com',
         address: {
@@ -49,7 +49,7 @@ export function SchemaOrg({ locale }: { locale: string }) {
             closes: '14:00',
           },
         ],
-        priceRange: '$$$',
+        priceRange: '$$',
         currenciesAccepted: 'CAD',
         paymentAccepted: 'Cash, Credit Card, Debit Card',
         areaServed: [
