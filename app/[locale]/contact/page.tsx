@@ -55,18 +55,14 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
       {/* FAQ Schema.org for Rich Snippets */}
       <FaqSchemaOrg
         items={[
-          {
-            question: t('faq.items.new_patients.question'),
-            answer: t('faq.items.new_patients.answer'),
-          },
-          {
-            question: t('faq.items.payment.question'),
-            answer: t('faq.items.payment.answer'),
-          },
-          {
-            question: t('faq.items.emergency.question'),
-            answer: t('faq.items.emergency.answer'),
-          },
+          { question: t('faq.items.new_patients.question'), answer: t('faq.items.new_patients.answer') },
+          { question: t('faq.items.cdcp.question'), answer: t('faq.items.cdcp.answer') },
+          { question: t('faq.items.payment.question'), answer: t('faq.items.payment.answer') },
+          { question: t('faq.items.emergency.question'), answer: t('faq.items.emergency.answer') },
+          { question: t('faq.items.languages.question'), answer: t('faq.items.languages.answer') },
+          { question: t('faq.items.insurance_direct.question'), answer: t('faq.items.insurance_direct.answer') },
+          { question: t('faq.items.children.question'), answer: t('faq.items.children.answer') },
+          { question: t('faq.items.ramq.question'), answer: t('faq.items.ramq.answer') },
         ]}
       />
     </>

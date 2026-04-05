@@ -64,9 +64,10 @@
         "description": "Remplacement durable et naturel de vos racines dentaires pour une fonctionnalité retrouvée.",
         "cta": "Consulter"
       },
-      "pediatric": {
-        "title": "Odontologie Pédiatrique",
-        "description": "Une approche douce et ludique pour les premiers soins de vos enfants."
+      "surgery": {
+        "title": "Chirurgie Dentaire",
+        "description": "Extractions, greffes de gencive et pose d'implants réalisés avec précision et douceur.",
+        "cta": "En savoir plus"
       },
       "emergency": {
         "title": "Urgences",
@@ -74,7 +75,8 @@
       },
       "prevention": {
         "title": "Prévention & Hygiène",
-        "description": "Détartrage et bilans complets pour préserver votre capital santé."
+        "description": "Détartrage et bilans complets pour préserver votre capital santé.",
+        "cta": "En savoir plus"
       }
     },
     "serenity": {
@@ -103,6 +105,23 @@
           "author": "Simon"
         }
       ]
+    },
+    "programs": {
+      "section_title": "Accueil & Programmes Spéciaux",
+      "section_subtitle": "Nous nous engageons à rendre les soins dentaires accessibles à tous.",
+      "cdcp": {
+        "eyebrow": "Régime Canadien de Soins Dentaires",
+        "title": "Vous pourriez être couvert(e) !",
+        "body": "Nous sommes partenaires du Régime Canadien de Soins Dentaires (RCSD). Si votre revenu familial net est inférieur à 90 000 $/an et que vous n'avez pas d'assurance dentaire privée, vous êtes admissible — peu importe votre âge. Le programme couvre examens, nettoyages, obturations, couronnes, traitements de canal et plus encore.",
+        "cta": "En savoir plus sur canada.ca"
+      },
+      "new_arrivals": {
+        "eyebrow": "Première Visite ? Nouvel Arrivant au Canada ?",
+        "title": "Bienvenue — on s'occupe de tout !",
+        "body": "Pas d'assurance, paperasse à gérer, langue différente ? Pas d'inquiétude. Notre équipe multilingue vous accueille avec une attention particulière et prend en charge toutes les démarches administratives — assurances, RCSD, plans de traitement. Votre première visite commence par un bilan complet.",
+        "cta": "Prendre rendez-vous"
+      },
+      "cta_services": "Voir tous nos traitements"
     },
     "cta": {
       "title": "Prêt à sublimer votre sourire ?",
@@ -184,6 +203,14 @@
         {
           "q": "Est-ce que mon assurance couvre le nettoyage dentaire ?",
           "a": "La plupart des assurances dentaires couvrent 1 à 2 nettoyages par an. Nous vous aidons à maximiser vos remboursements lors de votre visite."
+        },
+        {
+          "q": "Le nettoyage dentaire est-il couvert par le RCSD ?",
+          "a": "Oui, le Régime Canadien de Soins Dentaires (RCSD) couvre les nettoyages prophylactiques et les bilans parodontaux pour les bénéficiaires admissibles. Nous soumettons la demande directement lors de votre visite."
+        },
+        {
+          "q": "Comment savoir si j'ai une maladie des gencives ?",
+          "a": "Les signes les plus fréquents sont des gencives qui saignent au brossage, une mauvaise haleine persistante, des gencives rouges ou gonflées, et des dents qui semblent « s'allonger » (récession gingivale). Si vous présentez l'un de ces symptômes, consultez-nous rapidement — la maladie parodontale se traite bien lorsqu'elle est détectée tôt."
         }
       ]
     },
@@ -213,6 +240,14 @@
         {
           "q": "Combien de rendez-vous sont nécessaires pour des facettes ?",
           "a": "En général, 2 à 3 rendez-vous : consultation et planification numérique, préparation et prise d'empreinte optique, puis pose finale."
+        },
+        {
+          "q": "Les facettes en porcelaine sont-elles couvertes par les assurances ?",
+          "a": "Les facettes à visée purement esthétique ne sont généralement pas remboursées par les assurances. Certaines couvertures peuvent s'appliquer si la facette remplace une dent fracturée ou endommagée. Nous vous aidons à vérifier votre couverture lors de la consultation."
+        },
+        {
+          "q": "Peut-on blanchir des facettes en porcelaine ?",
+          "a": "Non, les facettes en céramique ne réagissent pas aux agents blanchissants. Si vous souhaitez un sourire plus blanc, le blanchiment doit être réalisé avant la pose des facettes, afin d'harmoniser la teinte de l'ensemble."
         }
       ]
     },
@@ -242,6 +277,14 @@
         {
           "q": "Combien de temps dure un traitement de canal ?",
           "a": "La plupart des traitements se font en 1 à 2 séances. Les cas complexes (canaux courbés, retreatment) peuvent nécessiter 3 séances."
+        },
+        {
+          "q": "Puis-je conduire ou reprendre le travail après un traitement de canal ?",
+          "a": "Oui. Le traitement est réalisé sous anesthésie locale ; une fois l'effet dissipé (2 à 3 heures), vous pouvez conduire et reprendre vos activités normales. Nous recommandons d'éviter les aliments durs le jour même."
+        },
+        {
+          "q": "Que faire si ma dent fait encore mal après le traitement de canal ?",
+          "a": "Une légère sensibilité dans les jours suivant le traitement est normale. Si la douleur persiste au-delà d'une semaine ou s'intensifie, contactez-nous — il peut s'agir d'une inflammation résiduelle ou d'un canal supplémentaire non traité. Un suivi rapide permet de résoudre le problème sans difficulté."
         }
       ]
     },
@@ -271,6 +314,14 @@
         {
           "q": "Combien de temps dure un implant dentaire ?",
           "a": "Avec un entretien approprié (brossage, soie, suivi annuel), un implant peut durer 20 à 30 ans, souvent toute une vie."
+        },
+        {
+          "q": "Combien coûte un implant dentaire à Montréal ?",
+          "a": "Le coût d'un implant varie selon le cas clinique, mais comptez en général entre 2 500 $ et 4 500 $ pour l'implant et la couronne. Une consultation avec bilan radiologique 3D est nécessaire pour établir un devis précis. Nous vous aidons également à vérifier si votre assurance ou le RCSD peut couvrir une partie des frais."
+        },
+        {
+          "q": "Les implants dentaires sont-ils couverts par le RCSD ?",
+          "a": "Le RCSD couvre certains actes chirurgicaux liés aux implants selon votre niveau de couverture et votre situation clinique. Lors de votre consultation, nous vérifions votre admissibilité et soumettons la demande en votre nom."
         }
       ]
     },
@@ -300,6 +351,14 @@
         {
           "q": "Combien coûte Invisalign ?",
           "a": "Le coût varie selon la complexité du cas (de 3 500 $ à 7 000 $ environ). Nous offrons une consultation initiale pour évaluer votre cas et vous donner un devis précis."
+        },
+        {
+          "q": "Les assurances couvrent-elles Invisalign ?",
+          "a": "Certaines assurances dentaires incluent une couverture partielle pour l'orthodontie (bagues ou Invisalign), souvent entre 1 000 $ et 2 500 $ de remboursement à vie. Nous vous aidons à maximiser vos prestations lors de la consultation."
+        },
+        {
+          "q": "Faut-il porter des contentions après un traitement Invisalign ?",
+          "a": "Oui, les contentions (retainers) sont indispensables pour maintenir le résultat. Nous les fabriquons sur mesure à la fin du traitement. Portées la nuit, elles préservent l'alignement de vos dents à long terme."
         }
       ]
     },
@@ -329,6 +388,14 @@
         {
           "q": "Combien de temps dure la convalescence après une chirurgie ?",
           "a": "Pour une extraction simple, 24-48h. Pour une greffe de gencive ou la pose d'un implant, comptez 3 à 7 jours avant de reprendre une activité normale."
+        },
+        {
+          "q": "Puis-je manger normalement après une extraction dentaire ?",
+          "a": "Évitez les aliments durs, chauds et les pailles les 24 premières heures pour protéger le caillot. Privilégiez les aliments mous (soupes, yaourts, purées). Vous pouvez généralement reprendre une alimentation normale après 48 à 72 heures."
+        },
+        {
+          "q": "La greffe de gencive est-elle douloureuse ?",
+          "a": "L'intervention est réalisée sous anesthésie locale et n'est pas douloureuse pendant la chirurgie. Des inconforts post-opératoires légers à modérés (sensibilité au palais, légère enflure) sont courants les 3 à 5 premiers jours et se gèrent avec des analgésiques standards."
         }
       ]
     },
@@ -358,6 +425,14 @@
         {
           "q": "Qu'est-ce qu'un cone beam 3D ?",
           "a": "C'est un scanner dentaire qui produit une reconstruction 3D complète de vos mâchoires et de vos dents. Indispensable pour planifier avec précision la pose d'implants ou évaluer des cas complexes."
+        },
+        {
+          "q": "La radiologie dentaire est-elle couverte par les assurances ?",
+          "a": "Oui, les radiographies de diagnostic (bitewing, panoramique) sont généralement couvertes par les assurances dentaires à raison d'une fréquence définie (ex : bitewing tous les 1-2 ans). Nous soumettons votre demande directement à votre assureur."
+        },
+        {
+          "q": "Les femmes enceintes peuvent-elles passer des radiographies dentaires ?",
+          "a": "Avec notre technologie numérique, la dose de radiation est extrêmement faible. En cas de nécessité clinique (douleur, infection), les radiographies peuvent être réalisées avec un tablier de plomb. Nous recommandons toutefois de reporter les radios de routine au second trimestre ou après l'accouchement."
         }
       ]
     },
@@ -387,6 +462,14 @@
         {
           "q": "Le blanchiment fonctionne-t-il sur les couronnes et facettes ?",
           "a": "Non, les restaurations en céramique ou en composite ne réagissent pas aux agents blanchissants. Nous planifions le traitement pour harmoniser la teinte de l'ensemble du sourire."
+        },
+        {
+          "q": "Le blanchiment dentaire professionnel est-il remboursé par les assurances ?",
+          "a": "Non, le blanchiment dentaire est considéré comme un soin esthétique et n'est pas couvert par les assurances dentaires standard. Cependant, le rapport qualité-résultat d'un blanchiment professionnel est nettement supérieur aux kits vendus en pharmacie, pour un prix souvent comparable."
+        },
+        {
+          "q": "À quel âge peut-on commencer le blanchiment dentaire ?",
+          "a": "Nous recommandons d'attendre que les dents adultes soient entièrement sorties, généralement à partir de 16-18 ans. Avant cet âge, l'émail est encore en développement et le blanchiment n'est pas conseillé."
         }
       ]
     },
@@ -416,6 +499,14 @@
         {
           "q": "Ces technologies augmentent-elles le coût des soins ?",
           "a": "Certaines technologies impliquent un coût légèrement plus élevé (ex: empreinte numérique vs conventionnelle), mais elles réduisent souvent le nombre de rendez-vous nécessaires et améliorent la précision, ce qui évite des reprises coûteuses."
+        },
+        {
+          "q": "L'empreinte numérique (scanner Trios) est-elle plus précise qu'une empreinte classique ?",
+          "a": "Oui — les empreintes numériques ont une précision au dixième de millimètre, éliminent les distorsions des pâtes à empreinte et sont transmises instantanément au laboratoire. Résultat : des couronnes, facettes et gouttières mieux ajustées et moins de rendez-vous d'ajustement."
+        },
+        {
+          "q": "Qu'est-ce que le Digital Smile Design (DSD) ?",
+          "a": "C'est un logiciel de planification qui simule votre sourire final sur écran avant tout traitement. Il vous permet de visualiser le résultat attendu pour des facettes, des implants ou un traitement orthodontique, et nous aide à concevoir un sourire harmonieux en accord avec votre visage et vos préférences."
         }
       ]
     }
@@ -495,7 +586,7 @@
   "Contact": {
     "hero": {
       "title": "Contactez-nous",
-      "subtitle": "Notre équipe est à votre disposition pour toute question concernant vos soins ou pour planifier une première consultation dans notre centre du Plateau."
+      "subtitle": "Notre équipe est à votre disposition pour toute question ou pour planifier votre première consultation. Nous sommes partenaires du Régime Canadien de Soins Dentaires (RCSD)."
     },
     "block": {
       "title": "Prenez Rendez-vous",
@@ -547,8 +638,12 @@
       "subtitle": "Tout ce que vous devez savoir avant votre visite.",
       "items": {
         "new_patients": {
-          "question": "Acceptez-vous les nouveaux patients ?",
-          "answer": "Oui, nous accueillons avec plaisir les nouveaux patients. Une première consultation de bilan sera nécessaire pour établir votre dossier médical complet."
+          "question": "Première visite ou nouvel arrivant au Canada ?",
+          "answer": "Nous accueillons chaleureusement les nouveaux patients et les personnes arrivées récemment au Canada. Lors de votre première visite, nous réalisons un bilan bucco-dentaire complet (examen clinique + radiographies) pour établir votre plan de traitement personnalisé. Notre équipe multilingue vous accompagne dans toutes les démarches administratives : inscription à une assurance, utilisation du Régime Canadien de Soins Dentaires (RCSD), et compréhension de votre couverture. Vous n'avez rien à préparer — on s'occupe de tout."
+        },
+        "cdcp": {
+          "question": "Acceptez-vous le Régime Canadien de Soins Dentaires (RCSD) ?",
+          "answer": "Oui, nous sommes partenaires du RCSD. Ce programme fédéral est ouvert à tous les résidents canadiens sans assurance dentaire privée dont le revenu familial net est inférieur à 90 000 $/an. Il couvre une vaste gamme de soins : examens, nettoyages, obturations, couronnes, traitements de canal, extractions et plus. Pour en bénéficier, inscrivez-vous sur canada.ca, puis présentez votre carte de membre lors de votre rendez-vous — nous soumettons la demande directement. La couverture se renouvelle chaque année après votre déclaration de revenus."
         },
         "payment": {
           "question": "Quels sont vos modes de paiement ?",
@@ -557,6 +652,22 @@
         "emergency": {
           "question": "Comment gérer une urgence le week-end ?",
           "answer": "Le dimanche, nous sommes ouverts de 10h à 14h pour les soins urgents. En dehors de ces horaires, veuillez contacter le service de garde."
+        },
+        "languages": {
+          "question": "Parlez-vous d'autres langues ?",
+          "answer": "Oui, notre équipe communique en français, en anglais et en tagalog. Nous nous assurons que chaque patient comprend parfaitement son plan de traitement, peu importe la langue."
+        },
+        "insurance_direct": {
+          "question": "Pouvez-vous facturer directement mon assurance ?",
+          "answer": "Oui, nous pratiquons le tiers-payant avec la majorité des assureurs privés. Apportez votre carte d'assurance lors de votre rendez-vous et nous nous occupons de la soumission directement — vous ne payez que la portion non couverte."
+        },
+        "children": {
+          "question": "Acceptez-vous les enfants ?",
+          "answer": "Absolument, nous traitons les patients de tous âges, des tout-petits aux aînés. Nos dentistes sont habitués à mettre les enfants à l'aise et à leur expliquer les soins de façon ludique pour créer de bonnes habitudes dès le jeune âge."
+        },
+        "ramq": {
+          "question": "La RAMQ couvre-t-elle les soins dentaires ?",
+          "answer": "La RAMQ couvre les soins dentaires de base pour les enfants de moins de 10 ans (examens, nettoyages, obturations, extractions). Pour les adultes, la RAMQ ne couvre généralement pas les soins dentaires, sauf de rares exceptions comme certaines chirurgies buccales en milieu hospitalier. Si vous n'avez pas d'assurance privée, le Régime Canadien de Soins Dentaires (RCSD) fédéral peut prendre en charge une grande partie des frais — nous sommes partenaires du programme."
         }
       }
     }

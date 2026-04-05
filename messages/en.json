@@ -64,9 +64,10 @@
         "description": "Durable and natural replacement of your dental roots for restored functionality.",
         "cta": "Learn more"
       },
-      "pediatric": {
-        "title": "Pediatric Dentistry",
-        "description": "A gentle and playful approach for your children's first dental care."
+      "surgery": {
+        "title": "Oral Surgery",
+        "description": "Extractions, gum grafts, and implant placement performed with precision and care.",
+        "cta": "Learn more"
       },
       "emergency": {
         "title": "Emergency Care",
@@ -74,7 +75,8 @@
       },
       "prevention": {
         "title": "Prevention & Hygiene",
-        "description": "Scaling and comprehensive check-ups to preserve your oral health."
+        "description": "Scaling and comprehensive check-ups to preserve your oral health.",
+        "cta": "Learn more"
       }
     },
     "serenity": {
@@ -103,6 +105,23 @@
           "author": "Simon"
         }
       ]
+    },
+    "programs": {
+      "section_title": "Special Welcome & Programs",
+      "section_subtitle": "We are committed to making dental care accessible to everyone.",
+      "cdcp": {
+        "eyebrow": "Canadian Dental Care Plan",
+        "title": "You may be covered!",
+        "body": "We are a partner of the Canadian Dental Care Plan (CDCP). If your family net income is under $90,000/year and you have no private dental insurance, you may be eligible — regardless of your age. The plan covers exams, cleanings, fillings, crowns, root canals, and more.",
+        "cta": "Learn more at canada.ca"
+      },
+      "new_arrivals": {
+        "eyebrow": "First Visit? New to Canada?",
+        "title": "Welcome — we take care of everything!",
+        "body": "No insurance, paperwork to sort out, or language barrier? No worries. Our multilingual team welcomes you with extra care and handles all administrative tasks — insurance, CDCP, treatment plans. Your first visit starts with a complete check-up to assess your needs.",
+        "cta": "Book an appointment"
+      },
+      "cta_services": "See all our treatments"
     },
     "cta": {
       "title": "Ready to enhance your smile?",
@@ -184,6 +203,14 @@
         {
           "q": "Does my insurance cover dental cleanings?",
           "a": "Most dental insurance plans cover 1 to 2 cleanings per year. We help you maximize your coverage at every visit."
+        },
+        {
+          "q": "Are dental cleanings covered by the CDCP?",
+          "a": "Yes, the Canadian Dental Care Plan (CDCP) covers prophylactic cleanings and periodontal assessments for eligible beneficiaries. We submit the claim directly at your visit."
+        },
+        {
+          "q": "How do I know if I have gum disease?",
+          "a": "The most common signs are gums that bleed when you brush, persistent bad breath, red or swollen gums, and teeth that appear to be 'getting longer' (gum recession). If you notice any of these, book an appointment soon — periodontal disease responds well to treatment when caught early."
         }
       ]
     },
@@ -213,6 +240,14 @@
         {
           "q": "How many appointments are needed for veneers?",
           "a": "Generally 2 to 3 visits: consultation and digital planning, preparation and digital impression, then final placement."
+        },
+        {
+          "q": "Are porcelain veneers covered by dental insurance?",
+          "a": "Purely cosmetic veneers are generally not covered by insurance. However, if a veneer is replacing a fractured or damaged tooth, partial coverage may apply. We help you check your benefits at the consultation."
+        },
+        {
+          "q": "Can you whiten porcelain veneers?",
+          "a": "No — ceramic restorations do not respond to whitening agents. If you want a brighter smile, teeth whitening should be done before veneers are placed so the shade of the entire smile can be matched."
         }
       ]
     },
@@ -242,6 +277,14 @@
         {
           "q": "How long does root canal treatment take?",
           "a": "Most treatments are completed in 1 to 2 appointments. Complex cases (curved canals, retreatment) may require 3 sessions."
+        },
+        {
+          "q": "Can I drive or go back to work after a root canal?",
+          "a": "Yes. The treatment is done under local anesthesia; once it wears off (2 to 3 hours), you can drive and resume normal activities. We recommend avoiding hard foods for the rest of the day."
+        },
+        {
+          "q": "What if my tooth still hurts after the root canal?",
+          "a": "Mild sensitivity for a few days after treatment is normal. If the discomfort persists beyond a week or intensifies, contact us — it may be residual inflammation or an additional canal that needs attention. A quick follow-up visit resolves it."
         }
       ]
     },
@@ -271,6 +314,14 @@
         {
           "q": "How long does a dental implant last?",
           "a": "With proper maintenance (brushing, flossing, annual check-ups), an implant can last 20 to 30 years — often a lifetime."
+        },
+        {
+          "q": "How much does a dental implant cost in Montreal?",
+          "a": "The cost of an implant varies by clinical situation, but typically ranges from $2,500 to $4,500 for the implant and crown combined. A consultation with a 3D radiographic assessment is needed for a precise quote. We also help you determine whether your insurance or the CDCP can cover part of the cost."
+        },
+        {
+          "q": "Are dental implants covered by the CDCP?",
+          "a": "The CDCP covers certain surgical acts related to implants depending on your coverage tier and clinical situation. At your consultation, we verify your eligibility and submit the claim on your behalf."
         }
       ]
     },
@@ -300,6 +351,14 @@
         {
           "q": "How much does Invisalign cost?",
           "a": "Costs vary by case complexity (approximately $3,500 to $7,000). We offer an initial consultation to assess your case and provide an accurate quote."
+        },
+        {
+          "q": "Does insurance cover Invisalign?",
+          "a": "Some dental insurance plans include partial orthodontic coverage (braces or Invisalign), often between $1,000 and $2,500 lifetime maximum. We help you maximize your benefits at the consultation."
+        },
+        {
+          "q": "Do I need retainers after Invisalign?",
+          "a": "Yes — retainers are essential to maintain your results. We custom-fabricate them at the end of your treatment. Worn at night, they keep your teeth in their new position long-term."
         }
       ]
     },
@@ -329,6 +388,14 @@
         {
           "q": "How long is recovery after oral surgery?",
           "a": "For a simple extraction, 24–48 hours. For a gum graft or implant placement, expect 3 to 7 days before returning to normal activity."
+        },
+        {
+          "q": "Can I eat normally after a tooth extraction?",
+          "a": "Avoid hard, hot foods and straws for the first 24 hours to protect the blood clot. Stick to soft foods (soups, yogurt, mashed potatoes). You can generally resume normal eating after 48 to 72 hours."
+        },
+        {
+          "q": "Is a gum graft painful?",
+          "a": "The procedure is performed under local anesthesia and is not painful during surgery. Mild to moderate post-operative discomfort (palate tenderness, slight swelling) is common for 3 to 5 days and is managed with standard pain relievers."
         }
       ]
     },
@@ -358,6 +425,14 @@
         {
           "q": "What is a cone beam CT scan?",
           "a": "It is a dental scanner that produces a full 3D reconstruction of your jaws and teeth. Essential for precisely planning implant placement or evaluating complex cases."
+        },
+        {
+          "q": "Are dental X-rays covered by insurance?",
+          "a": "Yes — diagnostic X-rays (bitewings, panoramic) are generally covered by dental insurance plans at defined intervals (e.g., bitewings every 1–2 years). We submit the claim directly to your insurer."
+        },
+        {
+          "q": "Can pregnant women have dental X-rays?",
+          "a": "With our digital technology, the radiation dose is extremely low. When clinically necessary (pain, infection), X-rays can be taken with a lead apron for protection. We recommend postponing routine X-rays to the second trimester or after delivery whenever possible."
         }
       ]
     },
@@ -387,6 +462,14 @@
         {
           "q": "Does whitening work on crowns and veneers?",
           "a": "No — ceramic and composite restorations do not respond to whitening agents. We plan the treatment to harmonize the overall shade of your smile."
+        },
+        {
+          "q": "Is professional teeth whitening covered by insurance?",
+          "a": "No — teeth whitening is considered a cosmetic procedure and is not covered by standard dental insurance. That said, the results of a professional whitening are significantly superior to over-the-counter kits, often at a comparable price point."
+        },
+        {
+          "q": "At what age can you start teeth whitening?",
+          "a": "We recommend waiting until all adult teeth have fully erupted, generally from age 16 to 18. Before that age, enamel is still developing and whitening is not advisable."
         }
       ]
     },
@@ -416,6 +499,14 @@
         {
           "q": "Do these technologies increase the cost of care?",
           "a": "Some technologies carry a slightly higher cost (e.g. digital vs conventional impression), but they often reduce the number of appointments needed and improve precision, which avoids costly remakes."
+        },
+        {
+          "q": "Is a digital impression (Trios scanner) more accurate than a traditional one?",
+          "a": "Yes — digital impressions have sub-millimetre accuracy, eliminate distortions from impression paste, and are transmitted instantly to the lab. This means better-fitting crowns, veneers and aligners, and fewer adjustment appointments."
+        },
+        {
+          "q": "What is Digital Smile Design (DSD)?",
+          "a": "Digital Smile Design is a planning software that simulates your final smile on screen before any treatment begins. It lets you visualize the expected result for veneers, implants or orthodontic work, and helps us design a smile that fits your face and preferences."
         }
       ]
     }
@@ -495,7 +586,7 @@
   "Contact": {
     "hero": {
       "title": "Contact Us",
-      "subtitle": "Our team is at your disposal for any questions about your care or to schedule a first consultation at our Plateau center."
+      "subtitle": "Our team is here for any questions or to schedule your first consultation. We are a partner of the Canadian Dental Care Plan (CDCP)."
     },
     "block": {
       "title": "Book an Appointment",
@@ -547,8 +638,12 @@
       "subtitle": "Everything you need to know before your visit.",
       "items": {
         "new_patients": {
-          "question": "Do you accept new patients?",
-          "answer": "Yes, we welcome new patients with pleasure. A first check-up consultation will be necessary to establish your complete medical file."
+          "question": "First visit or new to Canada?",
+          "answer": "We warmly welcome new patients and people who have recently arrived in Canada. During your first visit, we perform a complete oral health assessment (clinical exam + X-rays) to establish your personalized treatment plan. Our multilingual team guides you through all administrative steps: enrolling in insurance, using the Canadian Dental Care Plan (CDCP), and understanding your coverage. You don't need to prepare anything — we take care of everything."
+        },
+        "cdcp": {
+          "question": "Do you accept the Canadian Dental Care Plan (CDCP)?",
+          "answer": "Yes, we are a CDCP partner. This federal program is open to all Canadian residents without private dental insurance whose family net income is under $90,000/year. It covers a wide range of services: exams, cleanings, fillings, crowns, root canals, extractions and more. To benefit, register at canada.ca, then present your membership card at your appointment — we submit the claim directly. Coverage renews annually after you file your income tax return."
         },
         "payment": {
           "question": "What are your payment methods?",
@@ -557,6 +652,22 @@
         "emergency": {
           "question": "How to handle a weekend emergency?",
           "answer": "On Sundays, we are open from 10am to 2pm for urgent care. Outside these hours, please contact the on-call service."
+        },
+        "languages": {
+          "question": "Do you speak other languages?",
+          "answer": "Yes, our team communicates in French, English, and Tagalog. We make sure every patient fully understands their treatment plan, regardless of language."
+        },
+        "insurance_direct": {
+          "question": "Can you bill my insurance directly?",
+          "answer": "Yes, we offer direct billing with most private insurance providers. Just bring your insurance card to your appointment and we handle the submission — you only pay the portion not covered by your plan."
+        },
+        "children": {
+          "question": "Do you accept children?",
+          "answer": "Absolutely — we treat patients of all ages, from toddlers to seniors. Our dentists are experienced in making children feel comfortable and explaining procedures in a fun, engaging way to build healthy habits from an early age."
+        },
+        "ramq": {
+          "question": "Does the RAMQ cover dental care?",
+          "answer": "The RAMQ covers basic dental care for children under 10 (exams, cleanings, fillings, extractions). For adults, the RAMQ generally does not cover dental care, except in rare cases such as certain oral surgeries performed in a hospital setting. If you have no private insurance, the federal Canadian Dental Care Plan (CDCP) may cover a large portion of your costs — we are a registered CDCP provider."
         }
       }
     }

@@ -6,9 +6,10 @@ import {
   ArrowRight,
   Sparkles,
   Shield,
-  Baby,
+  Stethoscope,
   Zap,
   HeartPulse,
+  Asterisk,
 } from "lucide-react";
 import type { Metadata } from "next";
 import { TestimonialsCarousel } from "../../components/ui/TestimonialsCarousel";
@@ -134,62 +135,62 @@ export default async function Home({
 
           {/* Main Services Grid — 2 large cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
-            {/* Aesthetic Card */}
+            {/* Surgery Card */}
             <div className="bg-surface-container-lowest rounded-[2rem] p-10 sm:p-12 space-y-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-ambient-hover)]">
               <div className="w-16 h-16 rounded-2xl bg-primary-fixed/20 flex items-center justify-center">
-                <Sparkles className="text-primary" size={32} aria-hidden="true" />
+                <Stethoscope className="text-primary" size={32} aria-hidden="true" />
               </div>
               <div className="space-y-4">
                 <h3 className="font-heading font-bold text-2xl text-on-surface">
-                  {t("services.aesthetic.title")}
+                  {t("services.surgery.title")}
                 </h3>
                 <p className="font-body text-on-surface-variant leading-relaxed text-[1.05rem]">
-                  {t("services.aesthetic.description")}
+                  {t("services.surgery.description")}
                 </p>
               </div>
               <Link
                 href="/services"
                 className="inline-flex items-center gap-2.5 font-body font-semibold text-primary hover:gap-4 transition-all duration-300 pt-2"
               >
-                {t("services.aesthetic.cta")}
+                {t("services.surgery.cta")}
                 <ArrowRight size={18} aria-hidden="true" />
               </Link>
             </div>
 
-            {/* Implants Card */}
+            {/* Prevention Card */}
             <div className="bg-surface-container-lowest rounded-[2rem] p-10 sm:p-12 space-y-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-ambient-hover)]">
               <div className="w-16 h-16 rounded-2xl bg-primary-fixed/20 flex items-center justify-center">
-                <Shield className="text-primary" size={32} aria-hidden="true" />
+                <HeartPulse className="text-primary" size={32} aria-hidden="true" />
               </div>
               <div className="space-y-4">
                 <h3 className="font-heading font-bold text-2xl text-on-surface">
-                  {t("services.implants.title")}
+                  {t("services.prevention.title")}
                 </h3>
                 <p className="font-body text-on-surface-variant leading-relaxed text-[1.05rem]">
-                  {t("services.implants.description")}
+                  {t("services.prevention.description")}
                 </p>
               </div>
               <Link
                 href="/services"
                 className="inline-flex items-center gap-2.5 font-body font-semibold text-primary hover:gap-4 transition-all duration-300 pt-2"
               >
-                {t("services.implants.cta")}
+                {t("services.prevention.cta")}
                 <ArrowRight size={18} aria-hidden="true" />
               </Link>
             </div>
           </div>
 
           {/* Secondary Services Grid — 3 smaller cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12">
             <div className="bg-surface-container-low rounded-[1.5rem] p-8 space-y-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-ambient)]">
               <div className="w-12 h-12 rounded-xl bg-primary-fixed/20 flex items-center justify-center">
-                <Baby className="text-primary" size={24} aria-hidden="true" />
+                <Sparkles className="text-primary" size={24} aria-hidden="true" />
               </div>
               <h4 className="font-heading font-semibold text-xl text-on-surface">
-                {t("services.pediatric.title")}
+                {t("services.aesthetic.title")}
               </h4>
               <p className="font-body text-on-surface-variant leading-relaxed">
-                {t("services.pediatric.description")}
+                {t("services.aesthetic.description")}
               </p>
             </div>
             <div className="bg-surface-container-low rounded-[1.5rem] p-8 space-y-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-ambient)]">
@@ -205,14 +206,82 @@ export default async function Home({
             </div>
             <div className="bg-surface-container-low rounded-[1.5rem] p-8 space-y-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-ambient)]">
               <div className="w-12 h-12 rounded-xl bg-primary-fixed/20 flex items-center justify-center">
-                <HeartPulse className="text-primary" size={24} aria-hidden="true" />
+                <Shield className="text-primary" size={24} aria-hidden="true" />
               </div>
               <h4 className="font-heading font-semibold text-xl text-on-surface">
-                {t("services.prevention.title")}
+                {t("services.implants.title")}
               </h4>
               <p className="font-body text-on-surface-variant leading-relaxed">
-                {t("services.prevention.description")}
+                {t("services.implants.description")}
               </p>
+            </div>
+          </div>
+
+          {/* CTA — Voir tous les traitements */}
+          <div className="text-center">
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-primary text-on-primary font-body font-semibold text-base transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-ambient-hover)]"
+            >
+              {t("programs.cta_services")} <ArrowRight size={18} aria-hidden="true" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== PROGRAMMES SPÉCIAUX ==================== */}
+      <section className="py-20 sm:py-28 px-6 sm:px-8 lg:px-12 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl text-primary mb-4">
+              {t("programs.section_title")}
+            </h2>
+            <p className="font-body text-lg text-on-surface-variant leading-relaxed">
+              {t("programs.section_subtitle")}
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            {/* RCSD Card */}
+            <div className="bg-surface-container-lowest rounded-[2rem] p-10 space-y-5 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-ambient-hover)]">
+              <Asterisk className="text-primary mx-auto" size={40} aria-hidden="true" />
+              <p className="font-body text-xs tracking-widest text-primary uppercase font-semibold">
+                {t("programs.cdcp.eyebrow")}
+              </p>
+              <h3 className="font-heading font-bold text-2xl text-on-surface">
+                {t("programs.cdcp.title")}
+              </h3>
+              <div className="w-10 h-0.5 bg-primary mx-auto" />
+              <p className="font-body text-on-surface-variant leading-relaxed text-sm">
+                {t("programs.cdcp.body")}
+              </p>
+              <a
+                href="https://www.canada.ca/fr/services/prestations/dentaire/regime-soins-dentaires.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-body font-semibold text-primary text-sm hover:gap-3 transition-all duration-300"
+              >
+                {t("programs.cdcp.cta")} <ArrowRight size={16} aria-hidden="true" />
+              </a>
+            </div>
+            {/* Première Visite Card */}
+            <div className="bg-surface-container-lowest rounded-[2rem] p-10 space-y-5 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-ambient-hover)]">
+              <Asterisk className="text-primary mx-auto" size={40} aria-hidden="true" />
+              <p className="font-body text-xs tracking-widest text-primary uppercase font-semibold">
+                {t("programs.new_arrivals.eyebrow")}
+              </p>
+              <h3 className="font-heading font-bold text-2xl text-on-surface">
+                {t("programs.new_arrivals.title")}
+              </h3>
+              <div className="w-10 h-0.5 bg-primary mx-auto" />
+              <p className="font-body text-on-surface-variant leading-relaxed text-sm">
+                {t("programs.new_arrivals.body")}
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 font-body font-semibold text-primary text-sm hover:gap-3 transition-all duration-300"
+              >
+                {t("programs.new_arrivals.cta")} <ArrowRight size={16} aria-hidden="true" />
+              </Link>
             </div>
           </div>
         </div>

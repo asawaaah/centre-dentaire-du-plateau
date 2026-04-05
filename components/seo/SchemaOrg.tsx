@@ -52,10 +52,16 @@ export function SchemaOrg({ locale }: { locale: string }) {
         priceRange: '$$$',
         currenciesAccepted: 'CAD',
         paymentAccepted: 'Cash, Credit Card, Debit Card',
-        areaServed: {
-          '@type': 'City',
-          name: 'Montréal',
-        },
+        areaServed: [
+          { '@type': 'City', name: 'Montréal' },
+          { '@type': 'Neighborhood', name: 'Plateau Mont-Royal' },
+          { '@type': 'Neighborhood', name: 'Rosemont' },
+          { '@type': 'Neighborhood', name: 'Mile-End' },
+          { '@type': 'Neighborhood', name: 'Outremont' },
+          { '@type': 'Neighborhood', name: 'Villeray' },
+        ],
+        medicalSpecialty: 'Dentistry',
+        hasMap: 'https://maps.google.com/?q=1357+Avenue+du+Mont-Royal+Est+Montreal',
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
           name: isFr ? 'Traitements Dentaires' : 'Dental Treatments',
@@ -123,6 +129,33 @@ export function SchemaOrg({ locale }: { locale: string }) {
     ],
   };
 
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function BreadcrumbSchemaOrg({
+  locale,
+  serviceName,
+  serviceSlug,
+}: {
+  locale: string;
+  serviceName: string;
+  serviceSlug: string;
+}) {
+  const base = 'https://dentisteplateau.com';
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: locale === 'fr' ? 'Accueil' : 'Home', item: `${base}/${locale}` },
+      { '@type': 'ListItem', position: 2, name: locale === 'fr' ? 'Traitements' : 'Treatments', item: `${base}/${locale}/services` },
+      { '@type': 'ListItem', position: 3, name: serviceName, item: `${base}/${locale}/services/${serviceSlug}` },
+    ],
+  };
   return (
     <script
       type="application/ld+json"
