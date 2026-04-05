@@ -33,7 +33,7 @@ export async function generateMetadata({
       template: "%s | Centre Dentaire du Plateau",
     },
     description:
-      "Clinique dentaire haut de gamme au Plateau Mont-Royal. Implants, esthétique, orthodontie invisible et soins préventifs dans une atmosphère apaisante.",
+      "Votre dentiste de quartier au Plateau Mont-Royal. Implants dentaires, soins esthétiques, orthodontie et soins préventifs dans un environnement chaleureux et accessible.",
     metadataBase: new URL("https://dentisteplateau.com"),
     openGraph: {
       type: "website",
