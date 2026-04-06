@@ -255,7 +255,11 @@ export default async function Home({
                 {t("programs.cdcp.body")}
               </p>
               <a
-                href="https://www.canada.ca/fr/services/prestations/dentaire/regime-soins-dentaires.html"
+                href={
+                  locale === 'fr'
+                    ? "https://www.canada.ca/fr/services/prestations/dentaire/regime-soins-dentaires.html"
+                    : "https://www.canada.ca/en/services/benefits/dental/dental-care-plan.html"
+                }
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 font-body font-semibold text-primary text-sm hover:gap-3 transition-all duration-300"
