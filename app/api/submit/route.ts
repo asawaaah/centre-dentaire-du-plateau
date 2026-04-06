@@ -24,8 +24,8 @@ export async function POST(request: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'Centre Dentaire du Plateau <onboarding@resend.dev>',
-      to: ['asawauno@gmail.com'],
+      from: 'Centre Dentaire du Plateau <ne-pas-repondre@dentisteplateau.com>',
+      to: ['asawauno@gmail.com', 'info@dentisteplateau.com'],
       replyTo: email,
       subject: `Nouveau message de contact: ${name}`,
       html: `
