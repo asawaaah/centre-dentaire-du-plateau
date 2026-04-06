@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Send, Loader2 } from 'lucide-react';
+import { gtmEvent } from '../../lib/gtm';
 
 export function ContactForm() {
   const t = useTranslations('Contact.form');
@@ -45,6 +46,7 @@ export function ContactForm() {
       }
 
       setStatus('success');
+      gtmEvent('Contact_RDV');
       setDateValue('');
       setPhoneValue('');
       (e.target as HTMLFormElement).reset();

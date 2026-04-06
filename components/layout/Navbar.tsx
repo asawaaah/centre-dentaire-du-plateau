@@ -9,6 +9,7 @@ import { useRouter } from '../../i18n/routing';
 import { useLocale } from 'next-intl';
 import { useParams } from 'next/navigation';
 import { getServiceBySlug, getServiceSlug, type ServiceKey } from '../../lib/services';
+import { gtmEvent } from '../../lib/gtm';
 
 export function Navbar() {
   const t = useTranslations('Nav');
@@ -57,7 +58,7 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
 
           <span className="hidden sm:block font-body text-on-primary/80">{t('hours_short')}</span>
-          <a href="tel:+15145281587" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <a href="tel:+15145281587" onClick={() => gtmEvent('Phone_Call')} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Phone size={14} aria-hidden="true" />
             <span className="font-body">{t('phone')}</span>
           </a>
