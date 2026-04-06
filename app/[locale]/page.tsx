@@ -299,7 +299,7 @@ export default async function Home({
             <div className="relative">
               <div className="relative w-full aspect-[4/3] rounded-[2.5rem] overflow-hidden">
                 <Image
-                  src="/images/clinic/interior.png"
+                  src="/images/clinic/interior.jpg"
                   alt="Intérieur apaisant de la clinique"
                   fill
                   className="object-cover"
