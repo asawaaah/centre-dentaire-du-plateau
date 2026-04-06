@@ -1,7 +1,10 @@
+'use client';
+
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '../../i18n/routing';
 import { MapPin, Mail, Phone } from 'lucide-react';
+import { gtmEvent } from '../../lib/gtm';
 
 export function Footer() {
   const t = useTranslations('Footer');
@@ -31,6 +34,7 @@ export function Footer() {
             <div className="flex items-center gap-3 pt-2">
               <a
                 href="tel:+15145281587"
+                onClick={() => gtmEvent('Phone_Call')}
                 className="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary hover:-translate-y-0.5 transition-all duration-300 hover:shadow-[var(--shadow-ambient)]"
                 aria-label={t('phone_label')}
               >
@@ -38,6 +42,7 @@ export function Footer() {
               </a>
               <a
                 href="mailto:info@dentisteplateau.com"
+                onClick={() => gtmEvent('Send_email')}
                 className="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary hover:-translate-y-0.5 transition-all duration-300 hover:shadow-[var(--shadow-ambient)]"
                 aria-label={t('email_label')}
               >
