@@ -100,6 +100,11 @@ export function Footer() {
                   {t('nav.contact')}
                 </Link>
               </li>
+              <li>
+                <Link href="/carriere" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors">
+                  {t('nav.careers')}
+                </Link>
+              </li>
             </ul>
           </div>
 

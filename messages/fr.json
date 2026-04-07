@@ -26,7 +26,8 @@
     "nav": {
       "home": "Accueil",
       "about": "À Propos",
-      "contact": "Contact"
+      "contact": "Contact",
+      "careers": "Carrière"
     },
     "hours_title": "Horaires",
     "hours": {
@@ -42,6 +43,36 @@
     "legal": "Mentions Légales",
     "privacy": "Confidentialité",
     "accessibility": "Accessibilité"
+  },
+  "Carriere": {
+    "meta": {
+      "title": "Carrière | Centre Dentaire du Plateau",
+      "description": "Rejoignez l'équipe du Centre Dentaire du Plateau. Nous sommes toujours à la recherche de talents passionnés par la santé bucco-dentaire."
+    },
+    "hero": {
+      "title": "Rejoignez Notre Équipe",
+      "subtitle": "Vous êtes passionné(e) par les soins dentaires et cherchez un environnement de travail stimulant et bienveillant ? Nous serions ravis de vous connaître."
+    },
+    "intro": {
+      "title": "Toujours à la recherche de talents",
+      "body": "Au Centre Dentaire du Plateau, nous croyons qu'une grande équipe est le fondement d'une grande clinique. Que vous soyez dentiste, hygiéniste, assistant(e) dentaire ou professionnel(le) administratif(ve), nous vous invitons à nous faire parvenir votre candidature. Nous conservons chaque dossier et vous contacterons dès qu'une opportunité correspondant à votre profil se présente."
+    },
+    "form": {
+      "title": "Déposez votre candidature",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Adresse courriel",
+      "email_title": "Veuillez entrer une adresse courriel valide",
+      "position": "Poste recherché",
+      "position_placeholder": "Ex : Hygiéniste dentaire, Dentiste, Réceptionniste…",
+      "cv": "CV (PDF ou Word, max 4 Mo)",
+      "cv_hint": "Formats acceptés : .pdf, .doc, .docx",
+      "submit": "Envoyer ma candidature",
+      "success": "Votre candidature a bien été reçue. Merci de votre intérêt — nous vous contacterons si une opportunité se présente !",
+      "error": "Une erreur est survenue. Veuillez réessayer.",
+      "file_too_large": "Le fichier dépasse 4 Mo. Veuillez en choisir un plus petit.",
+      "file_invalid": "Format non accepté. Utilisez un fichier PDF, DOC ou DOCX."
+    }
   },
   "Home": {
     "hero": {
@@ -605,12 +636,8 @@
           "time": "9h - 14h"
         },
         "sat": {
-          "day": "Samedi",
+          "day": "Samedi - Dimanche",
           "time": "Fermé"
-        },
-        "sun": {
-          "day": "Dimanche",
-          "time": "10h - 14h"
         }
       },
       "emergency": "Urgences",

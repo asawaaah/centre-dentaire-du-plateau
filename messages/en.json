@@ -26,7 +26,8 @@
     "nav": {
       "home": "Home",
       "about": "About Us",
-      "contact": "Contact"
+      "contact": "Contact",
+      "careers": "Careers"
     },
     "hours_title": "Hours",
     "hours": {
@@ -42,6 +43,36 @@
     "legal": "Legal Notice",
     "privacy": "Privacy",
     "accessibility": "Accessibility"
+  },
+  "Carriere": {
+    "meta": {
+      "title": "Careers | Centre Dentaire du Plateau",
+      "description": "Join the team at Centre Dentaire du Plateau. We are always looking for passionate dental health professionals."
+    },
+    "hero": {
+      "title": "Join Our Team",
+      "subtitle": "Are you passionate about dental care and looking for a stimulating, caring work environment? We would love to hear from you."
+    },
+    "intro": {
+      "title": "Always looking for talent",
+      "body": "At Centre Dentaire du Plateau, we believe that a great team is the foundation of a great clinic. Whether you are a dentist, hygienist, dental assistant, or administrative professional, we invite you to send us your application. We keep every file on record and will reach out as soon as an opportunity matching your profile arises."
+    },
+    "form": {
+      "title": "Submit your application",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email address",
+      "email_title": "Please enter a valid email address",
+      "position": "Position sought",
+      "position_placeholder": "E.g. Dental hygienist, Dentist, Receptionist…",
+      "cv": "Resume (PDF or Word, max 4 MB)",
+      "cv_hint": "Accepted formats: .pdf, .doc, .docx",
+      "submit": "Send my application",
+      "success": "Your application has been received. Thank you for your interest — we will reach out if an opportunity arises!",
+      "error": "An error occurred. Please try again.",
+      "file_too_large": "The file exceeds 4 MB. Please choose a smaller one.",
+      "file_invalid": "Invalid format. Please use a PDF, DOC, or DOCX file."
+    }
   },
   "Home": {
     "hero": {
@@ -605,12 +636,8 @@
           "time": "9am - 2pm"
         },
         "sat": {
-          "day": "Saturday",
+          "day": "Saturday - Sunday",
           "time": "Closed"
-        },
-        "sun": {
-          "day": "Sunday",
-          "time": "10am - 2pm"
         }
       },
       "emergency": "Emergency",

@@ -8,7 +8,7 @@ import { gtmEvent } from "../../lib/gtm";
 export function ContactBlock() {
   const t = useTranslations("Contact");
 
-  const hours = ["mon_thu", "fri", "sat", "sun"];
+  const hours = ["mon_thu", "fri", "sat"];
 
   return (
     <section className="pt-12 pb-24 sm:pt-16 sm:pb-32 lg:pt-20 lg:pb-40 px-6 sm:px-8 lg:px-12 bg-surface-container-low">
