@@ -3,6 +3,59 @@ import { Resend } from 'resend';
 
 export const runtime = 'edge';
 
+async function logToExcel(data: {
+  submittedAt: string;
+  name: string;
+  email: string;
+  phone: string;
+  preferredDate: string;
+  message: string;
+}) {
+  const tenantId = process.env.MS_TENANT_ID;
+  const clientId = process.env.MS_CLIENT_ID;
+  const clientSecret = process.env.MS_CLIENT_SECRET;
+  const userId = process.env.MS_USER_ID;
+
+  if (!tenantId || !clientId || !clientSecret || !userId) return;
+
+  const tokenRes = await fetch(
+    `https://login.microsoftonline.com/${tenantId}/oauth2/v2.0/token`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        grant_type: 'client_credentials',
+        client_id: clientId,
+        client_secret: clientSecret,
+        scope: 'https://graph.microsoft.com/.default',
+      }),
+    }
+  );
+
+  const { access_token } = await tokenRes.json();
+
+  await fetch(
+    `https://graph.microsoft.com/v1.0/users/${encodeURIComponent(userId)}/drive/root:/Formulaire%20RDV.xlsx:/workbook/tables/RDV/rows/add`,
+    {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${access_token}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        values: [[
+          data.submittedAt,
+          data.name,
+          data.email,
+          data.phone,
+          data.preferredDate,
+          data.message,
+        ]],
+      }),
+    }
+  );
+}
+
 export async function POST(request: Request) {
   try {
     if (!process.env.RESEND_API_KEY) {
@@ -70,6 +123,15 @@ export async function POST(request: Request) {
         }),
       }).catch((err) => console.error('Google Sheets logging failed:', err));
     }
+
+    logToExcel({
+      submittedAt: new Date().toISOString(),
+      name,
+      email,
+      phone: phone || '',
+      preferredDate: date || '',
+      message,
+    }).catch((err) => console.error('Excel logging failed:', err));
 
     return NextResponse.json({ success: true, data });
   } catch (error) {
