@@ -32,8 +32,7 @@
     "hours": {
       "mon_thu": "Lun - Jeu : 9h00 - 18h00",
       "fri": "Ven : 9h00 - 14h00",
-      "sat": "Sam : Fermé",
-      "sun": "Dim : 10h00 - 14h00"
+      "sat": "Sam - Dim : Fermé"
     },
     "phone_number": "Tél : 514 528 1587",
     "phone_label": "Appelez-nous",

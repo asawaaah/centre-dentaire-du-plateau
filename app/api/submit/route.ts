@@ -1,7 +1,5 @@
-import { NextResponse } from 'next/server';
+import { NextResponse, after } from 'next/server';
 import { Resend } from 'resend';
-
-export const runtime = 'edge';
 
 async function logToExcel(data: {
   submittedAt: string;
@@ -108,30 +106,27 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: error.message }, { status: 400 });
     }
 
-    if (process.env.GOOGLE_SHEETS_WEBHOOK_URL && process.env.GOOGLE_SHEETS_WEBHOOK_SECRET) {
-      await fetch(process.env.GOOGLE_SHEETS_WEBHOOK_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          secret: process.env.GOOGLE_SHEETS_WEBHOOK_SECRET,
-          submittedAt: new Date().toISOString(),
-          name,
-          email,
-          phone: phone || '',
-          preferredDate: date || '',
-          message,
-        }),
-      }).catch((err) => console.error('Google Sheets logging failed:', err));
-    }
-
-    await logToExcel({
+    const logData = {
       submittedAt: new Date().toISOString(),
       name,
       email,
       phone: phone || '',
       preferredDate: date || '',
       message,
-    }).catch((err) => console.error('Excel logging failed:', err));
+    };
+
+    after(async () => {
+      await Promise.all([
+        process.env.GOOGLE_SHEETS_WEBHOOK_URL && process.env.GOOGLE_SHEETS_WEBHOOK_SECRET
+          ? fetch(process.env.GOOGLE_SHEETS_WEBHOOK_URL, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ secret: process.env.GOOGLE_SHEETS_WEBHOOK_SECRET, ...logData }),
+            }).catch((err) => console.error('Google Sheets logging failed:', err))
+          : Promise.resolve(),
+        logToExcel(logData).catch((err) => console.error('Excel logging failed:', err)),
+      ]);
+    });
 
     return NextResponse.json({ success: true, data });
   } catch (error) {

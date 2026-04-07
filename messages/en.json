@@ -32,8 +32,7 @@
     "hours": {
       "mon_thu": "Mon - Thu: 9:00 AM - 6:00 PM",
       "fri": "Fri: 9:00 AM - 2:00 PM",
-      "sat": "Sat: Closed",
-      "sun": "Sun: 10:00 AM - 2:00 PM"
+      "sat": "Sat - Sun: Closed"
     },
     "phone_number": "Tel: 514 528 1587",
     "phone_label": "Call us",
