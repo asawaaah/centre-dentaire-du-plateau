@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const isFr = locale === 'fr';
   return {
     title: isFr
-      ? "Centre Dentaire du Plateau | Expérience Sérénité à Montréal"
-      : "Centre Dentaire du Plateau | Serenity Experience in Montreal",
+      ? "Centre Dentaire du Plateau | Dentiste au Plateau-Mont-Royal, Montréal"
+      : "Centre Dentaire du Plateau | Dentist in Plateau-Mont-Royal, Montreal",
     description: isFr
       ? "Votre dentiste de quartier au Plateau Mont-Royal. Implants dentaires, soins esthétiques, orthodontie et soins préventifs dans un cadre chaleureux et accessible. Prenez rendez-vous."
       : "Your neighborhood dentist in Plateau Mont-Royal. Dental implants, cosmetic care, orthodontics and preventive care in a warm and welcoming setting. Book an appointment.",
@@ -299,7 +299,7 @@ export default async function Home({
             <div className="relative">
               <div className="relative w-full aspect-[4/3] rounded-[2.5rem] overflow-hidden">
                 <Image
-                  src="/images/clinic/interior.png"
+                  src="/images/clinic/interior.jpg"
                   alt="Intérieur apaisant de la clinique"
                   fill
                   className="object-cover"
