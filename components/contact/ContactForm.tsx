@@ -1,12 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Send, Loader2 } from 'lucide-react';
 import { gtmEvent } from '../../lib/gtm';
 
 export function ContactForm() {
   const t = useTranslations('Contact.form');
+  const locale = useLocale();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [dateValue, setDateValue] = useState('');
@@ -32,6 +33,7 @@ export function ContactForm() {
       phone: formData.get('phone'),
       date: formData.get('date'),
       message: formData.get('message'),
+      locale,
     };
 
     try {
