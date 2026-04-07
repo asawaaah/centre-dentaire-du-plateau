@@ -112,7 +112,6 @@ export function Footer() {
               <p>{t('hours.mon_thu')}</p>
               <p>{t('hours.fri')}</p>
               <p>{t('hours.sat')}</p>
-              <p>{t('hours.sun')}</p>
             </div>
             <div className="pt-2">
               <p className="font-body text-xs text-on-surface-variant">
