@@ -109,7 +109,7 @@ export async function POST(request: Request) {
     }
 
     if (process.env.GOOGLE_SHEETS_WEBHOOK_URL && process.env.GOOGLE_SHEETS_WEBHOOK_SECRET) {
-      fetch(process.env.GOOGLE_SHEETS_WEBHOOK_URL, {
+      await fetch(process.env.GOOGLE_SHEETS_WEBHOOK_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -124,7 +124,7 @@ export async function POST(request: Request) {
       }).catch((err) => console.error('Google Sheets logging failed:', err));
     }
 
-    logToExcel({
+    await logToExcel({
       submittedAt: new Date().toISOString(),
       name,
       email,
