@@ -605,12 +605,8 @@
           "time": "9am - 2pm"
         },
         "sat": {
-          "day": "Saturday",
+          "day": "Saturday - Sunday",
           "time": "Closed"
-        },
-        "sun": {
-          "day": "Sunday",
-          "time": "10am - 2pm"
         }
       },
       "emergency": "Emergency",

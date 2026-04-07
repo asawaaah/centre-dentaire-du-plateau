@@ -605,12 +605,8 @@
           "time": "9h - 14h"
         },
         "sat": {
-          "day": "Samedi",
+          "day": "Samedi - Dimanche",
           "time": "Fermé"
-        },
-        "sun": {
-          "day": "Dimanche",
-          "time": "10h - 14h"
         }
       },
       "emergency": "Urgences",

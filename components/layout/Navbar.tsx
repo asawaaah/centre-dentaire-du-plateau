@@ -180,7 +180,6 @@ export function Navbar() {
                   <li>{tFooter('hours.mon_thu')}</li>
                   <li>{tFooter('hours.fri')}</li>
                   <li>{tFooter('hours.sat')}</li>
-                  <li>{tFooter('hours.sun')}</li>
                 </ul>
               </div>
 
