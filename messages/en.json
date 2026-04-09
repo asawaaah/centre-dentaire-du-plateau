@@ -656,6 +656,7 @@
       "submit": "Send message",
       "success": "Message sent successfully!",
       "error": "An error occurred. Please try again.",
+      "captcha_error": "Please validate the CAPTCHA to prove you are human.",
       "phone_title": "Please enter a valid phone number (e.g. 514 123 4567)",
       "email_title": "Please enter a valid email address"
     },

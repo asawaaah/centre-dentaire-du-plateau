@@ -4,15 +4,17 @@ import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { Send, Loader2 } from 'lucide-react';
 import { gtmEvent } from '../../lib/gtm';
+import { Turnstile } from '@marsidev/react-turnstile';
 
 export function ContactForm() {
   const t = useTranslations('Contact.form');
   const locale = useLocale();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'success' | 'error' | 'captcha_error'>('idle');
   const [dateValue, setDateValue] = useState('');
   const [dateFocused, setDateFocused] = useState(false);
   const [phoneValue, setPhoneValue] = useState('');
+  const [turnstileToken, setTurnstileToken] = useState('');
 
   const formatPhone = (value: string) => {
     const digits = value.replace(/\D/g, '').slice(0, 10);
@@ -23,6 +25,10 @@ export function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!turnstileToken) {
+      setStatus('captcha_error');
+      return;
+    }
     setIsSubmitting(true);
     setStatus('idle');
 
@@ -33,6 +39,7 @@ export function ContactForm() {
       phone: formData.get('phone'),
       date: formData.get('date'),
       message: formData.get('message'),
+      turnstileToken,
       locale,
     };
 
@@ -44,6 +51,13 @@ export function ContactForm() {
       });
 
       if (!response.ok) {
+        if (response.status === 400) {
+          const body = await response.json();
+          if (body.error === 'CAPTCHA validation failed') {
+            setStatus('captcha_error');
+            return;
+          }
+        }
         throw new Error('Failed to send message');
       }
 
@@ -51,6 +65,7 @@ export function ContactForm() {
       gtmEvent('Contact_RDV');
       setDateValue('');
       setPhoneValue('');
+      setTurnstileToken(''); // reset token
       (e.target as HTMLFormElement).reset();
     } catch {
       setStatus('error');
@@ -158,6 +173,23 @@ export function ContactForm() {
           />
         </div>
 
+        {/* Captcha */}
+        <div className="flex justify-center py-2">
+          <Turnstile 
+            siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA'} 
+            onSuccess={(token) => {
+              setTurnstileToken(token);
+              if (status === 'captcha_error') setStatus('idle');
+            }}
+            onExpire={() => setTurnstileToken('')}
+            onError={() => setStatus('captcha_error')}
+            options={{
+              theme: 'light',
+              language: locale === 'en' ? 'en' : 'fr'
+            }}
+          />
+        </div>
+
         {/* Submit */}
         <button
           type="submit"
@@ -186,6 +218,11 @@ export function ContactForm() {
         {status === 'error' && (
           <div role="alert" className="bg-error-container rounded-xl p-4 text-center">
             <p className="font-body text-sm text-error font-medium">{t('error')}</p>
+          </div>
+        )}
+        {status === 'captcha_error' && (
+          <div role="alert" className="bg-error-container rounded-xl p-4 text-center">
+            <p className="font-body text-sm text-error font-medium">{t('captcha_error')}</p>
           </div>
         )}
       </form>
