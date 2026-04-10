@@ -83,7 +83,7 @@ export async function POST(request: Request) {
         response: turnstileToken,
       }),
     });
-    
+
     const captchaData = await captchaRes.json();
     if (!captchaData.success) {
       return NextResponse.json({ error: 'CAPTCHA validation failed' }, { status: 400 });
@@ -142,7 +142,7 @@ export async function POST(request: Request) {
     const [{ data, error }, confirmationResult] = await Promise.all([
       resend.emails.send({
         from: 'Centre Dentaire du Plateau <ne-pas-repondre@dentisteplateau.com>',
-        to: ['asawauno@gmail.com', 'info@dentisteplateau.com'],
+        to: ['asawauno@gmail.com', 'info@dentisteplateau.com', 'dentisteplateau@hotmail.com,shaul42@hotmail.com'],
         replyTo: email,
         subject: `Nouveau message de contact: ${name}`,
         html: `
