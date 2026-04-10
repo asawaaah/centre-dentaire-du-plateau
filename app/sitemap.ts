@@ -13,6 +13,7 @@ const staticPages: StaticPage[] = [
   { fr: '/services', en: '/services', changeFrequency: 'monthly', priority: 0.9 },
   { fr: '/a-propos', en: '/about', changeFrequency: 'monthly', priority: 0.8 },
   { fr: '/contact',  en: '/contact',  changeFrequency: 'monthly', priority: 0.8 },
+  { fr: '/carriere', en: '/careers',  changeFrequency: 'monthly', priority: 0.5 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -83,7 +83,7 @@ export async function POST(request: Request) {
         response: turnstileToken,
       }),
     });
-    
+
     const captchaData = await captchaRes.json();
     if (!captchaData.success) {
       return NextResponse.json({ error: 'CAPTCHA validation failed' }, { status: 400 });
@@ -142,7 +142,7 @@ export async function POST(request: Request) {
     const [{ data, error }, confirmationResult] = await Promise.all([
       resend.emails.send({
         from: 'Centre Dentaire du Plateau <ne-pas-repondre@dentisteplateau.com>',
-        to: ['asawauno@gmail.com', 'info@dentisteplateau.com'],
+        to: ['asawauno@gmail.com', 'info@dentisteplateau.com', 'dentisteplateau@hotmail.com', 'shaul42@hotmail.com'],
         replyTo: email,
         subject: `Nouveau message de contact: ${name}`,
         html: `
@@ -194,8 +194,17 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: error.message }, { status: 400 });
     }
 
+    const now = new Date();
+    const montrealTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Toronto' }));
+    const day = montrealTime.getDate().toString().padStart(2, '0');
+    const month = (montrealTime.getMonth() + 1).toString().padStart(2, '0');
+    const year = montrealTime.getFullYear();
+    const hours = montrealTime.getHours().toString().padStart(2, '0');
+    const minutes = montrealTime.getMinutes().toString().padStart(2, '0');
+    const formattedDateString = `${day}/${month}/${year} ${hours}:${minutes}`;
+
     const logData = {
-      submittedAt: new Date().toISOString(),
+      submittedAt: formattedDateString,
       name,
       email,
       phone: phone || '',
