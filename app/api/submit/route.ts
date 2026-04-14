@@ -139,51 +139,66 @@ export async function POST(request: Request) {
       </div>
     `;
 
-    const [{ data, error }, confirmationResult] = await Promise.all([
+    const clinicEmails = ['asawauno@gmail.com', 'info@dentisteplateau.com', 'dentisteplateau@hotmail.com', 'shaul42@hotmail.com'];
+
+    const notificationHtmlContent = `
+      <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #171d1d; background-color: #f5fafa; padding: 40px; border-radius: 12px; border: 1px solid #eff5f5;">
+        <h2 style="color: #006a66; margin-bottom: 24px; font-weight: bold;">Nouveau message de contact</h2>
+
+        <div style="margin-bottom: 24px;">
+          <p style="margin: 8px 0;"><strong>Nom:</strong> ${name}</p>
+          <p style="margin: 8px 0;"><strong>Email:</strong> ${email}</p>
+          <p style="margin: 8px 0;"><strong>Téléphone:</strong> ${phone || 'Non renseigné'}</p>
+          <p style="margin: 8px 0;"><strong>Date souhaitée:</strong> ${date ? new Date(date).toLocaleDateString('en-GB') : 'Non renseignée'}</p>
+        </div>
+
+        <div style="background-color: white; padding: 24px; border-radius: 8px; border: 1px solid #eff5f5;">
+          <h3 style="color: #006a66; margin-top: 0; margin-bottom: 12px; font-size: 16px;">Message :</h3>
+          <p style="margin: 0; line-height: 1.6; white-space: pre-wrap;">${message}</p>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid #eff5f5; margin: 32px 0;" />
+        <p style="font-size: 12px; color: #666; text-align: center; margin: 0;">Cet email a été envoyé depuis le formulaire de contact du site Centre Dentaire du Plateau.</p>
+      </div>
+    `;
+
+    const notificationPromises = clinicEmails.map(recipient =>
       resend.emails.send({
         from: 'Centre Dentaire du Plateau <ne-pas-repondre@dentisteplateau.com>',
-        to: ['asawauno@gmail.com', 'info@dentisteplateau.com', 'dentisteplateau@hotmail.com', 'shaul42@hotmail.com'],
+        to: [recipient],
         replyTo: email,
         subject: `Nouveau message de contact: ${name}`,
-        html: `
-          <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #171d1d; background-color: #f5fafa; padding: 40px; border-radius: 12px; border: 1px solid #eff5f5;">
-            <h2 style="color: #006a66; margin-bottom: 24px; font-weight: bold;">Nouveau message de contact</h2>
+        html: notificationHtmlContent,
+      })
+    );
 
-            <div style="margin-bottom: 24px;">
-              <p style="margin: 8px 0;"><strong>Nom:</strong> ${name}</p>
-              <p style="margin: 8px 0;"><strong>Email:</strong> ${email}</p>
-              <p style="margin: 8px 0;"><strong>Téléphone:</strong> ${phone || 'Non renseigné'}</p>
-              <p style="margin: 8px 0;"><strong>Date souhaitée:</strong> ${date ? new Date(date).toLocaleDateString('en-GB') : 'Non renseignée'}</p>
-            </div>
+    const confirmationPromise = resend.emails.send({
+      from: 'Centre Dentaire du Plateau <ne-pas-repondre@dentisteplateau.com>',
+      to: [email],
+      replyTo: 'info@dentisteplateau.com',
+      subject: confirmationSubject,
+      html: confirmationHtml,
+      attachments: [
+        {
+          filename: 'logo.png',
+          content: logoContent,
+          contentId: 'logo',
+        },
+      ],
+    }).catch((err) => {
+      console.error('Confirmation email error:', err);
+      return { data: null, error: err };
+    });
 
-            <div style="background-color: white; padding: 24px; border-radius: 8px; border: 1px solid #eff5f5;">
-              <h3 style="color: #006a66; margin-top: 0; margin-bottom: 12px; font-size: 16px;">Message :</h3>
-              <p style="margin: 0; line-height: 1.6; white-space: pre-wrap;">${message}</p>
-            </div>
-
-            <hr style="border: none; border-top: 1px solid #eff5f5; margin: 32px 0;" />
-            <p style="font-size: 12px; color: #666; text-align: center; margin: 0;">Cet email a été envoyé depuis le formulaire de contact du site Centre Dentaire du Plateau.</p>
-          </div>
-        `,
-      }),
-      resend.emails.send({
-        from: 'Centre Dentaire du Plateau <ne-pas-repondre@dentisteplateau.com>',
-        to: [email],
-        replyTo: 'info@dentisteplateau.com',
-        subject: confirmationSubject,
-        html: confirmationHtml,
-        attachments: [
-          {
-            filename: 'logo.png',
-            content: logoContent,
-            contentId: 'logo',
-          },
-        ],
-      }).catch((err) => {
-        console.error('Confirmation email error:', err);
-        return { data: null, error: err };
-      }),
-    ]);
+    const emailResults = await Promise.all([...notificationPromises, confirmationPromise]);
+    
+    // Le dernier élément correspond à l'email de confirmation 
+    const confirmationResult = emailResults.pop() as { data: any; error: any };
+    
+    // On vérifie s'il y a eu une erreur d'envoi pour au moins une des notifications
+    const errorResult = emailResults.find(res => res && res.error);
+    const error = errorResult ? errorResult.error : null;
+    const data = emailResults[0]?.data || null;
 
     if (confirmationResult.error) {
       console.error('Confirmation email failed:', confirmationResult.error);
