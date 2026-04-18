@@ -4,11 +4,12 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '../../i18n/routing';
-import { Phone, Menu, X, Globe, Clock } from 'lucide-react';
+import { Phone, Menu, X, Globe, Clock, AlertTriangle } from 'lucide-react';
 import { useRouter } from '../../i18n/routing';
 import { useLocale } from 'next-intl';
 import { useParams } from 'next/navigation';
 import { getServiceBySlug, getServiceSlug, type ServiceKey } from '../../lib/services';
+import { getBlogPostBySlug } from '../../lib/blog';
 import { gtmEvent } from '../../lib/gtm';
 
 export function Navbar() {
@@ -30,8 +31,11 @@ export function Navbar() {
     { href: '/' as const, label: t('home') },
     { href: '/services' as const, label: t('services') },
     { href: '/a-propos' as const, label: t('about') },
+    { href: '/blog' as const, label: t('blog') },
     { href: '/contact' as const, label: t('contact') },
   ];
+
+  const urgenceHref = '/urgence-dentaire' as const;
 
   const switchLocale = () => {
     const newLocale = locale === 'fr' ? 'en' : 'fr';
@@ -46,9 +50,19 @@ export function Navbar() {
         );
         return;
       }
+
+      const blogPost = getBlogPostBySlug(locale, slug);
+      if (blogPost) {
+        const newSlug = blogPost.slugs[newLocale as 'fr' | 'en'];
+        router.replace(
+          { pathname: '/blog/[slug]', params: { slug: newSlug } },
+          { locale: newLocale, scroll: false }
+        );
+        return;
+      }
     }
 
-    router.replace(pathname as '/' | '/services' | '/a-propos' | '/contact', { locale: newLocale, scroll: false });
+    router.replace(pathname as '/' | '/services' | '/a-propos' | '/contact' | '/carriere' | '/urgence-dentaire' | '/blog', { locale: newLocale, scroll: false });
   };
 
   return (
@@ -102,6 +116,13 @@ export function Navbar() {
 
             {/* Desktop Right Actions */}
             <div className="hidden md:flex items-center gap-4">
+              <Link
+                href={urgenceHref}
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-orange-50 border border-orange-200 text-orange-700 font-body font-semibold text-sm transition-all duration-200 hover:bg-orange-100 hover:border-orange-300"
+              >
+                <AlertTriangle size={14} aria-hidden="true" />
+                {t('urgence')}
+              </Link>
               <button
                 onClick={switchLocale}
                 className="flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors font-body text-sm"
@@ -156,6 +177,18 @@ export function Navbar() {
                     {link.label}
                   </Link>
                 ))}
+              </div>
+
+              {/* Urgence link */}
+              <div className="border-t border-outline-variant/15 mt-3 pt-3">
+                <Link
+                  href={urgenceHref}
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center gap-2 font-body text-base font-semibold py-2.5 text-orange-700"
+                >
+                  <AlertTriangle size={16} aria-hidden="true" />
+                  {t('urgence')}
+                </Link>
               </div>
 
               {/* Language switcher */}

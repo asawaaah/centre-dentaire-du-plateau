@@ -17,6 +17,20 @@ export const routing = defineRouting({
       fr: '/carriere',
       en: '/careers',
     },
+    '/urgence-dentaire': {
+      fr: '/urgence-dentaire',
+      en: '/dental-emergency',
+    },
+    '/a-propos/dr-saul-barchichat': {
+      fr: '/a-propos/dr-saul-barchichat',
+      en: '/about/dr-saul-barchichat',
+    },
+    '/regime-canadien-soins-dentaires': {
+      fr: '/regime-canadien-soins-dentaires',
+      en: '/canadian-dental-care-plan',
+    },
+    '/blog': '/blog',
+    '/blog/[slug]': '/blog/[slug]',
   },
 });
 

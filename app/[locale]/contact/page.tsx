@@ -8,11 +8,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   return {
     title: locale === 'fr'
-      ? "Contact | Prenez Rendez-vous"
-      : "Contact | Book an Appointment",
+      ? "Contact — Dentiste Plateau Mont-Royal | 1357 Av. Mont-Royal E, 514-528-1587"
+      : "Contact — Dentist Plateau Mont-Royal | 1357 Mont-Royal Ave E, 514-528-1587",
     description: locale === 'fr'
-      ? "Contactez le Centre Dentaire du Plateau au 1357 Avenue du Mont-Royal Est. Prenez rendez-vous en ligne ou appelez-nous. Horaires, accès et FAQ."
-      : "Contact Centre Dentaire du Plateau at 1357 Avenue du Mont-Royal Est. Book an appointment online or call us. Hours, access and FAQ.",
+      ? "Prenez rendez-vous au Centre Dentaire du Plateau — 1357 Av. Mont-Royal Est, Montréal. Urgences acceptées, RDV le jour même. En ligne ou par téléphone : 514-528-1587."
+      : "Book an appointment at Centre Dentaire du Plateau — 1357 Mont-Royal Ave E, Montreal. Emergencies accepted, same-day appointments. Online or by phone: 514-528-1587.",
     alternates: {
       canonical: `https://dentisteplateau.com/${locale}/contact`,
       languages: {

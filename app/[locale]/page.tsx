@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const isFr = locale === 'fr';
   return {
     title: isFr
-      ? "Centre Dentaire du Plateau | Dentiste au Plateau-Mont-Royal, Montréal"
-      : "Centre Dentaire du Plateau | Dentist in Plateau-Mont-Royal, Montreal",
+      ? "Dentiste Plateau Mont-Royal | Urgences, Implants, Invisalign — Dr. Barchichat"
+      : "Dentist Plateau Mont-Royal | Emergencies, Implants, Invisalign — Dr. Barchichat",
     description: isFr
-      ? "Votre dentiste de quartier au Plateau Mont-Royal. Implants dentaires, soins esthétiques, orthodontie et soins préventifs dans un cadre chaleureux et accessible. Prenez rendez-vous."
-      : "Your neighborhood dentist in Plateau Mont-Royal. Dental implants, cosmetic care, orthodontics and preventive care in a warm and welcoming setting. Book an appointment.",
+      ? "Dentiste au Plateau Mont-Royal depuis 1991. Urgences acceptées, RDV le jour même. Implants, Invisalign, blanchiment, soins préventifs. Lun–Ven. Appelez le 514-528-1587."
+      : "Dentist on Plateau Mont-Royal since 1991. Emergencies accepted, same-day appointments. Implants, Invisalign, whitening, preventive care. Mon–Fri. Call 514-528-1587.",
     alternates: {
       canonical: `https://dentisteplateau.com/${locale}`,
       languages: {
@@ -34,11 +34,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     openGraph: {
       title: isFr
-        ? "Centre Dentaire du Plateau | Votre sourire mérite l'excellence"
-        : "Centre Dentaire du Plateau | Your smile deserves excellence",
+        ? "Dentiste Plateau Mont-Royal — Dr. Barchichat | Centre Dentaire du Plateau"
+        : "Dentist Plateau Mont-Royal — Dr. Barchichat | Centre Dentaire du Plateau",
       description: isFr
-        ? "Découvrez une expérience dentaire repensée dans un cadre apaisant au cœur du Plateau Mont-Royal."
-        : "Discover a reimagined dental experience in a soothing setting in the heart of Plateau Mont-Royal.",
+        ? "Dentiste au Plateau Mont-Royal depuis 1991 — urgences, implants, Invisalign, soins préventifs. Lun–Ven. 1357 Av. Mont-Royal Est, Montréal."
+        : "Dentist on Plateau Mont-Royal since 1991 — emergencies, implants, Invisalign, preventive care. Mon–Fri. 1357 Mont-Royal Ave E, Montreal.",
       images: ['/images/clinic/hero-smile.png'],
     },
   };
@@ -254,18 +254,12 @@ export default async function Home({
               <p className="font-body text-on-surface-variant leading-relaxed text-sm">
                 {t("programs.cdcp.body")}
               </p>
-              <a
-                href={
-                  locale === 'fr'
-                    ? "https://www.canada.ca/fr/services/prestations/dentaire/regime-soins-dentaires.html"
-                    : "https://www.canada.ca/en/services/benefits/dental/dental-care-plan.html"
-                }
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/regime-canadien-soins-dentaires"
                 className="inline-flex items-center gap-2 font-body font-semibold text-primary text-sm hover:gap-3 transition-all duration-300"
               >
                 {t("programs.cdcp.cta")} <ArrowRight size={16} aria-hidden="true" />
-              </a>
+              </Link>
             </div>
             {/* Première Visite Card */}
             <div className="bg-surface-container-lowest rounded-[2rem] p-10 space-y-5 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-ambient-hover)]">

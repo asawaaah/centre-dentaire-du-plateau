@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   return {
     title: locale === 'fr'
-      ? "Nos Traitements | Hygiène, Implants, Esthétique & Orthodontie | Montréal"
-      : "Our Treatments | Hygiene, Implants, Cosmetics & Orthodontics | Montreal",
+      ? "Services Dentaires Plateau Mont-Royal | Implants, Invisalign, Urgences"
+      : "Dental Services Plateau Mont-Royal | Implants, Invisalign, Emergencies",
     description: locale === 'fr'
-      ? "Découvrez nos 9 traitements dentaires au Plateau Mont-Royal : nettoyage, implants, facettes, traitement de canal, Invisalign, chirurgie, blanchiment et plus. Technologie de pointe."
-      : "Explore our 9 dental treatments on Plateau Mont-Royal: cleaning, implants, veneers, root canal, Invisalign, surgery, whitening and more. Cutting-edge technology.",
+      ? "Tous nos soins dentaires au Plateau Mont-Royal : nettoyage, implants, facettes, Invisalign, traitement de canal, urgences, blanchiment. Technologie avancée. Dr. Barchichat, DMD."
+      : "All our dental services on Plateau Mont-Royal: cleaning, implants, veneers, Invisalign, root canal, emergencies, whitening. Advanced technology. Dr. Barchichat, DMD.",
     alternates: {
       canonical: `https://dentisteplateau.com/${locale}/services`,
       languages: {
