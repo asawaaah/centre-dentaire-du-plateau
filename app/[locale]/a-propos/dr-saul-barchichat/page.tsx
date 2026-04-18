@@ -1,8 +1,16 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "../../../../i18n/routing";
 import Image from "next/image";
-import { GraduationCap, Award, CheckCircle, ChevronRight, Phone, Heart, MessageCircle, Eye, Zap } from "lucide-react";
+import { GraduationCap, Award, CheckCircle, ChevronRight, Phone, Heart, MessageCircle, Eye, Zap, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
+
+import {
+  getAllStaticParams,
+  getServiceBySlug,
+  getServiceSlug,
+  SERVICES,
+  type ServiceKey,
+} from "../../../../lib/services";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -36,6 +44,17 @@ export default async function DrBarchichatPage({ params }: Props) {
   const credentials = t.raw("credentials.items") as { label: string; value: string }[];
   const expertiseItems = t.raw("expertise.items") as string[];
   const approachItems = t.raw("approach.items") as { title: string; desc: string }[];
+
+  // Map expertise items (by index) to service keys
+  const expertiseToService: Record<number, ServiceKey> = {
+    0: 'implants',       // Implantologie dentaire
+    1: 'orthodontics',   // Orthodontie invisible (Invisalign®)
+    2: 'veneers',        // Dentisterie esthétique (facettes, blanchiment)
+    3: 'hygiene',        // Soins préventifs & parodontologie
+    4: 'rootCanal',      // Endodontie (traitement de canal)
+    5: 'surgery',        // Chirurgie dentaire mini-invasive
+    6: 'radiology',      // Radiologie numérique & imagerie 3D
+  };
 
   const approachIcons = [
     <Heart key="heart" size={20} className="text-primary flex-shrink-0" aria-hidden="true" />,
@@ -226,12 +245,28 @@ export default async function DrBarchichatPage({ params }: Props) {
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {expertiseItems.map((item, i) => (
-              <div key={i} className="flex items-center gap-3 p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/10">
-                <CheckCircle size={18} className="text-primary flex-shrink-0" aria-hidden="true" />
-                <span className="font-body text-sm text-on-surface">{item}</span>
-              </div>
-            ))}
+            {expertiseItems.map((item, i) => {
+              const serviceKey = expertiseToService[i];
+              if (serviceKey) {
+                const slug = getServiceSlug(locale, serviceKey);
+                return (
+                  <Link
+                    key={i}
+                    href={{ pathname: '/services/[slug]', params: { slug } }}
+                    className="flex items-center gap-3 p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/10 hover:border-primary/20 hover:-translate-y-0.5 transition-all duration-200 group"
+                  >
+                    <CheckCircle size={18} className="text-primary flex-shrink-0" aria-hidden="true" />
+                    <span className="font-body text-sm text-on-surface group-hover:text-primary transition-colors">{item}</span>
+                  </Link>
+                );
+              }
+              return (
+                <div key={i} className="flex items-center gap-3 p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/10">
+                  <CheckCircle size={18} className="text-primary flex-shrink-0" aria-hidden="true" />
+                  <span className="font-body text-sm text-on-surface">{item}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

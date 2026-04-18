@@ -1,8 +1,10 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "../../../i18n/routing";
-import { Phone, Clock, MapPin, AlertTriangle, ChevronDown, ChevronRight, Shield } from "lucide-react";
+import { Phone, Clock, MapPin, AlertTriangle, ChevronDown, ChevronRight, Shield, BookOpen, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import { EmergencySchemaOrg, FaqSchemaOrg } from "../../../components/seo/SchemaOrg";
+import { getServiceSlug, type ServiceKey } from "../../../lib/services";
+import { BLOG_POSTS } from "../../../lib/blog";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -37,6 +39,15 @@ export default async function UrgenceDentairePage({ params }: Props) {
   const firstAidItems = t.raw("firstaid.items") as { situation: string; advice: string }[];
   const hours = t.raw("availability.hours") as { days: string; time: string }[];
   const faqItems = t.raw("faq.items") as { q: string; a: string }[];
+
+  // Service slugs for internal links
+  const rootCanalSlug = getServiceSlug(locale, 'rootCanal' as ServiceKey);
+  const surgerySlug = getServiceSlug(locale, 'surgery' as ServiceKey);
+  const implantsSlug = getServiceSlug(locale, 'implants' as ServiceKey);
+
+  // Related blog
+  const emergencyBlog = BLOG_POSTS.find((p) => p.key === 'urgence-quoi-faire');
+  const emergencyBlogSlug = emergencyBlog?.slugs[locale as 'fr' | 'en'];
 
   return (
     <>
@@ -186,6 +197,90 @@ export default async function UrgenceDentairePage({ params }: Props) {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* ==================== RELATED SERVICES + BLOG ==================== */}
+      <section className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 sm:py-24 space-y-10">
+        <div className="space-y-3">
+          <div className="w-1 h-10 rounded-full bg-primary" />
+          <h2 className="font-heading font-bold text-2xl sm:text-3xl text-on-surface">
+            {locale === 'fr' ? 'Traitements liés aux urgences' : 'Emergency-related treatments'}
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+          <Link
+            href={{ pathname: '/services/[slug]', params: { slug: rootCanalSlug } }}
+            className="flex items-center gap-4 p-5 rounded-2xl bg-surface-container-lowest hover:bg-primary-fixed/10 transition-all duration-200 group"
+          >
+            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <ArrowRight size={18} className="text-primary" aria-hidden="true" />
+            </div>
+            <div>
+              <p className="font-heading font-semibold text-on-surface text-sm group-hover:text-primary transition-colors">
+                {locale === 'fr' ? 'Traitement de canal' : 'Root canal treatment'}
+              </p>
+              <p className="font-body text-xs text-on-surface-variant">
+                {locale === 'fr' ? 'Sauver une dent infectée' : 'Save an infected tooth'}
+              </p>
+            </div>
+          </Link>
+
+          <Link
+            href={{ pathname: '/services/[slug]', params: { slug: surgerySlug } }}
+            className="flex items-center gap-4 p-5 rounded-2xl bg-surface-container-lowest hover:bg-primary-fixed/10 transition-all duration-200 group"
+          >
+            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <ArrowRight size={18} className="text-primary" aria-hidden="true" />
+            </div>
+            <div>
+              <p className="font-heading font-semibold text-on-surface text-sm group-hover:text-primary transition-colors">
+                {locale === 'fr' ? 'Chirurgie dentaire' : 'Oral surgery'}
+              </p>
+              <p className="font-body text-xs text-on-surface-variant">
+                {locale === 'fr' ? 'Extractions et interventions' : 'Extractions and procedures'}
+              </p>
+            </div>
+          </Link>
+
+          <Link
+            href={{ pathname: '/services/[slug]', params: { slug: implantsSlug } }}
+            className="flex items-center gap-4 p-5 rounded-2xl bg-surface-container-lowest hover:bg-primary-fixed/10 transition-all duration-200 group"
+          >
+            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <ArrowRight size={18} className="text-primary" aria-hidden="true" />
+            </div>
+            <div>
+              <p className="font-heading font-semibold text-on-surface text-sm group-hover:text-primary transition-colors">
+                {locale === 'fr' ? 'Implants dentaires' : 'Dental implants'}
+              </p>
+              <p className="font-body text-xs text-on-surface-variant">
+                {locale === 'fr' ? 'Remplacement après extraction' : 'Replacement after extraction'}
+              </p>
+            </div>
+          </Link>
+        </div>
+
+        {/* Blog article link */}
+        {emergencyBlogSlug && (
+          <div className="flex items-center gap-4 p-6 rounded-2xl bg-surface-container-lowest">
+            <BookOpen size={20} className="text-primary flex-shrink-0" aria-hidden="true" />
+            <div className="flex-1">
+              <p className="font-body text-xs text-on-surface-variant uppercase tracking-wider mb-1">
+                {locale === 'fr' ? 'Guide pratique' : 'Practical guide'}
+              </p>
+              <Link
+                href={`/blog/${emergencyBlogSlug}` as any}
+                className="font-body text-sm font-medium text-primary hover:underline"
+              >
+                {locale === 'fr'
+                  ? 'Urgence dentaire : que faire ? Guide complèt du Dr. Barchichat'
+                  : 'Dental emergency: what to do? Dr. Barchichat\'s complete guide'}
+              </Link>
+            </div>
+            <ChevronRight size={16} className="text-primary flex-shrink-0" aria-hidden="true" />
+          </div>
+        )}
       </section>
 
       {/* ==================== FAQ ==================== */}

@@ -1,8 +1,10 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "../../../i18n/routing";
-import { CheckCircle, ChevronDown, ChevronRight, Phone, Shield, DollarSign, Stethoscope } from "lucide-react";
+import { CheckCircle, ChevronDown, ChevronRight, Phone, Shield, DollarSign, Stethoscope, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
 import { FaqSchemaOrg } from "../../../components/seo/SchemaOrg";
+import { getServiceSlug, type ServiceKey } from "../../../lib/services";
+import { BLOG_POSTS } from "../../../lib/blog";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -38,6 +40,25 @@ export default async function RCSDPage({ params }: Props) {
   const coveredItems = t.raw("covered.items") as { category: string; services: string }[];
   const steps = t.raw("how_it_works.steps") as { step: string; title: string; desc: string }[];
   const faqItems = t.raw("faq.items") as { q: string; a: string }[];
+
+  // Service slugs for covered services links
+  const hygieneSlug = getServiceSlug(locale, 'hygiene' as ServiceKey);
+  const rootCanalSlug = getServiceSlug(locale, 'rootCanal' as ServiceKey);
+  const implantsSlug = getServiceSlug(locale, 'implants' as ServiceKey);
+  const orthodonticsSlug = getServiceSlug(locale, 'orthodontics' as ServiceKey);
+
+  // Map covered service categories to service page slugs
+  const coveredServiceLinks: Record<number, { slug: string; pathname: string }> = {
+    0: { slug: hygieneSlug, pathname: '/services/[slug]' },       // Prevention
+    1: { slug: rootCanalSlug, pathname: '/services/[slug]' },     // Basic treatments
+    2: { slug: implantsSlug, pathname: '/services/[slug]' },      // Prosthetics
+    3: { slug: orthodonticsSlug, pathname: '/services/[slug]' },  // Orthodontics
+    4: { slug: '', pathname: '/urgence-dentaire' },                // Emergencies
+  };
+
+  // RCSD blog
+  const rcsdBlog = BLOG_POSTS.find((p) => p.key === 'rcsd-eligibilite-2026');
+  const rcsdBlogSlug = rcsdBlog?.slugs[locale as 'fr' | 'en'];
 
   return (
     <>
@@ -145,16 +166,67 @@ export default async function RCSDPage({ params }: Props) {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {coveredItems.map((item, i) => (
-              <div key={i} className="rounded-2xl bg-surface-container-lowest p-6 space-y-3 border border-outline-variant/10">
-                <div className="flex items-center gap-3">
-                  <Stethoscope size={18} className="text-primary flex-shrink-0" aria-hidden="true" />
-                  <h3 className="font-heading font-semibold text-on-surface text-base">{item.category}</h3>
+            {coveredItems.map((item, i) => {
+              const link = coveredServiceLinks[i];
+              const cardContent = (
+                <>
+                  <div className="flex items-center gap-3">
+                    <Stethoscope size={18} className="text-primary flex-shrink-0" aria-hidden="true" />
+                    <h3 className="font-heading font-semibold text-on-surface text-base">{item.category}</h3>
+                  </div>
+                  <p className="font-body text-sm text-on-surface-variant leading-relaxed">{item.services}</p>
+                  {link && (
+                    <span className="inline-flex items-center gap-1 font-body text-xs text-primary font-medium">
+                      {locale === 'fr' ? 'Voir le service' : 'View service'}
+                      <ChevronRight size={12} aria-hidden="true" />
+                    </span>
+                  )}
+                </>
+              );
+
+              if (link) {
+                const href = link.slug
+                  ? { pathname: link.pathname as any, params: { slug: link.slug } }
+                  : link.pathname;
+                return (
+                  <Link
+                    key={i}
+                    href={href as any}
+                    className="rounded-2xl bg-surface-container-lowest p-6 space-y-3 border border-outline-variant/10 hover:border-primary/20 hover:-translate-y-0.5 transition-all duration-200 block"
+                  >
+                    {cardContent}
+                  </Link>
+                );
+              }
+
+              return (
+                <div key={i} className="rounded-2xl bg-surface-container-lowest p-6 space-y-3 border border-outline-variant/10">
+                  {cardContent}
                 </div>
-                <p className="font-body text-sm text-on-surface-variant leading-relaxed">{item.services}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
+
+          {/* Blog article link */}
+          {rcsdBlogSlug && (
+            <div className="flex items-center gap-4 p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/10 max-w-2xl mx-auto">
+              <BookOpen size={20} className="text-primary flex-shrink-0" aria-hidden="true" />
+              <div className="flex-1">
+                <p className="font-body text-xs text-on-surface-variant uppercase tracking-wider mb-1">
+                  {locale === 'fr' ? 'Guide complet' : 'Complete guide'}
+                </p>
+                <Link
+                  href={`/blog/${rcsdBlogSlug}` as any}
+                  className="font-body text-sm font-medium text-primary hover:underline"
+                >
+                  {locale === 'fr'
+                    ? 'RCSD 2026 : êtes-vous éligible ? Tout comprendre'
+                    : 'CDCP 2026: are you eligible? Everything you need to know'}
+                </Link>
+              </div>
+              <ChevronRight size={16} className="text-primary flex-shrink-0" aria-hidden="true" />
+            </div>
+          )}
 
           <p className="text-center font-body text-sm text-on-surface-variant italic mx-auto">
             {t("covered.note")}

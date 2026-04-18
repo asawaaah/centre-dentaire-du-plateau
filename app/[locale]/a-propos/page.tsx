@@ -4,6 +4,7 @@ import { Award, Cpu, History, ScanLine, Fingerprint, Zap, ArrowRight } from "luc
 import type { Metadata } from "next";
 import { Link } from "../../../i18n/routing";
 import { TestimonialsCarousel } from "@/components/ui/TestimonialsCarousel";
+import { getServiceSlug, type ServiceKey } from "../../../lib/services";
 
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -40,9 +41,9 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   ];
 
   const technologies = [
-    { key: "cone_beam", icon: <ScanLine className="text-primary" size={32} aria-hidden="true" /> },
-    { key: "optical", icon: <Fingerprint className="text-primary" size={32} aria-hidden="true" /> },
-    { key: "laser", icon: <Zap className="text-primary" size={32} aria-hidden="true" /> },
+    { key: "cone_beam", icon: <ScanLine className="text-primary" size={32} aria-hidden="true" />, serviceKey: 'radiology' as ServiceKey },
+    { key: "optical", icon: <Fingerprint className="text-primary" size={32} aria-hidden="true" />, serviceKey: 'technology' as ServiceKey },
+    { key: "laser", icon: <Zap className="text-primary" size={32} aria-hidden="true" />, serviceKey: 'surgery' as ServiceKey },
   ];
 
 
@@ -113,22 +114,30 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {technologies.map((tech) => (
-              <div
-                key={tech.key}
-                className="bg-surface-container-lowest rounded-[2rem] p-10 space-y-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-ambient-hover)]"
-              >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-signature flex items-center justify-center">
-                  <div className="text-on-primary">{tech.icon}</div>
-                </div>
-                <h3 className="font-heading font-bold text-xl text-on-surface">
-                  {t(`tech.${tech.key}.title`)}
-                </h3>
-                <p className="font-body text-on-surface-variant leading-relaxed">
-                  {t(`tech.${tech.key}.description`)}
-                </p>
-              </div>
-            ))}
+            {technologies.map((tech) => {
+              const slug = getServiceSlug(locale, tech.serviceKey);
+              return (
+                <Link
+                  key={tech.key}
+                  href={{ pathname: '/services/[slug]', params: { slug } }}
+                  className="bg-surface-container-lowest rounded-[2rem] p-10 space-y-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-ambient-hover)] block group"
+                >
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-signature flex items-center justify-center">
+                    <div className="text-on-primary">{tech.icon}</div>
+                  </div>
+                  <h3 className="font-heading font-bold text-xl text-on-surface group-hover:text-primary transition-colors">
+                    {t(`tech.${tech.key}.title`)}
+                  </h3>
+                  <p className="font-body text-on-surface-variant leading-relaxed">
+                    {t(`tech.${tech.key}.description`)}
+                  </p>
+                  <span className="inline-flex items-center gap-1.5 font-body text-sm text-primary font-medium">
+                    {locale === 'fr' ? 'En savoir plus' : 'Learn more'}
+                    <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
