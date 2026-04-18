@@ -3,8 +3,10 @@
     "home": "Home",
     "services": "Treatments",
     "about": "Team",
+    "blog": "Blog",
     "contact": "Contact",
     "cta": "Book Now",
+    "urgence": "Emergency?",
     "phone": "514 528 1587",
     "hours_short": "Mon-Thu 9am-6pm • Fri 9am-2pm",
     "switch_lang": "Switch language",
@@ -26,8 +28,11 @@
     "nav": {
       "home": "Home",
       "about": "About Us",
+      "blog": "Blog",
       "contact": "Contact",
-      "careers": "Careers"
+      "careers": "Careers",
+      "emergency": "Dental Emergency",
+      "cdcp": "CDCP — Dental Coverage"
     },
     "hours_title": "Hours",
     "hours": {
@@ -46,7 +51,7 @@
   },
   "Carriere": {
     "meta": {
-      "title": "Careers | Centre Dentaire du Plateau",
+      "title": "Careers",
       "description": "Join the team at Centre Dentaire du Plateau. We are always looking for passionate dental health professionals."
     },
     "hero": {
@@ -208,7 +213,7 @@
   },
   "ServicePages": {
     "hygiene": {
-      "meta_title": "Dental Cleaning & Hygiene in Montreal | Centre Dentaire du Plateau",
+      "meta_title": "Dental Cleaning Plateau Mont-Royal | Scaling & Hygiene",
       "meta_description": "Professional teeth cleaning, scaling and periodontal check-ups on the Plateau Mont-Royal. Personalized prevention for healthy gums and a lasting smile.",
       "hero_title": "Dental Hygiene & Prevention",
       "hero_subtitle": "The best dentistry is the kind you never need. Our preventive protocols keep your gums healthy and catch problems before they escalate.",
@@ -245,7 +250,7 @@
       ]
     },
     "veneers": {
-      "meta_title": "Porcelain Veneers & Cosmetic Fillings in Montreal | CDP",
+      "meta_title": "Porcelain Veneers Plateau Mont-Royal | Cosmetic Dentistry",
       "meta_description": "Ultra-thin ceramic veneers (0.3 mm) and invisible composite fillings on the Plateau Mont-Royal. Correct colour, shape and gaps with minimal tooth preparation.",
       "hero_title": "Porcelain Veneers & Cosmetic Fillings",
       "hero_subtitle": "Precise, ultra-natural corrections to give you a smile you are proud to show — without compromising the structure of your teeth.",
@@ -282,7 +287,7 @@
       ]
     },
     "rootCanal": {
-      "meta_title": "Root Canal Treatment in Montreal | Crown & Endodontics | CDP",
+      "meta_title": "Root Canal Plateau Mont-Royal | Painless Endodontics & Crown",
       "meta_description": "Painless root canal therapy at Centre Dentaire du Plateau. Precise endodontic treatment and metal-free ceramic crown to save your natural tooth.",
       "hero_title": "Root Canal & Ceramic Crown",
       "hero_subtitle": "Saving your natural tooth is always our first priority. Modern root canal treatment is fast, precise and far more comfortable than you might expect.",
@@ -319,7 +324,7 @@
       ]
     },
     "implants": {
-      "meta_title": "Dental Implants in Montreal | Plateau Mont-Royal | CDP",
+      "meta_title": "Dental Implants in Montreal | Plateau Mont-Royal",
       "meta_description": "Dental implant placement on the Plateau Mont-Royal. The permanent, natural-looking solution to replace missing teeth — biocompatible and built to last.",
       "hero_title": "Dental Implants & Implant Crowns",
       "hero_subtitle": "A dental implant is the closest thing to a real tooth — beautiful, fully functional and designed to last a lifetime.",
@@ -356,7 +361,7 @@
       ]
     },
     "orthodontics": {
-      "meta_title": "Invisalign Montreal | Invisible Orthodontics for Adults & Teens | CDP",
+      "meta_title": "Invisalign Plateau Mont-Royal | Invisible Orthodontics Adults & Teens",
       "meta_description": "Straighten your teeth discreetly with Invisalign on the Plateau Mont-Royal. Metal-free orthodontics for adults and teenagers. Free Invisalign consultation.",
       "hero_title": "Invisible Orthodontics with Invisalign®",
       "hero_subtitle": "Align your teeth without brackets, without metal, without aesthetic compromise — at your pace, with custom clear aligners.",
@@ -393,7 +398,7 @@
       ]
     },
     "surgery": {
-      "meta_title": "Oral Surgery in Montreal | Tooth Extraction & Gum Graft | CDP",
+      "meta_title": "Oral Surgery Plateau Mont-Royal | Tooth Extraction & Gum Graft",
       "meta_description": "Tooth extractions, gum grafts and implant surgery on the Plateau Mont-Royal. Precise, gentle surgical care for fast recovery.",
       "hero_title": "Oral Surgery",
       "hero_subtitle": "When surgery is needed, our minimally invasive techniques and careful approach ensure your comfort and a smooth, speedy recovery.",
@@ -430,7 +435,7 @@
       ]
     },
     "radiology": {
-      "meta_title": "Digital Dental X-Ray Montreal | Panoramic & Cone Beam | CDP",
+      "meta_title": "Digital Dental X-Ray Plateau Mont-Royal | Panoramic & Cone Beam 3D",
       "meta_description": "100% digital dental radiology on the Plateau Mont-Royal. Planmeca panoramic, intraoral sensors and 3D cone beam for precise diagnostics with minimal radiation.",
       "hero_title": "Digital Dental Radiology",
       "hero_subtitle": "Sharper images, more accurate diagnoses, and up to 90% less radiation than conventional equipment — for your health and the environment.",
@@ -467,7 +472,7 @@
       ]
     },
     "whitening": {
-      "meta_title": "Professional Teeth Whitening Montreal | Plateau | CDP",
+      "meta_title": "Teeth Whitening Plateau Mont-Royal | Professional Results",
       "meta_description": "Professional teeth whitening at Centre Dentaire du Plateau. Visible, lasting results with minimal sensitivity. Achieve a brighter smile safely.",
       "hero_title": "Professional Teeth Whitening",
       "hero_subtitle": "A smile several shades brighter in one session — with safe, dentist-supervised products that deliver results that last.",
@@ -504,7 +509,7 @@
       ]
     },
     "technology": {
-      "meta_title": "Advanced Dental Technology Montreal | 3D Scanner, Laser | CDP",
+      "meta_title": "Advanced Dental Technology Plateau Mont-Royal | 3D Scanner, Laser",
       "meta_description": "Trios 3D oral scanner, Bluewave diode laser and full digital radiology at Centre Dentaire du Plateau. Technology in service of more precise and comfortable care.",
       "hero_title": "Advanced Technology in Service of Your Smile",
       "hero_subtitle": "We continuously invest in the latest innovations so that every treatment is more accurate, faster and more comfortable for you.",
@@ -678,7 +683,7 @@
         },
         "emergency": {
           "question": "How to handle a weekend emergency?",
-          "answer": "On Sundays, we are open from 10am to 2pm for urgent care. Outside these hours, please contact the on-call service."
+          "answer": "For emergencies outside our opening hours (Mon–Thu 9am–6pm, Fri 9am–2pm), leave a voicemail at 514 528-1587 — we call you back as a priority at opening. For cases that cannot wait, you may also consult a local emergency dental service."
         },
         "languages": {
           "question": "Do you speak other languages?",
@@ -697,6 +702,816 @@
           "answer": "The RAMQ covers basic dental care for children under 10 (exams, cleanings, fillings, extractions). For adults, the RAMQ generally does not cover dental care, except in rare cases such as certain oral surgeries performed in a hospital setting. If you have no private insurance, the federal Canadian Dental Care Plan (CDCP) may cover a large portion of your costs — we are a registered CDCP provider."
         }
       }
+    }
+  },
+  "DrBarchichat": {
+    "meta_title": "Dr. Saul Barchichat DMD | Dentist Plateau Mont-Royal since 1991 — ODQ",
+    "meta_description": "Dr. Saul Barchichat, DMD, dentist on Plateau Mont-Royal for over 35 years. Graduated from Université de Montréal (1991), ODQ member. Gentle, personalized approach. 514-528-1587.",
+    "breadcrumb_about": "About",
+    "hero": {
+      "eyebrow": "Your neighborhood dentist",
+      "title": "Dr. Saul Barchichat, DMD",
+      "subtitle": "Dentist on Plateau Mont-Royal since 1991. Over 35 years of commitment to our community's oral health, with a gentle, patient, and judgment-free approach.",
+      "cta_appointment": "Book an appointment",
+      "cta_call": "514 528-1587"
+    },
+    "credentials": {
+      "title": "Education & Credentials",
+      "items": [
+        {
+          "label": "Degree",
+          "value": "DMD — Doctor of Dental Medicine"
+        },
+        {
+          "label": "University",
+          "value": "Université de Montréal, Faculty of Dental Medicine (1991)"
+        },
+        {
+          "label": "Member",
+          "value": "Ordre des dentistes du Québec (ODQ)"
+        },
+        {
+          "label": "Member",
+          "value": "Canadian Dental Association (CDA)"
+        },
+        {
+          "label": "In practice since",
+          "value": "1991 — over 35 years of practice"
+        }
+      ]
+    },
+    "philosophy": {
+      "title": "His philosophy of care",
+      "body": "For Dr. Barchichat, every patient deserves full attention and a tailored treatment plan. Since the beginning of his career, he has championed preventive dentistry — treat early to avoid complex interventions — and the trust-based relationship with patients. His Plateau clinic is designed as a space of calm, far from the anxiety often associated with dental care."
+    },
+    "expertise": {
+      "title": "Areas of expertise",
+      "items": [
+        "Dental implantology",
+        "Invisible orthodontics (Invisalign®)",
+        "Cosmetic dentistry (veneers, whitening)",
+        "Preventive care & periodontics",
+        "Endodontics (root canal therapy)",
+        "Minimally invasive oral surgery",
+        "Digital radiology & 3D imaging",
+        "Pain management & dental anxiety"
+      ]
+    },
+    "approach": {
+      "title": "A patient-centered approach",
+      "items": [
+        {
+          "title": "Listening & patience",
+          "desc": "Every appointment starts with careful listening to your concerns, without rushing."
+        },
+        {
+          "title": "Clear explanations",
+          "desc": "Dr. Barchichat takes time to explain each step of your treatment in plain, understandable terms."
+        },
+        {
+          "title": "Judgment-free",
+          "desc": "Whether it has been years since your last visit or you have dental anxiety, you will be welcomed without judgment."
+        },
+        {
+          "title": "Gentle technology",
+          "desc": "Systematic use of the least invasive technologies available to minimize discomfort."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Meet Dr. Barchichat",
+      "subtitle": "Book a first comprehensive consultation. Clinical exam, X-rays, and personalized treatment plan included.",
+      "button": "Book an appointment"
+    }
+  },
+  "UrgenceDentaire": {
+    "meta_title": "Dental Emergency Plateau Mont-Royal | Available Dentist — Dr. Barchichat",
+    "meta_description": "Dental emergency in Plateau Mont-Royal? Dr. Barchichat sees you same day. Broken tooth, abscess, toothache — 1357 Mont-Royal Ave E. Call 514-528-1587.",
+    "hero": {
+      "eyebrow": "Dental emergency — Plateau Mont-Royal",
+      "title": "Severe tooth pain? We'll see you today.",
+      "subtitle": "Don't suffer needlessly. Centre Dentaire du Plateau handles dental emergencies the same day, Monday through Friday. Call us or fill out the form below.",
+      "cta_call": "Call: 514 528-1587",
+      "cta_form": "Request emergency appointment",
+      "badge": "Mon–Fri · Same-day appointments available"
+    },
+    "types": {
+      "title": "Emergencies we treat",
+      "subtitle": "Any dental pain or trauma deserves prompt attention. Here are the most common emergencies we handle.",
+      "items": [
+        {
+          "title": "Broken or cracked tooth",
+          "desc": "Trauma, impact, or accidental bite — we assess and repair the tooth."
+        },
+        {
+          "title": "Severe toothache",
+          "desc": "Acute, throbbing, or nocturnal pain — often a sign of infection. Quick treatment to relieve pain."
+        },
+        {
+          "title": "Dental abscess",
+          "desc": "Swelling, fever, discharge: a medical emergency that cannot wait."
+        },
+        {
+          "title": "Knocked-out tooth (trauma)",
+          "desc": "Keep the tooth in milk or under your tongue and call immediately — every minute counts."
+        },
+        {
+          "title": "Lost crown or filling",
+          "desc": "Extreme sensitivity or functional discomfort: we recement or protect the tooth without delay."
+        },
+        {
+          "title": "Dental bleeding",
+          "desc": "Post-extraction or traumatic bleeding that won't stop — contact us right away."
+        },
+        {
+          "title": "Painful wisdom tooth",
+          "desc": "Pericoronitis or difficult eruption: quick relief and assessment."
+        },
+        {
+          "title": "Broken appliance or mouth injury",
+          "desc": "Wire poking your cheek, broken nightguard — we adapt the care to your situation."
+        }
+      ]
+    },
+    "firstaid": {
+      "title": "What to do while waiting for your appointment",
+      "items": [
+        {
+          "situation": "Broken tooth",
+          "advice": "Rinse gently with warm water. Keep the fragment if possible. Avoid very hot or cold foods on the affected area."
+        },
+        {
+          "situation": "Toothache",
+          "advice": "Take an over-the-counter painkiller (ibuprofen or acetaminophen). Avoid heat on the area. Call us."
+        },
+        {
+          "situation": "Dental abscess",
+          "advice": "Never try to drain an abscess yourself. Rinse gently with salt water. Seek emergency care — an untreated infection can spread quickly."
+        },
+        {
+          "situation": "Knocked-out tooth",
+          "advice": "Hold the tooth by the crown, not the root. Rinse it gently without scrubbing. Store it in cold milk or saline. Come within the hour — replantation success drops rapidly after 30–60 minutes."
+        },
+        {
+          "situation": "Lost crown",
+          "advice": "Keep the crown safe. Do not try to reglue it with super glue. Call us for an urgent appointment."
+        }
+      ]
+    },
+    "availability": {
+      "title": "Our availability",
+      "hours": [
+        {
+          "days": "Monday — Thursday",
+          "time": "9:00 am — 6:00 pm"
+        },
+        {
+          "days": "Friday",
+          "time": "9:00 am — 2:00 pm"
+        },
+        {
+          "days": "Saturday - Sunday",
+          "time": "Closed"
+        }
+      ],
+      "note": "For emergencies outside these hours, leave a voicemail at 514 528-1587 — we call you back as a priority at opening.",
+      "address": "1357 Avenue du Mont-Royal Est, Montréal (Mont-Royal metro)"
+    },
+    "faq": {
+      "title": "Frequently asked questions — Dental emergencies",
+      "items": [
+        {
+          "q": "Can I walk in without an appointment for an emergency?",
+          "a": "We recommend calling ahead at 514 528-1587 so we can reserve a priority slot for you. In case of an absolute emergency, walk in and we will do our best to see you the same day."
+        },
+        {
+          "q": "How much does an emergency visit cost?",
+          "a": "Emergency consultation fees are similar to a regular visit. We accept card, cash, and direct billing to most private insurance plans. The Canadian Dental Care Plan (CDCP) also covers certain emergency procedures."
+        },
+        {
+          "q": "What are your emergency hours?",
+          "a": "We are available Monday to Thursday from 9 am to 6 pm and Friday from 9 am to 2 pm. Outside these hours, leave a voicemail at 514 528-1587 — we call you back as a priority at opening."
+        },
+        {
+          "q": "My tooth was knocked out — what should I do immediately?",
+          "a": "Handle the tooth by the crown, never the root. Rinse it gently without scrubbing the root. Store it in cold milk or saline. Call us immediately — the chances of successful replantation drop rapidly after 30 to 60 minutes."
+        },
+        {
+          "q": "Do you treat children in emergencies?",
+          "a": "Yes, we treat patients of all ages including children. Dental trauma in children (baby or permanent teeth) requires rapid assessment to avoid complications with their development."
+        },
+        {
+          "q": "How do I know if I have a dental abscess?",
+          "a": "Signs of an abscess include: intense throbbing pain, swelling of the gum or cheek, persistent bad taste in your mouth, fever, and sensitivity to pressure or heat. An untreated abscess can spread — seek emergency care."
+        },
+        {
+          "q": "Do you work with insurance for emergencies?",
+          "a": "Yes. We offer direct billing with most private insurance providers. Bring your insurance card and we submit the claim directly. We are also a registered Canadian Dental Care Plan (CDCP) provider."
+        },
+        {
+          "q": "How do I get to the clinic in an emergency?",
+          "a": "We are located at 1357 Avenue du Mont-Royal Est (between Boyer and Garnier streets), a 3-minute walk from Mont-Royal metro station (orange line). Street parking is available nearby."
+        }
+      ]
+    }
+  },
+  "RCSD": {
+    "meta_title": "Canadian Dental Care Plan (CDCP) 2026",
+    "meta_description": "Centre Dentaire du Plateau is a registered CDCP provider. Find out who qualifies, what's covered, and how to use your benefits at your next appointment. Call 514-528-1587.",
+    "hero": {
+      "eyebrow": "Federal program — Updated 2025",
+      "title": "Canadian Dental Care Plan (CDCP)",
+      "subtitle": "The Government of Canada covers your dental care if you have no private insurance. We are a registered provider — come as you are, we handle everything.",
+      "badge": "We bill Service Canada directly",
+      "cta_appointment": "Check my eligibility",
+      "cta_call": "514 528-1587"
+    },
+    "eligibility": {
+      "title": "Who qualifies for the CDCP?",
+      "subtitle": "The program is open to most Canadians without private dental insurance. Check in 30 seconds if you're eligible.",
+      "criteria": [
+        {
+          "label": "Income",
+          "value": "Adjusted family net income under $90,000/year"
+        },
+        {
+          "label": "Insurance",
+          "value": "No private or group dental insurance"
+        },
+        {
+          "label": "Status",
+          "value": "Canadian resident with a valid SIN"
+        },
+        {
+          "label": "Tax filing",
+          "value": "Tax return filed for the previous year"
+        }
+      ],
+      "coverage_levels": {
+        "title": "Reimbursement rates by income",
+        "items": [
+          {
+            "income": "Under $70,000/year",
+            "rate": "100% of costs covered"
+          },
+          {
+            "income": "$70,000 – $79,999/year",
+            "rate": "60% of costs covered"
+          },
+          {
+            "income": "$80,000 – $89,999/year",
+            "rate": "40% of costs covered"
+          },
+          {
+            "income": "$90,000/year and above",
+            "rate": "Not eligible"
+          }
+        ]
+      }
+    },
+    "covered": {
+      "title": "Services covered by the CDCP",
+      "subtitle": "The program covers a wide range of essential dental services, including the most common treatments we perform at the clinic.",
+      "items": [
+        {
+          "category": "Prevention",
+          "services": "Dental exams, cleanings, X-rays, sealants"
+        },
+        {
+          "category": "Basic treatments",
+          "services": "Fillings, extractions, root canals"
+        },
+        {
+          "category": "Prosthetics",
+          "services": "Full and partial dentures, crowns"
+        },
+        {
+          "category": "Orthodontics",
+          "services": "Certain orthodontic appliances (based on eligibility)"
+        },
+        {
+          "category": "Emergencies",
+          "services": "Emergency consultations, palliative treatments"
+        }
+      ],
+      "note": "Purely cosmetic services (whitening, veneers) are not covered by the CDCP."
+    },
+    "how_it_works": {
+      "title": "How does it work at our clinic?",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Register for the CDCP",
+          "desc": "Visit canada.ca or call Service Canada at 1-888-698-2294. You will receive a letter or access through your My Service Canada Account."
+        },
+        {
+          "step": "2",
+          "title": "Book your appointment",
+          "desc": "Call us at 514 528-1587 or book online. Mention that you are using the CDCP — we block the time needed for your care."
+        },
+        {
+          "step": "3",
+          "title": "Bring your CDCP card",
+          "desc": "Bring your CDCP dental insurance card (or your SIN). Our team verifies your eligibility directly in the system."
+        },
+        {
+          "step": "4",
+          "title": "We submit on your behalf",
+          "desc": "We submit the reimbursement claim directly to Service Canada. You only pay any portion not covered, if applicable."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions — CDCP",
+      "items": [
+        {
+          "q": "How do I register for the Canadian Dental Care Plan?",
+          "a": "Register at canada.ca/dental-care or call Service Canada at 1-888-698-2294. You will need your SIN and your most recent tax return. Registration is free and takes a few minutes."
+        },
+        {
+          "q": "Are my children covered by the CDCP?",
+          "a": "Yes. All members of an eligible family can benefit from the program, including children. Care for those under 18 is included in the family coverage, provided eligibility criteria are met."
+        },
+        {
+          "q": "Does the CDCP cover dental implants?",
+          "a": "Implants may be partially covered depending on your clinical situation and your CDCP coverage level. A prior consultation is needed to assess coverage. At your appointment, we verify what applies to your specific case."
+        },
+        {
+          "q": "Do I pay upfront and get reimbursed?",
+          "a": "No. We use direct billing — you only pay the uncovered portion (if any) at the time of the visit. We submit the claim directly to Service Canada on your behalf."
+        },
+        {
+          "q": "Does the CDCP renew automatically?",
+          "a": "No. You must renew your eligibility each year after filing your tax return. Service Canada sends a notification when renewal is available. Make sure to update your profile to avoid losing your coverage."
+        },
+        {
+          "q": "Can I use the CDCP if I have partial insurance?",
+          "a": "No. The CDCP is reserved for people with no private or group dental insurance — even partial coverage disqualifies you. If you have any insurance coverage, you are not eligible for the federal program."
+        },
+        {
+          "q": "What if my dentist is not registered with the CDCP?",
+          "a": "Centre Dentaire du Plateau is a registered CDCP provider. If your current dentist is not enrolled, you can visit us using your CDCP benefits. Call us to book an appointment or to verify your eligibility."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Think you qualify?",
+      "subtitle": "Book an appointment — our team checks your CDCP coverage on the spot and submits the claim on your behalf. No extra steps on your end.",
+      "button": "Book an appointment"
+    }
+  },
+  "Blog": {
+    "meta_title": "Dental Blog — Tips & News | Dentist Plateau Mont-Royal",
+    "meta_description": "Dental tips, practical guides and oral health news written by Dr. Barchichat, dentist on the Plateau Mont-Royal since 1991.",
+    "hero_title": "Dental tips from the Plateau",
+    "hero_subtitle": "Articles written by Dr. Saul Barchichat — dentist on Plateau Mont-Royal for over 35 years — to help you take care of your oral health.",
+    "read_more": "Read the article",
+    "min_read": "min read",
+    "by_author": "By Dr. Saul Barchichat",
+    "back_to_blog": "← Back to blog",
+    "related_articles": "Related articles",
+    "sidebar_cta_title": "Need an appointment?",
+    "sidebar_cta_subtitle": "Our team is available Monday through Friday.",
+    "sidebar_cta_button": "Book an appointment",
+    "sidebar_author_title": "About the author",
+    "sidebar_author_name": "Dr. Saul Barchichat, DMD",
+    "sidebar_author_bio": "Dentist on the Plateau Mont-Royal since 1991. Graduate of Université de Montréal.",
+    "sidebar_author_link": "View full profile",
+    "categories": {
+      "urgence": "Emergencies",
+      "soins": "Treatments",
+      "orthodontie": "Orthodontics",
+      "prevention": "Prevention",
+      "assurance": "Insurance"
+    }
+  },
+  "BlogPages": {
+    "urgence-quoi-faire": {
+      "meta_title": "Dental Emergency on the Plateau: What to Do? | Plateau Montreal",
+      "meta_description": "Broken tooth, abscess, toothache on the Plateau Mont-Royal? Learn what to do in each situation. Dr. Barchichat's guide — call 514-528-1587.",
+      "hero_title": "Dental emergency on the Plateau-Mont-Royal: what to do?",
+      "hero_subtitle": "A practical guide from Dr. Saul Barchichat on how to react quickly to a dental emergency.",
+      "category": "urgence",
+      "intro": "A dental emergency rarely comes at a convenient time. Sudden pain, a tooth broken at dinner, a swollen abscess on a Monday morning — each situation calls for a rapid, appropriate response. As a dentist on the Plateau Mont-Royal for over 35 years, here are the tips I give my patients to help them get through a difficult moment and preserve their tooth.",
+      "sections": [
+        {
+          "h2": "1. Broken or chipped tooth",
+          "body": "Rinse your mouth with warm water to remove debris. If the fracture exposes the pulp (sharp pain from air or cold), cover the tooth with dental wax or a temporary cap available at the pharmacy. Collect any fragments if possible and call your dentist immediately — ideally within 24 hours.",
+          "list": [
+            "Rinse with warm water",
+            "Cover the fractured tooth with dental wax",
+            "Avoid hard or sugary foods",
+            "Call 514-528-1587 for an emergency appointment"
+          ]
+        },
+        {
+          "h2": "2. Knocked-out tooth (avulsion)",
+          "body": "This is the situation that demands the fastest response. Hold the tooth by the crown (never the root), rinse gently without scrubbing, and reinsert it into the socket if possible. Otherwise, store it in milk or between your cheek and gum. Every minute counts: a tooth reimplanted within 30 minutes has an excellent chance of survival.",
+          "list": [
+            "Never touch the root",
+            "Rinse gently and reinsert if possible",
+            "Store in milk otherwise",
+            "See a dentist within 30 minutes ideally"
+          ]
+        },
+        {
+          "h2": "3. Dental abscess",
+          "body": "An abscess is a bacterial infection that can spread quickly. Typical signs: intense, throbbing pain, swollen cheek, fever, bad taste in the mouth. Never lance an abscess yourself. Rinse with warm salt water for temporary relief, and seek emergency care. If you have a fever or difficulty swallowing, go to the hospital emergency room.",
+          "list": [
+            "Never lance the abscess yourself",
+            "Rinse with warm salt water every 2 hours",
+            "Take a pain reliever (ibuprofen) for discomfort",
+            "See your dentist the same day"
+          ]
+        },
+        {
+          "h2": "4. Severe toothache (pulpitis)",
+          "body": "Pulpitis is inflammation of the dental pulp often caused by advanced decay. The pain is typically sharp, persistent and worsened by heat or cold. Ibuprofen is generally more effective than acetaminophen for this type of pain. Avoid placing aspirin directly on the gum — it can burn the tissue. A root canal is often necessary.",
+          "list": [
+            "Take ibuprofen (unless contraindicated)",
+            "Avoid hot and cold on the tooth",
+            "Never apply aspirin directly on the gum",
+            "Seek care promptly — a root canal can save the tooth"
+          ]
+        },
+        {
+          "h2": "5. Loose or lost crown",
+          "body": "If your crown falls off, keep it carefully. You can temporarily reattach it with temporary dental cement available at the pharmacy. Never use Super Glue. Avoid chewing on the affected side and call your dentist to schedule an appointment within the next couple of days.",
+          "list": [
+            "Keep the dislodged crown",
+            "Temporarily reattach with pharmacy dental cement",
+            "Avoid chewing on the affected side",
+            "Call your dentist within 48 hours"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do you see emergency patients without an appointment on the Plateau?",
+          "a": "Yes. At Centre Dentaire du Plateau, we reserve daily time slots for emergencies. Call us at 514-528-1587 as soon as we open and we will do everything we can to see you the same day."
+        },
+        {
+          "q": "What are your emergency hours?",
+          "a": "We are open Monday through Thursday from 9am to 6pm and Friday from 9am to 2pm. For emergencies outside these hours, call 514-528-1587 and follow the voicemail instructions."
+        },
+        {
+          "q": "Is dental emergency care covered by Quebec health insurance?",
+          "a": "The RAMQ generally does not cover dental care for adults. However, many group insurance plans and the Canadian Dental Care Plan (CDCP) cover a portion of emergency care. Check your policy and feel free to call us to verify your coverage."
+        },
+        {
+          "q": "Can dental emergencies be prevented?",
+          "a": "In many cases, yes. A preventive visit every 6 months allows cavities, weaknesses and signs of infection to be detected before they become emergencies. Athletes should also wear a mouthguard during contact sports."
+        },
+        {
+          "q": "My child received a blow to the face and a tooth is loose — what should I do?",
+          "a": "See a dentist immediately. A loose baby tooth is generally not reimplanted, but a loose permanent tooth can often be stabilized if you act quickly. Call us at 514-528-1587."
+        }
+      ],
+      "internal_link": "/urgence-dentaire",
+      "internal_link_label": "View our dental emergency page"
+    },
+    "implant-guide-complet": {
+      "meta_title": "Dental Implant in Montreal: Complete Guide, Cost & Timeline | Plateau Montreal",
+      "meta_description": "Everything you need to know about dental implants in Montreal: cost, treatment duration, ideal candidates. Dr. Barchichat's guide, Plateau Mont-Royal.",
+      "hero_title": "Dental implant in Montreal: complete guide, cost and timeline",
+      "hero_subtitle": "Everything you need to know before getting started, by Dr. Saul Barchichat.",
+      "category": "soins",
+      "intro": "A dental implant is today the closest tooth replacement to a real tooth. Unlike a bridge or removable denture, it integrates directly into the jawbone and provides unmatched stability, comfort and aesthetics. Here is what I systematically explain to my patients at the Plateau Mont-Royal before starting implant treatment.",
+      "sections": [
+        {
+          "h2": "What is a dental implant?",
+          "body": "A dental implant is a titanium screw (or zirconia for patients with metal sensitivity) surgically inserted into the alveolar bone to replace the root of a missing tooth. An abutment and a custom crown are then attached to the implant. The result is indistinguishable from a natural tooth both visually and functionally.",
+          "list": [
+            "Lifespan: 15 to 25 years with proper care",
+            "Material: grade IV titanium or zirconia (metal-free option)",
+            "Success rate: 95 to 98% according to clinical studies",
+            "Preserves jawbone unlike a bridge"
+          ]
+        },
+        {
+          "h2": "Who can receive a dental implant?",
+          "body": "Most healthy adults are good candidates. However, some factors may require prior preparation: smoking (slows healing), uncontrolled diabetes, bisphosphonate therapy (osteoporosis treatment) or significant bone loss. In the last case, a bone graft may be needed before implant placement.",
+          "list": [
+            "Adults with good general health",
+            "Completed bone growth (generally 18 years old)",
+            "Satisfactory oral hygiene",
+            "Diabetic or smoking patients can be treated with precautions"
+          ]
+        },
+        {
+          "h2": "Treatment steps: how long does it take?",
+          "body": "Implant treatment takes place in several phases. Generally count 3 to 6 months from start to placement of the final crown.",
+          "list": [
+            "Consultation and assessment (panoramic, cone beam if needed): 1 visit",
+            "Extraction of remaining tooth if necessary: 1 visit",
+            "Surgical placement of the implant: 1 visit (under local anesthesia)",
+            "Bone healing (osseointegration): 2 to 4 months",
+            "Abutment placement and impression: 1 visit",
+            "Final crown placement: 1 visit"
+          ]
+        },
+        {
+          "h2": "Cost of a dental implant in Montreal",
+          "body": "The total cost of a dental implant in Montreal generally ranges from $2,500 to $4,500 per tooth, including surgery, abutment and crown. This amount may be higher if a bone graft is needed. Although more expensive upfront than a bridge, an implant is often more economical over 20 years as it does not require replacing adjacent teeth.",
+          "list": [
+            "Implant + crown: $2,500 to $4,500 per tooth",
+            "Bone graft if needed: $500 to $1,500 additional",
+            "Some insurance plans cover 50% of prosthetic care",
+            "CDCP may cover a portion for eligible patients"
+          ]
+        },
+        {
+          "h2": "Implant vs bridge: which to choose?",
+          "body": "A bridge is faster and generally less expensive upfront, but it requires shaping healthy adjacent teeth and does not preserve bone. An implant preserves the integrity of neighboring teeth, maintains bone volume and offers a far superior lifespan. For a healthy patient, an implant is almost always the best long-term solution."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is the procedure painful?",
+          "a": "Implant placement is done under local anesthesia. During the procedure, you should feel nothing. In the 48 hours that follow, moderate pain and slight swelling are normal. Common analgesics (ibuprofen, acetaminophen) are generally sufficient to control discomfort."
+        },
+        {
+          "q": "How long does an implant last?",
+          "a": "With good hygiene and regular check-ups, an implant can last 20 to 25 years, or even a lifetime. The porcelain crown may need to be replaced after 15 to 20 years due to normal wear."
+        },
+        {
+          "q": "Does my insurance cover implants?",
+          "a": "Many dental insurance plans cover 50% of prosthetic care up to an annual maximum. Check your policy. The Canadian Dental Care Plan (CDCP) also provides coverage for certain prosthetic procedures depending on your income."
+        },
+        {
+          "q": "Can multiple implants be placed simultaneously?",
+          "a": "Yes, it is possible to place multiple implants in the same surgery, reducing the number of visits and overall recovery time. We will evaluate your situation at the initial consultation."
+        }
+      ],
+      "internal_link": "/services/implants-dentaires",
+      "internal_link_label": "Learn more about our dental implant services"
+    },
+    "rcsd-eligibilite-2026": {
+      "meta_title": "Canadian Dental Care Plan 2026: Are You Eligible? | Plateau Montreal",
+      "meta_description": "Complete CDCP 2026 guide: eligibility criteria, coverage, how to apply. Centre Dentaire du Plateau is a registered provider — we handle everything.",
+      "hero_title": "Canadian Dental Care Plan 2026: are you eligible?",
+      "hero_subtitle": "Everything you need to understand about the CDCP to benefit at Centre Dentaire du Plateau.",
+      "category": "assurance",
+      "intro": "Launched by the federal government, the Canadian Dental Care Plan (CDCP) allows millions of low- and middle-income Canadians to access covered dental care. As a registered CDCP provider clinic, we submit claims directly on behalf of our patients. Here is everything you need to know to find out if you qualify and how to take advantage of it.",
+      "sections": [
+        {
+          "h2": "Who is eligible for the CDCP?",
+          "body": "To be eligible for the CDCP in 2026, you must meet all three of the following conditions:",
+          "list": [
+            "Be a Canadian resident",
+            "Not have access to private dental insurance",
+            "Have an adjusted family net income below $90,000"
+          ]
+        },
+        {
+          "h2": "What level of coverage based on your income?",
+          "body": "Coverage varies based on your adjusted family net income. The lower your income, the higher your coverage.",
+          "list": [
+            "Under $70,000: 100% of covered services (no co-pay)",
+            "Between $70,000 and $79,999: 60% coverage",
+            "Between $80,000 and $89,999: 40% coverage",
+            "$90,000 and above: not eligible"
+          ]
+        },
+        {
+          "h2": "What services are covered by the CDCP?",
+          "body": "The CDCP covers a wide range of preventive and basic oral health services.",
+          "list": [
+            "Dental exams and X-rays",
+            "Cleanings and scaling (preventive hygiene)",
+            "Fillings for cavities",
+            "Tooth extractions",
+            "Basic root canal treatments",
+            "Dental prostheses (partial and complete dentures)",
+            "Basic periodontal care",
+            "Dental emergencies"
+          ]
+        },
+        {
+          "h2": "How to benefit at Centre Dentaire du Plateau?",
+          "body": "The process is simple. At your appointment, let our team know you wish to use your CDCP coverage. We verify your eligibility directly online and submit the reimbursement claim on your behalf. Nothing more is required from you.",
+          "list": [
+            "Bring your health insurance card (RAMQ)",
+            "Mention CDCP when booking your appointment",
+            "Our team verifies your coverage on-site",
+            "We submit the claim directly to Sun Life"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do I enroll in the CDCP?",
+          "a": "Enrollment is done online at the Service Canada website or by phone at 1-833-537-4342. You will need your social insurance number and income information. Once enrolled, you will receive a coverage card."
+        },
+        {
+          "q": "Does the CDCP cover dental implants?",
+          "a": "The CDCP covers certain prosthetic procedures depending on your situation. Implants are not systematically covered, but alternative prostheses (partial, complete dentures) may be. Contact us for a personalized assessment."
+        },
+        {
+          "q": "I have workplace insurance — can I still benefit from the CDCP?",
+          "a": "No. If you have access to private dental insurance through your employer or spouse, you are not eligible for the CDCP, even if that insurance only provides partial coverage."
+        },
+        {
+          "q": "Can my child be covered by the CDCP?",
+          "a": "Yes. Children can be covered under the family CDCP coverage if the family income qualifies. There is no minimum age."
+        }
+      ],
+      "internal_link": "/regime-canadien-soins-dentaires",
+      "internal_link_label": "See our complete CDCP guide"
+    },
+    "invisalign-vs-broches": {
+      "meta_title": "Invisalign or Braces: Everything to Know Before Choosing | Plateau Montreal",
+      "meta_description": "Invisalign vs traditional braces? Full comparison: effectiveness, price, duration, maintenance. Dr. Barchichat's honest advice, Plateau Mont-Royal dentist.",
+      "hero_title": "Invisalign or braces: everything to know before choosing",
+      "hero_subtitle": "A thorough comparison by Dr. Saul Barchichat to help you make the right choice.",
+      "category": "orthodontie",
+      "intro": "The question comes up often in consultations: should I choose Invisalign or traditional braces to straighten my teeth? Both options work well, but each has advantages and limitations depending on your clinical case, lifestyle and budget. Here is my honest answer after years of orthodontic practice on the Plateau Mont-Royal.",
+      "sections": [
+        {
+          "h2": "How does Invisalign work?",
+          "body": "Invisalign uses a series of clear plastic aligners, custom-made from a 3D digital impression of your teeth. Each aligner is worn 20 to 22 hours per day for 1 to 2 weeks, then replaced by the next one. A complete treatment includes between 12 and 40 aligners depending on case complexity.",
+          "list": [
+            "Virtually invisible day-to-day",
+            "Removable for eating and brushing",
+            "Comfortable (no wires or brackets)",
+            "Digital tracking with final result visualization before start"
+          ]
+        },
+        {
+          "h2": "Traditional braces: advantages and limitations",
+          "body": "Braces remain the gold standard for complex cases: severe malocclusions, significant rotations, bite problems. They are permanently attached to the teeth and cannot be removed, ensuring continuous orthodontic force 24 hours a day. Ceramic braces offer a better aesthetic than traditional metal braces.",
+          "list": [
+            "Ideal for complex cases",
+            "No risk of forgetting to wear",
+            "Metal or ceramic (more discreet option)",
+            "Require monthly adjustments and rigorous hygiene"
+          ]
+        },
+        {
+          "h2": "Invisalign vs braces: objective comparison",
+          "body": "Here are the main criteria to compare based on your personal situation.",
+          "list": [
+            "Aesthetics: Invisalign wins (nearly invisible) vs braces (visible, ceramic as a compromise)",
+            "Comfort: Invisalign wins (no mucosal irritation) vs braces (possible irritations)",
+            "Complex case effectiveness: braces win vs Invisalign (limits on significant rotations)",
+            "Hygiene: Invisalign wins (removable) vs braces (harder to clean around brackets)",
+            "Price: comparable — expect $4,000 to $8,000 for both options",
+            "Duration: similar — 12 to 24 months depending on complexity"
+          ]
+        },
+        {
+          "h2": "Which treatment for which case?",
+          "body": "Invisalign works very well for mild to moderate misalignment in motivated patients who can commit to wearing the aligners. Braces are preferred for severe cases, younger patients, or those who may not wear aligners long enough. A consultation is essential to determine which option is best suited to your specific dentition."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the cost of Invisalign on the Plateau Mont-Royal?",
+          "a": "An Invisalign treatment typically costs between $4,500 and $7,500 depending on complexity. This amount includes 3D planning, all aligners and retainer trays at the end of treatment. Some insurance plans cover orthodontics up to a certain maximum."
+        },
+        {
+          "q": "At what age can orthodontic treatment begin?",
+          "a": "Orthodontic treatment can start once permanent teeth are in place, generally around age 11–13. However, adult orthodontics is equally effective — there is no upper age limit. More and more patients aged 30 to 50 are choosing Invisalign."
+        },
+        {
+          "q": "Is Invisalign treatment painful?",
+          "a": "Slight discomfort is possible when changing aligners, usually for 1 to 2 days. This is a normal pressure indicating teeth are moving. This discomfort is generally lower than with traditional braces."
+        },
+        {
+          "q": "What happens after orthodontic treatment?",
+          "a": "A retention phase is essential after any orthodontic treatment to maintain results. We make custom retainer trays to wear at night. Without retention, teeth naturally tend to return to their original position."
+        }
+      ],
+      "internal_link": "/services/orthodontie-invisible",
+      "internal_link_label": "Discover our invisible orthodontics treatments"
+    },
+    "detartrage-pourquoi": {
+      "meta_title": "Dental Scaling: Why Twice a Year? | Dental Hygienist Plateau Montreal",
+      "meta_description": "Is dental scaling twice a year really necessary? Our dental hygienist from Plateau Mont-Royal explains tartar, gingivitis, and the importance of prevention.",
+      "hero_title": "Why dental scaling twice a year is essential",
+      "hero_subtitle": "The explanation from our dental hygienist at Centre Dentaire du Plateau.",
+      "category": "prevention",
+      "intro": "It is one of the most common questions we hear at the clinic: \"I haven't been to the dentist in a couple of years — is that a problem?\" Often, the answer reveals that the patient has not been seen for 2 or 3 years. Dental prevention — particularly professional scaling — is the best way to keep your mouth healthy and avoid costly treatments.",
+      "sections": [
+        {
+          "h2": "What is tartar and why is it problematic?",
+          "body": "Dental plaque is a bacterial film that forms naturally on your teeth after every meal. If not removed through regular brushing and flossing, it mineralizes within 24 to 72 hours to form tartar (dental calculus). Once calcified, tartar can no longer be removed by brushing — it requires professional scaling.",
+          "list": [
+            "Tartar irritates the gums and causes gingivitis",
+            "Left untreated, it progresses to periodontitis (severe gum disease)",
+            "Periodontitis is the leading cause of tooth loss in adults",
+            "Links have been established between periodontal disease and heart disease"
+          ]
+        },
+        {
+          "h2": "What is a professional dental cleaning?",
+          "body": "During a scaling (or dental prophylaxis), our hygienist uses ultrasonic and manual instruments to remove supragingival (above the gum) and subgingival (below the gum) tartar. The treatment also includes polishing tooth surfaces and personalized hygiene advice. The appointment lasts approximately 45 to 60 minutes.",
+          "list": [
+            "Ultrasonic scaling (comfortable and effective)",
+            "Subgingival scaling for deep areas",
+            "Polishing to remove surface stains",
+            "Personalized brushing and flossing advice"
+          ]
+        },
+        {
+          "h2": "Why twice a year and not once?",
+          "body": "The recommendation for two visits per year is based on the time it takes tartar to accumulate to a clinically significant level — generally 6 months. Some patients (smokers, diabetics, people with a history of periodontitis) may need up to 4 cleanings per year. Conversely, patients with perfect hygiene and little tartar may only need to visit once a year. Your hygienist will adjust the frequency to your situation."
+        },
+        {
+          "h2": "What prevention actually saves you",
+          "body": "A professional cleaning twice a year typically costs $100 to $200 per visit. By comparison, treating advanced periodontitis (root planing) can cost $800 to $2,000, not counting the extractions or implants that may follow. Prevention is clearly the most cost-effective investment for your dental health.",
+          "list": [
+            "Prevents gingivitis and periodontitis",
+            "Detects cavities at an early stage (less treatment needed)",
+            "Reduces the risk of long-term tooth loss",
+            "Far less expensive than curative care"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does scaling hurt?",
+          "a": "For the majority of patients, scaling is not painful. Some sensitivity is possible if the gums are inflamed or if there is heavy tartar buildup. We use ultrasonic instruments that minimize discomfort, and we can apply a numbing gel if needed."
+        },
+        {
+          "q": "Is my cleaning covered by insurance?",
+          "a": "The vast majority of dental insurance plans cover 2 professional cleanings per year at 80-100%. The CDCP also covers preventive hygiene care for eligible patients."
+        },
+        {
+          "q": "Do I need a cleaning even if my teeth don't hurt?",
+          "a": "Absolutely. Most serious dental problems (deep cavities, periodontitis) are asymptomatic in their early stages. Waiting until something hurts usually means waiting until the problem is much more severe — and much more expensive to treat."
+        },
+        {
+          "q": "Does an electric toothbrush replace professional scaling?",
+          "a": "No. An electric toothbrush is excellent for removing plaque daily, but it cannot remove calcified tartar. Only a professional with appropriate instruments can do that."
+        }
+      ],
+      "internal_link": "/services/hygiene-dentaire",
+      "internal_link_label": "Learn more about our dental hygiene service"
+    },
+    "blanchiment-pro-vs-maison": {
+      "meta_title": "Professional vs At-Home Teeth Whitening: The Truth | Plateau Montreal",
+      "meta_description": "Professional teeth whitening or at-home kit? Effectiveness, safety, lasting results. Dr. Barchichat's honest take, dentist on Plateau Mont-Royal.",
+      "hero_title": "Professional vs at-home teeth whitening: the truth",
+      "hero_subtitle": "Which option is truly effective, safe and long-lasting? Dr. Barchichat's take.",
+      "category": "soins",
+      "intro": "Teeth whitening is the most requested cosmetic treatment in the office. With the proliferation of kits sold at pharmacies, grocery stores and even on Instagram, confusion is widespread. Here is what I tell patients who ask me: \"Doctor, is it worth paying more for professional whitening?\"",
+      "sections": [
+        {
+          "h2": "How does teeth whitening work?",
+          "body": "The active ingredient in all whitening products is peroxide — either hydrogen peroxide or carbamide peroxide which breaks down into hydrogen peroxide. This molecule penetrates tooth enamel and breaks down colored pigments embedded in the dentinal tubules. The concentration of peroxide and the application time determine effectiveness.",
+          "list": [
+            "Professional products: 25 to 40% hydrogen peroxide",
+            "Pharmacy kits: 6 to 10% peroxide (EU/Canada regulatory limit)",
+            "Over-the-counter products (strips, pens): 1 to 3% — very limited effectiveness",
+            "Activated charcoal, baking soda: abrasive, do not chemically whiten"
+          ]
+        },
+        {
+          "h2": "In-office whitening: what to expect",
+          "body": "At the office, we offer two complementary approaches. In-chair whitening (Zoom or Beyond type) uses a high concentration of gel activated by LED light for 60 to 90 minutes. Take-home whitening uses custom trays with a lower concentration gel worn 2 to 4 hours per day for 2 to 3 weeks. Both methods can be combined for maximum results.",
+          "list": [
+            "In-chair whitening: visible results from the first session (3 to 8 shades)",
+            "Custom trays: gradual and lasting results",
+            "Protective gel on gums to prevent irritation",
+            "Included follow-up: before and after assessment with Vita shade comparison"
+          ]
+        },
+        {
+          "h2": "Pharmacy at-home kits: honestly",
+          "body": "Pharmacy kits (Crest, Colgate Optic White, etc.) are safe and can produce mild results on surface stains. But their concentration is limited by Canadian regulation, and universal trays don't fit your dentition perfectly — which reduces gel contact with teeth and increases the risk of gum irritation. Expect a maximum of 1 to 2 shade changes.",
+          "list": [
+            "Limited effectiveness (1 to 2 shades vs 3 to 8 in office)",
+            "Non-custom trays (less effective)",
+            "Risk of gingival irritation if poorly fitting",
+            "Less lasting results (6 to 12 months vs 18 to 36 months in office)"
+          ]
+        },
+        {
+          "h2": "Who can have their teeth whitened?",
+          "body": "Whitening is safe for healthy tooth enamel. It is contraindicated during pregnancy and breastfeeding, on teeth with untreated active cavities, and on restorations (crowns, veneers, fillings) which do not whiten. A prior assessment is essential to ensure your teeth and gums are in good health before starting."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does teeth whitening damage enamel?",
+          "a": "No, when done correctly with appropriate concentrations. Twenty years of clinical studies show that peroxide whitening, used as directed, causes no lasting damage to enamel. Temporary post-treatment sensitivity (24 to 48 hours) is normal and reversible."
+        },
+        {
+          "q": "How long do the results last?",
+          "a": "Professional whitening typically lasts 1 to 3 years depending on your consumption of coffee, tea, red wine and tobacco. Annual touch-ups with custom trays make it very easy to maintain results."
+        },
+        {
+          "q": "Does whitening work on crowns or veneers?",
+          "a": "No. Porcelain, composite or zirconia restorations do not respond to whitening agents. If you want to harmonize the color of your natural teeth with your restorations, this should be discussed with your dentist before treatment."
+        },
+        {
+          "q": "What does professional whitening cost on the Plateau Mont-Royal?",
+          "a": "In-office whitening typically costs between $400 and $700 depending on the type of treatment (single session or custom trays). This price includes the pre-treatment assessment, follow-up and maintenance trays. Most insurance plans do not cover cosmetic treatments."
+        }
+      ],
+      "internal_link": "/services/blanchiment-dentaire",
+      "internal_link_label": "Discover our teeth whitening service"
     }
   }
 }

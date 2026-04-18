@@ -1,7 +1,8 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
-import { Award, Cpu, History, ScanLine, Fingerprint, Zap } from "lucide-react";
+import { Award, Cpu, History, ScanLine, Fingerprint, Zap, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
+import { Link } from "../../../i18n/routing";
 import { TestimonialsCarousel } from "@/components/ui/TestimonialsCarousel";
 
 
@@ -9,11 +10,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   return {
     title: locale === 'fr'
-      ? "Dr. Saul Barchichat | Dentiste à Montréal — Centre Dentaire du Plateau"
-      : "Dr. Saul Barchichat | Dentist in Montreal — Centre Dentaire du Plateau",
+      ? "Notre Clinique & Équipe — Dentiste Plateau Mont-Royal"
+      : "Our Clinic & Team — Dentist Plateau Mont-Royal",
     description: locale === 'fr'
-      ? "Rencontrez le Dr. Saul Barchichat, dentiste au Centre Dentaire du Plateau à Montréal. Membre de l'ODQ, il offre des soins complets pour patients de tous âges au Plateau Mont-Royal."
-      : "Meet Dr. Saul Barchichat, dentist at Centre Dentaire du Plateau in Montreal. ODQ member providing comprehensive care for patients of all ages on Plateau Mont-Royal.",
+      ? "Découvrez l'équipe et la mission du Centre Dentaire du Plateau — Dr. Barchichat, technologies de pointe et approche douce au Plateau Mont-Royal depuis 1991. 514-528-1587."
+      : "Meet the team and mission of Centre Dentaire du Plateau — Dr. Barchichat, advanced technology and gentle approach on Plateau Mont-Royal since 1991. 514-528-1587.",
     alternates: {
       canonical: `https://dentisteplateau.com/${locale === 'fr' ? 'fr/a-propos' : 'en/about'}`,
       languages: {
@@ -196,6 +197,14 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                   {t("team.member.services")}
                 </p>
               </div>
+
+              <Link
+                href="/a-propos/dr-saul-barchichat"
+                className="inline-flex items-center gap-2 font-body text-sm font-medium text-primary hover:gap-3 transition-all"
+              >
+                {locale === 'fr' ? 'Voir le profil complet du Dr. Barchichat' : 'View Dr. Barchichat\'s full profile'}
+                <ArrowRight size={15} aria-hidden="true" />
+              </Link>
             </div>
           </div>
 

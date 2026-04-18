@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { SERVICES } from '../lib/services';
+import { BLOG_POSTS } from '../lib/blog';
 
 type StaticPage = {
   fr: string;
@@ -14,6 +15,10 @@ const staticPages: StaticPage[] = [
   { fr: '/a-propos', en: '/about', changeFrequency: 'monthly', priority: 0.8 },
   { fr: '/contact',  en: '/contact',  changeFrequency: 'monthly', priority: 0.8 },
   { fr: '/carriere', en: '/careers',  changeFrequency: 'monthly', priority: 0.5 },
+  { fr: '/urgence-dentaire', en: '/dental-emergency', changeFrequency: 'monthly', priority: 0.9 },
+  { fr: '/a-propos/dr-saul-barchichat', en: '/about/dr-saul-barchichat', changeFrequency: 'monthly', priority: 0.7 },
+  { fr: '/regime-canadien-soins-dentaires', en: '/canadian-dental-care-plan', changeFrequency: 'monthly', priority: 0.8 },
+  { fr: '/blog', en: '/blog', changeFrequency: 'weekly', priority: 0.7 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -52,6 +57,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
             fr: `${baseUrl}/fr/services/${service.slugs.fr}`,
             en: `${baseUrl}/en/services/${service.slugs.en}`,
             'x-default': `${baseUrl}/fr/services/${service.slugs.fr}`,
+          },
+        },
+      });
+    }
+
+    for (const post of BLOG_POSTS) {
+      const slug = post.slugs[locale as 'fr' | 'en'];
+      entries.push({
+        url: `${baseUrl}/${locale}/blog/${slug}`,
+        lastModified: new Date(post.publishedAt),
+        changeFrequency: 'monthly',
+        priority: 0.7,
+        alternates: {
+          languages: {
+            fr: `${baseUrl}/fr/blog/${post.slugs.fr}`,
+            en: `${baseUrl}/en/blog/${post.slugs.en}`,
+            'x-default': `${baseUrl}/fr/blog/${post.slugs.fr}`,
           },
         },
       });

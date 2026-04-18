@@ -3,8 +3,10 @@
     "home": "Accueil",
     "services": "Traitements",
     "about": "Équipe",
+    "blog": "Blog",
     "contact": "Contact",
     "cta": "Prendre RDV",
+    "urgence": "Urgence ?",
     "phone": "514 528 1587",
     "hours_short": "Lun-Jeu 9h-18h • Ven 9h-14h",
     "switch_lang": "Changer de langue",
@@ -26,8 +28,11 @@
     "nav": {
       "home": "Accueil",
       "about": "À Propos",
+      "blog": "Blog",
       "contact": "Contact",
-      "careers": "Carrière"
+      "careers": "Carrière",
+      "emergency": "Urgence Dentaire",
+      "cdcp": "RCSD — Soins Dentaires"
     },
     "hours_title": "Horaires",
     "hours": {
@@ -46,7 +51,7 @@
   },
   "Carriere": {
     "meta": {
-      "title": "Carrière | Centre Dentaire du Plateau",
+      "title": "Carrière",
       "description": "Rejoignez l'équipe du Centre Dentaire du Plateau. Nous sommes toujours à la recherche de talents passionnés par la santé bucco-dentaire."
     },
     "hero": {
@@ -208,8 +213,8 @@
   },
   "ServicePages": {
     "hygiene": {
-      "meta_title": "Nettoyage & Hygiène Dentaire à Montréal | Centre Dentaire du Plateau",
-      "meta_description": "Détartrage professionnel, nettoyage des dents et bilans parodontaux au Plateau Mont-Royal. Prévention sur mesure pour des gencives saines et un sourire durable.",
+      "meta_title": "Nettoyage Dentaire Plateau Mont-Royal | Détartrage & Hygiène",
+      "meta_description": "Détartrage professionnel et bilan parodontal au Plateau Mont-Royal. Prévention sur mesure pour gencives saines et sourire durable. RDV le jour même : 514-528-1587.",
       "hero_title": "Hygiène Dentaire & Prévention",
       "hero_subtitle": "La meilleure dentisterie est celle qu'on évite. Nos protocoles préventifs gardent vos gencives saines et détectent les problèmes avant qu'ils s'aggravent.",
       "description": "Une gencive en santé est la base d'un beau sourire et d'une dentition solide. Lors de chaque suivi périodique, notre hygiéniste élimine le tartre et la plaque dentaire inaccessibles au brossage, évalue l'état de vos gencives et vous guide vers une routine d'hygiène personnalisée. Nous détectons également les récessions gingivales, l'hypersensibilité dentinaire, les parafonctions comme le bruxisme et les obturations inadéquates — autant de problèmes qu'il vaut mieux traiter tôt.",
@@ -245,7 +250,7 @@
       ]
     },
     "veneers": {
-      "meta_title": "Facettes Porcelaine & Obturations Esthétiques à Montréal | CDP",
+      "meta_title": "Facettes Porcelaine Plateau Mont-Royal | Esthétique Dentaire",
       "meta_description": "Facettes en céramique ultra-minces (0,3 mm) et obturations invisibles en composite au Plateau Mont-Royal. Corrigez couleur, forme et espaces sans meulage excessif.",
       "hero_title": "Facettes en Porcelaine & Obturations Esthétiques",
       "hero_subtitle": "Des corrections précises et ultra-naturelles pour retrouver un sourire que vous serez fier d'afficher, sans compromettre la structure de vos dents.",
@@ -282,7 +287,7 @@
       ]
     },
     "rootCanal": {
-      "meta_title": "Traitement de Canal à Montréal | Dévitalisation & Couronne | CDP",
+      "meta_title": "Traitement de Canal Plateau Mont-Royal | Dévitalisation sans douleur",
       "meta_description": "Traitement de canal indolore au Centre Dentaire du Plateau. Dévitalisation précise et couronne céramique sans métal pour sauver votre dent naturelle.",
       "hero_title": "Traitement de Canal & Couronne Céramique",
       "hero_subtitle": "Sauver votre dent naturelle est toujours notre première priorité. Un traitement de canal moderne est rapide, précis et bien moins inconfortable que vous ne l'imaginez.",
@@ -319,7 +324,7 @@
       ]
     },
     "implants": {
-      "meta_title": "Implants Dentaires à Montréal | Plateau Mont-Royal | CDP",
+      "meta_title": "Implants Dentaires à Montréal | Plateau Mont-Royal",
       "meta_description": "Pose d'implants dentaires au Plateau Mont-Royal. Solution permanente pour remplacer une dent manquante — biocompatible, naturel et durable. Consultation sans frais.",
       "hero_title": "Implantologie & Couronnes sur Implant",
       "hero_subtitle": "Un implant dentaire est la solution la plus proche d'une vraie dent — esthétique, fonctionnelle et conçue pour durer toute une vie.",
@@ -356,7 +361,7 @@
       ]
     },
     "orthodontics": {
-      "meta_title": "Invisalign Montréal | Orthodontie Invisible Adulte & Ado | CDP",
+      "meta_title": "Invisalign Plateau Mont-Royal | Orthodontie Invisible Adulte & Ado",
       "meta_description": "Alignez vos dents discrètement avec Invisalign au Plateau Mont-Royal. Orthodontie sans métal pour adultes et adolescents. Consultation Invisalign gratuite.",
       "hero_title": "Orthodontie Invisible avec Invisalign®",
       "hero_subtitle": "Redressez vos dents sans broches, sans métal, sans compromis esthétique — à votre rythme, avec des gouttières transparentes sur mesure.",
@@ -393,7 +398,7 @@
       ]
     },
     "surgery": {
-      "meta_title": "Chirurgie Dentaire à Montréal | Extraction & Greffe de Gencive | CDP",
+      "meta_title": "Chirurgie Dentaire Plateau Mont-Royal | Extraction & Greffe de Gencive",
       "meta_description": "Extractions dentaires, greffes de gencive et chirurgie implantaire au Plateau Mont-Royal. Soins chirurgicaux précis et doux pour une récupération rapide.",
       "hero_title": "Chirurgie Dentaire",
       "hero_subtitle": "Quand une intervention chirurgicale est nécessaire, notre approche minutieuse et nos techniques mini-invasives garantissent votre confort et une guérison rapide.",
@@ -430,7 +435,7 @@
       ]
     },
     "radiology": {
-      "meta_title": "Radiologie Dentaire Numérique Montréal | Panoramique | CDP",
+      "meta_title": "Radiologie Dentaire Numérique Plateau Mont-Royal | Cone Beam 3D",
       "meta_description": "Radiologie dentaire 100 % numérique au Plateau Mont-Royal. Panoramique Planmeca, capteurs intra-oraux et cone beam 3D pour des diagnostics précis avec radiation minimale.",
       "hero_title": "Radiologie Dentaire Numérique",
       "hero_subtitle": "Des images plus nettes, un diagnostic plus précis, et jusqu'à 90 % moins de radiation qu'un appareil conventionnel — pour votre santé et celle de l'environnement.",
@@ -467,7 +472,7 @@
       ]
     },
     "whitening": {
-      "meta_title": "Blanchiment Dentaire Professionnel Montréal | Plateau | CDP",
+      "meta_title": "Blanchiment Dentaire Plateau Mont-Royal | Résultats visibles",
       "meta_description": "Blanchiment dentaire professionnel au Centre Dentaire du Plateau. Résultats visibles et durables, sans sensibilité excessive. Sourire lumineux garanti.",
       "hero_title": "Blanchiment Dentaire Professionnel",
       "hero_subtitle": "Un sourire plusieurs tons plus lumineux en une séance — avec des produits sécuritaires, supervisés par nos dentistes, pour un résultat qui dure.",
@@ -504,7 +509,7 @@
       ]
     },
     "technology": {
-      "meta_title": "Technologie Dentaire Avancée Montréal | Scanner 3D, Laser | CDP",
+      "meta_title": "Technologie Dentaire Plateau Mont-Royal | Scanner 3D, Laser Bluewave",
       "meta_description": "Scanner oral Trios 3D, laser Bluewave diode et radiologie numérique complète au Centre Dentaire du Plateau. La technologie au service de soins plus précis et plus confortables.",
       "hero_title": "Technologie de Pointe au Service de Votre Sourire",
       "hero_subtitle": "Nous investissons continuellement dans les technologies les plus récentes pour que chaque soin soit plus précis, plus rapide et plus confortable pour vous.",
@@ -678,7 +683,7 @@
         },
         "emergency": {
           "question": "Comment gérer une urgence le week-end ?",
-          "answer": "Le dimanche, nous sommes ouverts de 10h à 14h pour les soins urgents. En dehors de ces horaires, veuillez contacter le service de garde."
+          "answer": "En cas d'urgence en dehors de nos heures d'ouverture (Lun–Jeu 9h–18h, Ven 9h–14h), laissez un message vocal au 514 528-1587 — nous vous rappelons en priorité à l'ouverture. Vous pouvez aussi consulter un service d'urgences dentaires local pour les cas ne pouvant pas attendre."
         },
         "languages": {
           "question": "Parlez-vous d'autres langues ?",
@@ -697,6 +702,816 @@
           "answer": "La RAMQ couvre les soins dentaires de base pour les enfants de moins de 10 ans (examens, nettoyages, obturations, extractions). Pour les adultes, la RAMQ ne couvre généralement pas les soins dentaires, sauf de rares exceptions comme certaines chirurgies buccales en milieu hospitalier. Si vous n'avez pas d'assurance privée, le Régime Canadien de Soins Dentaires (RCSD) fédéral peut prendre en charge une grande partie des frais — nous sommes partenaires du programme."
         }
       }
+    }
+  },
+  "DrBarchichat": {
+    "meta_title": "Dr. Saul Barchichat DMD | Dentiste Plateau Mont-Royal depuis 1991 — ODQ",
+    "meta_description": "Dr. Saul Barchichat, DMD, dentiste au Plateau Mont-Royal depuis plus de 35 ans. Diplômé de l'Université de Montréal (1991), membre de l'ODQ. Approche douce et personnalisée. 514-528-1587.",
+    "breadcrumb_about": "À propos",
+    "hero": {
+      "eyebrow": "Votre dentiste de quartier",
+      "title": "Dr. Saul Barchichat, DMD",
+      "subtitle": "Dentiste au Plateau Mont-Royal depuis 1991. Plus de 35 ans d'engagement envers la santé bucco-dentaire de notre communauté, avec une approche douce, patiente et sans jugement.",
+      "cta_appointment": "Prendre rendez-vous",
+      "cta_call": "514 528-1587"
+    },
+    "credentials": {
+      "title": "Formation & Accréditations",
+      "items": [
+        {
+          "label": "Diplôme",
+          "value": "DMD — Docteur en médecine dentaire"
+        },
+        {
+          "label": "Université",
+          "value": "Université de Montréal, Faculté de médecine dentaire (1991)"
+        },
+        {
+          "label": "Membre",
+          "value": "Ordre des dentistes du Québec (ODQ)"
+        },
+        {
+          "label": "Membre",
+          "value": "Association dentaire canadienne (ADC)"
+        },
+        {
+          "label": "En exercice depuis",
+          "value": "1991 — plus de 35 ans de pratique"
+        }
+      ]
+    },
+    "philosophy": {
+      "title": "Sa philosophie de soin",
+      "body": "Pour le Dr. Barchichat, chaque patient mérite une attention complète et un plan de traitement taillé sur mesure. Depuis ses débuts, il défend une dentisterie centrée sur la prévention — traiter tôt pour éviter les interventions lourdes — et sur la relation de confiance. Son cabinet du Plateau est pensé comme un espace de sérénité, loin de l'anxiété souvent associée aux soins dentaires."
+    },
+    "expertise": {
+      "title": "Domaines d'expertise",
+      "items": [
+        "Implantologie dentaire",
+        "Orthodontie invisible (Invisalign®)",
+        "Dentisterie esthétique (facettes, blanchiment)",
+        "Soins préventifs & parodontologie",
+        "Endodontie (traitement de canal)",
+        "Chirurgie dentaire mini-invasive",
+        "Radiologie numérique & imagerie 3D",
+        "Gestion de la douleur & odontophobie"
+      ]
+    },
+    "approach": {
+      "title": "Une approche centrée sur vous",
+      "items": [
+        {
+          "title": "Écoute & patience",
+          "desc": "Chaque rendez-vous commence par une écoute attentive de vos préoccupations, sans précipitation."
+        },
+        {
+          "title": "Explication claire",
+          "desc": "Le Dr. Barchichat prend le temps de vous expliquer chaque étape du traitement, en termes simples."
+        },
+        {
+          "title": "Sans jugement",
+          "desc": "Que vous n'ayez pas consulté depuis longtemps ou que vous ayez des appréhensions, vous serez accueilli sans jugement."
+        },
+        {
+          "title": "Technologie douce",
+          "desc": "Utilisation systématique des technologies les moins invasives pour minimiser l'inconfort."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Rencontrez le Dr. Barchichat",
+      "subtitle": "Prenez rendez-vous pour une première consultation complète. Examen clinique, radiographies et plan de traitement personnalisé inclus.",
+      "button": "Prendre rendez-vous"
+    }
+  },
+  "UrgenceDentaire": {
+    "meta_title": "Urgence Dentaire Plateau Mont-Royal | Dentiste Disponible — Dr. Barchichat",
+    "meta_description": "Urgence dentaire au Plateau Mont-Royal ? Dr. Barchichat vous reçoit le jour même. Dent cassée, abcès, rage de dents — 1357 Av. Mont-Royal E. Appelez le 514-528-1587.",
+    "hero": {
+      "eyebrow": "Urgence dentaire — Plateau Mont-Royal",
+      "title": "Douleur dentaire aiguë ? On vous reçoit.",
+      "subtitle": "Ne souffrez pas inutilement. Le Centre Dentaire du Plateau prend en charge les urgences dentaires le jour même, du lundi au vendredi. Appelez-nous ou remplissez le formulaire ci-dessous.",
+      "cta_call": "Appeler : 514 528-1587",
+      "cta_form": "Demander un RDV d'urgence",
+      "badge": "Lun–Ven · RDV le jour même possible"
+    },
+    "types": {
+      "title": "Urgences que nous traitons",
+      "subtitle": "Toute douleur ou traumatisme dentaire mérite une prise en charge rapide. Voici les cas les plus courants que nous traitons en urgence.",
+      "items": [
+        {
+          "title": "Dent cassée ou fêlée",
+          "desc": "Traumatisme, choc ou morsure malencontreuse : nous évaluons et réparons la dent."
+        },
+        {
+          "title": "Rage de dents intense",
+          "desc": "Douleur aiguë, pulsatile ou nocturne — souvent signe d'infection. Traitement rapide pour soulager."
+        },
+        {
+          "title": "Abcès dentaire",
+          "desc": "Gonflement, fièvre, pus : une urgence médicale qui ne peut pas attendre."
+        },
+        {
+          "title": "Dent tombée (choc)",
+          "desc": "Conservez la dent dans du lait ou sous la langue et appelez immédiatement — chaque minute compte."
+        },
+        {
+          "title": "Couronne ou plombage tombé",
+          "desc": "Sensibilité extrême ou gêne fonctionnelle : nous reposons ou protégeons la dent sans délai."
+        },
+        {
+          "title": "Saignement dentaire",
+          "desc": "Saignement post-extraction ou traumatique qui ne s'arrête pas — contactez-nous."
+        },
+        {
+          "title": "Dent de sagesse douloureuse",
+          "desc": "Péricoronite ou poussée difficile : soulagement et évaluation rapides."
+        },
+        {
+          "title": "Appareil cassé ou blessure en bouche",
+          "desc": "Fil d'appareil qui blesse, gouttière fracturée — nous adaptons la prise en charge."
+        }
+      ]
+    },
+    "firstaid": {
+      "title": "Que faire en attendant votre rendez-vous ?",
+      "items": [
+        {
+          "situation": "Dent cassée",
+          "advice": "Rincez doucement à l'eau tiède. Conservez le fragment dentaire si possible. Évitez les aliments trop chauds ou froids sur la zone."
+        },
+        {
+          "situation": "Rage de dents",
+          "advice": "Prenez un analgésique en vente libre (ibuprofène ou acétaminophène) selon votre tolérance. Évitez le chaud sur la zone. Appelez-nous."
+        },
+        {
+          "situation": "Abcès dentaire",
+          "advice": "Ne percez jamais un abcès vous-même. Rincez légèrement à l'eau salée. Consultez en urgence — une infection non traitée peut se propager."
+        },
+        {
+          "situation": "Dent tombée suite à un choc",
+          "advice": "Manipulez la dent par la couronne (pas la racine). Rincez-la délicatement sans frotter. Immergez-la dans du lait froid ou saline. Venez dans l'heure — les chances de réimplantation chutent rapidement."
+        },
+        {
+          "situation": "Couronne tombée",
+          "advice": "Conservez la couronne. Ne tentez pas de la recoller vous-même avec de la super glue. Appelez-nous pour un RDV urgent."
+        }
+      ]
+    },
+    "availability": {
+      "title": "Nos disponibilités",
+      "hours": [
+        {
+          "days": "Lundi — Jeudi",
+          "time": "9 h 00 — 18 h 00"
+        },
+        {
+          "days": "Vendredi",
+          "time": "9 h 00 — 14 h 00"
+        },
+        {
+          "days": "Samedi - Dimanche",
+          "time": "Fermé"
+        }
+      ],
+      "note": "Pour toute urgence en dehors de ces heures, laissez un message vocal au 514 528-1587 — nous vous rappelons en priorité à l'ouverture.",
+      "address": "1357 Avenue du Mont-Royal Est, Montréal (métro Mont-Royal)"
+    },
+    "faq": {
+      "title": "Questions fréquentes — Urgences dentaires",
+      "items": [
+        {
+          "q": "Puis-je venir sans rendez-vous pour une urgence ?",
+          "a": "Nous recommandons d'appeler au préalable au 514 528-1587 pour que nous puissions bloquer un créneau en priorité. En cas d'urgence absolue, présentez-vous directement et nous ferons de notre mieux pour vous prendre en charge le jour même."
+        },
+        {
+          "q": "Combien coûte une consultation d'urgence ?",
+          "a": "Les tarifs d'une consultation d'urgence sont comparables à une consultation standard. Nous acceptons le paiement par carte, comptant et la facturation directe à la plupart des assurances privées. Le Régime Canadien de Soins Dentaires (RCSD) couvre également certaines interventions d'urgence."
+        },
+        {
+          "q": "Quels sont vos horaires pour les urgences ?",
+          "a": "Nous sommes disponibles du lundi au jeudi de 9 h à 18 h et le vendredi de 9 h à 14 h. En dehors de ces créneaux, laissez un message au 514 528-1587 — nous vous rappelons en priorité dès l'ouverture."
+        },
+        {
+          "q": "Ma dent est tombée suite à un choc — que faire immédiatement ?",
+          "a": "Manipulez la dent par la couronne, jamais par la racine. Rincez-la délicatement sans frotter la racine. Conservez-la dans du lait froid ou de la saline. Appelez-nous immédiatement — les chances de réimplantation réussie diminuent rapidement après 30 à 60 minutes."
+        },
+        {
+          "q": "Traitez-vous les enfants en urgence ?",
+          "a": "Oui, nous traitons les patients de tous âges, y compris les enfants. Les traumatismes dentaires chez les enfants (dents de lait ou permanentes) nécessitent une évaluation rapide pour éviter des complications sur le développement."
+        },
+        {
+          "q": "Comment savoir si j'ai un abcès dentaire ?",
+          "a": "Les signes d'un abcès incluent : douleur pulsatile intense, gonflement de la gencive ou de la joue, mauvais goût persistant dans la bouche, fièvre, sensibilité à la pression ou à la chaleur. Un abcès non traité peut se propager — consultez en urgence."
+        },
+        {
+          "q": "Êtes-vous partenaires des assurances pour les urgences ?",
+          "a": "Oui. Nous pratiquons le tiers-payant avec la majorité des assureurs privés. Apportez votre carte d'assurance et nous soumettons la demande directement. Nous sommes également partenaires du Régime Canadien de Soins Dentaires (RCSD)."
+        },
+        {
+          "q": "Comment vous rendre au cabinet en urgence ?",
+          "a": "Nous sommes situés au 1357 Avenue du Mont-Royal Est (entre les rues Boyer et Garnier), à 3 minutes à pied du métro Mont-Royal (ligne orange). Stationnement disponible dans les rues environnantes."
+        }
+      ]
+    }
+  },
+  "RCSD": {
+    "meta_title": "Régime Canadien de Soins Dentaires (RCSD) 2026",
+    "meta_description": "Le Centre Dentaire du Plateau est partenaire du RCSD. Découvrez qui est admissible, ce qui est couvert et comment en bénéficier lors de votre prochain rendez-vous. Appelez le 514-528-1587.",
+    "hero": {
+      "eyebrow": "Programme fédéral — Mis à jour 2025",
+      "title": "Régime Canadien de Soins Dentaires (RCSD)",
+      "subtitle": "Le gouvernement du Canada couvre vos soins dentaires si vous n'avez pas d'assurance privée. Nous sommes partenaires du programme — venez tel quel, nous nous occupons de tout.",
+      "badge": "Nous soumettons directement à Service Canada",
+      "cta_appointment": "Vérifier mon admissibilité",
+      "cta_call": "514 528-1587"
+    },
+    "eligibility": {
+      "title": "Qui est admissible au RCSD ?",
+      "subtitle": "Le programme est ouvert à la majorité des Canadiens sans assurance dentaire privée. Vérifiez en 30 secondes si vous y avez droit.",
+      "criteria": [
+        {
+          "label": "Revenus",
+          "value": "Revenu familial net ajusté inférieur à 90 000 $/an"
+        },
+        {
+          "label": "Assurance",
+          "value": "Pas d'assurance dentaire privée ou collective"
+        },
+        {
+          "label": "Statut",
+          "value": "Résident canadien avec un NAS valide"
+        },
+        {
+          "label": "Déclaration",
+          "value": "Déclaration de revenus produite pour l'année précédente"
+        }
+      ],
+      "coverage_levels": {
+        "title": "Taux de remboursement selon vos revenus",
+        "items": [
+          {
+            "income": "Moins de 70 000 $/an",
+            "rate": "100 % des frais couverts"
+          },
+          {
+            "income": "70 000 $ – 79 999 $/an",
+            "rate": "60 % des frais couverts"
+          },
+          {
+            "income": "80 000 $ – 89 999 $/an",
+            "rate": "40 % des frais couverts"
+          },
+          {
+            "income": "90 000 $/an et plus",
+            "rate": "Non admissible"
+          }
+        ]
+      }
+    },
+    "covered": {
+      "title": "Soins couverts par le RCSD",
+      "subtitle": "Le programme couvre une vaste gamme de soins dentaires essentiels, y compris les traitements les plus courants que nous pratiquons au cabinet.",
+      "items": [
+        {
+          "category": "Prévention",
+          "services": "Examens dentaires, nettoyages, radiographies, scellants"
+        },
+        {
+          "category": "Traitements de base",
+          "services": "Obturations (plombages), extractions, traitements de canal"
+        },
+        {
+          "category": "Prothèses",
+          "services": "Prothèses complètes et partielles, couronnes"
+        },
+        {
+          "category": "Orthodontie",
+          "services": "Certains appareils orthodontiques (selon admissibilité)"
+        },
+        {
+          "category": "Urgences",
+          "services": "Consultations d'urgence, traitements palliatifs"
+        }
+      ],
+      "note": "Les soins purement esthétiques (blanchiment, facettes) ne sont pas couverts par le RCSD."
+    },
+    "how_it_works": {
+      "title": "Comment ça fonctionne chez nous ?",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Inscrivez-vous au RCSD",
+          "desc": "Rendez-vous sur canada.ca ou appelez Service Canada au 1-888-698-2294. Vous recevrez une lettre ou un accès à votre compte Mon dossier Service Canada."
+        },
+        {
+          "step": "2",
+          "title": "Prenez rendez-vous",
+          "desc": "Appelez-nous au 514 528-1587 ou réservez en ligne. Mentionnez que vous utilisez le RCSD — nous bloquons le temps nécessaire."
+        },
+        {
+          "step": "3",
+          "title": "Venez avec votre carte RCSD",
+          "desc": "Apportez votre carte d'assurance dentaire RCSD (ou votre NAS). Notre équipe vérifie votre admissibilité directement au système."
+        },
+        {
+          "step": "4",
+          "title": "Nous soumettons pour vous",
+          "desc": "Nous soumettons la demande de remboursement directement à Service Canada. Vous ne payez que la portion non couverte, s'il y en a une."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes — RCSD",
+      "items": [
+        {
+          "q": "Comment m'inscrire au Régime canadien de soins dentaires ?",
+          "a": "Inscrivez-vous sur canada.ca/sante-soins-dentaires ou appelez Service Canada au 1-888-698-2294. Vous aurez besoin de votre NAS et de votre déclaration de revenus la plus récente. L'inscription est gratuite et prend quelques minutes."
+        },
+        {
+          "q": "Mon enfant est-il couvert par le RCSD ?",
+          "a": "Oui. Tous les membres d'une famille admissible peuvent bénéficier du programme, y compris les enfants. Les soins pour les moins de 18 ans sont inclus dans la couverture familiale, à condition de remplir les critères d'admissibilité."
+        },
+        {
+          "q": "Le RCSD couvre-t-il les implants dentaires ?",
+          "a": "Les implants peuvent être partiellement couverts selon votre situation clinique et votre niveau de couverture RCSD. Une consultation préalable est nécessaire pour évaluer la prise en charge. Lors de votre rendez-vous, nous vérifions ce qui est applicable à votre cas."
+        },
+        {
+          "q": "Dois-je payer d'avance et me faire rembourser ?",
+          "a": "Non. Nous pratiquons la facturation directe — vous ne payez que la portion non couverte (le cas échéant) au moment de la visite. Nous soumettons la demande directement à Service Canada."
+        },
+        {
+          "q": "Le RCSD se renouvelle-t-il automatiquement ?",
+          "a": "Non. Vous devez renouveler votre admissibilité chaque année après avoir produit votre déclaration de revenus. Service Canada vous envoie une notification quand le renouvellement est disponible. Assurez-vous de mettre à jour votre profil pour ne pas perdre votre couverture."
+        },
+        {
+          "q": "Puis-je utiliser le RCSD si j'ai une assurance partielle ?",
+          "a": "Non. Le RCSD est réservé aux personnes sans assurance dentaire privée ou collective, même partielle. Si vous avez une couverture d'assurance, même limitée, vous n'êtes pas admissible au programme fédéral."
+        },
+        {
+          "q": "Que faire si mon dentiste n'est pas inscrit au RCSD ?",
+          "a": "Le Centre Dentaire du Plateau est partenaire inscrit au RCSD. Si votre dentiste actuel n'est pas inscrit, vous pouvez consulter chez nous en utilisant votre couverture. Appelez-nous pour un rendez-vous ou pour vérifier votre admissibilité."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Vous pensez être admissible ?",
+      "subtitle": "Prenez rendez-vous — notre équipe vérifie votre couverture RCSD sur place et soumet la demande en votre nom. Aucune démarche supplémentaire de votre côté.",
+      "button": "Prendre rendez-vous"
+    }
+  },
+  "Blog": {
+    "meta_title": "Blog Dentaire — Conseils & Actualités | Dentiste Plateau Mont-Royal",
+    "meta_description": "Conseils dentaires, guides pratiques et actualités de santé bucco-dentaire rédigés par le Dr. Barchichat, dentiste au Plateau Mont-Royal depuis 1991.",
+    "hero_title": "Conseils dentaires du Plateau",
+    "hero_subtitle": "Articles rédigés par le Dr. Saul Barchichat — dentiste au Plateau Mont-Royal depuis 35 ans — pour vous aider à prendre soin de votre santé bucco-dentaire.",
+    "read_more": "Lire l'article",
+    "min_read": "min de lecture",
+    "by_author": "Par Dr. Saul Barchichat",
+    "back_to_blog": "← Retour au blog",
+    "related_articles": "Articles similaires",
+    "sidebar_cta_title": "Besoin d'un rendez-vous ?",
+    "sidebar_cta_subtitle": "Notre équipe est disponible du lundi au vendredi.",
+    "sidebar_cta_button": "Prendre rendez-vous",
+    "sidebar_author_title": "À propos de l'auteur",
+    "sidebar_author_name": "Dr. Saul Barchichat, DMD",
+    "sidebar_author_bio": "Dentiste au Plateau Mont-Royal depuis 1991. Diplômé de l'Université de Montréal.",
+    "sidebar_author_link": "Voir le profil complet",
+    "categories": {
+      "urgence": "Urgences",
+      "soins": "Soins",
+      "orthodontie": "Orthodontie",
+      "prevention": "Prévention",
+      "assurance": "Assurances"
+    }
+  },
+  "BlogPages": {
+    "urgence-quoi-faire": {
+      "meta_title": "Urgence Dentaire sur le Plateau : Que Faire ? | Plateau Mont-Royal",
+      "meta_description": "Dent cassée, abcès, rage de dents sur le Plateau Mont-Royal ? Apprenez quoi faire selon chaque situation. Guide du Dr. Barchichat — appelez le 514-528-1587.",
+      "hero_title": "Urgence dentaire sur le Plateau-Mont-Royal : que faire ?",
+      "hero_subtitle": "Guide pratique du Dr. Saul Barchichat pour réagir vite face à une urgence dentaire.",
+      "category": "urgence",
+      "intro": "Une urgence dentaire arrive rarement au bon moment. Douleur soudaine, dent cassée lors d'un repas, abcès gonflé un lundi matin — chaque situation demande une réaction rapide et adaptée. En tant que dentiste au Plateau Mont-Royal depuis plus de 35 ans, voici les conseils que je donne à mes patients pour les aider à passer ce cap difficile et préserver leur dent.",
+      "sections": [
+        {
+          "h2": "1. Dent cassée ou fracturée",
+          "body": "Rincez votre bouche à l'eau tiède pour éliminer les débris. Si la fracture expose la pulpe (douleur vive au contact de l'air ou du froid), couvrez la dent avec de la cire dentaire ou un cache temporaire vendu en pharmacie. Récupérez les morceaux si possible et appelez votre dentiste immédiatement — idéalement dans les 24 heures.",
+          "list": [
+            "Rincez à l'eau tiède",
+            "Couvrez la dent fracturée avec de la cire dentaire",
+            "Évitez les aliments durs ou sucrés",
+            "Appelez le 514-528-1587 pour un rendez-vous d'urgence"
+          ]
+        },
+        {
+          "h2": "2. Dent avulsée (arrachée)",
+          "body": "C'est la situation qui demande le plus de réactivité. Tenez la dent par la couronne (jamais par la racine), rincez-la doucement sans frotter, et réinsérez-la dans l'alvéole si vous le pouvez. Sinon, conservez-la dans du lait ou entre la joue et la gencive. Chaque minute compte : une dent réimplantée dans les 30 minutes a d'excellentes chances de survie.",
+          "list": [
+            "Ne touchez jamais la racine",
+            "Rincez doucement et réinsérez si possible",
+            "Conservez dans du lait à défaut",
+            "Consultez dans les 30 minutes idéalement"
+          ]
+        },
+        {
+          "h2": "3. Abcès dentaire",
+          "body": "Un abcès est une infection bactérienne qui peut se propager rapidement. Signes typiques : douleur intense et pulsatile, gonflement de la joue, fièvre, mauvais goût dans la bouche. Ne percez jamais un abcès vous-même. Rincez à l'eau salée tiède pour soulager temporairement, et consultez en urgence. Si vous avez de la fièvre ou une difficulté à avaler, rendez-vous aux urgences hospitalières.",
+          "list": [
+            "Ne percez jamais l'abcès",
+            "Rincez à l'eau salée tiède toutes les 2 heures",
+            "Prenez un analgésique (ibuprofène) pour la douleur",
+            "Consultez votre dentiste le jour même"
+          ]
+        },
+        {
+          "h2": "4. Rage de dents (pulpite)",
+          "body": "La pulpite est une inflammation de la pulpe dentaire souvent causée par une carie avancée. La douleur est souvent vive, persistante et aggravée par le chaud ou le froid. L'ibuprofène est généralement plus efficace que l'acétaminophène pour ce type de douleur. Evitez l'aspirine directement sur la gencive — cela peut brûler les tissus. Un traitement de canal est souvent nécessaire.",
+          "list": [
+            "Prenez de l'ibuprofène (sauf contre-indication)",
+            "Évitez le chaud et le froid sur la dent",
+            "N'appliquez jamais d'aspirine sur la gencive",
+            "Consultez rapidement — un traitement de canal peut sauver la dent"
+          ]
+        },
+        {
+          "h2": "5. Couronne ou bridge décollé",
+          "body": "Si votre couronne se décolle, gardez-la précieusement. Vous pouvez temporairement la recoller avec de la colle dentaire temporaire vendue en pharmacie. N'utilisez jamais de Super Glue. Évitez de mâcher du côté concerné et appelez votre dentiste pour fixer un rendez-vous dans les prochains jours.",
+          "list": [
+            "Conservez la couronne décollée",
+            "Recollez temporairement avec colle dentaire de pharmacie",
+            "Évitez de mâcher du côté affecté",
+            "Appelez votre dentiste dans les 48 heures"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Prenez-vous des patients en urgence sans rendez-vous au Plateau ?",
+          "a": "Oui. Au Centre Dentaire du Plateau, nous réservons des plages horaires quotidiennes pour les urgences. Appelez-nous au 514-528-1587 dès l'ouverture et nous ferons tout notre possible pour vous voir le jour même."
+        },
+        {
+          "q": "Quelles sont vos heures d'urgence ?",
+          "a": "Nous sommes ouverts du lundi au jeudi de 9h à 18h et le vendredi de 9h à 14h. Pour les urgences en dehors de ces heures, appelez le 514-528-1587 et suivez les instructions du message vocal."
+        },
+        {
+          "q": "L'urgence dentaire est-elle couverte par l'assurance maladie du Québec ?",
+          "a": "La RAMQ ne couvre généralement pas les soins dentaires pour les adultes. Toutefois, de nombreuses assurances collectives et le Régime canadien de soins dentaires (RCSD) couvrent une partie des soins d'urgence. Vérifiez votre police et n'hésitez pas à nous appeler pour valider votre couverture."
+        },
+        {
+          "q": "Peut-on prévenir les urgences dentaires ?",
+          "a": "Dans bien des cas, oui. Une visite préventive tous les 6 mois permet de détecter les caries, fragilités et signes d'infection avant qu'ils ne deviennent des urgences. Les sportifs devraient aussi porter un protecteur buccal lors de sports de contact."
+        },
+        {
+          "q": "Mon enfant a reçu un coup au visage et une dent bouge — que faire ?",
+          "a": "Consultez immédiatement un dentiste. Une dent de lait mobile n'est généralement pas réimplantée, mais une dent permanente mobile peut souvent être stabilisée si vous agissez rapidement. Appelez-nous au 514-528-1587."
+        }
+      ],
+      "internal_link": "/urgence-dentaire",
+      "internal_link_label": "Voir notre page urgences dentaires"
+    },
+    "implant-guide-complet": {
+      "meta_title": "Implant Dentaire à Montréal : Guide Complet, Coûts & Délais | Plateau Mont-Royal",
+      "meta_description": "Tout ce que vous devez savoir sur les implants dentaires à Montréal : coût, durée du traitement, candidats idéaux. Guide du Dr. Barchichat, Plateau Mont-Royal.",
+      "hero_title": "Implant dentaire à Montréal : guide complet, coûts et délais",
+      "hero_subtitle": "Tout ce que vous devez savoir avant de vous lancer, par le Dr. Saul Barchichat.",
+      "category": "soins",
+      "intro": "L'implant dentaire est aujourd'hui la solution de remplacement la plus proche d'une vraie dent. Contrairement au bridge ou à la prothèse amovible, il s'intègre directement dans l'os de la mâchoire et offre une stabilité, un confort et une esthétique incomparables. Voici ce que j'explique systématiquement à mes patients au Plateau Mont-Royal avant de commencer un traitement implantaire.",
+      "sections": [
+        {
+          "h2": "Qu'est-ce qu'un implant dentaire ?",
+          "body": "Un implant dentaire est une vis en titane (ou en zircone pour les patients allergiques) insérée chirurgicalement dans l'os alvéolaire pour remplacer la racine d'une dent manquante. Sur cet implant, on fixe un pilier et une couronne sur mesure. Le résultat est indiscernable d'une dent naturelle tant visuellement que fonctionnellement.",
+          "list": [
+            "Durée de vie : 15 à 25 ans avec un bon entretien",
+            "Matériau : titane grade IV ou zircone (option sans métal)",
+            "Taux de succès : 95 à 98 % selon les études cliniques",
+            "Préserve l'os de la mâchoire contrairement au bridge"
+          ]
+        },
+        {
+          "h2": "Qui peut recevoir un implant dentaire ?",
+          "body": "La plupart des adultes en bonne santé générale sont de bons candidats. Certains facteurs peuvent cependant nécessiter une préparation préalable : le tabagisme (ralentit la cicatrisation), le diabète non contrôlé, la prise de bisphosphonates (traitement ostéoporose) ou une perte osseuse importante. Dans ce dernier cas, une greffe osseuse peut être nécessaire avant l'implantation.",
+          "list": [
+            "Adultes avec une bonne santé générale",
+            "Croissance osseuse terminée (généralement 18 ans)",
+            "Hygiène bucco-dentaire satisfaisante",
+            "Patients diabétiques ou fumeurs peuvent être traités avec précautions"
+          ]
+        },
+        {
+          "h2": "Les étapes du traitement : combien de temps ça prend ?",
+          "body": "Le traitement implantaire se déroule en plusieurs phases. Comptez en général 3 à 6 mois du début à la pose de la couronne définitive.",
+          "list": [
+            "Consultation et bilan (panoramique, cone beam si nécessaire) : 1 visite",
+            "Extraction de la dent résiduelle si nécessaire : 1 visite",
+            "Pose chirurgicale de l'implant : 1 visite (sous anesthésie locale)",
+            "Cicatrisation osseuse (ostéointégration) : 2 à 4 mois",
+            "Pose du pilier et empreinte : 1 visite",
+            "Pose de la couronne définitive : 1 visite"
+          ]
+        },
+        {
+          "h2": "Coût d'un implant dentaire à Montréal",
+          "body": "Le coût total d'un implant dentaire à Montréal varie généralement entre 2 500 $ et 4 500 $ par dent, incluant la chirurgie, le pilier et la couronne. Ce montant peut être plus élevé si une greffe osseuse est nécessaire. Bien que plus coûteux à court terme qu'un bridge, l'implant est souvent plus économique sur 20 ans car il ne nécessite pas de remplacer les dents adjacentes.",
+          "list": [
+            "Implant + couronne : 2 500 $ à 4 500 $ par dent",
+            "Greffe osseuse si nécessaire : 500 $ à 1 500 $ supplémentaires",
+            "Certaines assurances couvrent 50 % des soins prothétiques",
+            "Le RCSD peut couvrir une partie pour les personnes admissibles"
+          ]
+        },
+        {
+          "h2": "Implant vs bridge : quoi choisir ?",
+          "body": "Le bridge est plus rapide et généralement moins coûteux à court terme, mais il nécessite de tailler les dents saines adjacentes et ne préserve pas l'os. L'implant préserve l'intégrité des dents voisines, maintient le volume osseux et offre une durée de vie bien supérieure. Pour un patient en bonne santé, l'implant est presque toujours la meilleure solution à long terme."
+        }
+      ],
+      "faq": [
+        {
+          "q": "L'intervention est-elle douloureuse ?",
+          "a": "La pose d'un implant se fait sous anesthésie locale. Pendant l'intervention, vous ne devriez rien sentir. Dans les 48 heures qui suivent, des douleurs modérées et un léger gonflement sont normaux. Des analgésiques courants (ibuprofène, acétaminophène) suffisent généralement à contrôler l'inconfort."
+        },
+        {
+          "q": "Combien de temps dure un implant ?",
+          "a": "Avec une bonne hygiène et des contrôles réguliers, un implant peut durer 20 à 25 ans, voire toute une vie. La couronne en porcelaine peut nécessiter un remplacement après 15 à 20 ans en raison de l'usure normale."
+        },
+        {
+          "q": "Mon assurance couvre-t-elle les implants ?",
+          "a": "De nombreuses assurances dentaires couvrent 50 % des soins prothétiques avec un maximum annuel. Vérifiez votre contrat. Le Régime canadien de soins dentaires (RCSD) prévoit aussi une couverture pour certains actes prothétiques selon votre revenu."
+        },
+        {
+          "q": "Peut-on poser plusieurs implants simultanément ?",
+          "a": "Oui, il est possible de placer plusieurs implants lors de la même chirurgie, ce qui réduit le nombre de visites et le temps de récupération global. Nous évaluerons votre situation lors de la consultation initiale."
+        }
+      ],
+      "internal_link": "/services/implants-dentaires",
+      "internal_link_label": "En savoir plus sur nos services d'implants dentaires"
+    },
+    "rcsd-eligibilite-2026": {
+      "meta_title": "Régime Canadien de Soins Dentaires 2026 : Êtes-vous Admissible ? | Plateau",
+      "meta_description": "Guide complet du RCSD 2026 : critères d'admissibilité, couverture, démarches. Le Centre Dentaire du Plateau est partenaire inscrit — on s'occupe de tout.",
+      "hero_title": "Régime canadien de soins dentaires 2026 : êtes-vous admissible ?",
+      "hero_subtitle": "Tout comprendre sur le RCSD pour en profiter au Centre Dentaire du Plateau.",
+      "category": "assurance",
+      "intro": "Lancé par le gouvernement fédéral canadien, le Régime canadien de soins dentaires (RCSD) permet à des millions de Canadiens à revenus modestes d'accéder à des soins dentaires couverts. En tant que cabinet partenaire inscrit au RCSD, nous soumettons directement les demandes pour nos patients. Voici tout ce que vous devez savoir pour savoir si vous êtes admissible et comment en bénéficier.",
+      "sections": [
+        {
+          "h2": "Qui est admissible au RCSD ?",
+          "body": "Pour être admissible au RCSD en 2026, vous devez remplir les trois conditions suivantes :",
+          "list": [
+            "Résider au Canada",
+            "Ne pas avoir accès à une assurance dentaire privée",
+            "Avoir un revenu familial net ajusté inférieur à 90 000 $"
+          ]
+        },
+        {
+          "h2": "Quel niveau de couverture selon votre revenu ?",
+          "body": "La couverture varie selon votre revenu familial net ajusté. Plus votre revenu est faible, plus votre couverture est élevée.",
+          "list": [
+            "Moins de 70 000 $ : 100 % des soins couverts (sans franchise)",
+            "Entre 70 000 $ et 79 999 $ : 60 % des soins couverts",
+            "Entre 80 000 $ et 89 999 $ : 40 % des soins couverts",
+            "90 000 $ et plus : non admissible"
+          ]
+        },
+        {
+          "h2": "Quels soins sont couverts par le RCSD ?",
+          "body": "Le RCSD couvre un large éventail de soins bucco-dentaires préventifs et de base.",
+          "list": [
+            "Examens et radiographies dentaires",
+            "Nettoyages et détartrages (hygiène préventive)",
+            "Obturations (plombages) pour les caries",
+            "Extractions dentaires",
+            "Traitements de canal (endodontie de base)",
+            "Prothèses dentaires (partielles et complètes)",
+            "Soins parodontaux de base",
+            "Urgences dentaires"
+          ]
+        },
+        {
+          "h2": "Comment en bénéficier au Centre Dentaire du Plateau ?",
+          "body": "La démarche est simple. Lors de votre rendez-vous, informez notre équipe que vous souhaitez utiliser votre couverture RCSD. Nous vérifions votre admissibilité directement en ligne et soumettons la demande de remboursement en votre nom. Vous n'avez rien à faire de plus.",
+          "list": [
+            "Apportez votre carte d'assurance-maladie (RAMQ)",
+            "Mentionnez le RCSD lors de la prise de rendez-vous",
+            "Notre équipe vérifie votre couverture sur place",
+            "Nous soumettons la demande directement à Sun Life"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Comment m'inscrire au RCSD ?",
+          "a": "L'inscription se fait en ligne sur le site Service Canada ou par téléphone au 1-833-537-4342. Vous aurez besoin de votre numéro d'assurance sociale et de vos informations de revenu. Une fois inscrit, vous recevrez une carte de couverture."
+        },
+        {
+          "q": "Le RCSD couvre-t-il les implants dentaires ?",
+          "a": "Le RCSD couvre certains actes prothétiques selon votre situation. Les implants ne sont pas systématiquement couverts, mais des prothèses alternatives (partielles, complètes) peuvent l'être. Consultez-nous pour une évaluation personnalisée."
+        },
+        {
+          "q": "J'ai déjà une assurance au travail — puis-je quand même bénéficier du RCSD ?",
+          "a": "Non. Si vous avez accès à une assurance dentaire privée par votre employeur ou votre conjoint, vous n'êtes pas admissible au RCSD, même si cette assurance est partielle."
+        },
+        {
+          "q": "Mon enfant peut-il être couvert par le RCSD ?",
+          "a": "Oui. Les enfants peuvent être couverts sous la couverture familiale du RCSD si le revenu familial est admissible. Il n'y a pas d'âge minimum."
+        }
+      ],
+      "internal_link": "/regime-canadien-soins-dentaires",
+      "internal_link_label": "Voir notre guide complet sur le RCSD"
+    },
+    "invisalign-vs-broches": {
+      "meta_title": "Invisalign ou Broches Dentaires : Tout Savoir Avant de Choisir | Plateau",
+      "meta_description": "Invisalign ou broches traditionnelles ? Comparatif complet : efficacité, prix, durée, entretien. L'avis du Dr. Barchichat, orthodontiste sur le Plateau Mont-Royal.",
+      "hero_title": "Invisalign ou broches dentaires : tout savoir avant de choisir",
+      "hero_subtitle": "Comparatif complet par le Dr. Saul Barchichat pour vous aider à faire le bon choix.",
+      "category": "orthodontie",
+      "intro": "La question revient souvent en consultation : faut-il choisir Invisalign ou des broches traditionnelles pour redresser mes dents ? Les deux options fonctionnent bien, mais chacune a ses avantages et ses limites selon votre cas clinique, votre mode de vie et votre budget. Voici ma réponse honnête après des années de pratique orthodontique au Plateau Mont-Royal.",
+      "sections": [
+        {
+          "h2": "Comment fonctionne Invisalign ?",
+          "body": "Invisalign utilise une série d'aligneurs en plastique transparent, fabriqués sur mesure à partir d'une empreinte numérique 3D de vos dents. Chaque aligneur est porté 20 à 22 heures par jour pendant 1 à 2 semaines, puis remplacé par le suivant. Le traitement complet comprend entre 12 et 40 aligneurs selon la complexité du cas.",
+          "list": [
+            "Invisibles au quotidien",
+            "Retirables pour manger et se brosser les dents",
+            "Confortables (pas de fil ni de brackets)",
+            "Suivi numérique avec visualisation du résultat final avant le début"
+          ]
+        },
+        {
+          "h2": "Les broches dentaires : avantages et limites",
+          "body": "Les broches (ou appareils fixes) restent la référence pour les cas complexes : malocclusions sévères, rotations importantes, problèmes de morsure. Elles sont fixées en permanence sur les dents et ne peuvent pas être retirées, ce qui garantit une force orthodontique continue 24h/24. Les broches céramiques offrent un meilleur aspect esthétique que les broches métalliques traditionnelles.",
+          "list": [
+            "Idéales pour les cas complexes",
+            "Aucun risque d'oubli de port",
+            "Métal ou céramique (option plus discrète)",
+            "Nécessitent des ajustements mensuels et une hygiène rigoureuse"
+          ]
+        },
+        {
+          "h2": "Invisalign vs broches : comparatif objectif",
+          "body": "Voici les principaux critères à comparer selon votre situation personnelle.",
+          "list": [
+            "Esthétique : Invisalign gagne (quasi invisible) vs broches (visibles, céramique en compromis)",
+            "Confort : Invisalign gagne (pas de blessures de la muqueuse) vs broches (irritations possibles)",
+            "Efficacité cas complexes : broches gagnent vs Invisalign (limites sur rotations importantes)",
+            "Hygiène : Invisalign gagne (retirable) vs broches (nettoyage plus difficile autour des brackets)",
+            "Prix : comparable — comptez 4 000 $ à 8 000 $ pour les deux options",
+            "Durée : similaire — 12 à 24 mois selon la complexité"
+          ]
+        },
+        {
+          "h2": "Quel traitement pour quel cas ?",
+          "body": "Invisalign convient très bien aux désalignements légers à modérés chez des patients motivés qui peuvent respecter le port des aligneurs. Les broches sont préférables pour les cas sévères, les patients plus jeunes ou ceux qui risquent de ne pas porter les aligneurs assez longtemps. Une consultation est indispensable pour déterminer quelle option est la plus adaptée à votre bouche spécifiquement."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Quel est le coût d'Invisalign au Plateau Mont-Royal ?",
+          "a": "Le coût d'un traitement Invisalign varie entre 4 500 $ et 7 500 $ selon la complexité. Ce montant comprend la planification 3D, tous les aligneurs et les gouttières de contention en fin de traitement. Certaines assurances couvrent l'orthodontie jusqu'à un certain plafond."
+        },
+        {
+          "q": "À quel âge peut-on commencer un traitement orthodontique ?",
+          "a": "Un traitement orthodontique peut commencer dès que les dents permanentes sont en place, généralement vers 11-13 ans. Cependant, l'orthodontie pour adultes est tout aussi efficace — il n'y a pas d'âge limite. De plus en plus de patients de 30 à 50 ans choisissent Invisalign."
+        },
+        {
+          "q": "Est-ce que le traitement Invisalign est douloureux ?",
+          "a": "Un léger inconfort est possible lors du changement d'aligneur, généralement pendant 1 à 2 jours. Il s'agit d'une pression normale signe que les dents bougent. Cet inconfort est généralement plus faible qu'avec les broches traditionnelles."
+        },
+        {
+          "q": "Que se passe-t-il après le traitement orthodontique ?",
+          "a": "Une phase de contention est indispensable après tout traitement orthodontique pour maintenir les résultats. Nous fabriquons des gouttières de contention sur mesure, à porter la nuit. Sans contention, les dents tendent naturellement à revenir à leur position initiale."
+        }
+      ],
+      "internal_link": "/services/orthodontie-invisible",
+      "internal_link_label": "Découvrir nos traitements d'orthodontie invisible"
+    },
+    "detartrage-pourquoi": {
+      "meta_title": "Détartrage Dentaire : Pourquoi Deux Fois par An ? | Hygiéniste Plateau",
+      "meta_description": "Le détartrage dentaire deux fois par an est-il vraiment nécessaire ? Explication de notre hygiéniste du Plateau Mont-Royal sur le tartre, la gingivite et la prévention.",
+      "hero_title": "Pourquoi le détartrage dentaire deux fois par an est essentiel",
+      "hero_subtitle": "L'explication de notre hygiéniste dentaire du Centre Dentaire du Plateau.",
+      "category": "prevention",
+      "intro": "C'est l'une des questions les plus fréquentes que nous entendons au cabinet : \"J'ai pas mal de douleur en ce moment, est-ce que c'est urgent ?\" Et souvent, la réponse révèle que le patient n'a pas consulté depuis 2 ou 3 ans. La prévention dentaire — et en particulier le détartrage professionnel — est la meilleure façon de garder votre bouche en santé et d'éviter des soins coûteux.",
+      "sections": [
+        {
+          "h2": "Qu'est-ce que le tartre et pourquoi est-il problématique ?",
+          "body": "La plaque dentaire est un film bactérien qui se forme naturellement sur vos dents après chaque repas. Si elle n'est pas éliminée par un brossage et un fil dentaire réguliers, elle se minéralise en 24 à 72 heures pour former du tartre (ou calcul dentaire). Une fois calcifié, le tartre ne peut plus être retiré par le brossage — il faut un détartrage professionnel.",
+          "list": [
+            "Le tartre irrite les gencives et provoque la gingivite",
+            "Non traité, il évolue vers la parodontite (maladie des gencives sévère)",
+            "La parodontite est la première cause de perte de dents chez l'adulte",
+            "Des liens ont été établis entre maladies parodontales et maladies cardiaques"
+          ]
+        },
+        {
+          "h2": "Qu'est-ce qu'un détartrage professionnel ?",
+          "body": "Lors d'un détartrage (ou prophylaxie dentaire), notre hygiéniste utilise des instruments ultrasoniques et manuels pour retirer le tartre supra-gingival (au-dessus de la gencive) et sous-gingival (sous la gencive). Le traitement inclut aussi un polissage des surfaces dentaires et des conseils personnalisés d'hygiène. La séance dure environ 45 à 60 minutes.",
+          "list": [
+            "Détartrage aux ultrasons (confortable et efficace)",
+            "Détartrage sous-gingival pour les zones profondes",
+            "Polissage pour éliminer les taches superficielles",
+            "Conseils de brossage et de fil dentaire personnalisés"
+          ]
+        },
+        {
+          "h2": "Pourquoi deux fois par an et pas une ?",
+          "body": "La recommandation de deux visites par an est basée sur le temps qu'il faut au tartre pour s'accumuler à un niveau cliniquement significatif — généralement 6 mois. Certains patients (fumeurs, diabétiques, personnes avec historique de parodontite) peuvent nécessiter jusqu'à 4 nettoyages par an. À l'inverse, des patients avec une hygiène parfaite et peu de tartre peuvent ne consulter qu'une fois par an. Votre hygiéniste adaptera la fréquence à votre situation."
+        },
+        {
+          "h2": "Ce que la prévention vous évite vraiment",
+          "body": "Un détartrage deux fois par an coûte généralement 100 $ à 200 $ par visite. En comparaison, le traitement d'une parodontite avancée (surfaçage radiculaire) peut coûter 800 $ à 2 000 $, sans compter les extractions ou les implants qui peuvent s'ensuivre. La prévention est clairement l'investissement le plus rentable pour votre santé dentaire.",
+          "list": [
+            "Prévient la gingivite et la parodontite",
+            "Détecte les caries à un stade précoce (moins de traitement)",
+            "Réduit le risque de perte de dents à long terme",
+            "Bien moins coûteux que les soins curatifs"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Le détartrage fait-il mal ?",
+          "a": "Pour la majorité des patients, le détartrage n'est pas douloureux. Une certaine sensibilité est possible si les gencives sont enflammées ou si le tartre est abondant. Nous utilisons des instruments ultrasoniques qui minimisent l'inconfort, et nous pouvons appliquer un gel anesthésiant si nécessaire."
+        },
+        {
+          "q": "Mon détartrage est-il couvert par mon assurance ?",
+          "a": "La grande majorité des assurances dentaires couvrent 2 nettoyages professionnels par an à 80-100 %. Le RCSD couvre également les soins d'hygiène préventive pour les personnes admissibles."
+        },
+        {
+          "q": "Dois-je faire un détartrage même si mes dents ne me font pas mal ?",
+          "a": "Absolument. La plupart des problèmes dentaires graves (caries profondes, parodontite) sont asymptomatiques à leurs débuts. Attendre d'avoir mal, c'est souvent attendre que le problème soit beaucoup plus sévère — et plus coûteux à traiter."
+        },
+        {
+          "q": "Le brossage électrique remplace-t-il le détartrage ?",
+          "a": "Non. Une brosse à dents électrique est excellente pour retirer la plaque quotidiennement, mais elle ne peut pas éliminer le tartre calcifié. Seul un professionnel avec des instruments appropriés peut le faire."
+        }
+      ],
+      "internal_link": "/services/hygiene-dentaire",
+      "internal_link_label": "En savoir plus sur notre service d'hygiène dentaire"
+    },
+    "blanchiment-pro-vs-maison": {
+      "meta_title": "Blanchiment Dentaire Professionnel vs Maison : La Vérité | Plateau Mont-Royal",
+      "meta_description": "Blanchiment dentaire professionnel ou kit maison ? Efficacité, sécurité, durée des résultats. L'avis honnête du Dr. Barchichat, dentiste au Plateau Mont-Royal.",
+      "hero_title": "Blanchiment dentaire professionnel vs maison : la vérité",
+      "hero_subtitle": "Quelle option est vraiment efficace, sûre et durable ? L'avis du Dr. Barchichat.",
+      "category": "soins",
+      "intro": "Le blanchiment dentaire est le traitement esthétique le plus demandé en cabinet. Avec la prolifération des kits vendus en pharmacie, en épicerie et même sur Instagram, la confusion est grande. Voici ce que je dis à mes patients qui me posent la question : \"Docteur, est-ce que ça vaut la peine de payer plus cher pour un blanchiment professionnel ?\"",
+      "sections": [
+        {
+          "h2": "Comment fonctionne le blanchiment dentaire ?",
+          "body": "Le principe actif dans tous les produits de blanchiment est le peroxyde — soit de l'eau oxygénée (peroxyde d'hydrogène), soit du peroxyde de carbamide qui se décompose en peroxyde d'hydrogène. Cette molécule pénètre l'émail dentaire et dégrade les pigments colorés incrustés dans les petites tubules dentinaires. La concentration du peroxyde et la durée d'application déterminent l'efficacité.",
+          "list": [
+            "Produits professionnels : 25 à 40 % de peroxyde d'hydrogène",
+            "Kits officine : 6 à 10 % de peroxyde (limite réglementaire UE/Canada)",
+            "Produits grand public (bandes, stylos) : 1 à 3 % — efficacité très limitée",
+            "Charbon activé, bicarbonate : abrasifs, ne blanchissent pas chimiquement"
+          ]
+        },
+        {
+          "h2": "Le blanchiment en cabinet : comment ça se passe ?",
+          "body": "En cabinet, nous proposons deux approches complémentaires. Le blanchiment en séance (type Zoom ou Beyond) utilise une concentration élevée de gel activé par une lumière LED pendant 60 à 90 minutes. Le blanchiment ambulatoire utilise des gouttières sur mesure avec un gel plus faible à porter 2 à 4 heures par jour pendant 2 à 3 semaines. Les deux méthodes peuvent être combinées pour un résultat maximal.",
+          "list": [
+            "Blanchiment en séance : résultats visibles dès la première séance (3 à 8 teintes)",
+            "Gouttières sur mesure : résultats progressifs et durables",
+            "Gel protecteur sur les gencives pour éviter les irritations",
+            "Suivi inclus : bilan avant et après avec comparaison Vita shade"
+          ]
+        },
+        {
+          "h2": "Kits maison de pharmacie : honnêtement",
+          "body": "Les kits vendus en pharmacie (Crest, Colgate Optic White, etc.) sont sûrs et peuvent donner de légers résultats sur les taches superficielles. Mais leur concentration est limitée par la réglementation canadienne, et les gouttières universelles ne s'adaptent pas parfaitement à votre dentition — ce qui réduit le contact du gel avec les dents et augmente le risque d'irritation des gencives. Attendez-vous à 1 ou 2 teintes de changement maximum.",
+          "list": [
+            "Efficacité limitée (1 à 2 teintes vs 3 à 8 en cabinet)",
+            "Gouttières non personnalisées (moins efficaces)",
+            "Risque d'irritation gingivale si mauvais ajustement",
+            "Résultats moins durables (6 à 12 mois vs 18 à 36 mois en cabinet)"
+          ]
+        },
+        {
+          "h2": "Qui peut se faire blanchir les dents ?",
+          "body": "Le blanchiment est sans danger pour l'émail des dents en bonne santé. Il est contre-indiqué pendant la grossesse et l'allaitement, sur les dents avec des caries actives non traitées, et sur les restaurations (couronnes, facettes, obturations) qui ne blanchissent pas. Un bilan préalable est indispensable pour s'assurer que vos dents et vos gencives sont en bonne santé avant de commencer."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Le blanchiment dentaire abîme-t-il l'émail ?",
+          "a": "Non, lorsqu'il est réalisé correctement avec les concentrations appropriées. Les études cliniques sur 20 ans montrent que le blanchiment au peroxyde, utilisé selon les recommandations, ne cause pas de dommages durables à l'émail. La sensibilité temporaire post-traitement (24 à 48 heures) est normale et réversible."
+        },
+        {
+          "q": "Combien de temps durent les résultats ?",
+          "a": "Un blanchiment professionnel dure généralement 1 à 3 ans selon votre consommation de café, thé, vin rouge et tabac. Des touches-up annuelles avec les gouttières sur mesure permettent de maintenir les résultats très facilement."
+        },
+        {
+          "q": "Est-ce que le blanchiment fonctionne sur les couronnes ou facettes ?",
+          "a": "Non. Les restaurations en porcelaine, composite ou zircone ne réagissent pas aux agents blanchissants. Si vous souhaitez harmoniser la couleur de vos dents naturelles avec vos restaurations, il faut en discuter avec votre dentiste avant le traitement."
+        },
+        {
+          "q": "Quel est le prix d'un blanchiment professionnel au Plateau Mont-Royal ?",
+          "a": "Le blanchiment en cabinet coûte généralement entre 400 $ et 700 $ selon le type de traitement (séance unique ou gouttières sur mesure). Ce prix inclut le bilan pré-traitement, le suivi et les gouttières de maintien. La plupart des assurances ne couvrent pas les traitements esthétiques."
+        }
+      ],
+      "internal_link": "/services/blanchiment-dentaire",
+      "internal_link_label": "Découvrir notre service de blanchiment dentaire"
     }
   }
 }

@@ -96,6 +96,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/blog" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors">
+                  {t('nav.blog')}
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors">
                   {t('nav.contact')}
                 </Link>
@@ -103,6 +108,16 @@ export function Footer() {
               <li>
                 <Link href="/carriere" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors">
                   {t('nav.careers')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/urgence-dentaire" className="font-body text-sm text-orange-600 hover:text-orange-700 transition-colors font-medium">
+                  {t('nav.emergency')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/regime-canadien-soins-dentaires" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors">
+                  {t('nav.cdcp')}
                 </Link>
               </li>
             </ul>
