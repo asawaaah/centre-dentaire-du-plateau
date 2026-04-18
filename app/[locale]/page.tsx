@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const isFr = locale === 'fr';
   return {
     title: isFr
-      ? "Dentiste Plateau Mont-Royal | Urgences, Implants, Invisalign — Dr. Barchichat"
-      : "Dentist Plateau Mont-Royal | Emergencies, Implants, Invisalign — Dr. Barchichat",
+      ? "Dentiste Plateau Mont-Royal — Soins Dentaires & Hygiène | Centre Dentaire du Plateau"
+      : "Dentist Plateau Mont-Royal — Dental Care & Hygiene | Centre Dentaire du Plateau",
     description: isFr
       ? "Dentiste au Plateau Mont-Royal depuis 1991. Urgences acceptées, RDV le jour même. Implants, Invisalign, blanchiment, soins préventifs. Lun–Ven. Appelez le 514-528-1587."
       : "Dentist on Plateau Mont-Royal since 1991. Emergencies accepted, same-day appointments. Implants, Invisalign, whitening, preventive care. Mon–Fri. Call 514-528-1587.",
