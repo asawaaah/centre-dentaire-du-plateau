@@ -326,7 +326,7 @@ export default async function BlogArticlePage({ params }: Props) {
                     return (
                       <Link
                         key={related.key}
-                        href={`/blog/${relatedSlug}` as `/blog/${string}`}
+                        href={`/blog/${relatedSlug}` as any}
                         className="flex items-start gap-3 px-4 py-3 rounded-xl font-body text-sm text-on-surface-variant hover:text-primary hover:bg-primary-fixed/10 transition-all duration-200"
                       >
                         <ChevronRight size={14} className="flex-shrink-0 text-primary mt-0.5" aria-hidden="true" />
