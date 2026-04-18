@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "../../../../i18n/routing";
 import { notFound } from "next/navigation";
-import { CheckCircle, ChevronRight, ChevronDown } from "lucide-react";
+import { CheckCircle, ChevronRight, ChevronDown, BookOpen, Shield } from "lucide-react";
 import type { Metadata } from "next";
 import {
   getAllStaticParams,
@@ -10,6 +10,7 @@ import {
   SERVICES,
   type ServiceKey,
 } from "../../../../lib/services";
+import { BLOG_POSTS } from "../../../../lib/blog";
 import { FaqSchemaOrg, BreadcrumbSchemaOrg } from "../../../../components/seo/SchemaOrg";
 
 type Props = {
@@ -41,6 +42,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+// Map service keys to their most relevant blog article key
+const SERVICE_TO_BLOG: Partial<Record<ServiceKey, string>> = {
+  implants: 'implant-guide-complet',
+  orthodontics: 'invisalign-vs-broches',
+  hygiene: 'detartrage-pourquoi',
+  whitening: 'blanchiment-pro-vs-maison',
+  surgery: 'urgence-quoi-faire',
+  rootCanal: 'urgence-quoi-faire',
+};
+
 export default async function ServiceDetailPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
@@ -57,6 +68,11 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   // Build list of other services for the sidebar
   const otherServices = SERVICES.filter((s) => s.key !== key).slice(0, 5);
+
+  // Find related blog article for this service
+  const relatedBlogKey = SERVICE_TO_BLOG[key as ServiceKey];
+  const relatedBlog = relatedBlogKey ? BLOG_POSTS.find((p) => p.key === relatedBlogKey) : undefined;
+  const tBlog = relatedBlog ? await getTranslations('BlogPages') : null;
 
   return (
     <>
@@ -159,6 +175,28 @@ export default async function ServiceDetailPage({ params }: Props) {
               </section>
             )}
 
+            {/* Recommended blog article */}
+            {relatedBlog && tBlog && (
+              <section className="rounded-[2rem] bg-surface-container-lowest p-8 space-y-5">
+                <div className="flex items-center gap-3">
+                  <BookOpen size={20} className="text-primary" aria-hidden="true" />
+                  <h2 className="font-heading font-semibold text-lg text-on-surface">
+                    {locale === 'fr' ? 'Article recommandé' : 'Recommended article'}
+                  </h2>
+                </div>
+                <p className="font-body text-sm text-on-surface-variant leading-relaxed">
+                  {tBlog(`${relatedBlog.key}.hero_subtitle`)}
+                </p>
+                <Link
+                  href={`/blog/${relatedBlog.slugs[locale as 'fr' | 'en']}` as any}
+                  className="inline-flex items-center gap-2 font-body text-sm font-medium text-primary hover:gap-3 transition-all duration-200"
+                >
+                  {tBlog(`${relatedBlog.key}.hero_title`)}
+                  <ChevronRight size={14} aria-hidden="true" />
+                </Link>
+              </section>
+            )}
+
           </div>
 
           {/* ---- Right: Sidebar ---- */}
@@ -186,6 +224,28 @@ export default async function ServiceDetailPage({ params }: Props) {
                   <ChevronRight size={14} className="flex-shrink-0" aria-hidden="true" />
                 </Link>
               </nav>
+
+              {/* RCSD CTA block */}
+              <div className="pt-4 border-t border-outline-variant/20 space-y-3">
+                <div className="flex items-center gap-2">
+                  <Shield size={16} className="text-primary" aria-hidden="true" />
+                  <p className="font-heading font-semibold text-sm text-on-surface">
+                    {locale === 'fr' ? 'Couvert par le RCSD ?' : 'Covered by CDCP?'}
+                  </p>
+                </div>
+                <p className="font-body text-xs text-on-surface-variant leading-relaxed">
+                  {locale === 'fr'
+                    ? 'Le Régime canadien de soins dentaires couvre plusieurs de nos traitements. Vérifiez votre éligibilité.'
+                    : 'The Canadian Dental Care Plan covers many of our treatments. Check your eligibility.'}
+                </p>
+                <Link
+                  href="/regime-canadien-soins-dentaires"
+                  className="flex items-center gap-1.5 font-body text-sm text-primary hover:underline"
+                >
+                  {locale === 'fr' ? 'En savoir plus sur le RCSD' : 'Learn more about the CDCP'}
+                  <ChevronRight size={13} aria-hidden="true" />
+                </Link>
+              </div>
 
               <div className="pt-4 border-t border-outline-variant/20 space-y-3">
                 <p className="font-body text-sm text-on-surface-variant">

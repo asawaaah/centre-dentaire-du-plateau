@@ -11,6 +11,7 @@ import {
   HeartPulse,
   Asterisk,
 } from "lucide-react";
+import { getServiceSlug, type ServiceKey } from "../../lib/services";
 import type { Metadata } from "next";
 import { TestimonialsCarousel } from "../../components/ui/TestimonialsCarousel";
 
@@ -52,6 +53,11 @@ export default async function Home({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Home");
+
+  // Pre-compute service slugs for internal links
+  const surgerySlug = getServiceSlug(locale, 'surgery' as ServiceKey);
+  const hygieneSlug = getServiceSlug(locale, 'hygiene' as ServiceKey);
+  const implantsSlug = getServiceSlug(locale, 'implants' as ServiceKey);
 
   return (
     <>
@@ -149,7 +155,7 @@ export default async function Home({
                 </p>
               </div>
               <Link
-                href="/services"
+                href={{ pathname: '/services/[slug]', params: { slug: surgerySlug } }}
                 className="inline-flex items-center gap-2.5 font-body font-semibold text-primary hover:gap-4 transition-all duration-300 pt-2"
               >
                 {t("services.surgery.cta")}
@@ -171,7 +177,7 @@ export default async function Home({
                 </p>
               </div>
               <Link
-                href="/services"
+                href={{ pathname: '/services/[slug]', params: { slug: hygieneSlug } }}
                 className="inline-flex items-center gap-2.5 font-body font-semibold text-primary hover:gap-4 transition-all duration-300 pt-2"
               >
                 {t("services.prevention.cta")}
@@ -193,7 +199,10 @@ export default async function Home({
                 {t("services.aesthetic.description")}
               </p>
             </div>
-            <div className="bg-surface-container-low rounded-[1.5rem] p-8 space-y-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-ambient)]">
+            <Link
+              href="/urgence-dentaire"
+              className="bg-surface-container-low rounded-[1.5rem] p-8 space-y-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-ambient)] block"
+            >
               <div className="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center">
                 <Zap className="text-tertiary" size={24} aria-hidden="true" />
               </div>
@@ -203,8 +212,11 @@ export default async function Home({
               <p className="font-body text-on-surface-variant leading-relaxed">
                 {t("services.emergency.description")}
               </p>
-            </div>
-            <div className="bg-surface-container-low rounded-[1.5rem] p-8 space-y-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-ambient)]">
+            </Link>
+            <Link
+              href={{ pathname: '/services/[slug]', params: { slug: implantsSlug } }}
+              className="bg-surface-container-low rounded-[1.5rem] p-8 space-y-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-ambient)] block"
+            >
               <div className="w-12 h-12 rounded-xl bg-primary-fixed/20 flex items-center justify-center">
                 <Shield className="text-primary" size={24} aria-hidden="true" />
               </div>
@@ -214,7 +226,7 @@ export default async function Home({
               <p className="font-body text-on-surface-variant leading-relaxed">
                 {t("services.implants.description")}
               </p>
-            </div>
+            </Link>
           </div>
 
           {/* CTA — Voir tous les traitements */}
