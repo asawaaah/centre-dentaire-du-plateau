@@ -209,7 +209,7 @@ export default async function RCSDPage({ params }: Props) {
 
           {/* Blog article link */}
           {rcsdBlogSlug && (
-            <div className="flex items-center gap-4 p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/10 max-w-2xl mx-auto">
+            <div className="flex items-center gap-4 p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/10 mx-auto">
               <BookOpen size={20} className="text-primary flex-shrink-0" aria-hidden="true" />
               <div className="flex-1">
                 <p className="font-body text-xs text-on-surface-variant uppercase tracking-wider mb-1">

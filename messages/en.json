@@ -919,7 +919,7 @@
     "meta_title": "Canadian Dental Care Plan (CDCP) 2026",
     "meta_description": "Centre Dentaire du Plateau is a registered CDCP provider. Find out who qualifies, what's covered, and how to use your benefits at your next appointment. Call 514-528-1587.",
     "hero": {
-      "eyebrow": "Federal program — Updated 2025",
+      "eyebrow": "Federal program — Updated 2026",
       "title": "Canadian Dental Care Plan (CDCP)",
       "subtitle": "The Government of Canada covers your dental care if you have no private insurance. We are a registered provider — come as you are, we handle everything.",
       "badge": "We bill Service Canada directly",
@@ -1042,7 +1042,7 @@
         },
         {
           "q": "Does the CDCP renew automatically?",
-          "a": "No. You must renew your eligibility each year after filing your tax return. Service Canada sends a notification when renewal is available. Make sure to update your profile to avoid losing your coverage."
+          "a": "No. You must renew your eligibility each year. For the 2026-2027 benefit year, the renewal period ended on June 2, 2026. If you missed this deadline, your coverage ends on June 30, 2026, and you will need to reapply."
         },
         {
           "q": "Can I use the CDCP if I have partial insurance?",
@@ -1512,6 +1512,187 @@
       ],
       "internal_link": "/services/blanchiment-dentaire",
       "internal_link_label": "Discover our teeth whitening service"
+    },
+    "sensibilite-causes": {
+      "meta_title": "Tooth Sensitivity: 7 Causes and Treatments | Dentist Plateau Montreal",
+      "meta_description": "Teeth sensitive to cold or heat? Discover the 7 most common causes and available treatments. Dr. Barchichat's guide, Plateau Mont-Royal.",
+      "hero_title": "Tooth sensitivity: 7 common causes and how to treat it",
+      "hero_subtitle": "A complete guide by Dr. Saul Barchichat to understand and relieve your sensitive teeth.",
+      "category": "prevention",
+      "intro": "Do you feel a sharp pain when drinking your morning coffee or eating ice cream? You are not alone: tooth sensitivity affects about 1 in 3 adults in Canada. In most cases, it is not an emergency — but it is always a sign that something deserves attention. As a dentist on the Plateau Mont-Royal for over 35 years, here is what I explain to my patients who come to see me about sensitive teeth.",
+      "sections": [
+        {
+          "h2": "What exactly is tooth sensitivity?",
+          "body": "Tooth sensitivity (or dentin hypersensitivity) manifests as a brief, sharp pain in response to an external stimulus: cold, heat, sugar, acid, or even air passing over the tooth. It occurs when the dentin — the layer beneath the enamel — is exposed. Dentin contains thousands of tiny tubules that lead directly to the tooth's nerve. When these tubules are exposed, every stimulus reaches the nerve and causes that characteristic pain.",
+          "list": [
+            "Brief, sharp pain (not continuous like a deep cavity)",
+            "Triggered by cold, heat, sugar or acid",
+            "Affects about 1 in 3 Canadian adults",
+            "Can affect a single tooth or multiple teeth"
+          ]
+        },
+        {
+          "h2": "The 7 most common causes of tooth sensitivity",
+          "body": "Identifying the cause is the first step to effectively treating sensitivity. Here are the 7 causes I encounter most frequently at the clinic.",
+          "list": [
+            "Worn enamel — Brushing too hard or using a hard-bristled toothbrush gradually wears down the protective enamel. This is the most common cause in motivated patients who brush too aggressively.",
+            "Gum recession — When the gum recedes, it exposes the tooth root which is not protected by enamel. Causes: periodontitis, aggressive brushing, natural aging.",
+            "Tooth decay — An untreated cavity breaks through the enamel and exposes the dentin. The sensitivity is then localized to a single tooth.",
+            "Bruxism (teeth grinding) — Nighttime grinding wears down the enamel on chewing surfaces. Bruxism patients often have generalized sensitivity across multiple teeth.",
+            "Recent teeth whitening — The peroxide used in whitening products can temporarily open the dentin tubules. This is normal and reversible within 24 to 72 hours.",
+            "Recent filling or treatment — After a filling, root canal or crown, temporary sensitivity lasting 1 to 2 weeks is common.",
+            "Crack or micro-fracture — An invisible crack in the enamel can let stimuli through. This diagnosis requires a thorough in-office examination."
+          ]
+        },
+        {
+          "h2": "When to see a dentist urgently",
+          "body": "Tooth sensitivity is rarely an emergency, but certain signs should alert you and warrant a prompt appointment.",
+          "list": [
+            "Spontaneous pain that persists without a stimulus (possibly an infection)",
+            "Swelling of the gum or cheek (sign of an abscess)",
+            "Intense sensitivity on a single tooth that gets worse (advanced cavity or crack)",
+            "Pain that wakes you at night (pulp inflammation)",
+            "Sensitivity that appeared after an impact or trauma"
+          ]
+        },
+        {
+          "h2": "Professional treatments available on the Plateau",
+          "body": "Depending on the identified cause, several professional treatments are available at the clinic. During your consultation, we determine the exact source of your sensitivity and recommend the most appropriate treatment.",
+          "list": [
+            "High-concentration fluoride varnish — Applied directly to sensitive areas, it seals exposed dentin tubules. Relief in a single session.",
+            "Dentin sealant — A protective resin that covers sensitive surfaces to block stimuli.",
+            "Gum graft — In cases of severe recession, a gum tissue graft permanently covers the exposed root.",
+            "Root canal — If the sensitivity is caused by irreversible pulp inflammation, root canal therapy permanently eliminates the pain.",
+            "Bruxism nightguard — For patients who grind their teeth at night, a custom nightguard protects the enamel and reduces sensitivity."
+          ]
+        },
+        {
+          "h2": "What you can do at home",
+          "body": "While waiting for your appointment or as a complement to professional treatment, these simple measures can significantly reduce daily sensitivity.",
+          "list": [
+            "Use a desensitizing toothpaste (Sensodyne, Colgate Sensitive Pro-Relief) — the active compounds (potassium nitrate, calcium phosphate) gradually block the tubules.",
+            "Switch to a soft-bristled toothbrush — and brush with gentle, circular motions, never in a back-and-forth horizontal pattern.",
+            "Avoid very acidic foods (citrus, vinegar, carbonated drinks) that erode enamel.",
+            "Wait 30 minutes after an acidic meal before brushing — enamel temporarily softened by acid is more vulnerable to brushing.",
+            "Rinse your mouth with water after consuming acidic or sugary foods."
+          ]
+        },
+        {
+          "h2": "Sensitivity after dental work: is it normal?",
+          "body": "Yes, in most cases. After a filling, deep scaling, whitening, or crown placement, temporary sensitivity is normal and expected. It typically lasts from a few days to 2 weeks. If the sensitivity persists beyond 3 weeks or intensifies, contact your dentist — it may indicate an issue with the restoration fit or pulp inflammation that requires follow-up."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can tooth sensitivity go away on its own?",
+          "a": "In some cases, yes. If the cause is temporary (recent whitening, recent dental work), the sensitivity resolves naturally within a few days to 2 weeks. But if it persists for more than 3 weeks or worsens, a consultation is needed to identify and treat the underlying cause."
+        },
+        {
+          "q": "Does desensitizing toothpaste actually work?",
+          "a": "Yes, desensitizing toothpastes are clinically proven. They contain active agents (potassium nitrate, calcium phosphate, stannous fluoride) that gradually block dentin tubules. However, it takes 2 to 4 weeks of regular use to see a significant effect."
+        },
+        {
+          "q": "Is tooth sensitivity a sign of a cavity?",
+          "a": "Not always, but it is a possibility. Sensitivity caused by a cavity is usually localized to a single tooth and gets worse over time. A clinical exam and X-ray can quickly confirm or rule out this diagnosis."
+        },
+        {
+          "q": "Can scaling cause sensitivity?",
+          "a": "Yes, temporarily. Scaling removes tartar that may have been covering sensitive areas of the tooth. This post-scaling sensitivity is normal and disappears within a few days. It is a sign that the cleaning was effective."
+        },
+        {
+          "q": "Can my child have sensitive teeth?",
+          "a": "Yes. Children can have sensitive teeth, often due to immature enamel, undetected cavities, or overly vigorous brushing. If your child regularly complains of pain when eating cold or hot foods, a consultation is recommended."
+        }
+      ],
+      "internal_link": "/services/hygiene-dentaire",
+      "internal_link_label": "Learn more about our dental hygiene service"
+    },
+    "peur-du-dentiste": {
+      "meta_title": "Fear of the Dentist: 5 Techniques to Overcome Dental Anxiety | Plateau",
+      "meta_description": "Afraid of the dentist? Discover 5 techniques to overcome dental anxiety. Gentle, judgment-free approach on Plateau Mont-Royal. Dr. Barchichat — 514-528-1587.",
+      "hero_title": "Fear of the dentist: 5 techniques to overcome dental anxiety",
+      "hero_subtitle": "Dr. Saul Barchichat's caring approach for stress-free dental visits.",
+      "category": "soins",
+      "intro": "If the thought of a dental appointment gives you cold sweats, know that you are absolutely not alone. Dental anxiety affects about 15% of Quebecers, and for some, it is so intense that it prevents them from seeing a dentist for years — worsening problems that could have been treated simply. In 35 years of practice on the Plateau Mont-Royal, I have supported hundreds of anxious patients. Here are the 5 techniques we use at the clinic to transform your experience.",
+      "sections": [
+        {
+          "h2": "You are not alone — dental anxiety in numbers",
+          "body": "Odontophobia (irrational fear of the dentist) is one of the most common phobias in the world. In Canada, approximately 5 to 15% of the population avoids the dentist due to severe anxiety. The consequences are real: simple cavities that become abscesses, gum problems that lead to tooth loss, and oral health that silently deteriorates.",
+          "list": [
+            "15% of Canadians suffer from significant dental anxiety",
+            "40% of adults feel some degree of discomfort about going to the dentist",
+            "Anxious patients visit the dentist on average half as often",
+            "Dental anxiety is the 3rd most common phobia in Canada"
+          ]
+        },
+        {
+          "h2": "Why are we afraid of the dentist? The real reasons",
+          "body": "Understanding the source of your anxiety is the first step to overcoming it. The reasons are often deep and legitimate — there is no shame in feeling them.",
+          "list": [
+            "Past traumatic experience — A painful treatment during childhood or a rough dentist leaves lasting marks in emotional memory.",
+            "Loss of control — Lying down, mouth open, unable to speak or move creates a feeling of helplessness in many patients.",
+            "Fear of pain — Even though modern anesthesia is very effective, the anticipatory fear of pain is often more intense than the pain itself.",
+            "Sensitivity to sounds and smells — The noise of the dental drill and the smell of materials can trigger a stress response.",
+            "Shame and judgment — Many patients fear being judged for the state of their teeth, especially after years without a visit. This fear is unfounded at our clinic."
+          ]
+        },
+        {
+          "h2": "Our 5 techniques for a stress-free visit",
+          "body": "At Centre Dentaire du Plateau, we have developed a specific protocol for anxious patients. These techniques have been refined over 35 years of practice and allow the vast majority of our patients to overcome their anxiety.",
+          "list": [
+            "Constant communication — Dr. Barchichat explains every step before doing it. No surprises. You know exactly what is happening at every moment.",
+            "Patient control (raised hand) — You raise your hand at any time to pause the treatment. We stop immediately, no questions asked. You stay in control.",
+            "Modern painless anesthesia — We use a topical numbing gel before the injection, ultra-fine needles and slow injection technique. Most patients don't feel the needle.",
+            "Music and headphones — Bring your earbuds and your favorite playlist. Music significantly reduces stress and masks instrument noise.",
+            "Progressive approach — For severe anxiety cases, we start with a familiarization visit: we meet, we chat, we do a simple visual exam. Treatment begins only when you are ready."
+          ]
+        },
+        {
+          "h2": "Dr. Barchichat's approach with anxious patients",
+          "body": "In 35 years of practice on the Plateau Mont-Royal, I have seen hundreds of patients who had not visited a dentist in 5, 10, sometimes 15 years because of their anxiety. My philosophy is simple: no judgment, no rushing, and absolute patience. I prefer 3 short appointments over one long stressful one. My goal is not just to treat your teeth, but to rebuild your trust in dental care — so you come back regularly and problems are treated before they become serious.",
+          "list": [
+            "No judgment about the state of your teeth — ever",
+            "Short, progressive appointments to build confidence",
+            "Clear explanation of every step in plain language",
+            "Calm, relaxed atmosphere — no noisy, hectic office"
+          ]
+        },
+        {
+          "h2": "First visit: what to expect",
+          "body": "We know that the unknown amplifies anxiety. Here is exactly what happens during your first visit to Centre Dentaire du Plateau.",
+          "list": [
+            "Warm welcome by our team — no endless paperwork, no packed waiting room.",
+            "Discussion with Dr. Barchichat — he takes the time to understand your fears and history. Nothing starts without your consent.",
+            "Gentle visual exam — we look, we assess, we take X-rays if needed. No invasive treatment at the first visit if you don't want it.",
+            "Treatment plan explained — we present what needs to be done, with priorities, costs and options. You set the pace.",
+            "Next appointment at your own pace — no pressure to book immediately."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does Dr. Barchichat judge patients who haven't visited in a long time?",
+          "a": "Absolutely not. Dr. Barchichat regularly sees patients who have not been to a dentist in 5 to 15 years. He understands that anxiety is a legitimate reason for avoiding care, and his approach is always caring and judgment-free. His goal is to help you regain good oral health at your own pace."
+        },
+        {
+          "q": "Do you offer conscious sedation for very anxious patients?",
+          "a": "For severe anxiety cases that don't respond to behavioral techniques, we can discuss light sedation options with you. During your consultation, Dr. Barchichat will assess your anxiety level and recommend the most appropriate approach."
+        },
+        {
+          "q": "Does local anesthesia hurt?",
+          "a": "With our modern techniques, the vast majority of patients do not feel the injection. We apply a topical numbing gel before the needle, use ultra-fine needles and inject very slowly. The slight pinch that some feel lasts less than a second."
+        },
+        {
+          "q": "Can I come just to see the clinic without any treatment?",
+          "a": "Yes, absolutely. We encourage anxious patients to come for a familiarization visit. You meet the team, tour the office, ask your questions — with no obligation for treatment. It is often the first step to breaking the anxiety cycle."
+        },
+        {
+          "q": "How do I manage anxiety the night before my appointment?",
+          "a": "A few tips that help our patients: prepare your music playlist, avoid coffee the morning of your appointment (it increases anxiety), arrive 10 minutes early to settle in calmly, and don't hesitate to call us the day before if you have questions. Knowing exactly what will happen significantly reduces stress."
+        }
+      ],
+      "internal_link": "/a-propos/dr-saul-barchichat",
+      "internal_link_label": "Learn about Dr. Barchichat's approach"
     }
   }
 }

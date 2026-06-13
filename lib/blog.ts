@@ -13,6 +13,22 @@ export interface BlogPostConfig {
 
 export const BLOG_POSTS: BlogPostConfig[] = [
   {
+    key: 'peur-du-dentiste',
+    slugs: { fr: 'peur-du-dentiste-vaincre-anxiete-dentaire', en: 'fear-of-dentist-overcoming-dental-anxiety' },
+    category: 'soins',
+    publishedAt: '2026-06-13',
+    readingTime: 8,
+    featuredImage: '/images/blog/anxiete.jpg',
+  },
+  {
+    key: 'sensibilite-causes',
+    slugs: { fr: 'sensibilite-dentaire-causes-et-traitements', en: 'tooth-sensitivity-causes-and-treatments' },
+    category: 'prevention',
+    publishedAt: '2026-06-10',
+    readingTime: 7,
+    featuredImage: '/images/blog/sensibilite.jpg',
+  },
+  {
     key: 'urgence-quoi-faire',
     slugs: { fr: 'urgence-dentaire-quoi-faire-plateau', en: 'dental-emergency-what-to-do-plateau' },
     category: 'urgence',
@@ -48,7 +64,7 @@ export const BLOG_POSTS: BlogPostConfig[] = [
     key: 'detartrage-pourquoi',
     slugs: { fr: 'detartrage-dentaire-pourquoi-deux-fois-par-an', en: 'dental-scaling-why-twice-a-year' },
     category: 'prevention',
-    publishedAt: '2026-12-08',
+    publishedAt: '2025-12-08',
     readingTime: 5,
     featuredImage: '/images/blog/hygiene.jpg',
   },
@@ -56,7 +72,7 @@ export const BLOG_POSTS: BlogPostConfig[] = [
     key: 'blanchiment-pro-vs-maison',
     slugs: { fr: 'blanchiment-dentaire-professionnel-vs-maison', en: 'professional-teeth-whitening-vs-at-home' },
     category: 'soins',
-    publishedAt: '2026-11-08',
+    publishedAt: '2025-11-08',
     readingTime: 6,
     featuredImage: '/images/blog/blanchiment.jpg',
   },

@@ -139,7 +139,7 @@ export async function POST(request: Request) {
       </div>
     `;
 
-    const clinicEmails = ['asawauno@gmail.com', 'info@dentisteplateau.com', 'dentisteplateau@hotmail.com', 'shaul42@hotmail.com'];
+    const clinicEmails = ['info@dentisteplateau.com', 'dentisteplateau@hotmail.com', 'shaul42@hotmail.com'];
 
     const notificationHtmlContent = `
       <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #171d1d; background-color: #f5fafa; padding: 40px; border-radius: 12px; border: 1px solid #eff5f5;">
@@ -191,10 +191,10 @@ export async function POST(request: Request) {
     });
 
     const emailResults = await Promise.all([...notificationPromises, confirmationPromise]);
-    
+
     // Le dernier élément correspond à l'email de confirmation 
     const confirmationResult = emailResults.pop() as { data: any; error: any };
-    
+
     // On vérifie s'il y a eu une erreur d'envoi pour au moins une des notifications
     const errorResult = emailResults.find(res => res && res.error);
     const error = errorResult ? errorResult.error : null;

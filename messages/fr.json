@@ -919,7 +919,7 @@
     "meta_title": "Régime Canadien de Soins Dentaires (RCSD) 2026",
     "meta_description": "Le Centre Dentaire du Plateau est partenaire du RCSD. Découvrez qui est admissible, ce qui est couvert et comment en bénéficier lors de votre prochain rendez-vous. Appelez le 514-528-1587.",
     "hero": {
-      "eyebrow": "Programme fédéral — Mis à jour 2025",
+      "eyebrow": "Programme fédéral — Mis à jour 2026",
       "title": "Régime Canadien de Soins Dentaires (RCSD)",
       "subtitle": "Le gouvernement du Canada couvre vos soins dentaires si vous n'avez pas d'assurance privée. Nous sommes partenaires du programme — venez tel quel, nous nous occupons de tout.",
       "badge": "Nous soumettons directement à Service Canada",
@@ -1042,7 +1042,7 @@
         },
         {
           "q": "Le RCSD se renouvelle-t-il automatiquement ?",
-          "a": "Non. Vous devez renouveler votre admissibilité chaque année après avoir produit votre déclaration de revenus. Service Canada vous envoie une notification quand le renouvellement est disponible. Assurez-vous de mettre à jour votre profil pour ne pas perdre votre couverture."
+          "a": "Non. Le renouvellement doit se faire chaque année. Pour l'année de prestations 2026-2027, la période de renouvellement s'est terminée le 2 juin 2026. Si vous avez manqué cette date, votre couverture se termine le 30 juin 2026 et vous devrez soumettre une nouvelle demande."
         },
         {
           "q": "Puis-je utiliser le RCSD si j'ai une assurance partielle ?",
@@ -1512,6 +1512,187 @@
       ],
       "internal_link": "/services/blanchiment-dentaire",
       "internal_link_label": "Découvrir notre service de blanchiment dentaire"
+    },
+    "sensibilite-causes": {
+      "meta_title": "Sensibilité Dentaire : 7 Causes et Traitements | Dentiste Plateau Mont-Royal",
+      "meta_description": "Dents sensibles au froid ou au chaud ? Découvrez les 7 causes les plus fréquentes et les traitements disponibles. Guide du Dr. Barchichat, Plateau Mont-Royal.",
+      "hero_title": "Sensibilité dentaire : 7 causes fréquentes et comment la traiter",
+      "hero_subtitle": "Guide complet du Dr. Saul Barchichat pour comprendre et soulager vos dents sensibles.",
+      "category": "prevention",
+      "intro": "Vous ressentez une douleur vive en buvant votre café du matin ou en mangeant une crème glacée ? Vous n'êtes pas seul(e) : la sensibilité dentaire touche environ 1 adulte sur 3 au Canada. Dans la plupart des cas, ce n'est pas une urgence — mais c'est toujours le signe que quelque chose mérite attention. En tant que dentiste au Plateau Mont-Royal depuis plus de 35 ans, voici ce que j'explique à mes patients qui viennent me voir pour des dents sensibles.",
+      "sections": [
+        {
+          "h2": "Qu'est-ce que la sensibilité dentaire exactement ?",
+          "body": "La sensibilité dentaire (ou hypersensibilité dentinaire) se manifeste par une douleur brève et aiguë en réponse à un stimulus externe : froid, chaud, sucré, acide, ou même le simple passage de l'air. Elle survient lorsque la dentine — la couche sous l'émail — est exposée. La dentine contient des milliers de petits tubules qui mènent directement au nerf de la dent. Quand ces tubules sont à découvert, chaque stimulus atteint le nerf et provoque cette douleur caractéristique.",
+          "list": [
+            "Douleur brève et aiguë (pas continue comme une carie profonde)",
+            "Déclenchée par le froid, le chaud, le sucré ou l'acide",
+            "Touche environ 1 adulte canadien sur 3",
+            "Peut affecter une seule dent ou plusieurs"
+          ]
+        },
+        {
+          "h2": "Les 7 causes les plus fréquentes de sensibilité dentaire",
+          "body": "Identifier la cause est la première étape pour traiter efficacement la sensibilité. Voici les 7 causes que je rencontre le plus souvent au cabinet.",
+          "list": [
+            "Émail usé — Un brossage trop vigoureux ou une brosse à poils durs use progressivement l'émail protecteur. C'est la cause la plus fréquente chez les patients motivés qui brossent trop fort.",
+            "Récession gingivale — Quand la gencive se rétracte, elle expose la racine de la dent qui n'est pas protégée par l'émail. Causes : parodontite, brossage agressif, vieillissement naturel.",
+            "Carie dentaire — Une carie non traitée perce l'émail et expose la dentine. La sensibilité est alors localisée sur une seule dent.",
+            "Bruxisme (grincement des dents) — Le grincement nocturne use l'émail des surfaces de mastication. Les patients bruxeurs ont souvent une sensibilité généralisée sur plusieurs dents.",
+            "Blanchiment dentaire récent — Le peroxyde utilisé dans les produits de blanchiment peut temporairement ouvrir les tubules dentinaires. C'est normal et réversible en 24 à 72 heures.",
+            "Plombage ou soin récent — Après une obturation, un traitement de canal ou une couronne, une sensibilité temporaire de 1 à 2 semaines est fréquente.",
+            "Fissure ou micro-fracture — Une fissure invisible dans l'émail peut laisser passer les stimuli. Ce diagnostic nécessite un examen approfondi au cabinet."
+          ]
+        },
+        {
+          "h2": "Quand consulter un dentiste en urgence ?",
+          "body": "La sensibilité dentaire est rarement une urgence, mais certains signes doivent vous alerter et justifient un rendez-vous rapide.",
+          "list": [
+            "Douleur spontanée qui persiste sans stimulus (possiblement une infection)",
+            "Gonflement de la gencive ou de la joue (signe d'abcès)",
+            "Sensibilité intense sur une seule dent qui s'aggrave (carie avancée ou fissure)",
+            "Douleur qui réveille la nuit (inflammation pulpaire)",
+            "Sensibilité apparue après un choc ou un traumatisme"
+          ]
+        },
+        {
+          "h2": "Traitements professionnels disponibles au Plateau",
+          "body": "Selon la cause identifiée, plusieurs traitements professionnels sont disponibles au cabinet. Lors de votre consultation, nous déterminons la source exacte de votre sensibilité et proposons le traitement le plus adapté.",
+          "list": [
+            "Vernis fluoré haute concentration — Appliqué directement sur les zones sensibles, il scelle les tubules dentinaires exposés. Soulagement en une seule séance.",
+            "Scellant dentinaire — Une résine protectrice qui recouvre les surfaces sensibles pour bloquer les stimuli.",
+            "Greffe gingivale — En cas de récession sévère, une greffe de tissu gingival recouvre la racine exposée de façon permanente.",
+            "Traitement de canal — Si la sensibilité est causée par une inflammation irréversible de la pulpe, le traitement de canal élimine définitivement la douleur.",
+            "Gouttière de bruxisme — Pour les patients qui grincent des dents la nuit, une gouttière sur mesure protège l'émail et réduit la sensibilité."
+          ]
+        },
+        {
+          "h2": "Ce que vous pouvez faire à la maison",
+          "body": "En attendant votre rendez-vous ou en complément du traitement professionnel, ces mesures simples peuvent réduire significativement la sensibilité au quotidien.",
+          "list": [
+            "Utilisez un dentifrice désensibilisant (Sensodyne, Colgate Sensitive Pro-Relief) — les composés actifs (nitrate de potassium, phosphate de calcium) bloquent progressivement les tubules.",
+            "Passez à une brosse à dents à poils souples — et brossez avec des mouvements doux et circulaires, jamais en va-et-vient horizontal.",
+            "Évitez les aliments très acides (agrumes, vinaigre, boissons gazeuses) qui érodent l'émail.",
+            "Attendez 30 minutes après un repas acide avant de vous brosser les dents — l'émail temporairement ramolli par l'acide est plus vulnérable au brossage.",
+            "Rincez-vous la bouche à l'eau après avoir consommé des aliments acides ou sucrés."
+          ]
+        },
+        {
+          "h2": "Sensibilité après un soin dentaire : est-ce normal ?",
+          "body": "Oui, dans la plupart des cas. Après une obturation (plombage), un détartrage profond, un blanchiment ou la pose d'une couronne, une sensibilité temporaire est normale et attendue. Elle dure généralement de quelques jours à 2 semaines. Si la sensibilité persiste au-delà de 3 semaines ou s'intensifie, contactez votre dentiste — il peut s'agir d'un problème d'ajustement de la restauration ou d'une inflammation de la pulpe qui nécessite un suivi."
+        }
+      ],
+      "faq": [
+        {
+          "q": "La sensibilité dentaire peut-elle disparaître toute seule ?",
+          "a": "Dans certains cas, oui. Si la cause est temporaire (blanchiment récent, soin dentaire récent), la sensibilité se résout naturellement en quelques jours à 2 semaines. Mais si elle persiste plus de 3 semaines ou s'aggrave, une consultation est nécessaire pour identifier et traiter la cause sous-jacente."
+        },
+        {
+          "q": "Le dentifrice désensibilisant fonctionne-t-il vraiment ?",
+          "a": "Oui, les dentifrices désensibilisants sont cliniquement prouvés. Ils contiennent des agents actifs (nitrate de potassium, phosphate de calcium, fluorure d'étain) qui bloquent progressivement les tubules dentinaires. Il faut cependant 2 à 4 semaines d'utilisation régulière pour constater un effet significatif."
+        },
+        {
+          "q": "Est-ce que la sensibilité dentaire est un signe de carie ?",
+          "a": "Pas toujours, mais c'est une possibilité. La sensibilité causée par une carie est généralement localisée sur une seule dent et s'aggrave avec le temps. Un examen clinique et une radiographie permettent de confirmer ou d'exclure rapidement ce diagnostic."
+        },
+        {
+          "q": "Le détartrage peut-il causer de la sensibilité ?",
+          "a": "Oui, temporairement. Le détartrage enlève le tartre qui recouvrait parfois les zones sensibles de la dent. Cette sensibilité post-détartrage est normale et disparaît en quelques jours. C'est un signe que le nettoyage a été efficace."
+        },
+        {
+          "q": "Mon enfant peut-il avoir des dents sensibles ?",
+          "a": "Oui. Les enfants peuvent avoir des dents sensibles, souvent à cause d'un émail immature, de caries non détectées ou de brossage trop vigoureux. Si votre enfant se plaint régulièrement de douleur en mangeant froid ou chaud, une consultation est recommandée."
+        }
+      ],
+      "internal_link": "/services/hygiene-dentaire",
+      "internal_link_label": "En savoir plus sur notre service d'hygiène dentaire"
+    },
+    "peur-du-dentiste": {
+      "meta_title": "Peur du Dentiste : 5 Techniques pour Vaincre l'Anxiété Dentaire | Plateau",
+      "meta_description": "Peur du dentiste ? Découvrez 5 techniques pour vaincre l'anxiété dentaire. Approche douce et sans jugement au Plateau Mont-Royal. Dr. Barchichat — 514-528-1587.",
+      "hero_title": "Peur du dentiste : 5 techniques pour vaincre l'anxiété dentaire",
+      "hero_subtitle": "L'approche bienveillante du Dr. Saul Barchichat pour des visites dentaires sans stress.",
+      "category": "soins",
+      "intro": "Si l'idée d'un rendez-vous chez le dentiste vous donne des sueurs froides, sachez que vous n'êtes absolument pas seul(e). L'anxiété dentaire touche environ 15 % des Québécois, et pour certains, elle est si intense qu'elle les empêche de consulter pendant des années — aggravant les problèmes qui auraient pu être traités simplement. En 35 ans de pratique au Plateau Mont-Royal, j'ai accompagné des centaines de patients anxieux. Voici les 5 techniques que nous utilisons au cabinet pour transformer votre expérience.",
+      "sections": [
+        {
+          "h2": "Vous n'êtes pas seul(e) — l'anxiété dentaire en chiffres",
+          "body": "L'odontophobie (peur irrationnelle du dentiste) est l'une des phobies les plus courantes au monde. Au Canada, environ 5 à 15 % de la population évite le dentiste par anxiété sévère. Les conséquences sont réelles : des caries simples qui deviennent des abcès, des problèmes de gencives qui mènent à la perte de dents, et une santé bucco-dentaire qui se dégrade silencieusement.",
+          "list": [
+            "15 % des Canadiens souffrent d'anxiété dentaire significative",
+            "40 % des adultes ressentent un certain inconfort à l'idée d'aller chez le dentiste",
+            "Les patients anxieux consultent en moyenne 2 fois moins souvent",
+            "L'anxiété dentaire est la 3e phobie la plus répandue au Canada"
+          ]
+        },
+        {
+          "h2": "Pourquoi a-t-on peur du dentiste ? Les vraies raisons",
+          "body": "Comprendre la source de votre anxiété est la première étape pour la surmonter. Les raisons sont souvent profondes et légitimes — il n'y a aucune honte à les ressentir.",
+          "list": [
+            "Expérience passée traumatisante — Un soin douloureux pendant l'enfance ou un dentiste brusque laisse des traces durables dans la mémoire émotionnelle.",
+            "Perte de contrôle — Être allongé, bouche ouverte, incapable de parler ou de bouger crée un sentiment d'impuissance chez beaucoup de patients.",
+            "Peur de la douleur — Même si l'anesthésie moderne est très efficace, la peur anticipatoire de la douleur est souvent plus intense que la douleur elle-même.",
+            "Sensibilité aux sons et odeurs — Le bruit de la fraise dentaire et l'odeur des matériaux peuvent déclencher une réaction de stress.",
+            "Honte et jugement — Beaucoup de patients craignent d'être jugés pour l'état de leurs dents, surtout après des années sans consultation. Cette crainte est infondée dans notre cabinet."
+          ]
+        },
+        {
+          "h2": "Nos 5 techniques pour une visite sans stress",
+          "body": "Au Centre Dentaire du Plateau, nous avons développé un protocole spécifique pour les patients anxieux. Ces techniques ont été affinées au fil de 35 ans de pratique et permettent à la grande majorité de nos patients de surmonter leur anxiété.",
+          "list": [
+            "Communication constante — Le Dr. Barchichat explique chaque geste avant de le faire. Aucune surprise. Vous savez exactement ce qui se passe à chaque instant.",
+            "Contrôle du patient (main levée) — Vous levez la main à tout moment pour interrompre le soin. Nous nous arrêtons immédiatement, sans question. Vous gardez le contrôle.",
+            "Anesthésie moderne sans douleur — Nous utilisons un gel anesthésiant topique avant l'injection, des aiguilles ultra-fines et une injection lente. La plupart des patients ne sentent pas l'aiguille.",
+            "Musique et écouteurs — Apportez vos écouteurs et votre playlist préférée. La musique réduit significativement le stress et couvre le bruit des instruments.",
+            "Approche progressive — Pour les cas d'anxiété sévère, nous commençons par une visite de familiarisation : on se rencontre, on discute, on fait un simple examen visuel. Les soins commencent seulement quand vous êtes prêt(e)."
+          ]
+        },
+        {
+          "h2": "L'approche du Dr. Barchichat avec les patients anxieux",
+          "body": "En 35 ans de pratique au Plateau Mont-Royal, j'ai reçu des centaines de patients qui n'avaient pas consulté depuis 5, 10, parfois 15 ans à cause de leur anxiété. Ma philosophie est simple : aucun jugement, aucune précipitation, et une patience absolue. Je préfère faire 3 rendez-vous courts plutôt qu'un long rendez-vous stressant. Mon objectif n'est pas seulement de soigner vos dents, mais de reconstruire votre confiance envers les soins dentaires — pour que vous reveniez régulièrement et que les problèmes soient traités avant de devenir graves.",
+          "list": [
+            "Aucun jugement sur l'état de vos dents — jamais",
+            "Rendez-vous courts et progressifs pour bâtir la confiance",
+            "Explication claire de chaque étape, en termes simples",
+            "Ambiance calme et posée — pas de cabinet bruyant ni agité"
+          ]
+        },
+        {
+          "h2": "Première visite : à quoi s'attendre concrètement",
+          "body": "Nous savons que l'inconnu amplifie l'anxiété. Voici exactement ce qui se passe lors de votre première visite au Centre Dentaire du Plateau.",
+          "list": [
+            "Accueil chaleureux par notre équipe — pas de formulaire interminable, pas de salle d'attente bondée.",
+            "Discussion avec le Dr. Barchichat — il prend le temps de comprendre vos peurs et vos antécédents. Rien ne commence sans votre accord.",
+            "Examen visuel doux — on regarde, on évalue, on prend des radiographies si nécessaire. Pas de soin invasif lors de la première visite si vous ne le souhaitez pas.",
+            "Plan de traitement expliqué — on vous présente ce qui doit être fait, avec les priorités, les coûts et les options. Vous décidez du rythme.",
+            "Prochain rendez-vous à votre rythme — pas de pression pour réserver immédiatement."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Est-ce que le Dr. Barchichat juge les patients qui n'ont pas consulté depuis longtemps ?",
+          "a": "Absolument pas. Le Dr. Barchichat reçoit régulièrement des patients qui n'ont pas vu de dentiste depuis 5 à 15 ans. Il comprend que l'anxiété est une raison légitime d'avoir évité les soins, et son approche est toujours bienveillante et sans jugement. Son objectif est de vous aider à retrouver une bonne santé bucco-dentaire à votre rythme."
+        },
+        {
+          "q": "Proposez-vous la sédation consciente pour les patients très anxieux ?",
+          "a": "Pour les cas d'anxiété sévère qui ne répondent pas aux techniques comportementales, nous pouvons discuter d'options de sédation légère avec vous. Lors de votre consultation, le Dr. Barchichat évaluera votre niveau d'anxiété et vous proposera l'approche la plus adaptée."
+        },
+        {
+          "q": "Est-ce que l'anesthésie locale fait mal ?",
+          "a": "Avec nos techniques modernes, la grande majorité des patients ne sentent pas l'injection. Nous appliquons un gel anesthésiant topique avant l'aiguille, utilisons des aiguilles ultra-fines et injectons très lentement. Le léger pincement que certains ressentent dure moins d'une seconde."
+        },
+        {
+          "q": "Puis-je venir juste pour voir le cabinet sans faire de soins ?",
+          "a": "Oui, absolument. Nous encourageons les patients anxieux à venir pour une visite de familiarisation. Vous rencontrez l'équipe, visitez le cabinet, posez vos questions — sans aucune obligation de soins. C'est souvent la première étape pour briser le cycle de l'anxiété."
+        },
+        {
+          "q": "Comment gérer l'anxiété la veille du rendez-vous ?",
+          "a": "Quelques conseils qui aident nos patients : préparez votre playlist musicale, évitez le café le matin du rendez-vous (il augmente l'anxiété), arrivez 10 minutes en avance pour vous poser calmement, et n'hésitez pas à nous appeler la veille si vous avez des questions. Savoir exactement ce qui va se passer réduit considérablement le stress."
+        }
+      ],
+      "internal_link": "/a-propos/dr-saul-barchichat",
+      "internal_link_label": "Découvrir l'approche du Dr. Barchichat"
     }
   }
 }
