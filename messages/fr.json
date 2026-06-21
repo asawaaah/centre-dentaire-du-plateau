@@ -2,7 +2,7 @@
   "Nav": {
     "home": "Accueil",
     "services": "Traitements",
-    "about": "Équipe",
+    "about": "À propos",
     "blog": "Blog",
     "contact": "Contact",
     "cta": "Prendre RDV",
@@ -1694,5 +1694,11 @@
       "internal_link": "/a-propos/dr-saul-barchichat",
       "internal_link_label": "Découvrir l'approche du Dr. Barchichat"
     }
+  },
+  "VirtualTour": {
+    "title": "Visitez notre clinique",
+    "description": "Explorez nos installations avant votre première visite.",
+    "cta": "Démarrer la visite virtuelle",
+    "close": "Fermer la visite virtuelle"
   }
 }

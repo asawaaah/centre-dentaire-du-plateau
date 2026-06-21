@@ -4,6 +4,7 @@ import { Award, Cpu, History, ScanLine, Fingerprint, Zap, ArrowRight } from "luc
 import type { Metadata } from "next";
 import { Link } from "../../../i18n/routing";
 import { TestimonialsCarousel } from "@/components/ui/TestimonialsCarousel";
+import { VirtualTourModal } from "@/components/ui/VirtualTourModal";
 import { getServiceSlug, type ServiceKey } from "../../../lib/services";
 
 
@@ -32,6 +33,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   setRequestLocale(locale);
   const t = await getTranslations("About");
   const tHome = await getTranslations("Home");
+  const tVT = await getTranslations("VirtualTour");
 
 
   const pillars = [
@@ -138,6 +140,38 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 </Link>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== VIRTUAL TOUR ==================== */}
+      <section className="py-20 sm:py-24 px-6 sm:px-8 lg:px-12 bg-surface">
+        <div className="max-w-5xl mx-auto space-y-8 text-center">
+          <div className="space-y-4">
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl text-primary">
+              {tVT("title")}
+            </h2>
+            <p className="font-body text-lg text-on-surface-variant leading-relaxed">
+              {tVT("description")}
+            </p>
+          </div>
+
+          {/* Desktop: embedded iframe */}
+          <div className="hidden lg:block rounded-[2rem] overflow-hidden shadow-[var(--shadow-ambient)]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!4v1782064455162!6m8!1m7!1sCAoSLEFGMVFpcE5mSWhvc0h4NE9qNHVkckgzcVZ2ajZOT2hxb0tzMnpJYl9sSE1G!2m2!1d45.53048138404247!2d-73.57710976926973!3f348.58!4f-6.409999999999997!5f0.7820865974627469"
+              className="w-full aspect-video"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={tVT("title")}
+            />
+          </div>
+
+          {/* Mobile: modal button */}
+          <div className="lg:hidden">
+            <VirtualTourModal />
           </div>
         </div>
       </section>

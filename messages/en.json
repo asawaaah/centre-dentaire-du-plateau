@@ -2,7 +2,7 @@
   "Nav": {
     "home": "Home",
     "services": "Treatments",
-    "about": "Team",
+    "about": "About Us",
     "blog": "Blog",
     "contact": "Contact",
     "cta": "Book Now",
@@ -1694,5 +1694,11 @@
       "internal_link": "/a-propos/dr-saul-barchichat",
       "internal_link_label": "Learn about Dr. Barchichat's approach"
     }
+  },
+  "VirtualTour": {
+    "title": "Visit our clinic",
+    "description": "Explore our facilities before your first appointment.",
+    "cta": "Start the virtual tour",
+    "close": "Close the virtual tour"
   }
 }
