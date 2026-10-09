@@ -156,7 +156,7 @@ export function Footer() {
               <Link href="/" className="font-body text-xs text-on-surface-variant hover:text-primary transition-colors">
                 {t('legal')}
               </Link>
-              <Link href="/" className="font-body text-xs text-on-surface-variant hover:text-primary transition-colors">
+              <Link href="/confidentialite" className="font-body text-xs text-on-surface-variant hover:text-primary transition-colors">
                 {t('privacy')}
               </Link>
               <Link href="/" className="font-body text-xs text-on-surface-variant hover:text-primary transition-colors">

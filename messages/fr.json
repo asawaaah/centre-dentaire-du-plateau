@@ -1700,5 +1700,70 @@
     "description": "Explorez nos installations avant votre première visite.",
     "cta": "Démarrer la visite virtuelle",
     "close": "Fermer la visite virtuelle"
+  },
+  "Privacy": {
+    "meta": {
+      "title": "Politique de confidentialité",
+      "description": "Politique de confidentialité du Centre Dentaire du Plateau. Découvrez comment nous collectons, utilisons et protégeons vos données personnelles, y compris via les formulaires Google Lead Forms."
+    },
+    "hero": {
+      "title": "Politique de confidentialité",
+      "subtitle": "Votre vie privée est importante pour nous. Cette politique explique comment nous collectons, utilisons et protégeons vos renseignements personnels.",
+      "last_updated": "Dernière mise à jour : 9 octobre 2026"
+    },
+    "toc": {
+      "title": "Table des matières",
+      "label": "Naviguer dans la politique de confidentialité"
+    },
+    "sections": {
+      "responsible": {
+        "title": "1. Responsable du traitement",
+        "content": "<p><strong>Centre Dentaire du Plateau</strong> est responsable de la collecte et du traitement de vos renseignements personnels.</p><p>Adresse : 1357, avenue du Mont-Royal Est, Montréal (Québec), Canada</p><p>Téléphone : <phone>514 528 1587</phone></p><p>Courriel : <email>info@dentisteplateau.com</email></p>"
+      },
+      "collected_data": {
+        "title": "2. Données collectées",
+        "content": "<p>Nous collectons les renseignements personnels suivants, selon le canal utilisé :</p><p><strong>Via notre site web (formulaire de contact, formulaire de candidature) :</strong></p><ul><li>Nom complet</li><li>Adresse courriel</li><li>Numéro de téléphone</li><li>Message ou objet de la demande</li><li>CV (dans le cadre d'une candidature)</li></ul><p><strong>Via Google Lead Forms (formulaires publicitaires Google Ads) :</strong></p><ul><li>Nom complet</li><li>Adresse courriel</li><li>Numéro de téléphone</li><li>Toute autre information que vous choisissez de fournir dans le formulaire</li></ul><p><strong>Automatiquement (via cookies et outils d'analyse) :</strong></p><ul><li>Adresse IP (anonymisée)</li><li>Type de navigateur et appareil</li><li>Pages visitées et durée de la session</li><li>Source de la visite (moteur de recherche, publicité, lien direct)</li></ul>"
+      },
+      "google_lead_forms": {
+        "title": "3. Formulaires Google Lead Forms",
+        "content": "<p>Nous utilisons <strong>Google Lead Forms</strong> (extensions de formulaire de leads Google Ads) pour vous permettre de soumettre une demande de rendez-vous ou de renseignements directement depuis une annonce Google, sans quitter la plateforme Google.</p><p><strong>Données collectées via Google Lead Forms :</strong> nom, adresse courriel, numéro de téléphone, et toute information que vous fournissez volontairement dans le formulaire.</p><p><strong>Traitement de vos données :</strong> Lorsque vous soumettez un formulaire Google Lead Form, vos données nous sont transmises directement et de façon sécurisée. Nous les utilisons exclusivement pour vous contacter afin de planifier un rendez-vous ou répondre à votre demande.</p><p><strong>Partage avec Google :</strong> Google agit comme intermédiaire technique pour la collecte de vos données via ces formulaires. Google est soumis à sa propre politique de confidentialité (<google>Politique de confidentialité de Google</google>). Nous ne partageons pas vos données avec Google à des fins publicitaires au-delà de ce qui est nécessaire au fonctionnement des formulaires de leads.</p><p><strong>Conservation :</strong> Les données collectées via Google Lead Forms sont conservées pendant un maximum de 30 jours sur les serveurs de Google, après quoi elles sont supprimées par Google. De notre côté, nous conservons ces données conformément à la section « Durée de conservation » ci-dessous.</p><p><strong>Retrait du consentement :</strong> Vous pouvez retirer votre consentement à tout moment en nous contactant directement (voir section « Vos droits »).</p>"
+      },
+      "purposes": {
+        "title": "4. Finalités du traitement",
+        "content": "<p>Vos renseignements personnels sont utilisés exclusivement pour :</p><ul><li>Vous contacter pour planifier ou confirmer un rendez-vous</li><li>Répondre à vos demandes de renseignements</li><li>Traiter votre candidature (formulaire carrière)</li><li>Vous envoyer des rappels de rendez-vous (si vous avez donné votre accord)</li><li>Améliorer la qualité de nos services et de notre site web</li><li>Respecter nos obligations légales et réglementaires</li></ul><p><strong>Nous ne vendons jamais vos données.</strong> Nous n'utilisons pas vos données pour du marketing non sollicité. Nous ne vous enverrons aucune communication commerciale sans votre consentement explicite préalable.</p>"
+      },
+      "legal_basis": {
+        "title": "5. Base juridique",
+        "content": "<p>Le traitement de vos données repose sur :</p><ul><li><strong>Votre consentement</strong> — lorsque vous remplissez un formulaire (sur notre site ou via Google Lead Forms), vous consentez à ce que nous utilisions vos données pour les finalités décrites</li><li><strong>L'exécution d'un contrat</strong> — pour la gestion de vos rendez-vous et la prestation de soins dentaires</li><li><strong>Nos obligations légales</strong> — conservation des dossiers médicaux conformément au Code des professions du Québec et à la Loi sur les services de santé et les services sociaux</li></ul><p>Ce traitement est conforme à la <strong>Loi 25 sur la protection des renseignements personnels dans le secteur privé</strong> (Québec) et à la <strong>Loi sur la protection des renseignements personnels et les documents électroniques</strong> (LPRPDE / PIPEDA — Canada).</p>"
+      },
+      "sharing": {
+        "title": "6. Partage des données",
+        "content": "<p>Vos renseignements personnels peuvent être partagés avec :</p><ul><li><strong>Google LLC</strong> — en tant qu'intermédiaire technique pour les Google Lead Forms et les outils d'analyse (Google Analytics, Google Tag Manager)</li><li><strong>Resend</strong> — pour l'envoi sécurisé des notifications par courriel liées aux formulaires de contact</li><li><strong>Notre hébergeur (Netlify / Cloudflare)</strong> — pour l'hébergement sécurisé de notre site web</li></ul><p>Ces tiers sont liés par des obligations contractuelles de confidentialité et ne peuvent utiliser vos données qu'aux fins précisées.</p><p><strong>Nous ne vendons, ne louons et ne partageons jamais vos données à des fins de marketing tiers.</strong></p>"
+      },
+      "retention": {
+        "title": "7. Durée de conservation",
+        "content": "<p>Nous conservons vos données pour les durées suivantes :</p><ul><li><strong>Demandes de contact et leads :</strong> 12 mois à compter de la dernière interaction, sauf si vous devenez patient</li><li><strong>Dossiers patients :</strong> conformément aux exigences du Code des professions du Québec (minimum 5 ans après le dernier service rendu)</li><li><strong>Candidatures :</strong> 24 mois, sauf si vous demandez une suppression anticipée</li><li><strong>Données analytiques :</strong> 14 mois (Google Analytics)</li><li><strong>Google Lead Forms :</strong> 30 jours sur les serveurs de Google, puis supprimées automatiquement par Google</li></ul><p>À l'expiration de ces délais, vos données sont supprimées ou anonymisées de façon irréversible.</p>"
+      },
+      "rights": {
+        "title": "8. Vos droits",
+        "content": "<p>Conformément à la Loi 25 (Québec) et à la LPRPDE (Canada), vous disposez des droits suivants :</p><ul><li><strong>Droit d'accès :</strong> vous pouvez demander une copie de vos données personnelles détenues</li><li><strong>Droit de rectification :</strong> vous pouvez demander la correction de données inexactes</li><li><strong>Droit de suppression :</strong> vous pouvez demander la suppression de vos données (sous réserve de nos obligations légales de conservation)</li><li><strong>Droit de retrait du consentement :</strong> vous pouvez retirer votre consentement à tout moment, sans affecter la licéité du traitement effectué avant le retrait</li><li><strong>Droit à la portabilité :</strong> vous pouvez demander la transmission de vos données dans un format structuré</li></ul><p>Pour exercer vos droits, contactez-nous par courriel à <email>info@dentisteplateau.com</email> ou par téléphone au <phone>514 528 1587</phone>. Nous répondrons à votre demande dans un délai de 30 jours.</p><p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez porter plainte auprès de la <cai>Commission d'accès à l'information du Québec (CAI)</cai> ou du <opc>Commissariat à la protection de la vie privée du Canada</opc>.</p>"
+      },
+      "cookies": {
+        "title": "9. Cookies et technologies de suivi",
+        "content": "<p>Notre site utilise des cookies et technologies similaires pour :</p><ul><li><strong>Cookies essentiels :</strong> nécessaires au fonctionnement du site (langue, session)</li><li><strong>Cookies analytiques (Google Analytics) :</strong> nous aident à comprendre comment vous utilisez le site (pages visitées, durée, source). Les adresses IP sont anonymisées</li><li><strong>Cookies publicitaires (Google Ads, Google Tag Manager) :</strong> permettent de mesurer l'efficacité de nos campagnes publicitaires et d'optimiser les formulaires Google Lead Forms</li></ul><p>Vous pouvez gérer vos préférences en matière de cookies via les paramètres de votre navigateur. La désactivation des cookies analytiques et publicitaires n'affecte pas le fonctionnement du site.</p>"
+      },
+      "security": {
+        "title": "10. Sécurité des données",
+        "content": "<p>Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos renseignements personnels :</p><ul><li>Chiffrement SSL/TLS pour toutes les transmissions de données</li><li>Hébergement sur des serveurs sécurisés (Netlify / Cloudflare) avec certification SOC 2</li><li>Accès restreint aux données personnelles aux seuls membres autorisés de l'équipe</li><li>Protocoles de suppression sécurisée des données expirées</li></ul>"
+      },
+      "changes": {
+        "title": "11. Modifications de cette politique",
+        "content": "<p>Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. En cas de modification substantielle, la date de « Dernière mise à jour » en haut de cette page sera actualisée. Nous vous encourageons à consulter cette page régulièrement.</p>"
+      },
+      "contact_dpo": {
+        "title": "12. Nous contacter",
+        "content": "<p>Pour toute question relative à cette politique de confidentialité ou à la protection de vos données, contactez-nous :</p><p><strong>Centre Dentaire du Plateau</strong></p><p>1357, avenue du Mont-Royal Est, Montréal (Québec), Canada</p><p>Courriel : <email>info@dentisteplateau.com</email></p><p>Téléphone : <phone>514 528 1587</phone></p>"
+      }
+    }
   }
 }

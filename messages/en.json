@@ -1700,5 +1700,70 @@
     "description": "Explore our facilities before your first appointment.",
     "cta": "Start the virtual tour",
     "close": "Close the virtual tour"
+  },
+  "Privacy": {
+    "meta": {
+      "title": "Privacy Policy",
+      "description": "Privacy policy for Centre Dentaire du Plateau. Learn how we collect, use, and protect your personal information, including through Google Lead Forms."
+    },
+    "hero": {
+      "title": "Privacy Policy",
+      "subtitle": "Your privacy matters to us. This policy explains how we collect, use, and protect your personal information.",
+      "last_updated": "Last updated: October 9, 2026"
+    },
+    "toc": {
+      "title": "Table of Contents",
+      "label": "Navigate the privacy policy"
+    },
+    "sections": {
+      "responsible": {
+        "title": "1. Data Controller",
+        "content": "<p><strong>Centre Dentaire du Plateau</strong> is responsible for collecting and processing your personal information.</p><p>Address: 1357 Avenue du Mont-Royal Est, Montréal, Québec, Canada</p><p>Phone: <phone>514 528 1587</phone></p><p>Email: <email>info@dentisteplateau.com</email></p>"
+      },
+      "collected_data": {
+        "title": "2. Data We Collect",
+        "content": "<p>We collect the following personal information depending on the channel used:</p><p><strong>Through our website (contact form, career application):</strong></p><ul><li>Full name</li><li>Email address</li><li>Phone number</li><li>Message or subject of inquiry</li><li>Resume (for job applications)</li></ul><p><strong>Through Google Lead Forms (Google Ads lead form extensions):</strong></p><ul><li>Full name</li><li>Email address</li><li>Phone number</li><li>Any other information you choose to provide in the form</li></ul><p><strong>Automatically (via cookies and analytics tools):</strong></p><ul><li>IP address (anonymized)</li><li>Browser type and device</li><li>Pages visited and session duration</li><li>Visit source (search engine, ad, direct link)</li></ul>"
+      },
+      "google_lead_forms": {
+        "title": "3. Google Lead Forms",
+        "content": "<p>We use <strong>Google Lead Forms</strong> (Google Ads lead form extensions) to allow you to submit an appointment request or inquiry directly from a Google ad, without leaving the Google platform.</p><p><strong>Data collected through Google Lead Forms:</strong> name, email address, phone number, and any information you voluntarily provide in the form.</p><p><strong>How we process your data:</strong> When you submit a Google Lead Form, your data is transmitted to us directly and securely. We use it exclusively to contact you to schedule an appointment or respond to your inquiry.</p><p><strong>Sharing with Google:</strong> Google acts as a technical intermediary for collecting your data through these forms. Google is subject to its own privacy policy (<google>Google Privacy Policy</google>). We do not share your data with Google for advertising purposes beyond what is necessary for the lead forms to function.</p><p><strong>Retention:</strong> Data collected through Google Lead Forms is retained for a maximum of 30 days on Google's servers, after which it is deleted by Google. On our end, we retain this data in accordance with the \"Retention Period\" section below.</p><p><strong>Withdrawing consent:</strong> You may withdraw your consent at any time by contacting us directly (see \"Your Rights\" section).</p>"
+      },
+      "purposes": {
+        "title": "4. Purposes of Processing",
+        "content": "<p>Your personal information is used exclusively to:</p><ul><li>Contact you to schedule or confirm an appointment</li><li>Respond to your inquiries</li><li>Process your job application (career form)</li><li>Send you appointment reminders (if you have given consent)</li><li>Improve the quality of our services and website</li><li>Comply with our legal and regulatory obligations</li></ul><p><strong>We never sell your data.</strong> We do not use your data for unsolicited marketing. We will not send you any commercial communications without your prior explicit consent.</p>"
+      },
+      "legal_basis": {
+        "title": "5. Legal Basis",
+        "content": "<p>Our processing of your data is based on:</p><ul><li><strong>Your consent</strong> — when you fill out a form (on our website or through Google Lead Forms), you consent to our use of your data for the described purposes</li><li><strong>Contract performance</strong> — for managing your appointments and providing dental care</li><li><strong>Legal obligations</strong> — retention of medical records in accordance with the Québec Code of Professions and the Act respecting Health Services and Social Services</li></ul><p>This processing complies with <strong>Québec's Act respecting the protection of personal information in the private sector (Law 25)</strong> and the <strong>Personal Information Protection and Electronic Documents Act (PIPEDA)</strong> of Canada.</p>"
+      },
+      "sharing": {
+        "title": "6. Data Sharing",
+        "content": "<p>Your personal information may be shared with:</p><ul><li><strong>Google LLC</strong> — as a technical intermediary for Google Lead Forms and analytics tools (Google Analytics, Google Tag Manager)</li><li><strong>Resend</strong> — for secure email notifications related to contact forms</li><li><strong>Our hosting provider (Netlify / Cloudflare)</strong> — for secure hosting of our website</li></ul><p>These third parties are bound by contractual confidentiality obligations and may only use your data for the specified purposes.</p><p><strong>We never sell, rent, or share your data for third-party marketing purposes.</strong></p>"
+      },
+      "retention": {
+        "title": "7. Retention Period",
+        "content": "<p>We retain your data for the following periods:</p><ul><li><strong>Contact requests and leads:</strong> 12 months from the last interaction, unless you become a patient</li><li><strong>Patient records:</strong> in accordance with the Québec Code of Professions (minimum 5 years after the last service provided)</li><li><strong>Job applications:</strong> 24 months, unless you request earlier deletion</li><li><strong>Analytics data:</strong> 14 months (Google Analytics)</li><li><strong>Google Lead Forms:</strong> 30 days on Google's servers, then automatically deleted by Google</li></ul><p>Once these periods expire, your data is deleted or irreversibly anonymized.</p>"
+      },
+      "rights": {
+        "title": "8. Your Rights",
+        "content": "<p>Under Québec's Law 25 and PIPEDA (Canada), you have the following rights:</p><ul><li><strong>Right of access:</strong> you may request a copy of the personal data we hold about you</li><li><strong>Right of rectification:</strong> you may request the correction of inaccurate data</li><li><strong>Right of deletion:</strong> you may request the deletion of your data (subject to our legal retention obligations)</li><li><strong>Right to withdraw consent:</strong> you may withdraw your consent at any time, without affecting the lawfulness of processing carried out before the withdrawal</li><li><strong>Right to portability:</strong> you may request the transfer of your data in a structured format</li></ul><p>To exercise your rights, contact us by email at <email>info@dentisteplateau.com</email> or by phone at <phone>514 528 1587</phone>. We will respond to your request within 30 days.</p><p>If you believe your rights have not been respected, you may file a complaint with the <cai>Commission d'accès à l'information du Québec (CAI)</cai> or the <opc>Office of the Privacy Commissioner of Canada</opc>.</p>"
+      },
+      "cookies": {
+        "title": "9. Cookies and Tracking Technologies",
+        "content": "<p>Our website uses cookies and similar technologies for:</p><ul><li><strong>Essential cookies:</strong> required for the site to function (language, session)</li><li><strong>Analytics cookies (Google Analytics):</strong> help us understand how you use the site (pages visited, duration, source). IP addresses are anonymized</li><li><strong>Advertising cookies (Google Ads, Google Tag Manager):</strong> measure the effectiveness of our advertising campaigns and optimize Google Lead Forms</li></ul><p>You can manage your cookie preferences through your browser settings. Disabling analytics and advertising cookies does not affect the site's functionality.</p>"
+      },
+      "security": {
+        "title": "10. Data Security",
+        "content": "<p>We implement appropriate technical and organizational security measures to protect your personal information:</p><ul><li>SSL/TLS encryption for all data transmissions</li><li>Hosting on secure servers (Netlify / Cloudflare) with SOC 2 certification</li><li>Access to personal data restricted to authorized team members only</li><li>Secure deletion protocols for expired data</li></ul>"
+      },
+      "changes": {
+        "title": "11. Changes to This Policy",
+        "content": "<p>We reserve the right to modify this privacy policy at any time. In the event of a substantial change, the \"Last updated\" date at the top of this page will be updated. We encourage you to review this page regularly.</p>"
+      },
+      "contact_dpo": {
+        "title": "12. Contact Us",
+        "content": "<p>For any questions regarding this privacy policy or the protection of your data, please contact us:</p><p><strong>Centre Dentaire du Plateau</strong></p><p>1357 Avenue du Mont-Royal Est, Montréal, Québec, Canada</p><p>Email: <email>info@dentisteplateau.com</email></p><p>Phone: <phone>514 528 1587</phone></p>"
+      }
+    }
   }
 }

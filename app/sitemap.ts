@@ -18,6 +18,7 @@ const staticPages: StaticPage[] = [
   { fr: '/urgence-dentaire', en: '/dental-emergency', changeFrequency: 'monthly', priority: 0.9 },
   { fr: '/a-propos/dr-saul-barchichat', en: '/about/dr-saul-barchichat', changeFrequency: 'monthly', priority: 0.7 },
   { fr: '/regime-canadien-soins-dentaires', en: '/canadian-dental-care-plan', changeFrequency: 'monthly', priority: 0.8 },
+  { fr: '/confidentialite', en: '/privacy-policy', changeFrequency: 'monthly', priority: 0.3 },
   { fr: '/blog', en: '/blog', changeFrequency: 'weekly', priority: 0.7 },
 ];
 
