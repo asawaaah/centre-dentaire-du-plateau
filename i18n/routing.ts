@@ -29,6 +29,10 @@ export const routing = defineRouting({
       fr: '/regime-canadien-soins-dentaires',
       en: '/canadian-dental-care-plan',
     },
+    '/confidentialite': {
+      fr: '/confidentialite',
+      en: '/privacy-policy',
+    },
     '/blog': '/blog',
     '/blog/[slug]': '/blog/[slug]',
   },
